@@ -5,12 +5,14 @@ import javafx.scene.image.Image;
 import java.util.ArrayList;
 import java.util.List;
 
+import pokdp.Constantes;
+
 public class AnimationManagerSprite implements IAnimationManager {
     private List<Image>   imageList = new ArrayList<>();
 
     private int frameIndex = 0;
-    private int defaultWidth = 0;
-    private int defaultHeight = 0;
+    private int defaultWidth = Constantes.DEFAULT_SPRITE_WIDTH;
+    private int defaultHeight = Constantes.DEFAULT_SPRITE_HEIGHT;
 
     /**
      *

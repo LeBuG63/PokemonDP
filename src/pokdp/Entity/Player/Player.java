@@ -9,12 +9,13 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
 
+import pokdp.Constantes;
 
 public class Player extends IEntity {
     // Permet de définir le "pas" de pixel
     private static final int KEYBOARD_MOVEMENT_DELTA = 64;
-    private final int SPRITE_WIDTH = 64;
-    private final int SPRITE_HEIGHT = 64;
+    private final int SPRITE_WIDTH = Constantes.DEFAULT_SPRITE_WIDTH;
+    private final int SPRITE_HEIGHT = Constantes.DEFAULT_SPRITE_HEIGHT;
 
     private IAnimationManager animationManager = new AnimationManagerSprite(SPRITE_WIDTH, SPRITE_HEIGHT);
 
