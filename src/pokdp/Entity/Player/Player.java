@@ -12,11 +12,15 @@ import java.security.Key;
 
 
 public class Player extends IEntity {
-    private static final int KEYBOARD_MOVEMENT_DELTA = 5;
+    // Permet de définir le "pas" de pixel
+    private static final int KEYBOARD_MOVEMENT_DELTA = 64;
 
     public Player(String spritePath, ETypeEntity type, Scene scene) {
         super(spritePath, type);
 
+        setFit(64, 64);
+
+        // ajout de l'événement pour déplacer le joueur
         eventManager.add(new EventHandler<KeyEvent>() {
             @Override public void handle(KeyEvent event) {
                 switch (event.getCode()) {
@@ -31,21 +35,10 @@ public class Player extends IEntity {
             }
         }, EEventType.KEYBOARD_PRESSED);
 
-        eventManager.add(new EventHandler<KeyEvent>() {
-            @Override
-            public void handle(KeyEvent event) {
-                spriteView.setX(100);
-            }
-        }, EEventType.KEYBOARD_RELEASED);
-
         eventManager.attachAllEventsToScene(scene);
     }
 
     public void update() {
-
-    }
-
-    public void draw() {
 
     }
 }

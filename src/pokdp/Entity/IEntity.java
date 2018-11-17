@@ -8,24 +8,31 @@ import javafx.scene.image.ImageView;
 import EventManager.EventManager;
 
 public abstract class IEntity extends Parent {
-    public Vec2d coord;
+    // Coordonnées pour placer l'entité sur la scéne
+    public Vec2d coord = new Vec2d(0,0);;
+
+    // Le type de l'entité pour par la suite faire des tests
     public ETypeEntity type = ETypeEntity.NONE;
 
+    // Sert à contenir et à afficher une image
     protected ImageView spriteView;
+
+    // Permet de gérer les évenements plus facilement
     protected EventManager eventManager = new EventManager();
 
     public IEntity(String spritePath, ETypeEntity type) {
-        this.coord = new Vec2d(0,0);
         this.type = type;
-
         this.spriteView = new ImageView(new Image(spritePath));
 
         this.getChildren().add(spriteView);
     }
 
+    // modifie la taille du conteneur de l'image
+    public void setFit(int w, int h) {
+        this.spriteView.setFitHeight(w);
+        this.spriteView.setFitWidth(h);
+    }
 
 
     public abstract void update();
-
-    public abstract void draw();
 }
