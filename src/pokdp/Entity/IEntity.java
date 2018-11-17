@@ -67,6 +67,7 @@ public abstract class IEntity extends Parent {
      */
     public void setCoordX(double x) {
         coord.x = x;
+        spriteView.setX(x);
     }
 
     /**
@@ -75,6 +76,8 @@ public abstract class IEntity extends Parent {
      */
     public void setCoordY(double y) {
         coord.y = y;
+        spriteView.setY(y);
+
     }
 
     /**
