@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DecoObject extends IEntity {
-    private CollisionBox  collisionBox;
     private IAnimationManager animationManager = new AnimationManagerSprite();
 
     public DecoObject(String spritePath, double x, double y, double w, double h) {
@@ -36,17 +35,14 @@ public class DecoObject extends IEntity {
 
         for(String s : spritePath) {
             animationManager.addFrame(s);
-
         }
 
         setSprite(animationManager.getFrame(0));
         Image frame = animationManager.getFrame(0);
-
-        collisionBox = new CollisionBox(new Vec2d(x, y), frame.getWidth(), frame.getHeight());
     }
 
     public boolean isInCollision(IEntity entity) {
-        return this.collisionBox.isInCollision(entity.getCollisionBox());
+        return getCollisionBox().isInCollision(entity.getCollisionBox());
     }
 
     public void update() {

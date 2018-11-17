@@ -10,8 +10,8 @@ import java.util.List;
 import java.util.Random;
 
 public class Map extends Parent {
-    public int width;
-    public int height;
+    private int width;
+    private int height;
 
     private HashMap<ETerrainType, ObjectSet> tilesetHash = new HashMap<ETerrainType, ObjectSet>();
     private HashMap<ETerrainType, ObjectSet> decoObjectsetHash = new HashMap<ETerrainType, ObjectSet>();
@@ -44,7 +44,7 @@ public class Map extends Parent {
 
         for (int x = 0; x < width; ++x) {
             for (int y = 0; y < height; ++y) {
-                if (random.nextDouble() > 0.95f) {
+                if (random.nextDouble() > 0.50f) {
                     boolean add = true;
 
                     int i = random.nextInt(decoObjectsetHash.get(type).size());
@@ -69,10 +69,10 @@ public class Map extends Parent {
                     }
                 }
 
-                int i = random.nextInt(2);
+                int i = random.nextInt(tilesetHash.get(type).size());
 
                 while (random.nextDouble() > tilesetHash.get(type).getProbability(i)) {
-                    i = random.nextInt(2);
+                    i = random.nextInt(tilesetHash.get(type).size());
                 }
 
                 Tile t = new Tile(tilesetHash.get(type).getPathObject(i));

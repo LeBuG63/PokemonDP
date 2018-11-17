@@ -21,7 +21,7 @@ public abstract class IEntity extends Parent {
     // Coordonnées pour placer l'entité sur la scéne
     private Vec2d coord = new Vec2d();
 
-    private CollisionBox collisionBox;
+    protected CollisionBox collisionBox;
     /**
      * @param type  le type de l'entité
      */
@@ -29,7 +29,7 @@ public abstract class IEntity extends Parent {
         this.type = type;
         this.spriteView = new ImageView();
 
-        collisionBox = new CollisionBox(getCoord(), spriteView.getFitWidth(), spriteView.getFitHeight());
+        collisionBox = new CollisionBox(getCoord(), 0,0);
 
         this.getChildren().add(spriteView);
     }
@@ -56,6 +56,8 @@ public abstract class IEntity extends Parent {
     public void setFit(int w, int h) {
         this.spriteView.setFitHeight(w);
         this.spriteView.setFitWidth(h);
+
+        collisionBox = new CollisionBox(getCoord(), spriteView.getFitWidth(), spriteView.getFitHeight());
     }
 
     /**
@@ -65,6 +67,9 @@ public abstract class IEntity extends Parent {
     public void setSprite(Image sprite) {
         if (this.spriteView != null) {
             this.spriteView.setImage(sprite);
+
+            this.collisionBox.setHeight(sprite.getHeight());
+            this.collisionBox.setWidth(sprite.getWidth());
         }
     }
 
@@ -75,6 +80,7 @@ public abstract class IEntity extends Parent {
     public void setCoordX(double x) {
         coord.x = x;
         spriteView.setX(x);
+        collisionBox.setCoord(new Vec2d(coord.x, coord.y));
     }
 
     /**
@@ -84,7 +90,7 @@ public abstract class IEntity extends Parent {
     public void setCoordY(double y) {
         coord.y = y;
         spriteView.setY(y);
-
+        collisionBox.setCoord(new Vec2d(coord.x, coord.y));
     }
 
     /**

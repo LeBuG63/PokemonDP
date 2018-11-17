@@ -3,13 +3,39 @@ package Map.Object;
 import com.sun.javafx.geom.Vec2d;
 
 public class CollisionBox {
-    private double  width, height;
+    private double  width;
+    private double height;
+
     private Vec2d   coord;
+
+    public Vec2d getCoord() {
+        return coord;
+    }
+
+    public void setCoord(Vec2d coord) {
+        this.coord = coord;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
 
     public CollisionBox(Vec2d coord, double w, double h) {
         this.coord = coord;
-        this.width = width;
-        this.height = height;
+        this.width = w;
+        this.height = h;
     }
 
     public boolean isInCollision(CollisionBox c) {
