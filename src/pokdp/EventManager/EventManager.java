@@ -10,14 +10,22 @@ import java.util.Map;
 
 public class EventManager {
     // Permet de stocker les événements, clé = EventHandler<?> val = EEVentType
-    public HashMap<EventHandler<?>, EEventType> eventDict = new HashMap<EventHandler<?>, EEventType>();
+    private HashMap<EventHandler<?>, EEventType> eventDict = new HashMap<EventHandler<?>, EEventType>();
 
     // TODO: penser à faire des vérifications
+    /**
+     * ajoute un événement
+     * @param event     l'événement à ajouter
+     * @param type      le type d'événement
+     */
     public void add(EventHandler<?> event, EEventType type) {
         eventDict.put(event, type);
     }
 
-    // Permet de relier tous les éléments à la scéne
+    /**
+     * lie tous les événements à la scéne
+     * @param scene     la scéne où les événements seront gérés
+     */
     public void attachAllEventsToScene(Scene scene) {
         for(Map.Entry<EventHandler<?>, EEventType> e : eventDict.entrySet()) {
             switch (e.getValue()) {

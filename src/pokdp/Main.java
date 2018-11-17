@@ -1,6 +1,6 @@
 package pokdp;
 
-import Entity.ETypeEntity;
+import Entity.EEntityType;
 import Entity.IEntity;
 import Entity.Player.Player;
 import javafx.application.Application;
@@ -16,7 +16,7 @@ public class Main extends Application {
 
         Group root = new Group();
         Scene scene = new Scene(root, 500, 500, Color.WHITE);
-        IEntity player = new Player(ETypeEntity.PLAYER, scene);
+        IEntity player = new Player(scene);
 
         primaryStage.setScene(scene);
 

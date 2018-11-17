@@ -2,7 +2,7 @@ package Entity.Player;
 
 import AnimationManager.AnimationManagerSprite;
 import AnimationManager.IAnimationManager;
-import Entity.ETypeEntity;
+import Entity.EEntityType;
 import Entity.IEntity;
 import EventManager.EEventType;
 import javafx.event.EventHandler;
@@ -13,11 +13,17 @@ import javafx.scene.input.KeyEvent;
 public class Player extends IEntity {
     // Permet de définir le "pas" de pixel
     private static final int KEYBOARD_MOVEMENT_DELTA = 64;
+    private final int SPRITE_WIDTH = 64;
+    private final int SPRITE_HEIGHT = 64;
 
-    private IAnimationManager animationManager = new AnimationManagerSprite(64, 64);
+    private IAnimationManager animationManager = new AnimationManagerSprite(SPRITE_WIDTH, SPRITE_HEIGHT);
 
-    public Player(ETypeEntity type, Scene scene) {
-        super(type);
+    /**
+     *
+     * @param scene la scène dans laquelle se trouve le joueur
+     */
+    public Player(Scene scene) {
+        super(EEntityType.PLAYER);
 
         animationManager.addFrame("file:assets/sprites/player/player1.png");
         animationManager.addFrame("file:assets/sprites/player/player2.png");
@@ -29,14 +35,14 @@ public class Player extends IEntity {
         eventManager.add(new EventHandler<KeyEvent>() {
             @Override public void handle(KeyEvent event) {
                 switch (event.getCode()) {
-                    case UP:    coord.y -= KEYBOARD_MOVEMENT_DELTA; break;
-                    case RIGHT: coord.x += KEYBOARD_MOVEMENT_DELTA; break;
-                    case DOWN:  coord.y += KEYBOARD_MOVEMENT_DELTA; break;
-                    case LEFT:  coord.x -= KEYBOARD_MOVEMENT_DELTA; break;
+                    case UP:    setCoordY(getCoord().y - KEYBOARD_MOVEMENT_DELTA); break;
+                    case RIGHT: setCoordX(getCoord().x + KEYBOARD_MOVEMENT_DELTA); break;
+                    case DOWN:  setCoordY(getCoord().y + KEYBOARD_MOVEMENT_DELTA); break;
+                    case LEFT:  setCoordX(getCoord().x - KEYBOARD_MOVEMENT_DELTA); break;
                 }
 
-                spriteView.setY(coord.y);
-                spriteView.setX(coord.x);
+                spriteView.setY(getCoord().y);
+                spriteView.setX(getCoord().x);
 
                 setSprite(animationManager.getNextFrame());
             }

@@ -1,6 +1,6 @@
 package Entity;
 
-public enum ETypeEntity {
+public enum EEntityType {
     NONE,
     PLAYER,
     POKEMON,
