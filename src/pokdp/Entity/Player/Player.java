@@ -17,7 +17,7 @@ public class Player extends IEntity {
     private final int SPRITE_WIDTH = Constantes.DEFAULT_SPRITE_WIDTH;
     private final int SPRITE_HEIGHT = Constantes.DEFAULT_SPRITE_HEIGHT;
 
-    private IAnimationManager animationManager = new AnimationManagerSprite(SPRITE_WIDTH, SPRITE_HEIGHT);
+    private IAnimationManager animationManager = new AnimationManagerSprite();
 
     /**
      *

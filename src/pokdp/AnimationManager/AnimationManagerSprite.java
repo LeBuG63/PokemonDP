@@ -14,6 +14,8 @@ public class AnimationManagerSprite implements IAnimationManager {
     private int defaultWidth = Constantes.DEFAULT_SPRITE_WIDTH;
     private int defaultHeight = Constantes.DEFAULT_SPRITE_HEIGHT;
 
+    public AnimationManagerSprite() {
+    }
     /**
      *
      * @param w la largeur de chaque sprite
