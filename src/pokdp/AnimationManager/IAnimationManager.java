@@ -11,17 +11,17 @@ public interface IAnimationManager {
     Timeline timeline = new Timeline();
 
     int frameIndex = 0;
-    int defaultWidth = 0;
-    int defaultHeight = 0;
+    double defaultWidth = 0;
+    double defaultHeight = 0;
 
     void setTimeline(IEntity entity, double millis, int cycleCount);
     Timeline getTimeline();
 
-    void setDefaultWidth(int w);
-    void setDefaultHeight(int h);
+    void setDefaultWidth(double w);
+    void setDefaultHeight(double h);
 
     void addFrame(String imagePath);
-    void addFrame(String imagePath, int w, int h);
+    void addFrame(String imagePath, double w, double h);
 
     Image getFrame(int index);
     Image getNextFrame();

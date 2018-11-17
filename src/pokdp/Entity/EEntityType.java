@@ -4,5 +4,7 @@ public enum EEntityType {
     NONE,
     PLAYER,
     POKEMON,
-    WALL
+    WALL,
+    TERRAIN,
+    DECO
 }

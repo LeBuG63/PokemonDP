@@ -19,8 +19,8 @@ public class AnimationManagerSprite implements IAnimationManager {
     private List<Image>   imageList = new ArrayList<>();
 
     private int frameIndex = 0;
-    private int defaultWidth = Constantes.DEFAULT_SPRITE_WIDTH;
-    private int defaultHeight = Constantes.DEFAULT_SPRITE_HEIGHT;
+    private double defaultWidth = Constantes.DEFAULT_SPRITE_WIDTH;
+    private double defaultHeight = Constantes.DEFAULT_SPRITE_HEIGHT;
 
     public Timeline timeline = new Timeline();
 
@@ -32,7 +32,7 @@ public class AnimationManagerSprite implements IAnimationManager {
      * @param w la largeur de chaque sprite
      * @param h la hauteur de chaque sprite
      */
-    public AnimationManagerSprite(int w, int h) {
+    public AnimationManagerSprite(double w, double h) {
         this();
 
         setDefaultHeight(h);
@@ -47,7 +47,7 @@ public class AnimationManagerSprite implements IAnimationManager {
      * change la largeur des sprites par défaut
      * @param w     nouvelle largeur
      */
-    public void setDefaultWidth(int w) {
+    public void setDefaultWidth(double w) {
         defaultWidth = w;
     }
 
@@ -55,7 +55,7 @@ public class AnimationManagerSprite implements IAnimationManager {
      * change la hauteur des sprites par défaut
      * @param h     nouvelle hauteur
      */
-    public void setDefaultHeight(int h) {
+    public void setDefaultHeight(double h) {
         defaultHeight = h;
     }
 
@@ -63,7 +63,7 @@ public class AnimationManagerSprite implements IAnimationManager {
      * creer une timeline pour qu'une animation se fasse automatiquement
      * @param entity        l'entite sur laquelle la timeline va agire
      * @param millis        la durée entre chaque frame
-     * @param cycleCount    son nombre de cycle
+     * @param cycleCount    son nombre de cycles
      */
     public void setTimeline(IEntity entity, double millis, int cycleCount) {
         this.timeline.getKeyFrames().add(
@@ -83,7 +83,7 @@ public class AnimationManagerSprite implements IAnimationManager {
      * @param imagePath     le chemin (file:/...) du sprite
      */
     public void addFrame(String imagePath) {
-        this.addFrame(imagePath, defaultWidth, defaultHeight);
+        imageList.add(new Image(imagePath));
     }
 
     /**
@@ -92,7 +92,7 @@ public class AnimationManagerSprite implements IAnimationManager {
      * @param w             la largeur
      * @param h             la hauteur
      */
-    public void addFrame(String imagePath, int w, int h) {
+    public void addFrame(String imagePath, double w, double h) {
         imageList.add(new Image(imagePath, w, h, false, false));
     }
 
