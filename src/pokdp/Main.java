@@ -16,7 +16,7 @@ public class Main extends Application {
 
         Group root = new Group();
         Scene scene = new Scene(root, 500, 500, Color.WHITE);
-        IEntity player = new Player(scene);
+        IEntity player = new Player(scene, null);
 
         primaryStage.setScene(scene);
 
