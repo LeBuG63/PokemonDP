@@ -4,12 +4,10 @@ import Entity.ETypeEntity;
 import Entity.IEntity;
 import Entity.Player.Player;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
+import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.scene.Group;
 public class Main extends Application {
 
     @Override
@@ -18,10 +16,9 @@ public class Main extends Application {
 
         Group root = new Group();
         Scene scene = new Scene(root, 500, 500, Color.WHITE);
-        IEntity player = new Player("file:assets/sprites/player/player1.png", ETypeEntity.PLAYER, scene);
+        IEntity player = new Player(ETypeEntity.PLAYER, scene);
 
         primaryStage.setScene(scene);
-
 
         root.getChildren().add(player);
 

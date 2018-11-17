@@ -3,9 +3,8 @@ package EventManager;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
-import javafx.event.Event;
+import javafx.scene.input.MouseEvent;
 
-import java.util.Dictionary;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -27,6 +26,12 @@ public class EventManager {
                     break;
                 case KEYBOARD_RELEASED:
                     scene.setOnKeyReleased((EventHandler<KeyEvent>)e.getKey());
+                    break;
+                case MOUSE_MOVED:
+                    scene.setOnMouseMoved((EventHandler<MouseEvent>)e.getKey());
+                    break;
+                case MOUSE_CLICKED:
+                    scene.setOnMouseClicked((EventHandler<MouseEvent>)e.getKey());
                     break;
             }
         }

@@ -1,11 +1,10 @@
 package Entity;
 
+import EventManager.EventManager;
 import com.sun.javafx.geom.Vec2d;
 import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-
-import EventManager.EventManager;
 
 public abstract class IEntity extends Parent {
     // Coordonnées pour placer l'entité sur la scéne
@@ -20,6 +19,13 @@ public abstract class IEntity extends Parent {
     // Permet de gérer les évenements plus facilement
     protected EventManager eventManager = new EventManager();
 
+    public IEntity(ETypeEntity type) {
+        this.type = type;
+        this.spriteView = new ImageView();
+
+        this.getChildren().add(spriteView);
+    }
+
     public IEntity(String spritePath, ETypeEntity type) {
         this.type = type;
         this.spriteView = new ImageView(new Image(spritePath));
@@ -33,6 +39,11 @@ public abstract class IEntity extends Parent {
         this.spriteView.setFitWidth(h);
     }
 
+    public void setSprite(Image sprite) {
+        if (this.spriteView != null) {
+            this.spriteView.setImage(sprite);
+        }
+    }
 
     public abstract void update();
 }
