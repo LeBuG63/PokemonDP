@@ -1,10 +1,18 @@
 package AnimationManager;
 
+import Entity.IEntity;
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.animation.TimelineBuilder;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.image.Image;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import javafx.util.Duration;
 import pokdp.Constantes;
 
 public class AnimationManagerSprite implements IAnimationManager {
@@ -14,7 +22,10 @@ public class AnimationManagerSprite implements IAnimationManager {
     private int defaultWidth = Constantes.DEFAULT_SPRITE_WIDTH;
     private int defaultHeight = Constantes.DEFAULT_SPRITE_HEIGHT;
 
+    public Timeline timeline = new Timeline();
+
     public AnimationManagerSprite() {
+
     }
     /**
      *
@@ -22,8 +33,14 @@ public class AnimationManagerSprite implements IAnimationManager {
      * @param h la hauteur de chaque sprite
      */
     public AnimationManagerSprite(int w, int h) {
+        this();
+
         setDefaultHeight(h);
         setDefaultWidth(h);
+    }
+
+    public Timeline getTimeline() {
+        return timeline;
     }
 
     /**
@@ -40,6 +57,25 @@ public class AnimationManagerSprite implements IAnimationManager {
      */
     public void setDefaultHeight(int h) {
         defaultHeight = h;
+    }
+
+    /**
+     * creer une timeline pour qu'une animation se fasse automatiquement
+     * @param entity        l'entite sur laquelle la timeline va agire
+     * @param millis        la durée entre chaque frame
+     * @param cycleCount    son nombre de cycle
+     */
+    public void setTimeline(IEntity entity, double millis, int cycleCount) {
+        this.timeline.getKeyFrames().add(
+                new KeyFrame(Duration.millis(millis),
+                        new EventHandler<ActionEvent>() {
+                            @Override
+                            public void handle(ActionEvent actionEvent) {
+                                entity.setSprite(getNextFrame());
+                            }
+                        }));
+        this.timeline.setCycleCount(cycleCount);
+        this.timeline.play();
     }
 
     /**

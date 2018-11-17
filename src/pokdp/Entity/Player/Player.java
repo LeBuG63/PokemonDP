@@ -5,6 +5,7 @@ import AnimationManager.IAnimationManager;
 import Entity.EEntityType;
 import Entity.IEntity;
 import EventManager.EEventType;
+import javafx.animation.Animation;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
@@ -29,6 +30,8 @@ public class Player extends IEntity {
         animationManager.addFrame("file:assets/sprites/player/player1.png");
         animationManager.addFrame("file:assets/sprites/player/player2.png");
         animationManager.addFrame("file:assets/sprites/player/player3.png");
+
+        animationManager.setTimeline(this, 1000, Animation.INDEFINITE);
 
         setSprite(animationManager.getFrame(0));
 
