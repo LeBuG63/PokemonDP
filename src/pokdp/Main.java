@@ -1,8 +1,10 @@
 package pokdp;
 
+import AnimationManager.AnimationManagerSprite;
 import Entity.EEntityType;
 import Entity.IEntity;
 import Entity.Player.Player;
+import Map.Object.DecoObject;
 import Map.Tile;
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -30,6 +32,13 @@ public class Main extends Application {
         {{
             load("file:assets/sprites/terrain/grass1.png", 0.80f);
             load("file:assets/sprites/terrain/grass2.png", 0.10f);
+
+            load(new ArrayList<String>()
+            {{
+                add("file:assets/sprites/terrain/flower1_down.png");
+                add("file:assets/sprites/terrain/flower1_up.png");
+            }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION);
+
         }}, ETerrainType.FOREST);
 
         map.addDecoObjectSet(new ObjectSet()
@@ -37,7 +46,7 @@ public class Main extends Application {
             load("file:assets/sprites/objects/factory1.png", 0.10f);
             load("file:assets/sprites/objects/mart1.png", 0.10f);
             load("file:assets/sprites/objects/pc1.png", 0.10f);
-            load("file:assets/sprites/objects/tree1.png", 0.75f);
+            load("file:assets/sprites/objects/tree1.png", 0.55f);
         }}, ETerrainType.FOREST);
 
 

@@ -83,13 +83,23 @@ public class Map extends Parent {
                     }
                 }
 
-                int i = random.nextInt(tilesetHash.get(type).size());
+                ObjectSet objectSet = tilesetHash.get(type);
 
-                while (random.nextDouble() > tilesetHash.get(type).getProbability(i)) {
-                    i = random.nextInt(tilesetHash.get(type).size());
+                int i = random.nextInt(objectSet.size());
+
+                while (random.nextDouble() > objectSet.getProbability(i)) {
+                    i = random.nextInt(objectSet.size());
                 }
 
-                Tile t = new Tile(tilesetHash.get(type).getPathObject(i));
+
+                Tile t;
+
+                if(objectSet.hasAnimation(i)) {
+                    t = new Tile(objectSet.getPathObject(i), objectSet.getAnimationDuration(i));
+                }
+                else {
+                    t = new Tile(objectSet.getPathObject(i));
+                }
 
                 t.setCoordX(x * Constantes.DEFAULT_TILE_MAP_WIDTH);
                 t.setCoordY(y * Constantes.DEFAULT_TILE_MAP_HEIGHT);

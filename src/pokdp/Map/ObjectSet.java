@@ -2,11 +2,13 @@ package Map;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class ObjectSet {
     private List<List<String>> set = new ArrayList<List<String>>();
     private List<Double> probaList = new ArrayList<Double>();
+    private HashMap<Integer, Double> animationDurationHash = new HashMap<Integer, Double>();
 
     /**
      * stock une liste de chemin pour une animation
@@ -16,6 +18,12 @@ public class ObjectSet {
     public void load(List<String> pathList, double proba) {
         set.add(pathList);
         probaList.add(proba);
+    }
+
+    public void load(List<String> pathList, double proba, double duration) {
+        load(pathList, proba);
+
+        animationDurationHash.put(set.size() - 1, duration);
     }
 
     /**
@@ -41,5 +49,17 @@ public class ObjectSet {
 
     public int size() {
         return set.size();
+    }
+
+    public boolean hasAnimation(int i) {
+        return getPathObject(i).size() > 1;
+    }
+
+    public double getAnimationDuration(int i) {
+        if(hasAnimation(i)) {
+            return animationDurationHash.get(i);
+        }
+
+        return 0.0f;
     }
 }

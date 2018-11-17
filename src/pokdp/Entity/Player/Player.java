@@ -18,12 +18,19 @@ import pokdp.Constantes;
 import java.util.List;
 
 public class Player extends IEntity {
+    private final int LOOK_UP = 0;
+    private final int LOOK_DOWN = 1;
+    private final int LOOK_RIGHT = 2;
+    private final int LOOK_LEFT = 3;
+
+    private int look = LOOK_DOWN;
+
     // Permet de définir le "pas" de pixel
     private static final int KEYBOARD_MOVEMENT_DELTA = 10;
     private final int SPRITE_WIDTH = Constantes.DEFAULT_SPRITE_WIDTH;
     private final int SPRITE_HEIGHT = Constantes.DEFAULT_SPRITE_HEIGHT;
 
-    private IAnimationManager animationManager = new AnimationManagerSprite();
+    private IAnimationManager[] animationManager = new AnimationManagerSprite[4];
 
     /**
      * @param scene la scène dans laquelle se trouve le joueur
@@ -31,13 +38,17 @@ public class Player extends IEntity {
     public Player(Scene scene, List<DecoObject> decoObjectList) {
         super(EEntityType.PLAYER);
 
-        animationManager.addFrame("file:assets/sprites/player/player1.png", Constantes.DEFAULT_SPRITE_WIDTH, Constantes.DEFAULT_SPRITE_HEIGHT);
-        animationManager.addFrame("file:assets/sprites/player/player2.png", Constantes.DEFAULT_SPRITE_WIDTH, Constantes.DEFAULT_SPRITE_HEIGHT);
-        animationManager.addFrame("file:assets/sprites/player/player3.png", Constantes.DEFAULT_SPRITE_WIDTH, Constantes.DEFAULT_SPRITE_HEIGHT);
+        String[] stringLook = {"up", "down", "right", "left"};
 
-        animationManager.setTimeline(this, 1000, Animation.INDEFINITE);
+        for(int i = 0; i < 4; ++i) {
+            animationManager[i] = new AnimationManagerSprite(SPRITE_WIDTH, SPRITE_HEIGHT);
 
-        setSprite(animationManager.getFrame(0));
+            for(int j = 0; j < 3; ++j) {
+                animationManager[i].addFrameDefaultSize("file:assets/sprites/player/sasha_" + stringLook[i] + (j+1) + ".png");
+            }
+        }
+
+        setSprite(animationManager[LOOK_DOWN].getFrame(0));
 
         // ajout de l'événement pour déplacer le joueur
         eventManager.add(new EventHandler<KeyEvent>() {
@@ -51,18 +62,22 @@ public class Player extends IEntity {
                     case UP:
                         setCoordY(getCoord().y - KEYBOARD_MOVEMENT_DELTA);
                         collision = isCollidingWithDeco(decoObjectList);
+                        look = LOOK_UP;
                         break;
                     case RIGHT:
                         setCoordX(getCoord().x + KEYBOARD_MOVEMENT_DELTA);
                         collision = isCollidingWithDeco(decoObjectList);
+                        look = LOOK_RIGHT;
                         break;
                     case DOWN:
                         setCoordY(getCoord().y + KEYBOARD_MOVEMENT_DELTA);
                         collision = isCollidingWithDeco(decoObjectList);
+                        look = LOOK_DOWN;
                         break;
                     case LEFT:
                         setCoordX(getCoord().x - KEYBOARD_MOVEMENT_DELTA);
                         collision = isCollidingWithDeco(decoObjectList);
+                        look = LOOK_LEFT;
                         break;
                 }
 
@@ -70,7 +85,7 @@ public class Player extends IEntity {
                     setCoord(save);
                 }
 
-                setSprite(animationManager.getNextFrame());
+                setSprite(animationManager[look].getNextFrame());
             }
         }, EEventType.KEYBOARD_PRESSED);
 

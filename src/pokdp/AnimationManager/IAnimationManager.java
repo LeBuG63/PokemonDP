@@ -19,8 +19,10 @@ public interface IAnimationManager {
 
     void setDefaultWidth(double w);
     void setDefaultHeight(double h);
+    void setDefaultSize(double w, double h);
 
     void addFrame(String imagePath);
+    void addFrameDefaultSize(String imagePath);
     void addFrame(String imagePath, double w, double h);
 
     Image getFrame(int index);

@@ -16,6 +16,8 @@ import javafx.util.Duration;
 import pokdp.Constantes;
 
 public class AnimationManagerSprite implements IAnimationManager {
+    public static final double RANDOM_DURATION = -1.0f;
+
     private List<Image>   imageList = new ArrayList<>();
 
     private int frameIndex = 0;
@@ -59,6 +61,11 @@ public class AnimationManagerSprite implements IAnimationManager {
         defaultHeight = h;
     }
 
+    public void setDefaultSize(double w, double h) {
+        setDefaultWidth(w);
+        setDefaultHeight(w);
+    }
+
     /**
      * creer une timeline pour qu'une animation se fasse automatiquement
      * @param entity        l'entite sur laquelle la timeline va agire
@@ -84,6 +91,10 @@ public class AnimationManagerSprite implements IAnimationManager {
      */
     public void addFrame(String imagePath) {
         imageList.add(new Image(imagePath));
+    }
+
+    public void addFrameDefaultSize(String imagePath) {
+        imageList.add(new Image(imagePath, defaultWidth, defaultHeight, false, false));
     }
 
     /**

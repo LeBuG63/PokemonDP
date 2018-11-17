@@ -3,26 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/Entity/IEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pokemondp/Entity/IEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/Entity/Player/Player$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pokemondp/Entity/Player/Player$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/Entity/Player/Player$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pokemondp/Entity/Player/Player$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/Entity/Player/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pokemondp/Entity/Player/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/Map/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pokemondp/Map/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/Map/Object/CollisionBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pokemondp/Map/Object/CollisionBox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/Map/Object/DecoObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pokemondp/Map/Object/DecoObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/Map/ObjectSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pokemondp/Map/ObjectSet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/pokdp/Constantes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pokemondp/pokdp/Constantes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/pokdp/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pokemondp/pokdp/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/pokdp/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pokemondp/pokdp/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/pokdp/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pokemondp/pokdp/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Constantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Constantes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/IEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/IEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/Entity/Player/Player$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/Entity/Player/Player$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pokemondp/Entity/Player/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/AnimationManager/AnimationManagerSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/AnimationManager/AnimationManagerSprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/AnimationManager/IAnimationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/AnimationManager/IAnimationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokdp/Map/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Map/Object/CollisionBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/Object/CollisionBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Map/Object/DecoObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/Object/DecoObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Map/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/Tile.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,27 +84,29 @@
         <counts>
           <entry key="class" value="5" />
           <entry key="iml" value="1" />
-          <entry key="java" value="51" />
+          <entry key="java" value="57" />
+          <entry key="png" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="5" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="51" />
+          <entry key="Image" value="2" />
+          <entry key="JAVA" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="39" />
           <entry key="iml" value="10" />
-          <entry key="java" value="13926" />
+          <entry key="java" value="15546" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="IDEA_MODULE" value="10" />
-          <entry key="JAVA" value="13926" />
+          <entry key="JAVA" value="15546" />
           <entry key="PLAIN_TEXT" value="39" />
         </counts>
       </usages-collector>
@@ -125,84 +117,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+            <state relative-caret-position="285">
+              <caret line="48" column="61" selection-start-line="48" selection-start-column="61" selection-end-line="48" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/IEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="99" selection-start-line="99" selection-end-line="99" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2512#2513#0" expanded="true" />
-                <element signature="e#2852#2853#0" expanded="true" />
-                <element signature="e#2879#2880#0" expanded="true" />
-                <element signature="e#2865#2866#0" expanded="true" />
-                <element signature="e#2898#2899#0" expanded="true" />
-                <element signature="e#2557#2558#0" expanded="true" />
-                <element signature="e#2592#2593#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Object/CollisionBox.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-              <folding>
-                <element signature="e#200#201#0" expanded="true" />
-                <element signature="e#228#229#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-                <element signature="e#303#304#0" expanded="true" />
-                <element signature="e#204#205#0" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
-                <element signature="e#274#275#0" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#412#413#0" expanded="true" />
-                <element signature="e#448#449#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#739#740#0" expanded="true" />
-                <element signature="e#778#779#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#836#837#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -211,17 +132,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Tile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="291">
+              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ETerrainType.java">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/AnimationManager/IAnimationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="360">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+              <folding>
+                <element signature="e#351#368#0" expanded="true" />
+                <element signature="e#1150#1151#0" expanded="true" />
+                <element signature="e#1199#1200#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -229,33 +167,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="252">
+              <caret line="96" column="28" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
               <folding>
-                <element signature="e#915#916#0" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Constantes.java">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/EventManager/EventManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="139">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Object/DecoObject.java">
+        <entry file="file://$PROJECT_DIR$/assets/sprites/terrain/grass2.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/sprites/terrain/grass1.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/AnimationManager/AnimationManagerSprite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+            <state relative-caret-position="-204">
+              <caret line="96" column="84" selection-start-line="96" selection-start-column="84" selection-end-line="96" selection-end-column="84" />
               <folding>
-                <element signature="e#1403#1404#0" expanded="true" />
-                <element signature="e#1483#1484#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2243#2244#0" expanded="true" />
+                <element signature="e#2339#2340#0" expanded="true" />
+                <element signature="e#2439#2440#0" expanded="true" />
+                <element signature="e#2490#2491#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -310,19 +272,19 @@
         <option value="$PROJECT_DIR$/src/pokdp/Map/Object.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Map/Object/Object.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Map/Object/ObjectDeco.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/AnimationManager/IAnimationManager.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Entity/EEntityType.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/AnimationManager/AnimationManagerSprite.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/Map/Tile.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Map/Object/CollisionBoxTest.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Map/Object/CollisionBox.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Map/Object/DecoObject.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/Map/Map.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Constantes.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Entity/IEntity.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" />
+        <option value="$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java" />
+        <option value="$PROJECT_DIR$/src/pokdp/Map/Map.java" />
+        <option value="$PROJECT_DIR$/src/pokdp/Map/Tile.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Main.java" />
+        <option value="$PROJECT_DIR$/src/pokdp/AnimationManager/IAnimationManager.java" />
+        <option value="$PROJECT_DIR$/src/pokdp/AnimationManager/AnimationManagerSprite.java" />
+        <option value="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" />
       </list>
     </option>
   </component>
@@ -385,6 +347,13 @@
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="sprites" type="462c0819:PsiDirectoryNode" />
               <item name="player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="sprites" type="462c0819:PsiDirectoryNode" />
+              <item name="terrain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
@@ -582,7 +551,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29431000" />
+    <option name="totallyTimeSpent" value="33199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-18" width="1604" height="920" extended-state="0" />
@@ -663,23 +632,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/EventManager/EventManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/package-info.java" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="1118">
+          <caret line="266" column="4" selection-start-line="266" selection-start-column="4" selection-end-line="266" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -690,34 +647,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/AnimationManager/IAnimationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Map/TileSet.java" />
     <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Object/DecoObjectSet.java" />
     <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/EEntityType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/AnimationManager/AnimationManagerSprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2439#2440#0" expanded="true" />
-            <element signature="e#2490#2491#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,35 +677,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Object/CollisionBoxTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Object/CollisionBoxTest.java" />
     <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Object/DecoObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -782,76 +689,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Constantes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Object/CollisionBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="210">
           <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-          <folding>
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#448#449#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/IEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
+        <state relative-caret-position="383">
           <caret line="99" selection-start-line="99" selection-end-line="99" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2512#2513#0" expanded="true" />
+            <element signature="e#2813#2814#0" expanded="true" />
             <element signature="e#2852#2853#0" expanded="true" />
             <element signature="e#2879#2880#0" expanded="true" />
-            <element signature="e#2865#2866#0" expanded="true" />
-            <element signature="e#2898#2899#0" expanded="true" />
+            <element signature="e#2931#2932#0" expanded="true" />
+            <element signature="e#2964#2965#0" expanded="true" />
             <element signature="e#2557#2558#0" expanded="true" />
             <element signature="e#2592#2593#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/pokdp/EventManager/EventManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        <state relative-caret-position="139">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sprites/terrain/grass1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/sprites/terrain/grass2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="62" column="20" selection-start-line="62" selection-start-column="20" selection-end-line="62" selection-end-column="20" />
+          <folding>
+            <element signature="e#351#368#0" expanded="true" />
+            <element signature="e#1150#1151#0" expanded="true" />
+            <element signature="e#1199#1200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="96" column="28" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Tile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="39" column="62" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="62" />
+        <state relative-caret-position="285">
+          <caret line="48" column="61" selection-start-line="48" selection-start-column="61" selection-end-line="48" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/AnimationManager/IAnimationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/AnimationManager/AnimationManagerSprite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="96" column="84" selection-start-line="96" selection-start-column="84" selection-end-line="96" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2243#2244#0" expanded="true" />
+            <element signature="e#2339#2340#0" expanded="true" />
+            <element signature="e#2439#2440#0" expanded="true" />
+            <element signature="e#2490#2491#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
