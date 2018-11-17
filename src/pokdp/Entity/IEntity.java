@@ -100,6 +100,14 @@ public abstract class IEntity extends Parent {
         return coord;
     }
 
+    public void setCoord(Vec2d vec) {
+        coord = vec;
+    }
+
+    public void setCollisionBox(CollisionBox cb) {
+        collisionBox = cb;
+    }
+
     public CollisionBox getCollisionBox() {
         return collisionBox;
     }

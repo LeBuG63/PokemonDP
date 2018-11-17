@@ -24,7 +24,6 @@ public class Main extends Application {
         Group root = new Group();
         Scene scene = new Scene(root, 1600, 900, Color.WHITE);
 
-        IEntity player = new Player(scene);
         Map map = new Map((int)scene.getWidth() / Constantes.DEFAULT_TILE_MAP_WIDTH,(int)scene.getHeight() / Constantes.DEFAULT_TILE_MAP_HEIGHT);
 
         map.addTileSet(new ObjectSet()
@@ -38,7 +37,11 @@ public class Main extends Application {
             load("file:assets/sprites/objects/factory1.png", 0.10f);
             load("file:assets/sprites/objects/mart1.png", 0.10f);
             load("file:assets/sprites/objects/pc1.png", 0.10f);
+            load("file:assets/sprites/objects/tree1.png", 0.75f);
         }}, ETerrainType.FOREST);
+
+
+        IEntity player = new Player(scene, map.getDecoObjectList());
 
         map.generateRandomTerrain(ETerrainType.FOREST);
 

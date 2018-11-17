@@ -8,11 +8,21 @@ public class ObjectSet {
     private List<List<String>> set = new ArrayList<List<String>>();
     private List<Double> probaList = new ArrayList<Double>();
 
+    /**
+     * stock une liste de chemin pour une animation
+     * @param pathList  la liste de chemin pour une animation
+     * @param proba     la probabilité d'aparaitre
+     */
     public void load(List<String> pathList, double proba) {
         set.add(pathList);
         probaList.add(proba);
     }
 
+    /**
+     * stock un chemin pour un sprite
+     * @param path      le chemin du sprite
+     * @param proba     la probabilité qu'il apparaisse
+     */
     public void load(String path, double proba) {
         ArrayList<String> converted = new ArrayList<>();
 

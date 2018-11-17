@@ -38,6 +38,11 @@ public class CollisionBox {
         this.height = h;
     }
 
+    /**
+     * vérifie si 2 rectangles sont en collisions
+     * @param c     l'autre collisionbox
+     * @return      vrai si il y a collision, faux sinon
+     */
     public boolean isInCollision(CollisionBox c) {
         return !((c.coord.x >= this.coord.x + this.width)
         || (c.coord.x + c.width <= this.coord.x)

@@ -41,6 +41,11 @@ public class DecoObject extends IEntity {
         Image frame = animationManager.getFrame(0);
     }
 
+    /**
+     * vérifie si deux entités sont en collision
+     * @param entity
+     * @return
+     */
     public boolean isInCollision(IEntity entity) {
         return getCollisionBox().isInCollision(entity.getCollisionBox());
     }

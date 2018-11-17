@@ -28,14 +28,28 @@ public class Map extends Parent {
         return decoObjectList;
     }
 
+    /**
+     * ajoute un tile
+     * @param tileset   l'objet tile à ajouter
+     * @param type      le type du terrain
+     */
     public void addTileSet(ObjectSet tileset, ETerrainType type) {
         tilesetHash.put(type, tileset);
     }
 
+    /**
+     * ajoute un objet de décoration
+     * @param decoObjectSet     l'objet de décoration à ajouter
+     * @param type              le type du terrain
+     */
     public void addDecoObjectSet(ObjectSet decoObjectSet, ETerrainType type) {
         decoObjectsetHash.put(type, decoObjectSet);
     }
 
+    /**
+     * génére un terrain aléatoire en fonction du type du terrain
+     * @param type  le type du terrain
+     */
     public void generateRandomTerrain(ETerrainType type) {
         mapTile.clear();
         this.getChildren().removeAll();
@@ -44,7 +58,7 @@ public class Map extends Parent {
 
         for (int x = 0; x < width; ++x) {
             for (int y = 0; y < height; ++y) {
-                if (random.nextDouble() > 0.50f) {
+                if (random.nextDouble() > Constantes.PROBA_DECO) {
                     boolean add = true;
 
                     int i = random.nextInt(decoObjectsetHash.get(type).size());
