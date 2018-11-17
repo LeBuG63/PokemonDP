@@ -1,10 +1,12 @@
 package Entity;
 
 import EventManager.EventManager;
+import Map.Object.CollisionBox;
 import com.sun.javafx.geom.Vec2d;
 import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import pokdp.Constantes;
 
 public abstract class IEntity extends Parent {
     // Le type de l'entité pour par la suite faire des tests
@@ -19,12 +21,15 @@ public abstract class IEntity extends Parent {
     // Coordonnées pour placer l'entité sur la scéne
     private Vec2d coord = new Vec2d();
 
+    private CollisionBox collisionBox;
     /**
      * @param type  le type de l'entité
      */
     public IEntity(EEntityType type) {
         this.type = type;
         this.spriteView = new ImageView();
+
+        collisionBox = new CollisionBox(getCoord(), spriteView.getFitWidth(), spriteView.getFitHeight());
 
         this.getChildren().add(spriteView);
     }
@@ -37,6 +42,8 @@ public abstract class IEntity extends Parent {
     public IEntity(String spritePath, EEntityType type) {
         this.type = type;
         this.spriteView = new ImageView(new Image(spritePath));
+
+        collisionBox = new CollisionBox(getCoord(), spriteView.getFitWidth(), spriteView.getFitHeight());
 
         this.getChildren().add(spriteView);
     }
@@ -85,6 +92,10 @@ public abstract class IEntity extends Parent {
      */
     public Vec2d getCoord() {
         return coord;
+    }
+
+    public CollisionBox getCollisionBox() {
+        return collisionBox;
     }
 
     public abstract void update();

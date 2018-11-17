@@ -5,6 +5,7 @@ import AnimationManager.IAnimationManager;
 import Entity.EEntityType;
 import Entity.IEntity;
 import javafx.animation.Animation;
+import pokdp.Constantes;
 
 import java.util.List;
 
@@ -16,7 +17,7 @@ public class Tile extends IEntity {
 
         if(pathList != null) {
             for (String path : pathList) {
-                animationManager.addFrame(path);
+                animationManager.addFrame(path, Constantes.DEFAULT_TILE_MAP_WIDTH, Constantes.DEFAULT_TILE_MAP_HEIGHT);
             }
 
             setSprite(animationManager.getFrame(0));

@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 import java.util.ArrayList;
 import java.util.List;
 import Map.*;
+import pokdp.Constantes;
 
 public class Main extends Application {
 
@@ -21,15 +22,22 @@ public class Main extends Application {
         primaryStage.setTitle("Pokemon du Pauvre");
 
         Group root = new Group();
-        Scene scene = new Scene(root, 500, 500, Color.WHITE);
+        Scene scene = new Scene(root, 1600, 900, Color.WHITE);
 
         IEntity player = new Player(scene);
-        Map map = new Map(30,30);
+        Map map = new Map((int)scene.getWidth() / Constantes.DEFAULT_TILE_MAP_WIDTH,(int)scene.getHeight() / Constantes.DEFAULT_TILE_MAP_HEIGHT);
 
-        map.addTileSet(new TileSet()
+        map.addTileSet(new ObjectSet()
         {{
-            load("file:assets/sprites/terrain/grass1.png");
-            load("file:assets/sprites/terrain/grass2.png");
+            load("file:assets/sprites/terrain/grass1.png", 0.80f);
+            load("file:assets/sprites/terrain/grass2.png", 0.10f);
+        }}, ETerrainType.FOREST);
+
+        map.addDecoObjectSet(new ObjectSet()
+        {{
+            load("file:assets/sprites/objects/factory1.png", 0.10f);
+            load("file:assets/sprites/objects/mart1.png", 0.10f);
+            load("file:assets/sprites/objects/pc1.png", 0.10f);
         }}, ETerrainType.FOREST);
 
         map.generateRandomTerrain(ETerrainType.FOREST);

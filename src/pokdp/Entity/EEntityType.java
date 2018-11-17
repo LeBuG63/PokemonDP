@@ -5,5 +5,6 @@ public enum EEntityType {
     PLAYER,
     POKEMON,
     WALL,
-    TERRAIN
+    TERRAIN,
+    DECO
 }
