@@ -38,6 +38,13 @@ public class CollisionBox {
         this.height = h;
     }
 
+
+    public CollisionBox(double w, double h) {
+        this.coord = new Vec2d(0, 0);
+        this.width = w;
+        this.height = h;
+    }
+
     /**
      * vérifie si 2 rectangles sont en collisions
      * @param c     l'autre collisionbox

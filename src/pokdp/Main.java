@@ -3,6 +3,8 @@ package pokdp;
 import AnimationManager.AnimationManagerSprite;
 import Entity.IEntity;
 import Entity.Player.Player;
+import Map.Object.CollisionBox;
+import com.sun.javafx.geom.Vec2d;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -43,7 +45,7 @@ public class Main extends Application {
             load("file:assets/sprites/objects/factory1.png", 0.10f);
             load("file:assets/sprites/objects/mart1.png", 0.10f);
             load("file:assets/sprites/objects/pc1.png", 0.10f);
-            load("file:assets/sprites/objects/tree1.png", 0.55f);
+            load("file:assets/sprites/objects/littletree1.png", 0.55f);
         }}, ETerrainType.FOREST);
 
 

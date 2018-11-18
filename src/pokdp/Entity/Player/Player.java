@@ -50,7 +50,7 @@ public class Player extends IEntity {
         getCollisionBox().setHeight(getCollisionBox().getHeight()/2);
         getCollisionBox().setCoord(new Vec2d(getCollisionBox().getCoord().x, getCollisionBox().getCoord().y - getCollisionBox().getCoord().y/2));
         // ajout de l'événement pour déplacer le joueur
-        eventManager.add(new EventHandler<KeyEvent>() {
+        getEventManager().add(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
                 Vec2d save = new Vec2d(getCoord());
@@ -88,7 +88,7 @@ public class Player extends IEntity {
             }
         }, EEventType.KEYBOARD_PRESSED);
 
-        eventManager.attachAllEventsToScene(scene);
+        getEventManager().attachAllEventsToScene(scene);
     }
 
     public boolean isCollidingWithDeco(List<DecoObject> decoObjectList) {

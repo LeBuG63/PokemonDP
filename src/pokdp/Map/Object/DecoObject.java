@@ -41,6 +41,12 @@ public class DecoObject extends IEntity {
         Image frame = animationManager.getFrame(0);
     }
 
+    public DecoObject(List<String> spritePath, double x, double y, CollisionBox collisionBox) {
+        this(spritePath, x, y);
+
+        setCollisionBox(collisionBox);
+    }
+
     /**
      * vérifie si deux entités sont en collision
      * @param entity

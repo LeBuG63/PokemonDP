@@ -1,5 +1,7 @@
 package Map;
 
+import Map.Object.CollisionBox;
+
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,7 +11,6 @@ public class ObjectSet {
     private List<List<String>> set = new ArrayList<List<String>>();
     private List<Double> probaList = new ArrayList<Double>();
     private HashMap<Integer, Double> animationDurationHash = new HashMap<Integer, Double>();
-
     /**
      * stock une liste de chemin pour une animation
      * @param pathList  la liste de chemin pour une animation
