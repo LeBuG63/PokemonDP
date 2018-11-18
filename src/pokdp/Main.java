@@ -1,11 +1,8 @@
 package pokdp;
 
 import AnimationManager.AnimationManagerSprite;
-import Entity.EEntityType;
 import Entity.IEntity;
 import Entity.Player.Player;
-import Map.Object.DecoObject;
-import Map.Tile;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -13,9 +10,9 @@ import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.util.ArrayList;
-import java.util.List;
+
 import Map.*;
-import pokdp.Constantes;
+import Utils.Constantes;
 
 public class Main extends Application {
 

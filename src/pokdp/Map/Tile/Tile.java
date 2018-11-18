@@ -1,11 +1,11 @@
-package Map;
+package Map.Tile;
 
 import AnimationManager.AnimationManagerSprite;
 import AnimationManager.IAnimationManager;
 import Entity.EEntityType;
 import Entity.IEntity;
+import Utils.Constantes;
 import javafx.animation.Animation;
-import pokdp.Constantes;
 
 import java.util.List;
 
@@ -37,9 +37,5 @@ public class Tile extends IEntity {
         }
 
         animationManager.setTimeline(this, duration, Animation.INDEFINITE);
-    }
-
-    public void update() {
-
     }
 }

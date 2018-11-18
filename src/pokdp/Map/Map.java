@@ -1,8 +1,9 @@
 package Map;
 
 import Map.Object.DecoObject;
+import Map.Tile.Tile;
 import javafx.scene.Parent;
-import pokdp.Constantes;
+import Utils.Constantes;
 
 import java.util.ArrayList;
 import java.util.HashMap;

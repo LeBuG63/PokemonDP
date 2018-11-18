@@ -6,7 +6,6 @@ import com.sun.javafx.geom.Vec2d;
 import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import pokdp.Constantes;
 
 public abstract class IEntity extends Parent {
     // Le type de l'entité pour par la suite faire des tests
@@ -111,6 +110,4 @@ public abstract class IEntity extends Parent {
     public CollisionBox getCollisionBox() {
         return collisionBox;
     }
-
-    public abstract void update();
 }

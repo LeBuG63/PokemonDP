@@ -1,10 +1,8 @@
 package AnimationManager;
 
 import Entity.IEntity;
-import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.animation.TimelineBuilder;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.image.Image;
@@ -13,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javafx.util.Duration;
-import pokdp.Constantes;
+import Utils.Constantes;
 
 public class AnimationManagerSprite implements IAnimationManager {
     public static final double RANDOM_DURATION = -1.0f;

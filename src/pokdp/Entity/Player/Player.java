@@ -5,15 +5,12 @@ import AnimationManager.IAnimationManager;
 import Entity.EEntityType;
 import Entity.IEntity;
 import EventManager.EEventType;
-import Map.Object.CollisionBox;
 import Map.Object.DecoObject;
+import Utils.Constantes;
 import com.sun.javafx.geom.Vec2d;
-import javafx.animation.Animation;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
-
-import pokdp.Constantes;
 
 import java.util.List;
 
@@ -50,6 +47,8 @@ public class Player extends IEntity {
 
         setSprite(animationManager[LOOK_DOWN].getFrame(0));
 
+        getCollisionBox().setHeight(getCollisionBox().getHeight()/2);
+        getCollisionBox().setCoord(new Vec2d(getCollisionBox().getCoord().x, getCollisionBox().getCoord().y - getCollisionBox().getCoord().y/2));
         // ajout de l'événement pour déplacer le joueur
         eventManager.add(new EventHandler<KeyEvent>() {
             @Override
@@ -98,9 +97,5 @@ public class Player extends IEntity {
                 return true;
         }
         return false;
-    }
-
-    public void update() {
-
     }
 }
