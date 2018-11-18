@@ -102,8 +102,6 @@ public class Map extends Parent {
                     t = new Tile(objectSet.getPathObject(i));
                 }
 
-                t.getCollisionBox().setWidth(t.getCollisionBox().getWidth() - 100);
-
                 t.setCoordX(x * Constantes.DEFAULT_TILE_MAP_WIDTH);
                 t.setCoordY(y * Constantes.DEFAULT_TILE_MAP_HEIGHT);
 

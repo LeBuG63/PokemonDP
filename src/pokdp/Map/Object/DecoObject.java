@@ -4,9 +4,6 @@ import AnimationManager.AnimationManagerSprite;
 import AnimationManager.IAnimationManager;
 import Entity.EEntityType;
 import Entity.IEntity;
-import EventManager.EEventType;
-import com.sun.javafx.geom.Vec2d;
-import javafx.animation.Animation;
 import javafx.scene.image.Image;
 
 import java.util.ArrayList;
@@ -44,7 +41,7 @@ public class DecoObject extends IEntity {
     public DecoObject(List<String> spritePath, double x, double y, CollisionBox collisionBox) {
         this(spritePath, x, y);
 
-        setCollisionBox(collisionBox);
+        setCollisionObject(collisionBox);
     }
 
     /**
@@ -53,10 +50,6 @@ public class DecoObject extends IEntity {
      * @return
      */
     public boolean isInCollision(IEntity entity) {
-        return getCollisionBox().isInCollision(entity.getCollisionBox());
-    }
-
-    public void update() {
-
+        return getCollisionObject().isInCollision(entity.getCollisionObject());
     }
 }

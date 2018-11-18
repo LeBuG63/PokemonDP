@@ -5,6 +5,7 @@ import AnimationManager.IAnimationManager;
 import Entity.EEntityType;
 import Entity.IEntity;
 import EventManager.EEventType;
+import Map.Object.CollisionBox;
 import Map.Object.DecoObject;
 import Utils.Constantes;
 import com.sun.javafx.geom.Vec2d;
@@ -47,8 +48,8 @@ public class Player extends IEntity {
 
         setSprite(animationManager[LOOK_DOWN].getFrame(0));
 
-        getCollisionBox().setHeight(getCollisionBox().getHeight()/2);
-        getCollisionBox().setCoord(new Vec2d(getCollisionBox().getCoord().x, getCollisionBox().getCoord().y - getCollisionBox().getCoord().y/2));
+        getCollisionObject().setHeight(getCollisionObject().getHeight()/2);
+        getCollisionObject().setCoord(new Vec2d(getCollisionObject().getCoord().x, getCollisionObject().getCoord().y - getCollisionObject().getCoord().y/2));
         // ajout de l'événement pour déplacer le joueur
         getEventManager().add(new EventHandler<KeyEvent>() {
             @Override
@@ -93,8 +94,9 @@ public class Player extends IEntity {
 
     public boolean isCollidingWithDeco(List<DecoObject> decoObjectList) {
         for (DecoObject decoObject : decoObjectList) {
-            if (getCollisionBox().isInCollision(decoObject.getCollisionBox()))
+            if (getCollisionObject().isInCollision(decoObject.getCollisionObject())) {
                 return true;
+            }
         }
         return false;
     }

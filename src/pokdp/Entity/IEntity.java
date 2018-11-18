@@ -2,6 +2,7 @@ package Entity;
 
 import EventManager.EventManager;
 import Map.Object.CollisionBox;
+import Map.Object.ICollisionObject;
 import Utils.Constantes;
 import com.sun.javafx.geom.Vec2d;
 import javafx.scene.Parent;
@@ -21,7 +22,8 @@ public abstract class IEntity extends Parent {
     // Coordonnées pour placer l'entité sur la scéne
     private Vec2d coord = new Vec2d();
 
-    protected CollisionBox collisionBox;
+    private ICollisionObject collisionObject;
+
     /**
      * @param type  le type de l'entité
      */
@@ -29,7 +31,7 @@ public abstract class IEntity extends Parent {
         this.type = type;
         this.spriteView = new ImageView();
 
-        setCollisionBox(new CollisionBox(getCoord(), 0,0));
+        setCollisionObject(new CollisionBox(0, 0));
 
         this.getChildren().add(spriteView);
     }
@@ -43,7 +45,7 @@ public abstract class IEntity extends Parent {
         this.type = type;
         this.spriteView = new ImageView(new Image(spritePath));
 
-        setCollisionBox(new CollisionBox(getCoord(), spriteView.getFitWidth(), spriteView.getFitHeight()));
+        setCollisionObject(new CollisionBox(getCoord(), spriteView.getFitWidth(), spriteView.getFitHeight()));
 
         this.getChildren().add(spriteView);
     }
@@ -57,7 +59,7 @@ public abstract class IEntity extends Parent {
         this.spriteView.setFitHeight(w);
         this.spriteView.setFitWidth(h);
 
-        setCollisionBox(new CollisionBox(getCoord(), spriteView.getFitWidth(), spriteView.getFitHeight()));
+        setCollisionObject(new CollisionBox(getCoord(), spriteView.getFitWidth(), spriteView.getFitHeight()));
     }
 
     /**
@@ -68,8 +70,9 @@ public abstract class IEntity extends Parent {
         if (this.spriteView != null) {
             this.spriteView.setImage(sprite);
 
-            this.collisionBox.setHeight(sprite.getHeight() - Constantes.HITBOX_MARGIN);
-            this.collisionBox.setWidth(sprite.getWidth() - Constantes.HITBOX_MARGIN);
+            this.collisionObject.setHeight(sprite.getHeight() - Constantes.HITBOX_MARGIN);
+            this.collisionObject.setCoord(new Vec2d(collisionObject.getCoord().x, collisionObject.getCoord().y - Constantes.HITBOX_MARGIN));
+            this.collisionObject.setWidth(sprite.getWidth() - Constantes.HITBOX_MARGIN);
         }
     }
 
@@ -80,7 +83,7 @@ public abstract class IEntity extends Parent {
     public void setCoordX(double x) {
         coord.x = x;
         spriteView.setX(x);
-        collisionBox.setCoord(new Vec2d(coord.x, coord.y));
+        collisionObject.setCoord(new Vec2d(coord.x, coord.y));
     }
 
     /**
@@ -90,7 +93,7 @@ public abstract class IEntity extends Parent {
     public void setCoordY(double y) {
         coord.y = y;
         spriteView.setY(y);
-        collisionBox.setCoord(new Vec2d(coord.x, coord.y));
+        collisionObject.setCoord(new Vec2d(coord.x, coord.y));
     }
 
     /**
@@ -104,12 +107,12 @@ public abstract class IEntity extends Parent {
         coord = vec;
     }
 
-    public void setCollisionBox(CollisionBox cb) {
-        collisionBox = cb;
+    public void setCollisionObject(ICollisionObject cb) {
+        collisionObject = cb;
     }
 
-    public CollisionBox getCollisionBox() {
-        return collisionBox;
+    public ICollisionObject getCollisionObject() {
+        return collisionObject;
     }
 
     public EventManager getEventManager() {

@@ -2,7 +2,7 @@ package Map.Object;
 
 import com.sun.javafx.geom.Vec2d;
 
-public class CollisionBox {
+public class CollisionBox implements ICollisionObject {
     private double  width;
     private double height;
 
@@ -38,22 +38,19 @@ public class CollisionBox {
         this.height = h;
     }
 
-
     public CollisionBox(double w, double h) {
-        this.coord = new Vec2d(0, 0);
-        this.width = w;
-        this.height = h;
+        this(new Vec2d(0,0), w, h);
     }
 
     /**
      * vérifie si 2 rectangles sont en collisions
-     * @param c     l'autre collisionbox
+     * @param c     l'autre collisionObject
      * @return      vrai si il y a collision, faux sinon
      */
-    public boolean isInCollision(CollisionBox c) {
-        return !((c.coord.x >= this.coord.x + this.width)
-        || (c.coord.x + c.width <= this.coord.x)
-        || (c.coord.y >= this.coord.y + this.height)
-        || (c.coord.y + c.height <= this.coord.y));
+    public boolean isInCollision(ICollisionObject c) {
+        return !((c.getCoord().x >= (this.getCoord().x + this.getWidth()))
+                || ((c.getCoord().x + c.getWidth()) <= this.getCoord().x)
+                || (c.getCoord().y >= (this.getCoord().y + this.getHeight()))
+                || ((c.getCoord().y + c.getHeight()) <= this.getCoord().y));
     }
 }
