@@ -4,6 +4,8 @@ import AnimationManager.AnimationManagerSprite;
 import Entity.IEntity;
 import Entity.Player.Player;
 import Map.Object.CollisionBox;
+import Music.MusicManager;
+import Music.Playlist;
 import com.sun.javafx.geom.Vec2d;
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -37,7 +39,6 @@ public class Main extends Application {
                 add("file:assets/sprites/terrain/flower1_down.png");
                 add("file:assets/sprites/terrain/flower1_up.png");
             }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION);
-
         }}, ETerrainType.FOREST);
 
         map.addDecoObjectSet(new ObjectSet()
@@ -48,6 +49,20 @@ public class Main extends Application {
             load("file:assets/sprites/objects/littletree1.png", 0.55f);
         }}, ETerrainType.FOREST);
 
+        Playlist playlist = new Playlist()
+        {{
+            load("assets/musics/opening.wav", "opening");
+            load("assets/musics/professoroak.wav", "professoroak");
+            load("assets/musics/palettetown.wav", "palettetown");
+        }};
+
+        //MusicManager musicManager = new MusicManager();
+        //musicManager.load("assets/musics/opening.mp3", "opening");
+        //musicManager.play("opening");
+
+        playlist.shuffle();
+
+        playlist.play();
 
         IEntity player = new Player(scene, map.getDecoObjectList());
 
