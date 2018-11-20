@@ -20,7 +20,7 @@ public abstract class IEntity extends Parent {
     private EventManager eventManager = new EventManager();
 
     // Coordonnées pour placer l'entité sur la scéne
-    private Vec2d coord = new Vec2d();
+    private Vec2d coord = new Vec2d(0,0);
 
     private ICollisionObject collisionObject;
 
@@ -32,6 +32,17 @@ public abstract class IEntity extends Parent {
         this.spriteView = new ImageView();
 
         setCollisionObject(new CollisionBox(0, 0));
+
+        this.getChildren().add(spriteView);
+    }
+
+    public IEntity(EEntityType type, Vec2d coord) {
+        this.type = type;
+        this.spriteView = new ImageView();
+
+        setCollisionObject(new CollisionBox(coord, 0, 0));
+
+        setCoord(coord);
 
         this.getChildren().add(spriteView);
     }
@@ -104,7 +115,8 @@ public abstract class IEntity extends Parent {
     }
 
     public void setCoord(Vec2d vec) {
-        coord = vec;
+        setCoordX(vec.x);
+        setCoordY(vec.y);
     }
 
     public void setCollisionObject(ICollisionObject cb) {

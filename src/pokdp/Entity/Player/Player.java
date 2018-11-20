@@ -34,7 +34,7 @@ public class Player extends IEntity {
      * @param scene la scène dans laquelle se trouve le joueur
      */
     public Player(Scene scene, List<DecoObject> decoObjectList) {
-        super(EEntityType.PLAYER);
+        super(EEntityType.PLAYER, new Vec2d(50,50));
 
         String[] stringLook = {"up", "down", "right", "left"};
 
@@ -88,6 +88,7 @@ public class Player extends IEntity {
                 setSprite(animationManager[look].getNextFrame());
             }
         }, EEventType.KEYBOARD_PRESSED);
+
 
         getEventManager().attachAllEventsToScene(scene);
     }
