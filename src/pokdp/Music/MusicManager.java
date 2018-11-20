@@ -64,4 +64,15 @@ public class MusicManager {
             play(musicName.get(musicName.indexOf(actualMusicName) + 1));
         }
     }
+
+    public void prev() {
+        List<Map.Entry<String, Media>> collection = new ArrayList<Map.Entry<String, Media>>(mediaHash.entrySet());
+
+        if(musicName.indexOf(actualMusicName) - 1 > musicName.size()) {
+            play(musicName.get(musicName.size() - 1));
+        }
+        else {
+            play(musicName.get(musicName.indexOf(actualMusicName) - 1));
+        }
+    }
 }
