@@ -44,6 +44,11 @@ public class ObjectSet {
         return set.get(i);
     }
 
+    /**
+     * retourne la probabilité de l'objectset à l'index I
+     * @param i     l'index de l'objectset
+     * @return      la probabilité de l'objectset
+     */
     public double getProbability(int i) {
         return probaList.get(i);
     }
@@ -52,10 +57,20 @@ public class ObjectSet {
         return set.size();
     }
 
+    /**
+     * retourne si l'objectset à l'index I a une animation
+     * @param i     l'index de l'objectset
+     * @return      true si il y'a une animation, faux autrement
+     */
     public boolean hasAnimation(int i) {
         return getPathObject(i).size() > 1;
     }
 
+    /**
+     * retourne la durée de l'animation de l'objectset I
+     * @param i     l'index de l'objectset
+     * @return      la durée de l'animation ou 0.00 si il n'y en a pas
+     */
     public double getAnimationDuration(int i) {
         if(hasAnimation(i)) {
             return animationDurationHash.get(i);

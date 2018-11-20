@@ -26,10 +26,16 @@ public class Playlist extends MusicManager {
         mediaPlayer.play();
     }
 
+    /**
+     * lance la playlist
+     */
     public void play() {
         play(musicName.get(0));
     }
 
+    /**
+     * mélange de façon aléatoire la playlist
+     */
     public void shuffle() {
         List<Map.Entry<String, Media>> collection = new ArrayList<Map.Entry<String, Media>>(mediaHash.entrySet());
 

@@ -59,6 +59,11 @@ public class AnimationManagerSprite implements IAnimationManager {
         defaultHeight = h;
     }
 
+    /**
+     * change la taille par défaut des sprites
+     * @param w nouvelle largeur
+     * @param h nouvelle hauteur
+     */
     public void setDefaultSize(double w, double h) {
         setDefaultWidth(w);
         setDefaultHeight(w);
@@ -91,6 +96,10 @@ public class AnimationManagerSprite implements IAnimationManager {
         imageList.add(new Image(imagePath));
     }
 
+    /**
+     * ajoute une frame à l'animation de la taille par défaut
+     * @param imagePath     le chemin(file:...) du sprite
+     */
     public void addFrameDefaultSize(String imagePath) {
         imageList.add(new Image(imagePath, defaultWidth, defaultHeight, false, false));
     }

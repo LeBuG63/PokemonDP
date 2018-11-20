@@ -92,6 +92,11 @@ public class Player extends IEntity {
         getEventManager().attachAllEventsToScene(scene);
     }
 
+    /**
+     * vérifie si le joueur est en collision avec un élément du décors
+     * @param decoObjectList
+     * @return
+     */
     public boolean isCollidingWithDeco(List<DecoObject> decoObjectList) {
         for (DecoObject decoObject : decoObjectList) {
             if (getCollisionObject().isInCollision(decoObject.getCollisionObject())) {

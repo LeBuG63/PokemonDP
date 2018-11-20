@@ -24,11 +24,20 @@ public class MusicManager {
         this.mediaHash = mediaHash;
     }
 
+    /**
+     * charge une musique de le manager
+     * @param musicPath     le chemin de la musique (/assets/...)
+     * @param name          le nom de la musique
+     */
     public void load(String musicPath, String name) {
         mediaHash.put(name, new Media(new File(musicPath).toURI().toString()));
         musicName.add(name);
     }
 
+    /**
+     * joue une musique
+     * @param name  le nom de la musique
+     */
     public void play(String name) {
         if(mediaPlayer != null) {
             mediaPlayer.stop();
@@ -42,18 +51,27 @@ public class MusicManager {
         mediaPlayer.play();
     }
 
+    /**
+     * met en pause la musique en cours
+     */
     public void pause() {
         if(mediaPlayer != null) {
             mediaPlayer.pause();
         }
     }
 
+    /**
+     * stop la musique en cours
+     */
     public void stop() {
         if(mediaPlayer != null) {
             mediaPlayer.stop();
         }
     }
 
+    /**
+     * joue la prochaine musique
+     */
     public void next() {
         List<Map.Entry<String, Media>> collection = new ArrayList<Map.Entry<String, Media>>(mediaHash.entrySet());
 
@@ -65,6 +83,9 @@ public class MusicManager {
         }
     }
 
+    /**
+     * joue la musique précédente
+     */
     public void prev() {
         List<Map.Entry<String, Media>> collection = new ArrayList<Map.Entry<String, Media>>(mediaHash.entrySet());
 
