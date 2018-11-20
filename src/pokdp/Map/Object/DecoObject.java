@@ -36,6 +36,9 @@ public class DecoObject extends IEntity {
 
         setSprite(animationManager.getFrame(0));
         Image frame = animationManager.getFrame(0);
+
+        setCoordX(x);
+        setCoordY(y);
     }
 
     public DecoObject(List<String> spritePath, double x, double y, CollisionBox collisionBox) {

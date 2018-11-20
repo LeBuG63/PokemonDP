@@ -5,10 +5,7 @@ import Map.Tile.Tile;
 import javafx.scene.Parent;
 import Utils.Constantes;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Map extends Parent {
     private int width;
@@ -18,7 +15,7 @@ public class Map extends Parent {
     private HashMap<ETerrainType, ObjectSet> decoObjectsetHash = new HashMap<ETerrainType, ObjectSet>();
 
     private List<Tile> mapTile = new ArrayList<Tile>();
-    private List<DecoObject> decoObjectList = new ArrayList<DecoObject>();
+    private List<DecoObject> decoObjectList = new ArrayList<>();
 
     public Map(int w, int h) {
         width = w;
@@ -55,11 +52,24 @@ public class Map extends Parent {
         mapTile.clear();
         this.getChildren().removeAll();
 
+        List<DecoObject> fencesList = new ArrayList<>();
+
         Random random = new Random();
 
         for (int x = 0; x < width; ++x) {
             for (int y = 0; y < height; ++y) {
-                if (random.nextDouble() > Constantes.PROBA_DECO) {
+                if(x == 0 || x == width - 1) {
+                    DecoObject fence_ver = new DecoObject("file:assets/sprites/objects/fence_vertical1.png", x * Constantes.DEFAULT_TILE_MAP_WIDTH + 5, y * Constantes.DEFAULT_TILE_MAP_HEIGHT);
+
+                    fencesList.add(fence_ver);
+                }
+                else if(y == 0 || y == height - 1) {
+                    DecoObject fence_hor = new DecoObject("file:assets/sprites/objects/fence_horizontal1.png", (x-1) * Constantes.DEFAULT_TILE_MAP_WIDTH, y * Constantes.DEFAULT_TILE_MAP_HEIGHT + 10);
+
+                    fencesList.add(fence_hor);
+                }
+                else if (random.nextDouble() > Constantes.PROBA_DECO
+                && (x > 5 && y > 5)) {
                     boolean add = true;
 
                     int i = random.nextInt(decoObjectsetHash.get(type).size());
@@ -69,9 +79,6 @@ public class Map extends Parent {
                                 decoObjectsetHash.get(type).getPathObject(i),
                                 x * Constantes.DEFAULT_TILE_MAP_WIDTH,
                                 y * Constantes.DEFAULT_TILE_MAP_HEIGHT);
-
-                        decoObject.setCoordX(x * Constantes.DEFAULT_TILE_MAP_WIDTH);
-                        decoObject.setCoordY(y * Constantes.DEFAULT_TILE_MAP_HEIGHT);
 
                         for (DecoObject other : decoObjectList) {
                             if (decoObject.isInCollision(other)) {
@@ -108,6 +115,10 @@ public class Map extends Parent {
                 mapTile.add(t);
                 this.getChildren().add(t);
             }
+        }
+
+        for(DecoObject fence : fencesList) {
+            decoObjectList.add(0, fence);
         }
 
         for (DecoObject decoObject : decoObjectList) {
