@@ -1,7 +1,7 @@
 package Entity.Player;
 
 import AnimationManager.AnimationManagerSprite;
-import AnimationManager.IAnimationManager;
+import AnimationManager.AnimationManagerSprite;
 import Entity.EEntityType;
 import Entity.IEntity;
 import EventManager.EEventType;
@@ -28,7 +28,7 @@ public class Player extends IEntity {
     private final int SPRITE_WIDTH = Constantes.DEFAULT_SPRITE_WIDTH;
     private final int SPRITE_HEIGHT = Constantes.DEFAULT_SPRITE_HEIGHT;
 
-    private IAnimationManager[] animationManager = new AnimationManagerSprite[4];
+    private AnimationManagerSprite[] animationManager = new AnimationManagerSprite[4];
 
     /**
      * @param scene la scène dans laquelle se trouve le joueur

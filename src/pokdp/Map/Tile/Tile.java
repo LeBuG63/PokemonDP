@@ -1,7 +1,6 @@
 package Map.Tile;
 
 import AnimationManager.AnimationManagerSprite;
-import AnimationManager.IAnimationManager;
 import Entity.EEntityType;
 import Entity.IEntity;
 import Utils.Constantes;
@@ -10,7 +9,7 @@ import javafx.animation.Animation;
 import java.util.List;
 
 public class Tile extends IEntity {
-    IAnimationManager animationManager = new AnimationManagerSprite();
+    AnimationManagerSprite animationManager = new AnimationManagerSprite();
 
     public Tile(List<String> pathList) {
         super(EEntityType.TERRAIN);

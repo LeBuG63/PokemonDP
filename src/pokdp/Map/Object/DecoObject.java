@@ -1,7 +1,7 @@
 package Map.Object;
 
 import AnimationManager.AnimationManagerSprite;
-import AnimationManager.IAnimationManager;
+import AnimationManager.AnimationManagerSprite;
 import Entity.EEntityType;
 import Entity.IEntity;
 import javafx.scene.image.Image;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DecoObject extends IEntity {
-    private IAnimationManager animationManager = new AnimationManagerSprite();
+    private AnimationManagerSprite animationManager = new AnimationManagerSprite();
 
     public DecoObject(String spritePath, double x, double y, double w, double h) {
         this(new ArrayList<String>() {{ add(spritePath); }}, x, y, w, h);

@@ -13,7 +13,7 @@ import java.util.List;
 import javafx.util.Duration;
 import Utils.Constantes;
 
-public class AnimationManagerSprite implements IAnimationManager {
+public class AnimationManagerSprite  {
     public static final double RANDOM_DURATION = -1.0f;
 
     private List<Image>   imageList = new ArrayList<>();
