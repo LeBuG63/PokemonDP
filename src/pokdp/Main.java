@@ -37,22 +37,23 @@ public class Main extends Application {
 
         map.addTileSet(new ObjectSet()
         {{
-            load("file:assets/sprites/terrain/grass1.png", 0.80f);
-            load("file:assets/sprites/terrain/grass2.png", 0.10f);
+            load("file:assets/sprites/terrain/grass1.png", 0.80f, IEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/terrain/grass2.png", 0.10f, IEntity.HAS_NO_COLLISION);
 
             load(new ArrayList<String>()
             {{
                 add("file:assets/sprites/terrain/flower1_down.png");
                 add("file:assets/sprites/terrain/flower1_up.png");
-            }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION);
+            }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION, IEntity.HAS_NO_COLLISION);
         }}, ETerrainType.FOREST);
 
         map.addDecoObjectSet(new ObjectSet()
         {{
-            load("file:assets/sprites/objects/factory1.png", 0.10f);
-            load("file:assets/sprites/objects/mart1.png", 0.10f);
-            load("file:assets/sprites/objects/pc1.png", 0.10f);
-            load("file:assets/sprites/objects/littletree1.png", 0.55f);
+            load("file:assets/sprites/terrain/tallgrass1.png", 0.5f, IEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/objects/factory1.png", 0.10f, IEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/mart1.png", 0.10f, IEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/pc1.png", 0.10f, IEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/littletree1.png", 0.55f, IEntity.HAS_COLLISION);
         }}, ETerrainType.FOREST);
 
         Playlist playlist = new Playlist()

@@ -9,6 +9,7 @@ import Map.Object.CollisionBox;
 import Map.Object.DecoObject;
 import Utils.Constantes;
 import com.sun.javafx.geom.Vec2d;
+import javafx.animation.Animation;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
@@ -34,7 +35,7 @@ public class Player extends IEntity {
      * @param scene la scène dans laquelle se trouve le joueur
      */
     public Player(Scene scene, List<DecoObject> decoObjectList) {
-        super(EEntityType.PLAYER, new Vec2d(50,50));
+        super(EEntityType.PLAYER, new Vec2d(100,100), IEntity.HAS_COLLISION);
 
         String[] stringLook = {"up", "down", "right", "left"};
 
@@ -100,7 +101,7 @@ public class Player extends IEntity {
      */
     public boolean isCollidingWithDeco(List<DecoObject> decoObjectList) {
         for (DecoObject decoObject : decoObjectList) {
-            if (getCollisionObject().isInCollision(decoObject.getCollisionObject())) {
+            if (decoObject.hasCollision() && getCollisionObject().isInCollision(decoObject.getCollisionObject())) {
                 return true;
             }
         }

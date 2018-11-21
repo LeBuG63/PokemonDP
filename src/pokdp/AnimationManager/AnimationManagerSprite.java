@@ -2,6 +2,7 @@ package AnimationManager;
 
 import Entity.IEntity;
 import javafx.animation.KeyFrame;
+import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -27,6 +28,7 @@ public class AnimationManagerSprite  {
     public AnimationManagerSprite() {
 
     }
+
     /**
      *
      * @param w la largeur de chaque sprite

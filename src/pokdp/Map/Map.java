@@ -1,5 +1,6 @@
 package Map;
 
+import Entity.IEntity;
 import Map.Object.DecoObject;
 import Map.Tile.Tile;
 import javafx.scene.Parent;
@@ -59,12 +60,12 @@ public class Map extends Parent {
         for (int x = 0; x < width; ++x) {
             for (int y = 0; y < height; ++y) {
                 if(x == 0 || x == width - 1) {
-                    DecoObject fence_ver = new DecoObject("file:assets/sprites/objects/fence_vertical1.png", x * Constantes.DEFAULT_TILE_MAP_WIDTH + 5, y * Constantes.DEFAULT_TILE_MAP_HEIGHT);
+                    DecoObject fence_ver = new DecoObject("file:assets/sprites/objects/fence_vertical1.png", x * Constantes.DEFAULT_TILE_MAP_WIDTH + 5, y * Constantes.DEFAULT_TILE_MAP_HEIGHT, IEntity.HAS_COLLISION);
 
                     fencesList.add(fence_ver);
                 }
                 else if(y == 0 || y == height - 1) {
-                    DecoObject fence_hor = new DecoObject("file:assets/sprites/objects/fence_horizontal1.png", (x-1) * Constantes.DEFAULT_TILE_MAP_WIDTH, y * Constantes.DEFAULT_TILE_MAP_HEIGHT + 10);
+                    DecoObject fence_hor = new DecoObject("file:assets/sprites/objects/fence_horizontal1.png", (x-1) * Constantes.DEFAULT_TILE_MAP_WIDTH, y * Constantes.DEFAULT_TILE_MAP_HEIGHT + 10, IEntity.HAS_COLLISION);
 
                     fencesList.add(fence_hor);
                 }
@@ -78,7 +79,8 @@ public class Map extends Parent {
                         DecoObject decoObject = new DecoObject(
                                 decoObjectsetHash.get(type).getPathObject(i),
                                 x * Constantes.DEFAULT_TILE_MAP_WIDTH,
-                                y * Constantes.DEFAULT_TILE_MAP_HEIGHT);
+                                y * Constantes.DEFAULT_TILE_MAP_HEIGHT,
+                                decoObjectsetHash.get(type).hasCollision(i));
 
                         for (DecoObject other : decoObjectList) {
                             if (decoObject.isInCollision(other)) {

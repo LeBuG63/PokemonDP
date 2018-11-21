@@ -10,6 +10,11 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 public abstract class IEntity extends Parent {
+    public final static boolean HAS_COLLISION = true;
+    public final static boolean HAS_NO_COLLISION = false;
+
+    private boolean hasCollision = false;
+
     // Le type de l'entité pour par la suite faire des tests
     public EEntityType type = EEntityType.NONE;
 
@@ -27,7 +32,8 @@ public abstract class IEntity extends Parent {
     /**
      * @param type  le type de l'entité
      */
-    public IEntity(EEntityType type) {
+    public IEntity(EEntityType type, boolean hasCollision) {
+        this.hasCollision = hasCollision;
         this.type = type;
         this.spriteView = new ImageView();
 
@@ -36,7 +42,8 @@ public abstract class IEntity extends Parent {
         this.getChildren().add(spriteView);
     }
 
-    public IEntity(EEntityType type, Vec2d coord) {
+    public IEntity(EEntityType type, Vec2d coord, boolean hasCollision) {
+        this.hasCollision = hasCollision;
         this.type = type;
         this.spriteView = new ImageView();
 
@@ -52,7 +59,8 @@ public abstract class IEntity extends Parent {
      * @param spritePath    le chemin (file:/...) du sprite
      * @param type          le type de l'entité
      */
-    public IEntity(String spritePath, EEntityType type) {
+    public IEntity(String spritePath, EEntityType type, boolean hasCollision) {
+        this.hasCollision = hasCollision;
         this.type = type;
         this.spriteView = new ImageView(new Image(spritePath));
 
@@ -129,5 +137,9 @@ public abstract class IEntity extends Parent {
 
     public EventManager getEventManager() {
         return eventManager;
+    }
+
+    public boolean hasCollision() {
+        return hasCollision;
     }
 }

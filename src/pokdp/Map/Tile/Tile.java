@@ -12,7 +12,7 @@ public class Tile extends IEntity {
     AnimationManagerSprite animationManager = new AnimationManagerSprite();
 
     public Tile(List<String> pathList) {
-        super(EEntityType.TERRAIN);
+        super(EEntityType.TERRAIN, IEntity.HAS_NO_COLLISION);
 
         if(pathList != null) {
             for (String path : pathList) {
