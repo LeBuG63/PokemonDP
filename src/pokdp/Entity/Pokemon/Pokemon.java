@@ -17,8 +17,6 @@ public class Pokemon extends IEntity {
 
     private EType type;
 
-    private Attack[] attacks;
-
     public Pokemon(String name , int[] arrBaseStats , int[] arrEV , int[] arrIV, int level ,EType type) throws IllegalArgumentException{
         super(EEntityType.POKEMON);
         if(arrBaseStats.length == 6 && arrEV.length == 6 && arrIV.length == 6) {
@@ -33,11 +31,6 @@ public class Pokemon extends IEntity {
         }
         else
             throw new IllegalArgumentException();
-    }
-
-    public Pokemon (String name , int[] arrBaseStats , int[] arrEV , int[] arrIV, int level, Attack[] attacks, EType type) throws IllegalArgumentException{
-        this(name,arrBaseStats,arrEV,arrIV,level,type);
-        this.attacks = attacks;
     }
 
     private void setCurrentStats() {
