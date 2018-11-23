@@ -6,7 +6,7 @@ import pokdp.Type.EType;
 
 public class Pokemon extends IEntity {
 
-    private final static int PV     = 0;
+    private final int PV     = 0;
 
     private String name;
 
