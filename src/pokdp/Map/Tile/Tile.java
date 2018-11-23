@@ -1,9 +1,9 @@
-package Map.Tile;
+package pokdp.Map.Tile;
 
-import AnimationManager.AnimationManagerSprite;
-import Entity.EEntityType;
-import Entity.IEntity;
-import Utils.Constantes;
+import pokdp.AnimationManager.AnimationManagerSprite;
+import pokdp.Entity.EEntityType;
+import pokdp.Entity.IEntity;
+import pokdp.Utils.Constantes;
 import javafx.animation.Animation;
 
 import java.util.List;

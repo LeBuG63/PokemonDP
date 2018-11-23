@@ -1,6 +1,6 @@
-package AnimationManager;
+package pokdp.AnimationManager;
 
-import Entity.IEntity;
+import pokdp.Entity.IEntity;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javafx.util.Duration;
-import Utils.Constantes;
+import pokdp.Utils.Constantes;
 
 public class AnimationManagerSprite  {
     public static final double RANDOM_DURATION = -1.0f;

@@ -1,4 +1,4 @@
-package Music;
+package pokdp.Music;
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;

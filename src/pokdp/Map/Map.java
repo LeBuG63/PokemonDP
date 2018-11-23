@@ -1,10 +1,10 @@
-package Map;
+package pokdp.Map;
 
-import Entity.IEntity;
-import Map.Object.DecoObject;
-import Map.Tile.Tile;
+import pokdp.Entity.IEntity;
+import pokdp.Map.Object.DecoObject;
+import pokdp.Map.Tile.Tile;
 import javafx.scene.Parent;
-import Utils.Constantes;
+import pokdp.Utils.Constantes;
 
 import java.util.*;
 

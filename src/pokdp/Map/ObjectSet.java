@@ -1,6 +1,6 @@
-package Map;
+package pokdp.Map;
 
-import Map.Object.CollisionBox;
+import pokdp.Map.Object.CollisionBox;
 import com.sun.org.apache.xpath.internal.operations.Bool;
 
 import java.lang.reflect.Array;

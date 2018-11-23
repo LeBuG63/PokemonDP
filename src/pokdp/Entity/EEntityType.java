@@ -1,4 +1,4 @@
-package Entity;
+package pokdp.Entity;
 
 public enum EEntityType {
     NONE,

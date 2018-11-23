@@ -1,4 +1,4 @@
-package EventManager;
+package pokdp.EventManager;
 
 public enum EEventType {
     NULL,

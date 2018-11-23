@@ -1,4 +1,4 @@
-package Utils;
+package pokdp.Utils;
 
 public class Constantes {
     public static final int DEFAULT_SPRITE_WIDTH = 64;

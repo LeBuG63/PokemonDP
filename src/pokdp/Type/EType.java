@@ -1,4 +1,4 @@
-package Type;
+package pokdp.Type;
 
 public enum EType {
     EAU,

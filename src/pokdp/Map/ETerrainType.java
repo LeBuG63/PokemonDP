@@ -1,4 +1,4 @@
-package Map;
+package pokdp.Map;
 
 public enum ETerrainType {
     NONE,

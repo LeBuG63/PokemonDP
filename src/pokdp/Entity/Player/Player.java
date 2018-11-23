@@ -1,13 +1,13 @@
-package Entity.Player;
+package pokdp.Entity.Player;
 
-import AnimationManager.AnimationManagerSprite;
-import AnimationManager.AnimationManagerSprite;
-import Entity.EEntityType;
-import Entity.IEntity;
-import EventManager.EEventType;
-import Map.Object.CollisionBox;
-import Map.Object.DecoObject;
-import Utils.Constantes;
+import pokdp.AnimationManager.AnimationManagerSprite;
+import pokdp.AnimationManager.AnimationManagerSprite;
+import pokdp.Entity.EEntityType;
+import pokdp.Entity.IEntity;
+import pokdp.EventManager.EEventType;
+import pokdp.Map.Object.CollisionBox;
+import pokdp.Map.Object.DecoObject;
+import pokdp.Utils.Constantes;
 import com.sun.javafx.geom.Vec2d;
 import javafx.animation.Animation;
 import javafx.event.EventHandler;

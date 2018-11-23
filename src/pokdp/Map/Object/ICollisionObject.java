@@ -1,4 +1,4 @@
-package Map.Object;
+package pokdp.Map.Object;
 
 import com.sun.javafx.geom.Vec2d;
 

@@ -1,9 +1,9 @@
 package pokdp;
 
-import AnimationManager.AnimationManagerSprite;
-import Entity.IEntity;
-import Entity.Player.Player;
-import Music.Playlist;
+import pokdp.AnimationManager.AnimationManagerSprite;
+import pokdp.Entity.IEntity;
+import pokdp.Entity.Player.*;
+import pokdp.Music.Playlist;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -14,8 +14,8 @@ import javafx.stage.Stage;
 
 import java.util.ArrayList;
 
-import Map.*;
-import Utils.Constantes;
+import pokdp.Map.*;
+import pokdp.Utils.Constantes;
 
 public class Main extends Application {
 

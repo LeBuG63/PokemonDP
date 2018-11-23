@@ -1,9 +1,8 @@
-package Entity.Pokemon;
+package pokdp.Entity.Pokemon;
 
-import Attack.Attack;
-import Entity.EEntityType;
-import Entity.IEntity;
-import Type.EType;
+
+import pokdp.Entity.*;
+import pokdp.Type.EType;
 
 public class Pokemon extends IEntity {
 
@@ -18,7 +17,7 @@ public class Pokemon extends IEntity {
     private EType type;
 
     public Pokemon(String name , int[] arrBaseStats , int[] arrEV , int[] arrIV, int level ,EType type) throws IllegalArgumentException{
-        super(EEntityType.POKEMON);
+        super(EEntityType.POKEMON, false);
         if(arrBaseStats.length == 6 && arrEV.length == 6 && arrIV.length == 6) {
             this.name = name;
             this.arrBaseStats = arrBaseStats;
