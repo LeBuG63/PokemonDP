@@ -1,7 +1,6 @@
 package pokdp.Map.Object;
 
 import pokdp.AnimationManager.AnimationManagerSprite;
-import pokdp.AnimationManager.AnimationManagerSprite;
 import pokdp.Entity.EEntityType;
 import pokdp.Entity.IEntity;
 import javafx.scene.image.Image;
@@ -20,7 +19,7 @@ public class DecoObject extends IEntity {
         this(new ArrayList<String>() {{ add(spritePath); }}, x, y, hasCollision);
     }
 
-    public DecoObject(List<String> spritePath, double x, double y, double w, double h, boolean hasCollision) {
+    private DecoObject(List<String> spritePath, double x, double y, double w, double h, boolean hasCollision) {
         this(spritePath, x, y, hasCollision);
 
         animationManager.setDefaultHeight(h);

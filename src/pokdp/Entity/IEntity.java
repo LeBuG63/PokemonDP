@@ -17,7 +17,7 @@ public abstract class IEntity extends Parent {
     private boolean hasCollision = false;
 
     // Le type de l'entité pour par la suite faire des tests
-    public EEntityType type = EEntityType.NONE;
+    private EEntityType type = EEntityType.NONE;
 
     // Sert à contenir et à afficher une image
     private ImageView spriteView;
@@ -33,7 +33,7 @@ public abstract class IEntity extends Parent {
     /**
      * @param type  le type de l'entité
      */
-    public IEntity(EEntityType type, boolean hasCollision) {
+    protected IEntity(EEntityType type, boolean hasCollision) {
         this.hasCollision = hasCollision;
         this.type = type;
         this.spriteView = new ImageView();
@@ -43,7 +43,7 @@ public abstract class IEntity extends Parent {
         this.getChildren().add(spriteView);
     }
 
-    public IEntity(EEntityType type, Vec2d coord, boolean hasCollision) {
+    protected IEntity(EEntityType type, Vec2d coord, boolean hasCollision) {
         this.hasCollision = hasCollision;
         this.type = type;
         this.spriteView = new ImageView();
@@ -119,16 +119,16 @@ public abstract class IEntity extends Parent {
     /**
      * @return les coordonnées de l'entité
      */
-    public Vec2d getCoord() {
+    protected Vec2d getCoord() {
         return coord;
     }
 
-    public void setCoord(Vec2d vec) {
+    protected void setCoord(Vec2d vec) {
         setCoordX(vec.x);
         setCoordY(vec.y);
     }
 
-    public void setCollisionObject(ICollisionObject cb) {
+    protected void setCollisionObject(ICollisionObject cb) {
         collisionObject = cb;
     }
 
@@ -136,10 +136,14 @@ public abstract class IEntity extends Parent {
         return collisionObject;
     }
 
-    public EventManager getEventManager() {
+    protected EventManager getEventManager() {
         return eventManager;
     }
 
+    /**
+     * Vérifie si l'objet a des collisionsé&
+     * @return
+     */
     public boolean hasCollision() {
         return hasCollision;
     }

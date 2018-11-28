@@ -1,9 +1,11 @@
 package pokdp;
 
 import pokdp.AnimationManager.AnimationManagerSprite;
+import pokdp.Combat.Screen.CombatSceneSimple;
+import pokdp.Combat.Screen.ICombatScene;
 import pokdp.Entity.IEntity;
-import pokdp.Entity.Player.*;
-import pokdp.Music.Playlist;
+import pokdp.Entity.Player.Player;
+import pokdp.Entity.Pokemon.Pokemon;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -12,19 +14,22 @@ import javafx.scene.transform.Scale;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
-import java.util.ArrayList;
-
-import pokdp.Map.*;
+import pokdp.Map.ETerrainType;
+import pokdp.Map.Map;
+import pokdp.Map.ObjectSet;
+import pokdp.Music.Playlist;
 import pokdp.Utils.Constantes;
+
+import java.util.ArrayList;
 
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) {
         primaryStage.setTitle("Pokemon du Pauvre");
 
         Group root = new Group();
-        Scene scene = new Scene(root, 1600, 900, Color.WHITE);
+        Scene scene = new Scene(root, 1920, 1080, Color.WHITE);
 
         primaryStage.setFullScreen(true);
 
@@ -83,6 +88,19 @@ public class Main extends Application {
         scene.getRoot().getTransforms().setAll(scale);
 
         primaryStage.show();
+    /*
+
+            Pokemon pok1 = new Pokemon("Bullbizare", new int[] {45, 49, 49, 65, 65, 45}, new int[] {0, 0, 252, 252, 8, 0}, new int[] {31, 31, 31, 31, 31, 31}, 100, EType.PLANTE);
+            Pokemon pok2 = new Pokemon("Tauros", new int[] {75, 100, 95, 40, 70, 110}, new int[] {0, 252, 0, 8, 0, 252}, new int[] {31, 31, 31, 31, 31, 31}, 100, EType.FEU);
+
+            ICombatScene combatScene = new CombatSceneSimple(pok1, pok2);
+
+            combatScene.getScene().getRoot().getTransforms().setAll(scale);
+
+            primaryStage.setScene(combatScene.getScene()
+        );
+        primaryStage.show();
+    */
     }
 
 

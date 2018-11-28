@@ -1,25 +1,21 @@
 package pokdp.Map;
 
-import pokdp.Map.Object.CollisionBox;
-import com.sun.org.apache.xpath.internal.operations.Bool;
-
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 public class ObjectSet {
 
-    private List<List<String>> set = new ArrayList<List<String>>();
-    private List<Double> probaList = new ArrayList<Double>();
-    private HashMap<Integer, Double> animationDurationHash = new HashMap<Integer, Double>();
-    private HashMap<Integer, Boolean> hasCollisionHash = new HashMap<Integer, Boolean>();
+    private List<List<String>> set = new ArrayList<>();
+    private List<Double> probaList = new ArrayList<>();
+    private HashMap<Integer, Double> animationDurationHash = new HashMap<>();
+    private HashMap<Integer, Boolean> hasCollisionHash = new HashMap<>();
     /**
      * stock une liste de chemin pour une animation
      * @param pathList  la liste de chemin pour une animation
      * @param proba     la probabilité d'aparaitre
      */
-    public void load(List<String> pathList, double proba, boolean hasCollision) {
+    private void load(List<String> pathList, double proba, boolean hasCollision) {
         set.add(pathList);
         hasCollisionHash.put(set.size() - 1, hasCollision);
         probaList.add(proba);

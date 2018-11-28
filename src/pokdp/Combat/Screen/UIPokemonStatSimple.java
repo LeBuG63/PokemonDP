@@ -1,30 +1,24 @@
 package pokdp.Combat.Screen;
 
 import javafx.scene.control.Label;
-import javafx.scene.layout.GridPane;
 import pokdp.Entity.Pokemon.Pokemon;
 
 public class UIPokemonStatSimple extends IUIPokemonStat {
-    private Pokemon pokemon;
+    private Label name = new Label();
+    private Label level = new Label();
+    private Label hp = new Label();
 
-    private GridPane gridPane = new GridPane();
+    public UIPokemonStatSimple(Pokemon pokemon) {
+        reloadStatsPokemon(pokemon);
 
-    private Label   name;
-    private Label   level;
-    private Label   hp;
-
-    public UIPokemonStatSimple() {
-
-    }if [[ -r /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh ]]; then
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-fi
-
-    private void changeUIElements() {
-        //name.setText(pokemon);
+        getGridPane().add(name, 0, 0);
+        getGridPane().add(level, 1, 0);
+        getGridPane().add(hp, 2, 0);
     }
 
     @Override
-    public void reloadStatsPokemon(Pokemon pokemon) {
-        this.pokemon = pokemon;
+    protected void reloadStatsPokemon(Pokemon pokemon) {
+        name.setText(pokemon.getName());
+        level.setText(Integer.toString(pokemon.getLevel()));
     }
 }

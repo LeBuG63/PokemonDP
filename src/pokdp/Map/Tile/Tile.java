@@ -9,7 +9,7 @@ import javafx.animation.Animation;
 import java.util.List;
 
 public class Tile extends IEntity {
-    AnimationManagerSprite animationManager = new AnimationManagerSprite();
+    private AnimationManagerSprite animationManager = new AnimationManagerSprite();
 
     public Tile(List<String> pathList) {
         super(EEntityType.TERRAIN, IEntity.HAS_NO_COLLISION);

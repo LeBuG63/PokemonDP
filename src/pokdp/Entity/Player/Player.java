@@ -1,15 +1,13 @@
 package pokdp.Entity.Player;
 
-import pokdp.AnimationManager.AnimationManagerSprite;
+import javafx.scene.input.KeyCode;
 import pokdp.AnimationManager.AnimationManagerSprite;
 import pokdp.Entity.EEntityType;
 import pokdp.Entity.IEntity;
 import pokdp.EventManager.EEventType;
-import pokdp.Map.Object.CollisionBox;
 import pokdp.Map.Object.DecoObject;
 import pokdp.Utils.Constantes;
 import com.sun.javafx.geom.Vec2d;
-import javafx.animation.Animation;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
@@ -26,8 +24,6 @@ public class Player extends IEntity {
 
     // Permet de définir le "pas" de pixel
     private static final int KEYBOARD_MOVEMENT_DELTA = 10;
-    private final int SPRITE_WIDTH = Constantes.DEFAULT_SPRITE_WIDTH;
-    private final int SPRITE_HEIGHT = Constantes.DEFAULT_SPRITE_HEIGHT;
 
     private AnimationManagerSprite[] animationManager = new AnimationManagerSprite[4];
 
@@ -37,10 +33,15 @@ public class Player extends IEntity {
     public Player(Scene scene, List<DecoObject> decoObjectList) {
         super(EEntityType.PLAYER, new Vec2d(100,100), IEntity.HAS_COLLISION);
 
+        final int SPRITE_WIDTH = Constantes.DEFAULT_SPRITE_WIDTH;
+        final int SPRITE_HEIGHT = Constantes.DEFAULT_SPRITE_HEIGHT;
+
         String[] stringLook = {"up", "down", "right", "left"};
 
         for(int i = 0; i < 4; ++i) {
-            animationManager[i] = new AnimationManagerSprite(SPRITE_WIDTH, SPRITE_HEIGHT);
+
+
+            animationManager[i] = new AnimationManagerSprite(SPRITE_HEIGHT);
 
             for(int j = 0; j < 3; ++j) {
                 animationManager[i].addFrameDefaultSize("file:assets/sprites/player/sasha_" + stringLook[i] + (j+1) + ".png");
@@ -52,42 +53,39 @@ public class Player extends IEntity {
         getCollisionObject().setHeight(getCollisionObject().getHeight()/2);
         getCollisionObject().setCoord(new Vec2d(getCollisionObject().getCoord().x, getCollisionObject().getCoord().y - getCollisionObject().getCoord().y/2));
         // ajout de l'événement pour déplacer le joueur
-        getEventManager().add(new EventHandler<KeyEvent>() {
-            @Override
-            public void handle(KeyEvent event) {
-                Vec2d save = new Vec2d(getCoord());
+        getEventManager().add((EventHandler<KeyEvent>) event -> {
+            Vec2d save = new Vec2d(getCoord());
 
-                boolean collision = false;
+            boolean collision = false;
 
-                switch (event.getCode()) {
-                    case UP:
-                        setCoordY(getCoord().y - KEYBOARD_MOVEMENT_DELTA);
-                        collision = isCollidingWithDeco(decoObjectList);
-                        look = LOOK_UP;
-                        break;
-                    case RIGHT:
-                        setCoordX(getCoord().x + KEYBOARD_MOVEMENT_DELTA);
-                        collision = isCollidingWithDeco(decoObjectList);
-                        look = LOOK_RIGHT;
-                        break;
-                    case DOWN:
-                        setCoordY(getCoord().y + KEYBOARD_MOVEMENT_DELTA);
-                        collision = isCollidingWithDeco(decoObjectList);
-                        look = LOOK_DOWN;
-                        break;
-                    case LEFT:
-                        setCoordX(getCoord().x - KEYBOARD_MOVEMENT_DELTA);
-                        collision = isCollidingWithDeco(decoObjectList);
-                        look = LOOK_LEFT;
-                        break;
-                }
-
-                if(collision) {
-                    setCoord(save);
-                }
-
-                setSprite(animationManager[look].getNextFrame());
+            switch (event.getCode()) {
+                case UP:
+                    setCoordY(getCoord().y - KEYBOARD_MOVEMENT_DELTA);
+                    collision = isCollidingWithDeco(decoObjectList);
+                    look = LOOK_UP;
+                    break;
+                case RIGHT:
+                    setCoordX(getCoord().x + KEYBOARD_MOVEMENT_DELTA);
+                    collision = isCollidingWithDeco(decoObjectList);
+                    look = LOOK_RIGHT;
+                    break;
+                case DOWN:
+                    setCoordY(getCoord().y + KEYBOARD_MOVEMENT_DELTA);
+                    collision = isCollidingWithDeco(decoObjectList);
+                    look = LOOK_DOWN;
+                    break;
+                case LEFT:
+                    setCoordX(getCoord().x - KEYBOARD_MOVEMENT_DELTA);
+                    collision = isCollidingWithDeco(decoObjectList);
+                    look = LOOK_LEFT;
+                    break;
             }
+
+            if(collision) {
+                setCoord(save);
+            }
+
+            setSprite(animationManager[look].getNextFrame());
         }, EEventType.KEYBOARD_PRESSED);
 
 
@@ -99,7 +97,7 @@ public class Player extends IEntity {
      * @param decoObjectList
      * @return
      */
-    public boolean isCollidingWithDeco(List<DecoObject> decoObjectList) {
+    private boolean isCollidingWithDeco(List<DecoObject> decoObjectList) {
         for (DecoObject decoObject : decoObjectList) {
             if (decoObject.hasCollision() && getCollisionObject().isInCollision(decoObject.getCollisionObject())) {
                 return true;
