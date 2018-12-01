@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bfb9f8d-23bb-4774-a912-566443977a86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/pokemons/list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokdp/Combat/Screen/SelectPokemonScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokdp/LoadPokemon/IPokemonLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokdp/LoadPokemon/PokemonLoaderXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -67,7 +60,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="73" />
-          <entry key="JAVA" value="5869" />
+          <entry key="JAVA" value="5870" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="XML" value="320" />
         </counts>
@@ -103,23 +96,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/pokemons/list.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="30">
+              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
               <folding>
+                <element signature="n#Pokemon#0;n#list#0;n#!!top" />
                 <element signature="n#Pokemon#1;n#list#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="101" />
+            <state relative-caret-position="268">
+              <caret line="111" column="57" selection-start-line="111" selection-start-column="57" selection-end-line="111" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -221,9 +215,9 @@
         <option value="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Combat/Screen/SelectPokemonScreen.java" />
         <option value="$PROJECT_DIR$/src/pokdp/LoadPokemon/IPokemonLoader.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/Main.java" />
         <option value="$PROJECT_DIR$/src/pokdp/LoadPokemon/PokemonLoaderXML.java" />
         <option value="$PROJECT_DIR$/assets/pokemons/list.xml" />
+        <option value="$PROJECT_DIR$/src/pokdp/Main.java" />
       </list>
     </option>
   </component>
@@ -369,7 +363,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543673230966" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543673318913" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RunDashboard">
@@ -415,18 +409,18 @@
       <updated>1542976790735</updated>
       <workItem from="1543389158220" duration="8275000" />
       <workItem from="1543400243848" duration="1510000" />
-      <workItem from="1543657025207" duration="9766000" />
+      <workItem from="1543657025207" duration="9844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23144000" />
+    <option name="totallyTimeSpent" value="23222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="-18" width="1604" height="920" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12002567" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24903722" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -711,16 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/LoadPokemon/PokemonLoaderXML.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -733,10 +717,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/pokemons/list.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="30">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
           <folding>
+            <element signature="n#Pokemon#0;n#list#0;n#!!top" />
             <element signature="n#Pokemon#1;n#list#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="111" column="57" selection-start-line="111" selection-start-column="57" selection-end-line="111" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

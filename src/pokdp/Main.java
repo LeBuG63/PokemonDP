@@ -109,7 +109,7 @@ public class Main extends Application {
 
         IPokemonLoader pokemonLoader = new PokemonLoaderXML();
 
-        List<Pokemon> pokemonList = pokemonLoader.load("/home/rachartier/Documents/cours/java/pokemondp/assets/pokemons/list.xml");
+        List<Pokemon> pokemonList = pokemonLoader.load("assets/pokemons/list.xml");
 
         System.out.println(pokemonList.size());
 
