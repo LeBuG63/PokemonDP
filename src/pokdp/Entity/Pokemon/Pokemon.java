@@ -68,7 +68,7 @@ public class Pokemon extends IEntity {
     /**
      * Fait gagner un niveau au pokemon et reactualise ses statistiques
      */
-    public void lZevelUp(){
+    public void levelUp(){
         level++;
         setCurrentStats();
     }

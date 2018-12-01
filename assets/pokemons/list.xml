@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<list>
+    <Pokemon name="Bullbizare">
+        <type>EAU</type>
+        <baseStats>
+            <bstat>45</bstat>
+            <bstat>49</bstat>
+            <bstat>49</bstat>
+            <bstat>65</bstat>
+            <bstat>65</bstat>
+            <bstat>45</bstat>
+        </baseStats>
+        <ev>
+            <estat>0</estat>
+            <estat>0</estat>
+            <estat>252</estat>
+            <estat>252</estat>
+            <estat>8</estat>
+            <estat>0</estat>
+        </ev>
+        <iv>
+            <istat>32</istat>
+            <istat>31</istat>
+            <istat>31</istat>
+            <istat>31</istat>
+            <istat>31</istat>
+            <istat>31</istat>
+        </iv>
+    </Pokemon>
+    <Pokemon name="Tauros">
+        <type>FEU</type>
+        <baseStats>
+            <bstat>75</bstat>
+            <bstat>100</bstat>
+            <bstat>95</bstat>
+            <bstat>40</bstat>
+            <bstat>70</bstat>
+            <bstat>110</bstat>
+        </baseStats>
+        <ev>
+            <estat>0</estat>
+            <estat>250</estat>
+            <estat>0</estat>
+            <estat>8</estat>
+            <estat>0</estat>
+            <estat>252</estat>
+        </ev>
+        <iv>
+            <istat>32</istat>
+            <istat>31</istat>
+            <istat>31</istat>
+            <istat>31</istat>
+            <istat>31</istat>
+            <istat>31</istat>
+        </iv>
+    </Pokemon>
+</list>

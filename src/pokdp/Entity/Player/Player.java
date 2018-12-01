@@ -4,6 +4,7 @@ import javafx.scene.input.KeyCode;
 import pokdp.AnimationManager.AnimationManagerSprite;
 import pokdp.Entity.EEntityType;
 import pokdp.Entity.IEntity;
+import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.EventManager.EEventType;
 import pokdp.Map.Object.DecoObject;
 import pokdp.Utils.Constantes;
@@ -12,6 +13,7 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Player extends IEntity {
@@ -26,6 +28,7 @@ public class Player extends IEntity {
     private static final int KEYBOARD_MOVEMENT_DELTA = 10;
 
     private AnimationManagerSprite[] animationManager = new AnimationManagerSprite[4];
+    private List<Pokemon>   pokemonList = new ArrayList<>();
 
     /**
      * @param scene la scène dans laquelle se trouve le joueur
@@ -39,8 +42,6 @@ public class Player extends IEntity {
         String[] stringLook = {"up", "down", "right", "left"};
 
         for(int i = 0; i < 4; ++i) {
-
-
             animationManager[i] = new AnimationManagerSprite(SPRITE_HEIGHT);
 
             for(int j = 0; j < 3; ++j) {
@@ -104,5 +105,9 @@ public class Player extends IEntity {
             }
         }
         return false;
+    }
+
+    public List<Pokemon> getPokemonList() {
+        return pokemonList;
     }
 }

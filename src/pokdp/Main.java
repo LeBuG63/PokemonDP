@@ -14,6 +14,8 @@ import javafx.scene.transform.Scale;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
+import pokdp.LoadPokemon.IPokemonLoader;
+import pokdp.LoadPokemon.PokemonLoaderXML;
 import pokdp.Map.ETerrainType;
 import pokdp.Map.Map;
 import pokdp.Map.ObjectSet;
@@ -22,6 +24,7 @@ import pokdp.Type.EType;
 import pokdp.Utils.Constantes;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main extends Application {
 
@@ -93,7 +96,7 @@ public class Main extends Application {
 
         primaryStage.show();
 */
-
+/*
             Pokemon pok1 = new Pokemon("Bullbizare", new int[] {45, 49, 49, 65, 65, 45}, new int[] {0, 0, 252, 252, 8, 0}, new int[] {31, 31, 31, 31, 31, 31}, 100, EType.PLANTE);
             Pokemon pok2 = new Pokemon("Tauros", new int[] {75, 100, 95, 40, 70, 110}, new int[] {0, 252, 0, 8, 0, 252}, new int[] {31, 31, 31, 31, 31, 31}, 100, EType.FEU);
 
@@ -102,7 +105,18 @@ public class Main extends Application {
             primaryStage.setScene(combatScene.getScene());
 
         primaryStage.show();
+*/
 
+        IPokemonLoader pokemonLoader = new PokemonLoaderXML();
+
+        List<Pokemon> pokemonList = pokemonLoader.load("/home/rachartier/Documents/cours/java/pokemondp/assets/pokemons/list.xml");
+
+        System.out.println(pokemonList.size());
+
+        for(Pokemon p : pokemonList) {
+            System.out.println(p.getName());
+            System.out.println(p.getPV());
+        }
     }
 
 
