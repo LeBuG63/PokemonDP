@@ -18,6 +18,7 @@ import pokdp.Map.ETerrainType;
 import pokdp.Map.Map;
 import pokdp.Map.ObjectSet;
 import pokdp.Music.Playlist;
+import pokdp.Type.EType;
 import pokdp.Utils.Constantes;
 
 import java.util.ArrayList;
@@ -28,16 +29,19 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Pokemon du Pauvre");
 
+        double screenWidth = Screen.getPrimary().getVisualBounds().getWidth();
+        double screenHeight = Screen.getPrimary().getVisualBounds().getHeight();
+
         Group root = new Group();
-        Scene scene = new Scene(root, 1920, 1080, Color.WHITE);
+        Scene scene = new Scene(root, screenWidth, screenHeight, Color.WHITE);
 
         primaryStage.setFullScreen(true);
 
-        Scale scale = new Scale(Screen.getPrimary().getVisualBounds().getWidth() / 1920, Screen.getPrimary().getVisualBounds().getHeight() / 1080);
+        Scale scale = new Scale(screenWidth / 1920, screenHeight / 1080);
 
         scale.setPivotX(0);
         scale.setPivotY(0);
-
+/*
         Map map = new Map(1920 / Constantes.DEFAULT_TILE_MAP_WIDTH,1080 / Constantes.DEFAULT_TILE_MAP_HEIGHT + 1);
 
         map.addTileSet(new ObjectSet()
@@ -88,19 +92,17 @@ public class Main extends Application {
         scene.getRoot().getTransforms().setAll(scale);
 
         primaryStage.show();
-    /*
+*/
 
             Pokemon pok1 = new Pokemon("Bullbizare", new int[] {45, 49, 49, 65, 65, 45}, new int[] {0, 0, 252, 252, 8, 0}, new int[] {31, 31, 31, 31, 31, 31}, 100, EType.PLANTE);
             Pokemon pok2 = new Pokemon("Tauros", new int[] {75, 100, 95, 40, 70, 110}, new int[] {0, 252, 0, 8, 0, 252}, new int[] {31, 31, 31, 31, 31, 31}, 100, EType.FEU);
 
-            ICombatScene combatScene = new CombatSceneSimple(pok1, pok2);
-
+            ICombatScene combatScene = new CombatSceneSimple(pok1, pok2, screenWidth, screenHeight);
             combatScene.getScene().getRoot().getTransforms().setAll(scale);
+            primaryStage.setScene(combatScene.getScene());
 
-            primaryStage.setScene(combatScene.getScene()
-        );
         primaryStage.show();
-    */
+
     }
 
 

@@ -58,7 +58,13 @@ public class Pokemon extends IEntity {
         return currentStats[index];
     }
 
+    public void setPV(int hp) {
+        currentStats[PV] = hp;
+    }
 
+    public int getPV() {
+        return currentStats[PV];
+    }
     /**
      * Fait gagner un niveau au pokemon et reactualise ses statistiques
      */

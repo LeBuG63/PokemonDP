@@ -13,12 +13,13 @@ public class UIPokemonStatSimple extends IUIPokemonStat {
 
         getGridPane().add(name, 0, 0);
         getGridPane().add(level, 1, 0);
-        getGridPane().add(hp, 2, 0);
+        getGridPane().add(hp, 3, 1);
     }
 
     @Override
     protected void reloadStatsPokemon(Pokemon pokemon) {
         name.setText(pokemon.getName());
         level.setText(Integer.toString(pokemon.getLevel()));
+        hp.setText(Integer.toString(pokemon.getPV()));
     }
 }
