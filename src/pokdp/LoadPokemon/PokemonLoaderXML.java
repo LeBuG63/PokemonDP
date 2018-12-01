@@ -11,13 +11,15 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 public class PokemonLoaderXML implements IPokemonLoader {
     private final DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
 
-    public List<Pokemon> load(String path) {
-        List<Pokemon> pokemonList = new ArrayList<>();
+    public HashMap<String, Pokemon> load(String path) {
+        HashMap<String, Pokemon> pokemonHashmap = new HashMap<>();
 
         try {
 
@@ -47,7 +49,7 @@ public class PokemonLoaderXML implements IPokemonLoader {
                     int[] arrEV = getArrayIntWithElements(ev);
                     int[] arrIV = getArrayIntWithElements(iv);
 
-                    pokemonList.add(new Pokemon(name, arrBaseStats, arrEV, arrIV, 0, EType.valueOf(type.getTextContent())));
+                    pokemonHashmap.put(name, new Pokemon(name, arrBaseStats, arrEV, arrIV, 0, EType.valueOf(type.getTextContent())));
                 }
             }
         }
@@ -55,7 +57,7 @@ public class PokemonLoaderXML implements IPokemonLoader {
             System.out.println(e.getMessage());
         }
 
-        return pokemonList;
+        return pokemonHashmap;
     }
 
     private int[] getArrayIntWithElements(NodeList elements) {

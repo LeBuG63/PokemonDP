@@ -24,6 +24,7 @@ import pokdp.Type.EType;
 import pokdp.Utils.Constantes;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class Main extends Application {
@@ -96,27 +97,43 @@ public class Main extends Application {
 
         primaryStage.show();
 */
-/*
-            Pokemon pok1 = new Pokemon("Bullbizare", new int[] {45, 49, 49, 65, 65, 45}, new int[] {0, 0, 252, 252, 8, 0}, new int[] {31, 31, 31, 31, 31, 31}, 100, EType.PLANTE);
-            Pokemon pok2 = new Pokemon("Tauros", new int[] {75, 100, 95, 40, 70, 110}, new int[] {0, 252, 0, 8, 0, 252}, new int[] {31, 31, 31, 31, 31, 31}, 100, EType.FEU);
+        Map map = new Map(1920 / Constantes.DEFAULT_TILE_MAP_WIDTH,1080 / Constantes.DEFAULT_TILE_MAP_HEIGHT + 1);
 
-            ICombatScene combatScene = new CombatSceneSimple(pok1, pok2, screenWidth, screenHeight);
-            combatScene.getScene().getRoot().getTransforms().setAll(scale);
-            primaryStage.setScene(combatScene.getScene());
+        map.addTileSet(new ObjectSet()
+        {{
+            load("file:assets/sprites/terrain/grass1.png", 0.80f, IEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/terrain/grass2.png", 0.10f, IEntity.HAS_NO_COLLISION);
 
-        primaryStage.show();
-*/
+            load(new ArrayList<String>()
+            {{
+                add("file:assets/sprites/terrain/flower1_down.png");
+                add("file:assets/sprites/terrain/flower1_up.png");
+            }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION, IEntity.HAS_NO_COLLISION);
+        }}, ETerrainType.FOREST);
+
+        map.addDecoObjectSet(new ObjectSet()
+        {{
+            load("file:assets/sprites/terrain/tallgrass1.png", 0.5f, IEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/objects/factory1.png", 0.10f, IEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/mart1.png", 0.10f, IEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/pc1.png", 0.10f, IEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/littletree1.png", 0.55f, IEntity.HAS_COLLISION);
+        }}, ETerrainType.FOREST);
+
+        IEntity player = new Player(scene, map.getDecoObjectList());
 
         IPokemonLoader pokemonLoader = new PokemonLoaderXML();
+        HashMap<String, Pokemon> pokemonHashMap = pokemonLoader.load("assets/pokemons/list.xml");
 
-        List<Pokemon> pokemonList = pokemonLoader.load("assets/pokemons/list.xml");
+        ((Player) player).getPokemonList().add(pokemonHashMap.get("Bullbizare"));
 
-        System.out.println(pokemonList.size());
+        ICombatScene combatScene = new CombatSceneSimple(pokemonHashMap.get("Bullbizare"), pokemonHashMap.get("Tauros"), screenWidth, screenHeight);
 
-        for(Pokemon p : pokemonList) {
-            System.out.println(p.getName());
-            System.out.println(p.getPV());
-        }
+        combatScene.getScene().getRoot().getTransforms().setAll(scale);
+        primaryStage.setScene(combatScene.getScene());
+
+        primaryStage.show();
+
     }
 
 

@@ -1,10 +1,8 @@
 package pokdp.LoadPokemon;
 
-import org.w3c.dom.Element;
 import pokdp.Entity.Pokemon.Pokemon;
-
-import java.util.List;
+import java.util.HashMap;
 
 public interface IPokemonLoader {
-    List<Pokemon> load(String path);
+    HashMap<String, Pokemon> load(String path);
 }
