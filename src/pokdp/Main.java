@@ -19,6 +19,7 @@ import pokdp.LoadPokemon.PokemonLoaderXML;
 import pokdp.Map.ETerrainType;
 import pokdp.Map.Map;
 import pokdp.Map.ObjectSet;
+import pokdp.Music.MusicManager;
 import pokdp.Music.Playlist;
 import pokdp.Type.EType;
 import pokdp.Utils.Constantes;
@@ -45,7 +46,7 @@ public class Main extends Application {
 
         scale.setPivotX(0);
         scale.setPivotY(0);
-/*
+
         Map map = new Map(1920 / Constantes.DEFAULT_TILE_MAP_WIDTH,1080 / Constantes.DEFAULT_TILE_MAP_HEIGHT + 1);
 
         map.addTileSet(new ObjectSet()
@@ -75,16 +76,16 @@ public class Main extends Application {
             load("assets/musics/professoroak.wav", "professoroak");
             load("assets/musics/palettetown.wav", "palettetown");
         }};
-
-        //MusicManager musicManager = new MusicManager();
-        //musicManager.load("assets/musics/opening.mp3", "opening");
-        //musicManager.play("opening");
-
+/*
+        MusicManager musicManager = new MusicManager();
+        musicManager.load("assets/musics/opening.wav", "opening");
+        musicManager.play("opening");
+*/
         playlist.shuffle();
 
         playlist.play();
 
-        IEntity player = new Player(scene, map.getDecoObjectList());
+        IEntity player = new Player(scene, map.getDecoObjectList(), primaryStage);
 
         map.generateRandomTerrain(ETerrainType.FOREST);
 
@@ -96,7 +97,7 @@ public class Main extends Application {
         scene.getRoot().getTransforms().setAll(scale);
 
         primaryStage.show();
-*/
+/*
         Map map = new Map(1920 / Constantes.DEFAULT_TILE_MAP_WIDTH,1080 / Constantes.DEFAULT_TILE_MAP_HEIGHT + 1);
 
         map.addTileSet(new ObjectSet()
@@ -129,11 +130,11 @@ public class Main extends Application {
 
         ICombatScene combatScene = new CombatSceneSimple(pokemonHashMap.get("Bullbizare"), pokemonHashMap.get("Tauros"), screenWidth, screenHeight);
 
-        combatScene.getScene().getRoot().getTransforms().setAll(scale);
+        //combatScene.getScene().getRoot().getTransforms().setAll(scale);
         primaryStage.setScene(combatScene.getScene());
 
         primaryStage.show();
-
+        */
     }
 
 

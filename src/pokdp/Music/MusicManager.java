@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class MusicManager {
+public class MusicManager {
     HashMap<String, Media> mediaHash = new HashMap<>();
     MediaPlayer     mediaPlayer;
 
@@ -38,7 +38,7 @@ class MusicManager {
      * joue une musique
      * @param name  le nom de la musique
      */
-    void play(String name) {
+    public void play(String name) {
         if(mediaPlayer != null) {
             mediaPlayer.stop();
         }

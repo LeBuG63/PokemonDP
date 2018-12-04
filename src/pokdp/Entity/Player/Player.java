@@ -1,7 +1,11 @@
 package pokdp.Entity.Player;
 
+import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import javafx.scene.input.KeyCode;
+import javafx.stage.Stage;
 import pokdp.AnimationManager.AnimationManagerSprite;
+import pokdp.Combat.Screen.CombatSceneSimple;
+import pokdp.Combat.Screen.ICombatScene;
 import pokdp.Entity.EEntityType;
 import pokdp.Entity.IEntity;
 import pokdp.Entity.Pokemon.Pokemon;
@@ -15,6 +19,7 @@ import javafx.scene.input.KeyEvent;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Player extends IEntity {
     private final int LOOK_UP = 0;
@@ -33,7 +38,7 @@ public class Player extends IEntity {
     /**
      * @param scene la scène dans laquelle se trouve le joueur
      */
-    public Player(Scene scene, List<DecoObject> decoObjectList) {
+    public Player(Scene scene, List<DecoObject> decoObjectList, Stage primaryStage) {
         super(EEntityType.PLAYER, new Vec2d(100,100), IEntity.HAS_COLLISION);
 
         final int SPRITE_WIDTH = Constantes.DEFAULT_SPRITE_WIDTH;
@@ -49,6 +54,8 @@ public class Player extends IEntity {
             }
         }
 
+        Random random = new Random();
+
         setSprite(animationManager[LOOK_DOWN].getFrame(0));
 
         getCollisionObject().setHeight(getCollisionObject().getHeight()/2);
@@ -58,6 +65,10 @@ public class Player extends IEntity {
             Vec2d save = new Vec2d(getCoord());
 
             boolean collision = false;
+
+            if(random.nextDouble() <= Constantes.PROBA_COMBAT) {
+                CombatSceneSimple.launch(primaryStage, "Bullbizare", "Tauros");
+            }
 
             switch (event.getCode()) {
                 case UP:
