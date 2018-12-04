@@ -16,12 +16,7 @@ public class Playlist extends MusicManager {
 
         mediaPlayer = new MediaPlayer(mediaHash.get(name));
 
-        mediaPlayer.setOnEndOfMedia(new Runnable() {
-            @Override
-            public void run() {
-                next();
-            }
-        });
+        mediaPlayer.setOnEndOfMedia(() -> next());
 
         mediaPlayer.play();
     }
@@ -37,7 +32,7 @@ public class Playlist extends MusicManager {
      * mélange de façon aléatoire la playlist
      */
     public void shuffle() {
-        List<Map.Entry<String, Media>> collection = new ArrayList<Map.Entry<String, Media>>(mediaHash.entrySet());
+        List<Map.Entry<String, Media>> collection = new ArrayList<>(mediaHash.entrySet());
 
         HashMap<String, Media> shuffledHashMap = new HashMap<>();
 
