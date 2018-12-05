@@ -1,5 +1,7 @@
 package pokdp.Combat.Screen;
 
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.scene.control.Label;
 import pokdp.Entity.Pokemon.Pokemon;
 
@@ -14,6 +16,11 @@ public class UIPokemonStatSimple extends IUIPokemonStat {
         getGridPane().add(name, 0, 0);
         getGridPane().add(level, 1, 0);
         getGridPane().add(hp, 3, 1);
+/*
+        name.textProperty().bindBidirectional(new SimpleStringProperty(pokemon.getName()));
+        level.textProperty().bindBidirectional(new SimpleIntegerProperty(pokemon.getLevel()).asString());
+        hp.textProperty().bindBidirectional(new SimpleIntegerProperty(pokemon.getPV()).asString());
+  */
     }
 
     @Override
