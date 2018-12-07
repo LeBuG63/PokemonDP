@@ -13,7 +13,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.transform.Scale;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-
+import pokdp.ScreenComponent.Cursor;
 import pokdp.LoadPokemon.IPokemonLoader;
 import pokdp.LoadPokemon.PokemonLoaderXML;
 import pokdp.Map.ETerrainType;
@@ -76,6 +76,7 @@ public class Main extends Application {
             load("assets/musics/professoroak.wav", "professoroak");
             load("assets/musics/palettetown.wav", "palettetown");
         }};
+
 /*
         MusicManager musicManager = new MusicManager();
         musicManager.load("assets/musics/opening.wav", "opening");
@@ -93,7 +94,6 @@ public class Main extends Application {
 
         root.getChildren().add(map);
         root.getChildren().add(player);
-
         scene.getRoot().getTransforms().setAll(scale);
 
         primaryStage.show();
