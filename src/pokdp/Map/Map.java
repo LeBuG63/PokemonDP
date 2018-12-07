@@ -12,10 +12,10 @@ public class Map extends Parent {
     private int width;
     private int height;
 
-    private HashMap<ETerrainType, ObjectSet> tilesetHash = new HashMap<ETerrainType, ObjectSet>();
-    private HashMap<ETerrainType, ObjectSet> decoObjectsetHash = new HashMap<ETerrainType, ObjectSet>();
+    private HashMap<ETerrainType, ObjectSet> tilesetHash = new HashMap<>();
+    private HashMap<ETerrainType, ObjectSet> decoObjectsetHash = new HashMap<>();
 
-    private List<Tile> mapTile = new ArrayList<Tile>();
+    private List<Tile> mapTile = new ArrayList<>();
     private List<DecoObject> decoObjectList = new ArrayList<>();
 
     public Map(int w, int h) {

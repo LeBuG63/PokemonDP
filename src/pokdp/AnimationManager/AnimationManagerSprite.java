@@ -2,7 +2,6 @@ package pokdp.AnimationManager;
 
 import pokdp.Entity.IEntity;
 import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -23,7 +22,7 @@ public class AnimationManagerSprite  {
     private double defaultWidth = Constantes.DEFAULT_SPRITE_WIDTH;
     private double defaultHeight = Constantes.DEFAULT_SPRITE_HEIGHT;
 
-    public Timeline timeline = new Timeline();
+    private Timeline timeline = new Timeline();
 
     public AnimationManagerSprite() {
 
@@ -31,10 +30,9 @@ public class AnimationManagerSprite  {
 
     /**
      *
-     * @param w la largeur de chaque sprite
      * @param h la hauteur de chaque sprite
      */
-    public AnimationManagerSprite(double w, double h) {
+    public AnimationManagerSprite(double h) {
         this();
 
         setDefaultHeight(h);
@@ -64,9 +62,9 @@ public class AnimationManagerSprite  {
     /**
      * change la taille par défaut des sprites
      * @param w nouvelle largeur
-     * @param h nouvelle hauteur
+     *
      */
-    public void setDefaultSize(double w, double h) {
+    public void setDefaultSize(double w) {
         setDefaultWidth(w);
         setDefaultHeight(w);
     }
@@ -80,12 +78,7 @@ public class AnimationManagerSprite  {
     public void setTimeline(IEntity entity, double millis, int cycleCount) {
         this.timeline.getKeyFrames().add(
                 new KeyFrame(Duration.millis(millis),
-                        new EventHandler<ActionEvent>() {
-                            @Override
-                            public void handle(ActionEvent actionEvent) {
-                                entity.setSprite(getNextFrame());
-                            }
-                        }));
+                        actionEvent -> entity.setSprite(getNextFrame())));
         this.timeline.setCycleCount(cycleCount);
         this.timeline.play();
     }

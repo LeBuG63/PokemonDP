@@ -1,17 +1,26 @@
 package pokdp.Combat.Screen;
 
+import javafx.scene.Parent;
 import javafx.scene.layout.GridPane;
 
 import pokdp.Entity.Pokemon.Pokemon;
 
-public class IUIPokemonStat {
-    private GridPane root = new GridPane();
+abstract class IUIPokemonStat extends Parent {
+    private Pokemon pokemon;
 
-    public IUIPokemonStat(Pokemon pokemon) {
+    private GridPane gridPane = new GridPane();
 
+    IUIPokemonStat() {
+        this.getChildren().add(gridPane);
     }
 
-    public GridPane getRoot() {
-        return root;
+    /**
+     * recharge les modifications apport&eacute; &agrave; un pokemon
+     * @param pokemon
+     */
+    protected abstract void reloadStatsPokemon(Pokemon pokemon);
+
+    GridPane getGridPane() {
+        return gridPane;
     }
 }

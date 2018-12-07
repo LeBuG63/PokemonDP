@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class EventManager {
     // Permet de stocker les événements, clé = EventHandler<?> val = EEVentType
-    private HashMap<EventHandler<?>, EEventType> eventDict = new HashMap<EventHandler<?>, EEventType>();
+    private HashMap<EventHandler<?>, EEventType> eventDict = new HashMap<>();
 
     // TODO: penser à faire des vérifications
     /**

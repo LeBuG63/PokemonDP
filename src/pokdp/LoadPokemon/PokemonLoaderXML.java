@@ -16,9 +16,9 @@ import java.util.HashSet;
 import java.util.List;
 
 public class PokemonLoaderXML implements IPokemonLoader {
-    private final DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+    public static HashMap<String, Pokemon> load(String path) {
+        final DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
 
-    public HashMap<String, Pokemon> load(String path) {
         HashMap<String, Pokemon> pokemonHashmap = new HashMap<>();
 
         try {
@@ -60,7 +60,8 @@ public class PokemonLoaderXML implements IPokemonLoader {
         return pokemonHashmap;
     }
 
-    private int[] getArrayIntWithElements(NodeList elements) {
+    private static int[] getArrayIntWithElements(NodeList elements) {
+
         final int length = elements.getLength();
 
         int[] arr = new int[length];
