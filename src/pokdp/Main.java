@@ -70,21 +70,21 @@ public class Main extends Application {
             load("file:assets/sprites/objects/littletree1.png", 0.55f, IEntity.HAS_COLLISION);
         }}, ETerrainType.FOREST);
 
-        Playlist playlist = new Playlist()
+     /*Playlist playlist = new Playlist()
         {{
             load("assets/musics/opening.wav", "opening");
             load("assets/musics/professoroak.wav", "professoroak");
             load("assets/musics/palettetown.wav", "palettetown");
         }};
-/*
+
         MusicManager musicManager = new MusicManager();
         musicManager.load("assets/musics/opening.wav", "opening");
         musicManager.play("opening");
-*/
+
         playlist.shuffle();
 
         playlist.play();
-
+    */
         IEntity player = new Player(scene, map.getDecoObjectList(), primaryStage);
 
         map.generateRandomTerrain(ETerrainType.FOREST);

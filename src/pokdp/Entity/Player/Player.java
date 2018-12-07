@@ -11,6 +11,7 @@ import pokdp.Entity.IEntity;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.EventManager.EEventType;
 import pokdp.Map.Object.DecoObject;
+import pokdp.PokemonMenu.UIPokemonMenu;
 import pokdp.Utils.Constantes;
 import com.sun.javafx.geom.Vec2d;
 import javafx.event.EventHandler;
@@ -90,6 +91,9 @@ public class Player extends IEntity {
                     setCoordX(getCoord().x - KEYBOARD_MOVEMENT_DELTA);
                     collision = isCollidingWithDeco(decoObjectList);
                     look = LOOK_LEFT;
+                    break;
+                case ENTER:
+                    UIPokemonMenu.launch(primaryStage);
                     break;
             }
 

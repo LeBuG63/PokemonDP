@@ -6,9 +6,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
+<GridPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="pokdp.PokemonMenu.PokemonMenu"
+            fx:id="pane"
             prefHeight="400.0" prefWidth="600.0">
     <GridPane>
         <Button>z</Button>
@@ -18,4 +18,4 @@
         <Button>z</Button>
         <Button>z</Button>
     </GridPane>
-</AnchorPane>
+</GridPane>
