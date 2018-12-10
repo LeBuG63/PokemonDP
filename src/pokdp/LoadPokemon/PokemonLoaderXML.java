@@ -37,7 +37,7 @@ public class PokemonLoaderXML implements IPokemonLoader {
 
                     final String name = pokemon.getAttribute("name");
                     final Element type = (Element)pokemon.getElementsByTagName("type").item(0);
-
+                    final Element sprite = (Element)pokemon.getElementsByTagName("sprite").item(0);
                     //     private int[] arrBaseStats , arrEV , arrIV, currentStats;
 
                     final NodeList baseStats = pokemon.getElementsByTagName(("bstat"));
@@ -49,7 +49,9 @@ public class PokemonLoaderXML implements IPokemonLoader {
                     int[] arrEV = getArrayIntWithElements(ev);
                     int[] arrIV = getArrayIntWithElements(iv);
 
-                    pokemonHashmap.put(name, new Pokemon(name, arrBaseStats, arrEV, arrIV, 0, EType.valueOf(type.getTextContent())));
+                    String sSprite = String.valueOf(sprite.getTextContent());
+
+                    pokemonHashmap.put(name, new Pokemon(name, sSprite, arrBaseStats, arrEV, arrIV, 0, EType.valueOf(type.getTextContent())));
                 }
             }
         }

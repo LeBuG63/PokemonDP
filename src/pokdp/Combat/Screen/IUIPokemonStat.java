@@ -18,7 +18,6 @@ abstract class IUIPokemonStat extends Parent {
      * recharge les modifications apport&eacute; &agrave; un pokemon
      * @param pokemon
      */
-    protected abstract void reloadStatsPokemon(Pokemon pokemon);
 
     GridPane getGridPane() {
         return gridPane;

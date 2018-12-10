@@ -141,7 +141,7 @@ public abstract class IEntity extends Parent {
     }
 
     /**
-     * Vérifie si l'objet a des collisionsé&
+     * Vérifie si l'objet a des collisions
      * @return
      */
     public boolean hasCollision() {

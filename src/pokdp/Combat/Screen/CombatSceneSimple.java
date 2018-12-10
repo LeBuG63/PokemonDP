@@ -2,6 +2,7 @@ package pokdp.Combat.Screen;
 
 import com.sun.corba.se.impl.orbutil.closure.Constant;
 import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -30,8 +31,6 @@ public class CombatSceneSimple implements ICombatScene {
             @Override
             public void handle(MouseEvent t) {
                 enemy.setPV(enemy.getPV() - 10);
-
-                statEnemy.reloadStatsPokemon(enemy);
             }
         });
 
@@ -47,9 +46,8 @@ public class CombatSceneSimple implements ICombatScene {
         gridPane.add(buttonDefense, 0, 3);
 
         BackgroundImage backgroundImage = new BackgroundImage(new Image("file:assets/combat/combat_template1.png", 1920, 1080, true, false), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
-        gridPane.setBackground(new Background(backgroundImage));
+    //    gridPane.setBackground(new Background(backgroundImage));
 
-//        scene = new Scene(gridPane);
         scene = new Scene(gridPane, 1920, 1080, Color.WHITE);
     }
 

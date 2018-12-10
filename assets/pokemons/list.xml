@@ -2,6 +2,7 @@
 <list>
     <Pokemon name="Bullbizare">
         <type>EAU</type>
+        <sprite>http://www.pokestadium.com/sprites/black-white/bulbasaur.png</sprite>
         <baseStats>
             <bstat>45</bstat>
             <bstat>49</bstat>
@@ -29,6 +30,7 @@
     </Pokemon>
     <Pokemon name="Tauros">
         <type>FEU</type>
+        <sprite>http://www.pokestadium.com/sprites/black-white/tauros.png</sprite>
         <baseStats>
             <bstat>75</bstat>
             <bstat>100</bstat>
