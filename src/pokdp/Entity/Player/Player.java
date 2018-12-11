@@ -1,13 +1,10 @@
 package pokdp.Entity.Player;
 
-import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
-import javafx.scene.input.KeyCode;
 import javafx.stage.Stage;
 import pokdp.AnimationManager.AnimationManagerSprite;
 import pokdp.Combat.Screen.CombatSceneSimple;
-import pokdp.Combat.Screen.ICombatScene;
 import pokdp.Entity.EEntityType;
-import pokdp.Entity.IEntity;
+import pokdp.Entity.AEntity;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.EventManager.EEventType;
 import pokdp.Map.Object.DecoObject;
@@ -21,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Player extends IEntity {
+public class Player extends AEntity {
     private final int LOOK_UP = 0;
     private final int LOOK_DOWN = 1;
     private final int LOOK_RIGHT = 2;
@@ -39,7 +36,7 @@ public class Player extends IEntity {
      * @param scene la scène dans laquelle se trouve le joueur
      */
     public Player(Scene scene, List<DecoObject> decoObjectList, Stage primaryStage) {
-        super(EEntityType.PLAYER, new Vec2d(100,100), IEntity.HAS_COLLISION);
+        super(EEntityType.PLAYER, new Vec2d(100,100), AEntity.HAS_COLLISION);
 
         final int SPRITE_WIDTH = Constantes.DEFAULT_SPRITE_WIDTH;
         final int SPRITE_HEIGHT = Constantes.DEFAULT_SPRITE_HEIGHT;

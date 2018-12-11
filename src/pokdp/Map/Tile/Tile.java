@@ -1,18 +1,18 @@
 package pokdp.Map.Tile;
 
 import pokdp.AnimationManager.AnimationManagerSprite;
+import pokdp.Entity.AEntity;
 import pokdp.Entity.EEntityType;
-import pokdp.Entity.IEntity;
 import pokdp.Utils.Constantes;
 import javafx.animation.Animation;
 
 import java.util.List;
 
-public class Tile extends IEntity {
+public class Tile extends AEntity {
     private AnimationManagerSprite animationManager = new AnimationManagerSprite();
 
     public Tile(List<String> pathList) {
-        super(EEntityType.TERRAIN, IEntity.HAS_NO_COLLISION);
+        super(EEntityType.TERRAIN, AEntity.HAS_NO_COLLISION);
 
         if(pathList != null) {
             for (String path : pathList) {

@@ -1,8 +1,5 @@
 package pokdp.Combat.Screen;
 
-import com.sun.corba.se.impl.orbutil.closure.Constant;
-import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -11,7 +8,6 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import pokdp.Combat.Screen.ICombatScene;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Utils.Constantes;
 
@@ -20,8 +16,8 @@ public class CombatSceneSimple implements ICombatScene {
 
     private GridPane gridPane = new GridPane();
 
-    private IUIPokemonStat  statPlayer;
-    private IUIPokemonStat  statEnemy;
+    private AUIPokemonStat statPlayer;
+    private AUIPokemonStat statEnemy;
 
     public CombatSceneSimple(Pokemon player, Pokemon enemy, double width, double height) {
         Button buttonAttack = new Button("Attaque");

@@ -3,7 +3,7 @@ package pokdp.Attack;
 import pokdp.Entity.Pokemon.Pokemon;
 
 public interface IAttackManager {
-    int calculateDamage(Attack attack,Pokemon defender, Pokemon attacker);
+    int calculateDamage(Pokemon defender, Pokemon attacker);
     /*
         public int calculateDamage(Attack attack,Pokemon defender, Pokemon attacker){
             final int STAT_INDEX;

@@ -10,7 +10,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import pokdp.Entity.*;
 
-public abstract class IEntity extends Parent {
+public abstract class AEntity extends Parent {
     public final static boolean HAS_COLLISION = true;
     public final static boolean HAS_NO_COLLISION = false;
 
@@ -33,7 +33,7 @@ public abstract class IEntity extends Parent {
     /**
      * @param type  le type de l'entité
      */
-    protected IEntity(EEntityType type, boolean hasCollision) {
+    protected AEntity(EEntityType type, boolean hasCollision) {
         this.hasCollision = hasCollision;
         this.type = type;
         this.spriteView = new ImageView();
@@ -43,7 +43,7 @@ public abstract class IEntity extends Parent {
         this.getChildren().add(spriteView);
     }
 
-    protected IEntity(EEntityType type, Vec2d coord, boolean hasCollision) {
+    protected AEntity(EEntityType type, Vec2d coord, boolean hasCollision) {
         this.hasCollision = hasCollision;
         this.type = type;
         this.spriteView = new ImageView();
@@ -60,7 +60,7 @@ public abstract class IEntity extends Parent {
      * @param spritePath    le chemin (file:/...) du sprite
      * @param type          le type de l'entité
      */
-    public IEntity(String spritePath, EEntityType type, boolean hasCollision) {
+    public AEntity(String spritePath, EEntityType type, boolean hasCollision) {
         this.hasCollision = hasCollision;
         this.type = type;
         this.spriteView = new ImageView(new Image(spritePath));

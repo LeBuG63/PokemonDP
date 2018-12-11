@@ -1,6 +1,5 @@
 package pokdp.Entity.Pokemon;
 
-import javafx.beans.binding.IntegerExpression;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
@@ -8,9 +7,7 @@ import javafx.beans.property.StringProperty;
 import pokdp.Entity.*;
 import pokdp.Type.EType;
 
-import java.util.logging.Level;
-
-public class Pokemon extends IEntity {
+public class Pokemon extends AEntity {
 
     private final int PV     = 0;
 

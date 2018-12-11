@@ -1,18 +1,11 @@
 package pokdp.Combat.Screen;
 
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import pokdp.Entity.Pokemon.Pokemon;
 
-import java.io.File;
-import java.net.MalformedURLException;
-
-public class UIPokemonStatSimple extends IUIPokemonStat {
+public class UIPokemonStatSimple extends AUIPokemonStat {
     private Label name = new Label();
     private Label level = new Label();
     private Label hp = new Label();

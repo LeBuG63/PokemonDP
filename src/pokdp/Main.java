@@ -1,11 +1,8 @@
 package pokdp;
 
 import pokdp.AnimationManager.AnimationManagerSprite;
-import pokdp.Combat.Screen.CombatSceneSimple;
-import pokdp.Combat.Screen.ICombatScene;
-import pokdp.Entity.IEntity;
+import pokdp.Entity.AEntity;
 import pokdp.Entity.Player.Player;
-import pokdp.Entity.Pokemon.Pokemon;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -13,20 +10,13 @@ import javafx.scene.paint.Color;
 import javafx.scene.transform.Scale;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-import pokdp.ScreenComponent.Cursor;
-import pokdp.LoadPokemon.IPokemonLoader;
-import pokdp.LoadPokemon.PokemonLoaderXML;
 import pokdp.Map.ETerrainType;
 import pokdp.Map.Map;
 import pokdp.Map.ObjectSet;
-import pokdp.Music.MusicManager;
 import pokdp.Music.Playlist;
-import pokdp.Type.EType;
 import pokdp.Utils.Constantes;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 public class Main extends Application {
 
@@ -51,23 +41,23 @@ public class Main extends Application {
 
         map.addTileSet(new ObjectSet()
         {{
-            load("file:assets/sprites/terrain/grass1.png", 0.80f, IEntity.HAS_NO_COLLISION);
-            load("file:assets/sprites/terrain/grass2.png", 0.10f, IEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/terrain/grass1.png", 0.80f, AEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/terrain/grass2.png", 0.10f, AEntity.HAS_NO_COLLISION);
 
             load(new ArrayList<String>()
             {{
                 add("file:assets/sprites/terrain/flower1_down.png");
                 add("file:assets/sprites/terrain/flower1_up.png");
-            }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION, IEntity.HAS_NO_COLLISION);
+            }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION, AEntity.HAS_NO_COLLISION);
         }}, ETerrainType.FOREST);
 
         map.addDecoObjectSet(new ObjectSet()
         {{
-            load("file:assets/sprites/terrain/tallgrass1.png", 0.5f, IEntity.HAS_NO_COLLISION);
-            load("file:assets/sprites/objects/factory1.png", 0.10f, IEntity.HAS_COLLISION);
-            load("file:assets/sprites/objects/mart1.png", 0.10f, IEntity.HAS_COLLISION);
-            load("file:assets/sprites/objects/pc1.png", 0.10f, IEntity.HAS_COLLISION);
-            load("file:assets/sprites/objects/littletree1.png", 0.55f, IEntity.HAS_COLLISION);
+            load("file:assets/sprites/terrain/tallgrass1.png", 0.5f, AEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/objects/factory1.png", 0.10f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/mart1.png", 0.10f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/pc1.png", 0.10f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/littletree1.png", 0.55f, AEntity.HAS_COLLISION);
         }}, ETerrainType.FOREST);
 
         Playlist playlist = new Playlist()
@@ -86,7 +76,7 @@ public class Main extends Application {
 
         playlist.play();
 
-        IEntity player = new Player(scene, map.getDecoObjectList(), primaryStage);
+        AEntity player = new Player(scene, map.getDecoObjectList(), primaryStage);
 
         map.generateRandomTerrain(ETerrainType.FOREST);
 
@@ -102,26 +92,26 @@ public class Main extends Application {
 
         map.addTileSet(new ObjectSet()
         {{
-            load("file:assets/sprites/terrain/grass1.png", 0.80f, IEntity.HAS_NO_COLLISION);
-            load("file:assets/sprites/terrain/grass2.png", 0.10f, IEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/terrain/grass1.png", 0.80f, AEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/terrain/grass2.png", 0.10f, AEntity.HAS_NO_COLLISION);
 
             load(new ArrayList<String>()
             {{
                 add("file:assets/sprites/terrain/flower1_down.png");
                 add("file:assets/sprites/terrain/flower1_up.png");
-            }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION, IEntity.HAS_NO_COLLISION);
+            }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION, AEntity.HAS_NO_COLLISION);
         }}, ETerrainType.FOREST);
 
         map.addDecoObjectSet(new ObjectSet()
         {{
-            load("file:assets/sprites/terrain/tallgrass1.png", 0.5f, IEntity.HAS_NO_COLLISION);
-            load("file:assets/sprites/objects/factory1.png", 0.10f, IEntity.HAS_COLLISION);
-            load("file:assets/sprites/objects/mart1.png", 0.10f, IEntity.HAS_COLLISION);
-            load("file:assets/sprites/objects/pc1.png", 0.10f, IEntity.HAS_COLLISION);
-            load("file:assets/sprites/objects/littletree1.png", 0.55f, IEntity.HAS_COLLISION);
+            load("file:assets/sprites/terrain/tallgrass1.png", 0.5f, AEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/objects/factory1.png", 0.10f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/mart1.png", 0.10f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/pc1.png", 0.10f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/littletree1.png", 0.55f, AEntity.HAS_COLLISION);
         }}, ETerrainType.FOREST);
 
-        IEntity player = new Player(scene, map.getDecoObjectList());
+        AEntity player = new Player(scene, map.getDecoObjectList());
 
         IPokemonLoader pokemonLoader = new PokemonLoaderXML();
         HashMap<String, Pokemon> pokemonHashMap = pokemonLoader.load("assets/pokemons/list.xml");

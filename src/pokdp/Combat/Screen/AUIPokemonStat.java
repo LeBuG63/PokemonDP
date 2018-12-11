@@ -5,12 +5,12 @@ import javafx.scene.layout.GridPane;
 
 import pokdp.Entity.Pokemon.Pokemon;
 
-abstract class IUIPokemonStat extends Parent {
+abstract class AUIPokemonStat extends Parent {
     private Pokemon pokemon;
 
     private GridPane gridPane = new GridPane();
 
-    IUIPokemonStat() {
+    AUIPokemonStat() {
         this.getChildren().add(gridPane);
     }
 

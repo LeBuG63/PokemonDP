@@ -1,10 +1,8 @@
 package pokdp.AnimationManager;
 
-import pokdp.Entity.IEntity;
+import pokdp.Entity.AEntity;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.image.Image;
 
 import java.util.ArrayList;
@@ -75,7 +73,7 @@ public class AnimationManagerSprite  {
      * @param millis        la durée entre chaque frame
      * @param cycleCount    son nombre de cycles
      */
-    public void setTimeline(IEntity entity, double millis, int cycleCount) {
+    public void setTimeline(AEntity entity, double millis, int cycleCount) {
         this.timeline.getKeyFrames().add(
                 new KeyFrame(Duration.millis(millis),
                         actionEvent -> entity.setSprite(getNextFrame())));
