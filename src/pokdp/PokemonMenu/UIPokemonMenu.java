@@ -18,16 +18,14 @@ public class UIPokemonMenu  {
 
     public UIPokemonMenu(){
         try{
+            MenuController m = new MenuController();
             FXMLLoader fxmlLoader = new FXMLLoader();
-
             FileInputStream fxmlStream = new FileInputStream("src/pokdp/PokemonMenu/PokemonMenu.fxml");
-
             Parent root2 = (Parent)fxmlLoader.load(fxmlStream);
-/*
-            URL url = getClass().getClassLoader().getResource("../mainMenu.fxml");
-            root = FXMLLoader.load(url);
-  */
+
+            m.initialize();
             scene = new Scene(root2,1600,900);
+
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }

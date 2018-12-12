@@ -2,85 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bfb9f8d-23bb-4774-a912-566443977a86" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/combat/combat_template1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/PokemonMenu.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/combat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokdp/Attack/Attack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokdp/Attack/IAttackManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokdp/Combat/Screen/CombatSceneSimple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokdp/Combat/Screen/SelectPokemonScreen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokdp/Combat/Screen/UIPokemonStatSimple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitlab/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitlab/issue_templates/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab/issue_templates/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitlab/issue_templates/Backend.md" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab/issue_templates/Backend.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pokdp/PokemonMenu/MenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/musics/opening.wav" beforeDir="false" afterPath="$PROJECT_DIR$/assets/musics/opening.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/musics/palettetown.wav" beforeDir="false" afterPath="$PROJECT_DIR$/assets/musics/palettetown.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/musics/professoroak.wav" beforeDir="false" afterPath="$PROJECT_DIR$/assets/musics/professoroak.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/pokemons/list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pokemons/list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/objects/factory1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/objects/factory1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/objects/fence_horizontal1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/objects/fence_horizontal1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/objects/fence_vertical1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/objects/fence_vertical1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/objects/lake1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/objects/lake1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/objects/littletree1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/objects/littletree1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/objects/mart1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/objects/mart1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/objects/pc1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/objects/pc1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/objects/tree1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/objects/tree1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/player1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/player1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/player2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/player2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/player3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/player3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/sasha_down1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/sasha_down1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/sasha_down2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/sasha_down2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/sasha_down3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/sasha_down3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/sasha_left1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/sasha_left1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/sasha_left2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/sasha_left2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/sasha_left3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/sasha_left3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/sasha_right1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/sasha_right1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/sasha_right2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/sasha_right2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/sasha_right3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/sasha_right3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/sasha_up1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/sasha_up1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/sasha_up2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/sasha_up2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/player/sasha_up3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/player/sasha_up3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/terrain/flower1_down.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/terrain/flower1_down.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/terrain/flower1_up.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/terrain/flower1_up.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/terrain/grass1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/terrain/grass1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/terrain/grass2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/terrain/grass2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/terrain/lake.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/terrain/lake.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprites/terrain/tallgrass1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sprites/terrain/tallgrass1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pokemondp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pokemondp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/AnimationManager/AnimationManagerSprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/AnimationManager/AnimationManagerSprite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Combat/Screen/ICombatScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Combat/Screen/ICombatScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Combat/Screen/IUIPokemonStat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Combat/Screen/IUIPokemonStat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/EEntityType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/EEntityType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/IEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/IEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/EventManager/EEventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/EventManager/EEventType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/EventManager/EventManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/EventManager/EventManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/LoadPokemon/IPokemonLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/LoadPokemon/IPokemonLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/LoadPokemon/PokemonLoaderXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/LoadPokemon/PokemonLoaderXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Map/ETerrainType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/ETerrainType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Map/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Map/Object/CollisionBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/Object/CollisionBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Map/Object/DecoObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/Object/DecoObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Map/Object/ICollisionObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/Object/ICollisionObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Map/Tile/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/Tile/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Music/MusicManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Music/MusicManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Music/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Music/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Type/EType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Type/EType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Utils/Constantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Utils/Constantes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/mainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/mainMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/sample.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,7 +24,7 @@
     <session id="-1214951399">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.opened" value="3" />
@@ -106,24 +32,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="fxml" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="6" />
+          <entry key="java" value="8" />
+          <entry key="png" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="6" />
+          <entry key="Image" value="1" />
+          <entry key="JAVA" value="8" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="17" />
+          <entry key="fxml" value="351" />
+          <entry key="java" value="1002" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="17" />
+          <entry key="JAVA" value="1002" />
+          <entry key="XML" value="351" />
         </counts>
       </usages-collector>
     </session>
@@ -214,47 +146,97 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Object/ICollisionObject.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="37" />
+              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="96" column="26" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
+            <state relative-caret-position="152">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#471#472#0" expanded="true" />
+                <element signature="e#510#511#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+            <state relative-caret-position="225">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
             </state>
           </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/styles/PokemonMenu.css">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Tile/Tile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+            <state relative-caret-position="60">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="45">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/EventManager/EventManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/LoadPokemon/IPokemonLoader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -267,8 +249,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -309,9 +291,10 @@
         <option value="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Main.java" />
         <option value="$PROJECT_DIR$/src/pokdp/mainMenu.fxml" />
-        <option value="$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml" />
         <option value="$PROJECT_DIR$/assets/styles/PokemonMenu.css" />
+        <option value="$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml" />
+        <option value="$PROJECT_DIR$/src/pokdp/PokemonMenu/MenuController.java" />
+        <option value="$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java" />
       </list>
     </option>
   </component>
@@ -343,7 +326,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -360,25 +342,7 @@
               <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
               <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="combat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="pokemons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="sprites" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="background" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
@@ -390,6 +354,13 @@
               <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pokdp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
+              <item name="AnimationManager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
@@ -403,6 +374,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,17 +383,17 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544190926873" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544612213574" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/styles" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/pokdp" />
       <recent name="$PROJECT_DIR$/src/pokdp/PokemonMenu" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/styles" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -438,7 +410,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/java-8-openjdk-amd64/jre" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="pokdp.Main" />
       <module name="pokemondp" />
@@ -475,9 +447,9 @@
     <option name="totallyTimeSpent" value="24205000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1680" height="1023" extended-state="6" />
+    <frame x="0" y="27" width="1600" height="873" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1740196" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26610824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -486,15 +458,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.40677965" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4463277" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40625" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44602272" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292011" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32768363" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3252841" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.3292011" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -508,6 +480,38 @@
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Module Dependencies" order="9" weight="0.32991013" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26610824" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40625" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4463277" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292011" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32670453" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.3292011" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.068035945" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Module Dependencies" order="9" weight="0.32991013" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -540,13 +544,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ETerrainType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Object/ICollisionObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="14" selection-start-column="14" selection-end-column="14" />
@@ -593,6 +590,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -632,11 +632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -700,8 +697,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/LoadPokemon/IPokemonLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="60">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -732,17 +732,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/fxml/JavaFXBuilderFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
-          <folding>
-            <element signature="e#2200#2201#0" expanded="true" />
-            <element signature="e#2263#2264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/fxml/JavaFXBuilderFactory.java" />
     <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="875">
@@ -750,20 +740,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="3067" selection-start-line="3067" selection-end-line="3067" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
     <entry file="file://$PROJECT_DIR$/src/pokdp/mainMenu.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -784,36 +768,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/.nfs0000000001d80e270000003e">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="1155">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/.nfs0000000001d80e270000003e" />
     <entry file="file://$PROJECT_DIR$/assets/styles/PokemonMenu.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/background/pokemonMenu.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Object/ICollisionObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/MenuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+            <element signature="e#510#511#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

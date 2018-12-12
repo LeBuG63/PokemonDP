@@ -9,13 +9,17 @@
 <GridPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:id="pane"
+            fx:controller="pokdp.PokemonMenu.MenuController"
             prefHeight="400.0" prefWidth="600.0">
-    <GridPane>
-        <Button>z</Button>
-        <Button>z</Button>
-        <Button>z</Button>
-        <Button>z</Button>
-        <Button>z</Button>
-        <Button>z</Button>
+    <GridPane maxHeight="Infinity" minHeight="-Infinity">
+    <style>
+
+    </style>
+        <Label fx:id="labelName1" GridPane.rowIndex="0" />
+        <Label fx:id="labelName2" GridPane.rowIndex="1"/>
+        <Label fx:id="labelName3" GridPane.rowIndex="2"/>
+        <Label fx:id="labelName4" GridPane.rowIndex="3"/>
+        <Label fx:id="labelName5" GridPane.rowIndex="4"/>
+        <Label fx:id="labelName6" GridPane.rowIndex="5"/>
     </GridPane>
 </GridPane>
