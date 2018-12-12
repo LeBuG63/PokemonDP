@@ -27,7 +27,7 @@ public class Attack implements IAttackManager{
 
     @Override
     public int calculateDamage(Pokemon defender, Pokemon attacker) {
-        final int STAT_INDEX = (isSpecial)?5:3;
-        return ((((2*attacker.getLevel())/5)+2)*basePower*(attacker.getStatFromArray(STAT_INDEX)/defender.getStatFromArray(STAT_INDEX+2))/50)+2;
+        final int STAT_INDEX = (isSpecial)?3:1;
+        return ((((2*attacker.getLevel())/5)+2)*basePower*(attacker.getStatFromArray(STAT_INDEX)/defender.getStatFromArray(STAT_INDEX+1))/50)+2;
     }
 }

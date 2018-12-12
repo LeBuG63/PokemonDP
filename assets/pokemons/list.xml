@@ -27,6 +27,25 @@
             <istat>31</istat>
             <istat>31</istat>
         </iv>
+
+        <attacks>
+            <attack name = "comp1">
+                <basePower>10</basePower>
+                <isSpecial>true</isSpecial>
+            </attack>
+            <attack name = "comp2">
+                <basePower>15</basePower>
+                <isSpecial>false</isSpecial>
+            </attack>
+            <attack name = "comp3">
+                <basePower>20</basePower>
+                <isSpecial>true</isSpecial>
+            </attack>
+            <attack name = "comp4">
+                <basePower>40</basePower>
+                <isSpecial>false</isSpecial>
+            </attack>
+        </attacks>
     </Pokemon>
     <Pokemon name="Tauros">
         <type>FEU</type>
@@ -55,5 +74,24 @@
             <istat>31</istat>
             <istat>31</istat>
         </iv>
+
+        <attacks>
+            <attack name = "comp1">
+                <basePower>10</basePower>
+                <isSpecial>true</isSpecial>
+            </attack>
+            <attack name = "comp2">
+                <basePower>15</basePower>
+                <isSpecial>false</isSpecial>
+            </attack>
+            <attack name = "comp3">
+                <basePower>20</basePower>
+                <isSpecial>true</isSpecial>
+            </attack>
+            <attack name = "comp4">
+                <basePower>40</basePower>
+                <isSpecial>false</isSpecial>
+            </attack>
+        </attacks>
     </Pokemon>
 </list>

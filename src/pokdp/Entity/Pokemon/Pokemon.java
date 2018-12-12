@@ -4,8 +4,12 @@ import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
+import pokdp.Attack.Attack;
 import pokdp.Entity.*;
 import pokdp.Type.EType;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Pokemon extends AEntity {
 
@@ -18,8 +22,8 @@ public class Pokemon extends AEntity {
     //private int level;
 
     private int[] arrBaseStats , arrEV , arrIV, currentStats;
-
     private EType type;
+    private List<Attack> attackList = new ArrayList<>();
 
     public Pokemon(String name, String spritePath, int[] arrBaseStats , int[] arrEV , int[] arrIV, int level ,EType type) throws IllegalArgumentException{
         super(EEntityType.POKEMON, false);
@@ -91,4 +95,21 @@ public class Pokemon extends AEntity {
         setCurrentStats();
     }
 
+    public void addAttack(Attack attack) {
+        attackList.add(attack
+        );
+
+    }
+
+    public void addAllAttacks(List<Attack> attackList) {
+        for(Attack a : attackList) {
+            addAttack(a);
+        }
+
+        //attackList.addAll(attackList);
+    }
+
+    public List<Attack> getAttacks() {
+        return attackList;
+    }
 }

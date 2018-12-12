@@ -33,8 +33,8 @@ public class CombatSceneSimple implements ICombatScene {
         gridPane.setPrefHeight(height);
         gridPane.setPrefWidth(width);
 
-        statPlayer = new UIPokemonStatSimple(player);
-        statEnemy = new UIPokemonStatSimple(enemy);
+        statPlayer = new UIPokemonStatSimple(player, enemy);
+        statEnemy = new UIPokemonStatSimple(enemy, player);
 
         gridPane.add(statPlayer, 0, 0);
         gridPane.add(statEnemy, 0, 1);
