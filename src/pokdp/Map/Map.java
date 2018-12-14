@@ -1,6 +1,6 @@
 package pokdp.Map;
 
-import pokdp.Entity.IEntity;
+import pokdp.Entity.AEntity;
 import pokdp.Map.Object.DecoObject;
 import pokdp.Map.Tile.Tile;
 import javafx.scene.Parent;
@@ -60,12 +60,12 @@ public class Map extends Parent {
         for (int x = 0; x < width; ++x) {
             for (int y = 0; y < height; ++y) {
                 if(x == 0 || x == width - 1) {
-                    DecoObject fence_ver = new DecoObject("file:assets/sprites/objects/fence_vertical1.png", x * Constantes.DEFAULT_TILE_MAP_WIDTH + 5, y * Constantes.DEFAULT_TILE_MAP_HEIGHT, IEntity.HAS_COLLISION);
+                    DecoObject fence_ver = new DecoObject("file:assets/sprites/objects/fence_vertical1.png", x * Constantes.DEFAULT_TILE_MAP_WIDTH + 5, y * Constantes.DEFAULT_TILE_MAP_HEIGHT, AEntity.HAS_COLLISION);
 
                     fencesList.add(fence_ver);
                 }
                 else if(y == 0 || y == height - 1) {
-                    DecoObject fence_hor = new DecoObject("file:assets/sprites/objects/fence_horizontal1.png", (x-1) * Constantes.DEFAULT_TILE_MAP_WIDTH, y * Constantes.DEFAULT_TILE_MAP_HEIGHT + 10, IEntity.HAS_COLLISION);
+                    DecoObject fence_hor = new DecoObject("file:assets/sprites/objects/fence_horizontal1.png", (x-1) * Constantes.DEFAULT_TILE_MAP_WIDTH, y * Constantes.DEFAULT_TILE_MAP_HEIGHT + 10, AEntity.HAS_COLLISION);
 
                     fencesList.add(fence_hor);
                 }

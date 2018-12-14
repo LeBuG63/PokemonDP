@@ -2,13 +2,13 @@ package pokdp.Map.Object;
 
 import pokdp.AnimationManager.AnimationManagerSprite;
 import pokdp.Entity.EEntityType;
-import pokdp.Entity.IEntity;
+import pokdp.Entity.AEntity;
 import javafx.scene.image.Image;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DecoObject extends IEntity {
+public class DecoObject extends AEntity {
     private AnimationManagerSprite animationManager = new AnimationManagerSprite();
 
     public DecoObject(String spritePath, double x, double y, double w, double h, boolean hasCollision) {
@@ -41,7 +41,7 @@ public class DecoObject extends IEntity {
     }
 
     public DecoObject(List<String> spritePath, double x, double y, CollisionBox collisionBox) {
-        this(spritePath, x, y, IEntity.HAS_COLLISION);
+        this(spritePath, x, y, AEntity.HAS_COLLISION);
 
         setCollisionObject(collisionBox);
     }
@@ -51,7 +51,7 @@ public class DecoObject extends IEntity {
      * @param entity
      * @return
      */
-    public boolean isInCollision(IEntity entity) {
+    public boolean isInCollision(AEntity entity) {
         if(!entity.hasCollision()) return false;
         return getCollisionObject().isInCollision(entity.getCollisionObject());
     }

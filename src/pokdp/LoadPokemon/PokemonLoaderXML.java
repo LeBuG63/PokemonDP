@@ -4,6 +4,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import pokdp.Attack.Attack;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Type.EType;
 
@@ -37,19 +38,26 @@ public class PokemonLoaderXML implements IPokemonLoader {
 
                     final String name = pokemon.getAttribute("name");
                     final Element type = (Element)pokemon.getElementsByTagName("type").item(0);
-
+                    final Element sprite = (Element)pokemon.getElementsByTagName("sprite").item(0);
                     //     private int[] arrBaseStats , arrEV , arrIV, currentStats;
 
                     final NodeList baseStats = pokemon.getElementsByTagName(("bstat"));
-                    final NodeList ev = pokemon.getElementsByTagName(("estat"));
-                    final NodeList iv = pokemon.getElementsByTagName(("istat"));
-
+                    final NodeList ev = pokemon.getElementsByTagName("estat");
+                    final NodeList iv = pokemon.getElementsByTagName("istat");
+                    final NodeList attacks = pokemon.getElementsByTagName("attack");
 
                     int[] arrBaseStats = getArrayIntWithElements(baseStats);
                     int[] arrEV = getArrayIntWithElements(ev);
                     int[] arrIV = getArrayIntWithElements(iv);
 
-                    pokemonHashmap.put(name, new Pokemon(name, arrBaseStats, arrEV, arrIV, 0, EType.valueOf(type.getTextContent())));
+                    List<Attack> attackList = getAttacksWithElements(attacks);
+
+                    String sSprite = String.valueOf(sprite.getTextContent());
+
+                    Pokemon pok = new Pokemon(name, sSprite, arrBaseStats, arrEV, arrIV, 0, EType.valueOf(type.getTextContent()));
+                    pok.addAllAttacks(attackList);
+
+                    pokemonHashmap.put(name, pok);
                 }
             }
         }
@@ -60,6 +68,30 @@ public class PokemonLoaderXML implements IPokemonLoader {
         return pokemonHashmap;
     }
 
+<<<<<<< HEAD
+=======
+    private static List<Attack> getAttacksWithElements(NodeList elements) {
+        List<Attack> attackList = new ArrayList<>();
+
+        for(int i = 0; i < elements.getLength(); ++i) {
+            if(elements.item(i).getNodeType() == Node.ELEMENT_NODE) {
+                final Element attack = (Element)elements.item(i);
+
+                final String name = attack.getAttribute("name");
+                final Element elementBasePower = (Element)attack.getElementsByTagName("basePower").item(0);
+                final Element elementIsSpecial = (Element)attack.getElementsByTagName("isSpecial").item(0);
+
+                final int basePower = Integer.parseInt(elementBasePower.getTextContent());
+                final boolean isSpecial = Boolean.parseBoolean(elementIsSpecial.getTextContent());
+
+                attackList.add(new Attack(name, basePower, isSpecial));
+            }
+        }
+
+        return attackList;
+    }
+
+>>>>>>> f0491ba07135180a4bad065f2686ab0e7d84ee94
     private static int[] getArrayIntWithElements(NodeList elements) {
 
         final int length = elements.getLength();

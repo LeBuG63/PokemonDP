@@ -2,6 +2,7 @@
 <list>
     <Pokemon name="Bullbizare">
         <type>EAU</type>
+        <sprite>http://www.pokestadium.com/sprites/black-white/bulbasaur.png</sprite>
         <baseStats>
             <bstat>45</bstat>
             <bstat>49</bstat>
@@ -26,9 +27,29 @@
             <istat>31</istat>
             <istat>31</istat>
         </iv>
+
+        <attacks>
+            <attack name = "comp1">
+                <basePower>10</basePower>
+                <isSpecial>true</isSpecial>
+            </attack>
+            <attack name = "comp2">
+                <basePower>15</basePower>
+                <isSpecial>false</isSpecial>
+            </attack>
+            <attack name = "comp3">
+                <basePower>20</basePower>
+                <isSpecial>true</isSpecial>
+            </attack>
+            <attack name = "comp4">
+                <basePower>40</basePower>
+                <isSpecial>false</isSpecial>
+            </attack>
+        </attacks>
     </Pokemon>
     <Pokemon name="Tauros">
         <type>FEU</type>
+        <sprite>http://www.pokestadium.com/sprites/black-white/tauros.png</sprite>
         <baseStats>
             <bstat>75</bstat>
             <bstat>100</bstat>
@@ -53,5 +74,24 @@
             <istat>31</istat>
             <istat>31</istat>
         </iv>
+
+        <attacks>
+            <attack name = "comp1">
+                <basePower>10</basePower>
+                <isSpecial>true</isSpecial>
+            </attack>
+            <attack name = "comp2">
+                <basePower>15</basePower>
+                <isSpecial>false</isSpecial>
+            </attack>
+            <attack name = "comp3">
+                <basePower>20</basePower>
+                <isSpecial>true</isSpecial>
+            </attack>
+            <attack name = "comp4">
+                <basePower>40</basePower>
+                <isSpecial>false</isSpecial>
+            </attack>
+        </attacks>
     </Pokemon>
 </list>
