@@ -17,13 +17,10 @@ public class UIPokemonStatSimple extends AUIPokemonStat {
     private Label level = new Label();
     private Label hp = new Label();
 
-
-    private ImageView sprite;
-
     public UIPokemonStatSimple(Pokemon pokemon, Pokemon enemy) {
-        sprite = new ImageView(new Image(pokemon.getSpriteURL(),  300, 300, false, false));
+        setPokemonImageView(new ImageView(new Image(pokemon.getSpriteURL(),  300, 300, false, false)));
 
-        getGridPane().add(sprite, 2, 0);
+        getGridPane().add(getPokemonImageView(), 2, 0);
         getGridPane().add(name, 0, 0);
         getGridPane().add(level, 1, 0);
         getGridPane().add(hp, 3, 1);
@@ -33,7 +30,5 @@ public class UIPokemonStatSimple extends AUIPokemonStat {
         hp.textProperty().bind(pokemon.getHpProperty().asString());
 
         int i = 4;
-
-
     }
 }

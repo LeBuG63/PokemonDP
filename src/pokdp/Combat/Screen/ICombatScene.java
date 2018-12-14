@@ -11,8 +11,9 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
 
 public interface ICombatScene {
-    static void launch(Stage primaryStage, String pokemonPlayer, String pokemonEnnemy) {};
+    static void launch(Stage primaryStage, Player player, Pokemon pokemonPlayer, Pokemon pokemonEnnemy) {};
 }

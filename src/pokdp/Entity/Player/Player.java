@@ -32,6 +32,9 @@ public class Player extends AEntity {
     private AnimationManagerSprite[] animationManager = new AnimationManagerSprite[4];
     private List<Pokemon>   pokemonList = new ArrayList<>();
 
+    /// TODO: a changé quand la liste des pokemons sera implémentée
+    private Pokemon pokemonAct = Constantes.pokemonHashMap.get("Bullbizare");
+
     /**
      * @param scene la scène dans laquelle se trouve le joueur
      */
@@ -46,12 +49,10 @@ public class Player extends AEntity {
         for(int i = 0; i < 4; ++i) {
             animationManager[i] = new AnimationManagerSprite(SPRITE_HEIGHT);
 
-            for(int j = 0; j < 3; ++j) {
-                animationManager[i].addFrameDefaultSize("file:assets/sprites/player/sasha_" + stringLook[i] + (j+1) + ".png");
+            for (int j = 0; j < 3; ++j) {
+                animationManager[i].addFrameDefaultSize("file:assets/sprites/player/sasha_" + stringLook[i] + (j + 1) + ".png");
             }
         }
-
-        Random random = new Random();
 
         setSprite(animationManager[LOOK_DOWN].getFrame(0));
 
@@ -59,12 +60,11 @@ public class Player extends AEntity {
         getCollisionObject().setCoord(new Vec2d(getCollisionObject().getCoord().x, getCollisionObject().getCoord().y - getCollisionObject().getCoord().y/2));
         // ajout de l'événement pour déplacer le joueur
         getEventManager().add((EventHandler<KeyEvent>) event -> {
+            boolean collision = false;
             Vec2d save = new Vec2d(getCoord());
 
-            boolean collision = false;
-
-            if(random.nextDouble() <= Constantes.PROBA_COMBAT) {
-                CombatSceneSimple.launch(primaryStage, "Bullbizare", "Tauros");
+            if(Math.random() < Constantes.PROBA_COMBAT) {
+                CombatSceneSimple.launch(primaryStage, this, getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
             }
 
             switch (event.getCode()) {
@@ -117,5 +117,12 @@ public class Player extends AEntity {
 
     public List<Pokemon> getPokemonList() {
         return pokemonList;
+    }
+    public void addPokemon(Pokemon pokemon) {
+        pokemonList.add(pokemon);
+    }
+
+    public Pokemon getPokemon() {
+        return pokemonAct;
     }
 }

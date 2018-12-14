@@ -21,6 +21,7 @@ public class Pokemon extends AEntity {
     private String spritePath;
     //private int level;
 
+    private boolean isDefending = false;
     private int[] arrBaseStats , arrEV , arrIV, currentStats;
     private EType type;
     private List<Attack> attackList = new ArrayList<>();
@@ -68,6 +69,14 @@ public class Pokemon extends AEntity {
      */
     public int getStatFromArray(int index){
         return currentStats[index];
+    }
+
+    public boolean isDefending() {
+        return isDefending;
+    }
+
+    public void setDefense(boolean defense) {
+        isDefending = defense;
     }
 
     public void setPV(int hp) {
