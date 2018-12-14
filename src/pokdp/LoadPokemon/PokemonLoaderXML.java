@@ -54,7 +54,7 @@ public class PokemonLoaderXML implements IPokemonLoader {
 
                     String sSprite = String.valueOf(sprite.getTextContent());
 
-                    Pokemon pok = new Pokemon(name, sSprite, arrBaseStats, arrEV, arrIV, 0, EType.valueOf(type.getTextContent()));
+                    Pokemon pok = new Pokemon(name, sSprite, arrBaseStats, arrEV, arrIV, 5, EType.valueOf(type.getTextContent()));
                     pok.addAllAttacks(attackList);
 
                     pokemonHashmap.put(name, pok);

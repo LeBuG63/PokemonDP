@@ -17,7 +17,6 @@ public class UIPokemonStatSimple extends AUIPokemonStat {
     private Label level = new Label();
     private Label hp = new Label();
 
-    private List<Button> buttonList = new ArrayList<>();
 
     private ImageView sprite;
 
@@ -35,19 +34,6 @@ public class UIPokemonStatSimple extends AUIPokemonStat {
 
         int i = 4;
 
-        for(Attack attack : pokemon.getAttacks()) {
-            Button button = new Button(attack.getName());
 
-            button.setOnAction(new EventHandler<ActionEvent>() {
-                @Override
-                public void handle(ActionEvent actionEvent) {
-                    int damage = attack.calculateDamage(pokemon, enemy);
-                    enemy.setPV(enemy.getPV() - damage);
-                }
-            });
-
-            getGridPane().add(button, i++, 0);
-            buttonList.add(button);
-        }
     }
 }

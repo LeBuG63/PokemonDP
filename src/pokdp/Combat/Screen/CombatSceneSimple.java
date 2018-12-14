@@ -1,6 +1,7 @@
 package pokdp.Combat.Screen;
 
 import javafx.beans.property.IntegerProperty;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -9,9 +10,13 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import pokdp.Attack.Attack;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Utils.Constantes;
 import pokdp.World.Screen.WorldScreen;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class CombatSceneSimple implements ICombatScene {
     private static Scene scene;
@@ -21,7 +26,9 @@ public class CombatSceneSimple implements ICombatScene {
     private AUIPokemonStat statPlayer;
     private AUIPokemonStat statEnemy;
 
-    public CombatSceneSimple(Pokemon player, Pokemon enemy, double width, double height) {
+    private List<Button> buttonList = new ArrayList<>();
+
+    public CombatSceneSimple(Stage primaryStage, Pokemon player, Pokemon enemy, double width, double height) {
         Button buttonDefense = new Button("Defense");
 
         gridPane.setPrefHeight(height);
@@ -34,6 +41,27 @@ public class CombatSceneSimple implements ICombatScene {
         gridPane.add(statEnemy, 0, 1);
         gridPane.add(buttonDefense, 0, 3);
 
+        int i = 4;
+
+        for(Attack attack : player.getAttacks()) {
+            Button button = new Button(attack.getName());
+
+            button.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+                    int damage = attack.calculateDamage(player, enemy);
+                    enemy.setPV(enemy.getPV() - damage);
+
+                    if(enemy.getPV() <= 0) {
+                        WorldScreen.load(primaryStage);
+                    }
+                }
+            });
+
+            gridPane.add(button, i++, 0);
+            buttonList.add(button);
+        }
+
         BackgroundImage backgroundImage = new BackgroundImage(new Image("file:assets/combat/combat_template1.png", 1920, 1080, true, false), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
     //    gridPane.setBackground(new Background(backgroundImage));
 
@@ -45,16 +73,7 @@ public class CombatSceneSimple implements ICombatScene {
         Pokemon player = Constantes.pokemonHashMap.get(pokemonPlayer);
         Pokemon enemy = Constantes.pokemonHashMap.get(pokemonEnemy);
 
-        ICombatScene combatScene = new CombatSceneSimple(player, enemy, 1920, 1080);
-
-        scene.setOnMouseMoved(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent mouseEvent) {
-                if(enemy.getPV() < 0) {
-                    WorldScreen.load(primaryStage);
-                }
-            }
-        });
+        ICombatScene combatScene = new CombatSceneSimple(primaryStage, player, enemy, 1920, 1080);
 
         primaryStage.setScene(scene);
     }

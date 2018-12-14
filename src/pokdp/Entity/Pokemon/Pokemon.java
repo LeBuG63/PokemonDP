@@ -48,7 +48,7 @@ public class Pokemon extends AEntity {
     private void setCurrentStats() {
         int level = getLevel();
 
-        this.currentStats[PV] = (((2*arrBaseStats[PV]+arrIV[PV]+(arrEV[PV]/4))*level/100)+level+10);
+        setPV(((2*arrBaseStats[PV]+arrIV[PV]+(arrEV[PV]/4))*level/100)+level+10);
         for(int i = 1 ; i < 6 ; i++)
               this.currentStats[i] = ((2*arrBaseStats[i]+arrIV[i]+(arrEV[i]/4))*level/100)+5;
     }
@@ -76,7 +76,7 @@ public class Pokemon extends AEntity {
     }
 
     public int getPV() {
-        return HpProperty.getValue();
+        return currentStats[PV];
     }
 
     public IntegerProperty getHpProperty() {
@@ -85,6 +85,10 @@ public class Pokemon extends AEntity {
 
     public String getSpriteURL() {
         return spritePath;
+    }
+
+    public int getPVMax() {
+        return (((2*arrBaseStats[PV]+arrIV[PV]+(arrEV[PV]/4))*getLevel()/100)+getLevel()+10);
     }
 
     /**
@@ -105,7 +109,6 @@ public class Pokemon extends AEntity {
         for(Attack a : attackList) {
             addAttack(a);
         }
-
         //attackList.addAll(attackList);
     }
 
