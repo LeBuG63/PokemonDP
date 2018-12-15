@@ -1,17 +1,11 @@
 package pokdp.World.Screen;
 
-import javafx.event.Event;
-import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import pokdp.AnimationManager.AnimationManagerSprite;
-import pokdp.Combat.Screen.CombatSceneSimple;
 import pokdp.Entity.AEntity;
 import pokdp.Entity.Player.Player;
-import pokdp.EventManager.EEventType;
-import pokdp.EventManager.EventManager;
 import pokdp.Map.ETerrainType;
 import pokdp.Map.Map;
 import pokdp.Map.ObjectSet;

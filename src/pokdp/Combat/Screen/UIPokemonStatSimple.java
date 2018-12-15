@@ -23,7 +23,7 @@ public class UIPokemonStatSimple extends AUIPokemonStat {
         getGridPane().add(getPokemonImageView(), 2, 0);
         getGridPane().add(name, 0, 0);
         getGridPane().add(level, 1, 0);
-        getGridPane().add(hp, 3, 1);
+        getGridPane().add(hp, 3, 2);
 
         name.textProperty().bind(pokemon.getNameProperty());
         level.textProperty().bind(pokemon.getLevelProperty().asString());

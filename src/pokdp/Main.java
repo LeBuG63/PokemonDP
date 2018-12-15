@@ -1,5 +1,6 @@
 package pokdp;
 
+import javafx.scene.text.Font;
 import pokdp.AnimationManager.AnimationManagerSprite;
 import pokdp.Entity.AEntity;
 import pokdp.Entity.Player.Player;
