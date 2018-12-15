@@ -1,11 +1,16 @@
 package pokdp.World.Screen;
 
+import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import pokdp.AnimationManager.AnimationManagerSprite;
 import pokdp.Entity.AEntity;
 import pokdp.Entity.Player.Player;
+import pokdp.Entity.Player.RandomCombatEvent;
+import pokdp.EventManager.EEventType;
+import pokdp.EventManager.EventManager;
 import pokdp.Map.ETerrainType;
 import pokdp.Map.Map;
 import pokdp.Map.ObjectSet;
@@ -21,7 +26,10 @@ public class WorldScene extends AScene {
     public void load(double width, double height) {
         Group group = new Group();
 
-        super.setScene(new Scene(group));
+        EventManager eventManager = new EventManager();
+        RandomCombatEvent randomCombatEvent;
+
+        setScene(new Scene(group));
 
         Map map = new Map(1920 / Constantes.DEFAULT_TILE_MAP_WIDTH,1080 / Constantes.DEFAULT_TILE_MAP_HEIGHT + 1);
 
@@ -58,10 +66,28 @@ public class WorldScene extends AScene {
 
         AEntity player = new Player(getScene(), map.getDecoObjectList(), SceneManager.getStage());
 
+        randomCombatEvent = new RandomCombatEvent((Player) player);
+
+        eventManager.add(new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+                boolean combat = randomCombatEvent.roll();
+
+                if(combat) {
+                    SceneManager.setSceneCombat("CombatScene", ((Player) player), ((Player) player).getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
+                }
+
+                ((Player) player).processKeyboardEvent(event);
+            }
+        }, EEventType.KEYBOARD_PRESSED);
+
+        eventManager.attachAllEventsToScene(getScene());
+
         map.generateRandomTerrain(ETerrainType.FOREST);
 
         group.getChildren().add(map);
         group.getChildren().add(player);
+
 
     }
 }

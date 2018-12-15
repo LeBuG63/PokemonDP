@@ -8,6 +8,7 @@ import pokdp.Entity.AEntity;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.EventManager.EEventType;
 import pokdp.Map.Object.DecoObject;
+import pokdp.Map.ObjectSet;
 import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;
 import com.sun.javafx.geom.Vec2d;
@@ -32,6 +33,7 @@ public class Player extends AEntity {
 
     private AnimationManagerSprite[] animationManager = new AnimationManagerSprite[4];
     private List<Pokemon>   pokemonList = new ArrayList<>();
+    private List<DecoObject> decoObjectList;
 
     /// TODO: a changé quand la liste des pokemons sera implémentée
     private Pokemon pokemonAct = Constantes.pokemonHashMap.get("Bullbizare");
@@ -41,6 +43,10 @@ public class Player extends AEntity {
      */
     public Player(Scene scene, List<DecoObject> decoObjectList, Stage primaryStage) {
         super(EEntityType.PLAYER, new Vec2d(100,100), AEntity.HAS_COLLISION);
+
+        this.decoObjectList = decoObjectList;
+
+        RandomCombatEvent randomCombatEvent = new RandomCombatEvent(this);
 
         final int SPRITE_WIDTH = Constantes.DEFAULT_SPRITE_WIDTH;
         final int SPRITE_HEIGHT = Constantes.DEFAULT_SPRITE_HEIGHT;
@@ -59,48 +65,6 @@ public class Player extends AEntity {
 
         getCollisionObject().setHeight(getCollisionObject().getHeight()/2);
         getCollisionObject().setCoord(new Vec2d(getCollisionObject().getCoord().x, getCollisionObject().getCoord().y - getCollisionObject().getCoord().y/2));
-        // ajout de l'événement pour déplacer le joueur
-        getEventManager().add((EventHandler<KeyEvent>) event -> {
-            boolean collision = false;
-            Vec2d save = new Vec2d(getCoord());
-
-            if(Math.random() < Constantes.PROBA_COMBAT) {
-                SceneManager.setSceneCombat("CombatScene", this, getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
-                //CombatSceneSimple.launch(primaryStage, this, getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
-            }
-
-            switch (event.getCode()) {
-                case UP:
-                    setCoordY(getCoord().y - KEYBOARD_MOVEMENT_DELTA);
-                    collision = isCollidingWithDeco(decoObjectList);
-                    look = LOOK_UP;
-                    break;
-                case RIGHT:
-                    setCoordX(getCoord().x + KEYBOARD_MOVEMENT_DELTA);
-                    collision = isCollidingWithDeco(decoObjectList);
-                    look = LOOK_RIGHT;
-                    break;
-                case DOWN:
-                    setCoordY(getCoord().y + KEYBOARD_MOVEMENT_DELTA);
-                    collision = isCollidingWithDeco(decoObjectList);
-                    look = LOOK_DOWN;
-                    break;
-                case LEFT:
-                    setCoordX(getCoord().x - KEYBOARD_MOVEMENT_DELTA);
-                    collision = isCollidingWithDeco(decoObjectList);
-                    look = LOOK_LEFT;
-                    break;
-            }
-
-            if(collision) {
-                setCoord(save);
-            }
-
-            setSprite(animationManager[look].getNextFrame());
-        }, EEventType.KEYBOARD_PRESSED);
-
-
-        getEventManager().attachAllEventsToScene(scene);
     }
 
     /**
@@ -115,6 +79,40 @@ public class Player extends AEntity {
             }
         }
         return false;
+    }
+
+    public void processKeyboardEvent(KeyEvent event) {
+           boolean collision = false;
+           Vec2d save = new Vec2d(getCoord());
+
+           switch (event.getCode()) {
+               case UP:
+                   setCoordY(getCoord().y - KEYBOARD_MOVEMENT_DELTA);
+                   collision = isCollidingWithDeco(decoObjectList);
+                   look = LOOK_UP;
+                   break;
+               case RIGHT:
+                   setCoordX(getCoord().x + KEYBOARD_MOVEMENT_DELTA);
+                   collision = isCollidingWithDeco(decoObjectList);
+                   look = LOOK_RIGHT;
+                   break;
+               case DOWN:
+                   setCoordY(getCoord().y + KEYBOARD_MOVEMENT_DELTA);
+                   collision = isCollidingWithDeco(decoObjectList);
+                   look = LOOK_DOWN;
+                   break;
+               case LEFT:
+                   setCoordX(getCoord().x - KEYBOARD_MOVEMENT_DELTA);
+                   collision = isCollidingWithDeco(decoObjectList);
+                   look = LOOK_LEFT;
+                   break;
+           }
+
+           if (collision) {
+               setCoord(save);
+           }
+
+           setSprite(animationManager[look].getNextFrame());
     }
 
     public List<Pokemon> getPokemonList() {
