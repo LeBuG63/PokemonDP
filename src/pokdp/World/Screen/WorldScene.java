@@ -10,15 +10,18 @@ import pokdp.Map.ETerrainType;
 import pokdp.Map.Map;
 import pokdp.Map.ObjectSet;
 import pokdp.Music.Playlist;
+import pokdp.Scene.AScene;
+import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;
 
 import java.util.ArrayList;
 
-public class WorldScreen {
-
-    public static void load(Stage primaryStage) {
+public class WorldScene extends AScene {
+    @Override
+    public void load(double width, double height) {
         Group group = new Group();
-        Scene wolrdScene = new Scene(group);
+
+        super.setScene(new Scene(group));
 
         Map map = new Map(1920 / Constantes.DEFAULT_TILE_MAP_WIDTH,1080 / Constantes.DEFAULT_TILE_MAP_HEIGHT + 1);
 
@@ -53,13 +56,12 @@ public class WorldScreen {
         playlist.shuffle();
         playlist.play();
 
-        AEntity player = new Player(wolrdScene, map.getDecoObjectList(), primaryStage);
+        AEntity player = new Player(getScene(), map.getDecoObjectList(), SceneManager.getStage());
 
         map.generateRandomTerrain(ETerrainType.FOREST);
 
         group.getChildren().add(map);
         group.getChildren().add(player);
 
-        primaryStage.setScene(wolrdScene);
     }
 }

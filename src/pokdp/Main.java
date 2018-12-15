@@ -1,24 +1,14 @@
 package pokdp;
 
-import javafx.scene.text.Font;
-import pokdp.AnimationManager.AnimationManagerSprite;
-import pokdp.Entity.AEntity;
-import pokdp.Entity.Player.Player;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.paint.Color;
 import javafx.scene.transform.Scale;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-import pokdp.Map.ETerrainType;
-import pokdp.Map.Map;
-import pokdp.Map.ObjectSet;
-import pokdp.Music.Playlist;
-import pokdp.Utils.Constantes;
-import pokdp.World.Screen.WorldScreen;
-
-import java.util.ArrayList;
+import pokdp.Combat.Screen.CombatSceneSimple;
+import pokdp.Scene.SceneManager;
+import pokdp.World.Screen.WorldScene;
 
 public class Main extends Application {
 
@@ -30,7 +20,6 @@ public class Main extends Application {
         double screenHeight = Screen.getPrimary().getVisualBounds().getHeight();
 
         Group root = new Group();
-        Scene scene = new Scene(root, screenWidth, screenHeight, Color.WHITE);
 
         primaryStage.setFullScreen(true);
 
@@ -39,7 +28,15 @@ public class Main extends Application {
         scale.setPivotX(0);
         scale.setPivotY(0);
 
-        WorldScreen.load(primaryStage);
+        SceneManager.setManager(primaryStage, screenWidth, screenHeight);
+
+        WorldScene worldScene = new WorldScene();
+        CombatSceneSimple combatSceneSimple = new CombatSceneSimple();
+
+        SceneManager.addScene(worldScene, "WorldScene");
+        SceneManager.addScene(combatSceneSimple, "CombatScene");
+
+        SceneManager.setScene("WorldScene");
 
         primaryStage.show();
     }

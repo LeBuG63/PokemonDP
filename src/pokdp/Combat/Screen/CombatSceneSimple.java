@@ -2,42 +2,39 @@ package pokdp.Combat.Screen;
 
 import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
-import javafx.beans.property.IntegerProperty;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.event.EventType;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import pokdp.Attack.Attack;
 import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
-import pokdp.Type.Style;
-import pokdp.Utils.Button.ButtonStyle;
-import pokdp.Utils.Constantes;
-import pokdp.World.Screen.WorldScreen;
+import pokdp.Scene.AScene;
+import pokdp.Scene.SceneManager;
+import pokdp.Scene.Wrappers.WrapperSceneCombat;
+import pokdp.World.Screen.WorldScene;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class CombatSceneSimple implements ICombatScene {
-    private static Scene scene;
-
+public class CombatSceneSimple extends WrapperSceneCombat {
     private Label actionEnemy = new Label();
     private Label actionPlayer = new Label();
     private GridPane gridPane = new GridPane();
+    private GridPane actionPane = new GridPane(); // et pas action man
+
+    private Button buttonDefense = new Button("Defense");
+
 
     private AUIPokemonStat statPlayer;
     private AUIPokemonStat statEnemy;
@@ -46,16 +43,15 @@ public class CombatSceneSimple implements ICombatScene {
 
     private boolean deadOccuredOnce = false;
 
-    public CombatSceneSimple(Stage primaryStage, Player player, Pokemon pokPlayer, Pokemon enemy, double width, double height) {
-        Button buttonDefense = new Button("Defense");
-
+    @Override
+    public void load(double width, double height) {
         gridPane.setPrefHeight(height);
         gridPane.setPrefWidth(width);
 
-        statPlayer = new UIPokemonStatSimple(pokPlayer, enemy);
-        statEnemy = new UIPokemonStatSimple(enemy, pokPlayer);
-
         gridPane.setStyle("-fx-background-color: white; -fx-grid-lines-visible: true");
+
+        gridPane.add(actionEnemy, 2,1);
+        gridPane.add(actionPlayer, 0,1);
 
         ColumnConstraints colFirstPok = new ColumnConstraints();
         ColumnConstraints colSectPok = new ColumnConstraints();
@@ -69,22 +65,27 @@ public class CombatSceneSimple implements ICombatScene {
         gridPane.getColumnConstraints().add(colAction);
         gridPane.getColumnConstraints().add(colSectPok);
 
-        gridPane.add(statPlayer, 0, 2);
-        gridPane.add(buttonDefense, 0, 4);
-        gridPane.add(actionEnemy, 2,1);
-        gridPane.add(actionPlayer, 0,1);
-        gridPane.add(statEnemy, 2, 0);
+        gridPane.add(actionPane, 0, 3);
 
+        gridPane.add(buttonDefense, 0, 4);
+        setScene(new Scene(gridPane, 1920, 1080, Color.WHITE));
+
+        getScene().getStylesheets().add("file:assets/styles/combat.css");
+    }
+
+    @Override
+    public void setAttributes(Player player, Pokemon pokPlayer, Pokemon enemy) {
         buttonDefense.setOnAction(actionEvent -> {
             pokPlayer.setDefense(true);
             actionPlayer.setText(pokPlayer.getName() + " se défend!");
         });
 
+        statPlayer = new UIPokemonStatSimple(pokPlayer, enemy);
+        statEnemy = new UIPokemonStatSimple(enemy, pokPlayer);
+
+        gridPane.add(statPlayer, 0, 2);
+        gridPane.add(statEnemy, 2, 0);
         int i = 0;
-
-        GridPane actionPane = new GridPane(); // et pas action man
-
-        gridPane.add(actionPane, 0, 3);
 
         for(Attack attack : pokPlayer.getAttacks()) {
             Button button = new Button(attack.getName());
@@ -107,7 +108,7 @@ public class CombatSceneSimple implements ICombatScene {
 
                         if (enemy.getPV() <= 0) {
                             processDeathAnim(attack, pokPlayer, enemy, statEnemy.getPokemonImageView());
-                            addContinue(primaryStage, player, pokPlayer, enemy);
+                            addContinue(player, pokPlayer, enemy);
                         }
 
                         enemyAttack(pokPlayer, enemy);
@@ -119,12 +120,15 @@ public class CombatSceneSimple implements ICombatScene {
             buttonList.add(button);
         }
 
-        BackgroundImage backgroundImage = new BackgroundImage(new Image("file:assets/combat/combat_template1.png", 1920, 1080, true, false), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+    }
+
+    public void initialize(Player player, Pokemon pokPlayer, Pokemon enemy) {
+        statPlayer = new UIPokemonStatSimple(pokPlayer, enemy);
+        statEnemy = new UIPokemonStatSimple(enemy, pokPlayer);
+
+        //BackgroundImage backgroundImage = new BackgroundImage(new Image("file:assets/combat/combat_template1.png", 1920, 1080, true, false), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
     //    gridPane.setBackground(new Background(backgroundImage));
 
-        scene = new Scene(gridPane, 1920, 1080, Color.WHITE);
-
-        scene.getStylesheets().add("file:assets/styles/combat.css");
     }
 
     private void enemyAttack(Pokemon player, Pokemon enemy) {
@@ -161,11 +165,11 @@ public class CombatSceneSimple implements ICombatScene {
         }
     }
 
-    public void addDeath() {
+    private void addDeath() {
         throw new NotImplementedException();
     }
 
-    public void addContinue(Stage primaryStage, Player player, Pokemon attacker, Pokemon victim) {
+    private void addContinue(Player player, Pokemon attacker, Pokemon victim) {
         Button continueButton = new Button("continuer...");
 
         continueButton.setOnAction(new EventHandler<ActionEvent>() {
@@ -179,14 +183,15 @@ public class CombatSceneSimple implements ICombatScene {
                 if(!player.alreayHavePokemon(victim.getName())) {
                     player.addPokemon(victim);
                 }
-                WorldScreen.load(primaryStage);
+
+                SceneManager.setScene("WorldScene");
             }
         });
 
         gridPane.add(continueButton, 1, 1);
     }
 
-    public void processDeathAnim(Attack attack, Pokemon attacker, Pokemon victim, ImageView imageView) {
+    private void processDeathAnim(Attack attack, Pokemon attacker, Pokemon victim, ImageView imageView) {
         int damage = attack.calculateDamage(attacker, victim);
         victim.setPV(victim.getPV() - damage);
 
@@ -205,18 +210,12 @@ public class CombatSceneSimple implements ICombatScene {
         }
     }
 
-    public void playTranslationAnimation(Node node, float offsetX, int cycleCount, int duration) {
+    private void playTranslationAnimation(Node node, float offsetX, int cycleCount, int duration) {
         TranslateTransition tt = new TranslateTransition(Duration.millis(duration), node);
         tt.setByX(offsetX);
         tt.setCycleCount(cycleCount);
         tt.setAutoReverse(true);
 
         tt.play();
-    }
-
-    public static void launch(Stage primaryStage, Player player, Pokemon pokemonPlayer, Pokemon pokemonEnemy) {
-        ICombatScene combatScene = new CombatSceneSimple(primaryStage, player, pokemonPlayer, pokemonEnemy, 1920, 1080);
-
-        primaryStage.setScene(scene);
     }
 }

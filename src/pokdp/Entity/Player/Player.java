@@ -8,6 +8,7 @@ import pokdp.Entity.AEntity;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.EventManager.EEventType;
 import pokdp.Map.Object.DecoObject;
+import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;
 import com.sun.javafx.geom.Vec2d;
 import javafx.event.EventHandler;
@@ -64,7 +65,8 @@ public class Player extends AEntity {
             Vec2d save = new Vec2d(getCoord());
 
             if(Math.random() < Constantes.PROBA_COMBAT) {
-                CombatSceneSimple.launch(primaryStage, this, getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
+                SceneManager.setSceneCombat("CombatScene", this, getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
+                //CombatSceneSimple.launch(primaryStage, this, getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
             }
 
             switch (event.getCode()) {
