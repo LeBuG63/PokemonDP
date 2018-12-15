@@ -125,4 +125,14 @@ public class Player extends AEntity {
     public Pokemon getPokemon() {
         return pokemonAct;
     }
+
+    public boolean alreayHavePokemon(String name) {
+        for(Pokemon pokemon : getPokemonList()) {
+            if(pokemon.getName() == name) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

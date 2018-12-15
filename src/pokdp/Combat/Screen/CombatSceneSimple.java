@@ -176,7 +176,9 @@ public class CombatSceneSimple implements ICombatScene {
                 attacker.levelUp();
                 attacker.setPV(attacker.getPVMax());
 
-                player.addPokemon(victim);
+                if(!player.alreayHavePokemon(victim.getName())) {
+                    player.addPokemon(victim);
+                }
                 WorldScreen.load(primaryStage);
             }
         });
