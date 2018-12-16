@@ -27,6 +27,7 @@ public class ObjectSet {
         animationDurationHash.put(set.size() - 1, duration);
     }
 
+
     /**
      * stock un chemin pour un sprite
      * @param path      le chemin du sprite
@@ -38,6 +39,14 @@ public class ObjectSet {
         converted.add(path);
 
         load(converted, proba, hasCollision);
+    }
+
+    public void load(String path, boolean hasCollision) {
+        ArrayList<String> converted = new ArrayList<>();
+
+        converted.add(path);
+
+        load(converted, 1.0f, hasCollision);
     }
 
     public List<String> getPathObject(int i) {

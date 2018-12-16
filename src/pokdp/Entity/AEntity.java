@@ -61,6 +61,7 @@ public abstract class AEntity extends Parent {
      * @param type          le type de l'entité
      */
     public AEntity(String spritePath, EEntityType type, boolean hasCollision) {
+
         this.hasCollision = hasCollision;
         this.type = type;
         this.spriteView = new ImageView(new Image(spritePath));

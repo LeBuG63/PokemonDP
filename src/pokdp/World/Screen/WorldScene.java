@@ -31,29 +31,37 @@ public class WorldScene extends AScene {
 
         setScene(new Scene(group));
 
-        Map map = new Map(1920 / Constantes.DEFAULT_TILE_MAP_WIDTH,1080 / Constantes.DEFAULT_TILE_MAP_HEIGHT + 1);
+        Map map = new Map(1600 / Constantes.DEFAULT_TILE_MAP_WIDTH,900 / Constantes.DEFAULT_TILE_MAP_HEIGHT );
 
-        map.addTileSet(new ObjectSet()
-        {{
-            load("file:assets/sprites/terrain/grass1.png", 0.80f, AEntity.HAS_NO_COLLISION);
-            load("file:assets/sprites/terrain/grass2.png", 0.10f, AEntity.HAS_NO_COLLISION);
 
-            load(new ArrayList<String>()
-            {{
-                add("file:assets/sprites/terrain/flower1_down.png");
-                add("file:assets/sprites/terrain/flower1_up.png");
-            }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION, AEntity.HAS_NO_COLLISION);
-        }}, ETerrainType.FOREST);
+            map.addTileSet(new ObjectSet() {{
+                load("file:assets/sprites/terrain/grass1.png", 0.80f, AEntity.HAS_NO_COLLISION);
+                load("file:assets/sprites/terrain/grass2.png", 0.10f, AEntity.HAS_NO_COLLISION);
 
-        map.addDecoObjectSet(new ObjectSet()
-        {{
-            load("file:assets/sprites/terrain/tallgrass1.png", 0.5f, AEntity.HAS_NO_COLLISION);
-            load("file:assets/sprites/objects/factory1.png", 0.10f, AEntity.HAS_COLLISION);
-            load("file:assets/sprites/objects/mart1.png", 0.10f, AEntity.HAS_COLLISION);
-            load("file:assets/sprites/objects/pc1.png", 0.10f, AEntity.HAS_COLLISION);
-            load("file:assets/sprites/objects/littletree1.png", 0.55f, AEntity.HAS_COLLISION);
-        }}, ETerrainType.FOREST);
+                load(new ArrayList<String>() {{
+                    add("file:assets/sprites/terrain/flower1_down.png");
+                    add("file:assets/sprites/terrain/flower1_up.png");
+                }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION, AEntity.HAS_NO_COLLISION);
+            }}, ETerrainType.FOREST);
 
+            map.addDecoObjectSet(new ObjectSet() {{
+                load("file:assets/sprites/terrain/tallgrass1.png", 0.5f, AEntity.HAS_NO_COLLISION);
+                load("file:assets/sprites/objects/factory1.png", 0.10f, AEntity.HAS_COLLISION);
+                load("file:assets/sprites/objects/mart1.png", 0.10f, AEntity.HAS_COLLISION);
+                load("file:assets/sprites/objects/pc1.png", 0.10f, AEntity.HAS_COLLISION);
+                load("file:assets/sprites/objects/littletree1.png", 0.55f, AEntity.HAS_COLLISION);
+            }}, ETerrainType.FOREST);
+
+            map.addFences(new ObjectSet() {{
+                load("file:assets/sprites/objects/fence_forest_vertical1.png", AEntity.HAS_COLLISION);
+                load("file:assets/sprites/objects/fence_forest_horizontal1.png", AEntity.HAS_COLLISION);
+                load("file:assets/sprites/objects/fence_forest_vertical2.png", AEntity.HAS_COLLISION);
+                load("file:assets/sprites/objects/fence_forest_horizontal1.png", AEntity.HAS_COLLISION);
+                load("file:assets/sprites/objects/fence_forest_cornerupright.png", AEntity.HAS_COLLISION);
+                load("file:assets/sprites/objects/fence_forest_cornerupleft.png", AEntity.HAS_COLLISION);
+                load("file:assets/sprites/objects/fence_forest_cornerdownright.png", AEntity.HAS_COLLISION);
+                load("file:assets/sprites/objects/fence_forest_cornerdownleft.png", AEntity.HAS_COLLISION);
+            }}, ETerrainType.FOREST);
 
         map.addTileSet(new ObjectSet()
         {{
@@ -62,11 +70,43 @@ public class WorldScene extends AScene {
         }}, ETerrainType.SNOW);
 
         map.addDecoObjectSet(new ObjectSet() {{
-            load("file:assets/sprites/terrain/snowrock1.png", 0.15f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/snowrock1.png", 0.15f, AEntity.HAS_COLLISION);
             load("file:assets/sprites/objects/factory1.png", 0.10f, AEntity.HAS_COLLISION);
             load("file:assets/sprites/objects/mart1.png", 0.10f, AEntity.HAS_COLLISION);
         }}, ETerrainType.SNOW);
 
+        map.addFences(new ObjectSet() {{
+            load("file:assets/sprites/objects/fence_snow_vertical1.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_snow_horizontal1.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_snow_vertical2.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_snow_horizontal2.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_snow_cornerupright.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_snow_cornerupleft.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_snow_cornerdownright.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_snow_cornerdownleft.png", AEntity.HAS_COLLISION);
+        }}, ETerrainType.SNOW);
+
+        map.addTileSet(new ObjectSet()
+        {{
+            load("file:assets/sprites/terrain/dirt1.png", 0.80f, AEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/terrain/dirt2.png", 0.30f, AEntity.HAS_NO_COLLISION);
+        }}, ETerrainType.DIRT);
+
+        map.addDecoObjectSet(new ObjectSet() {{
+            load("file:assets/sprites/objects/dirtpebble1.png", 0.15f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/factory1.png", 0.10f, AEntity.HAS_COLLISION);
+        }}, ETerrainType.DIRT);
+
+        map.addFences(new ObjectSet() {{
+            load("file:assets/sprites/objects/fence_dirt_vertical1.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_dirt_horizontal1.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_dirt_vertical2.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_dirt_horizontal2.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_dirt_cornerupright.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_dirt_cornerupleft.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_dirt_cornerdownright.png", AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/fence_dirt_cornerdownleft.png", AEntity.HAS_COLLISION);
+        }}, ETerrainType.DIRT);
 
         Playlist playlist = new Playlist()
         {{
@@ -98,7 +138,7 @@ public class WorldScene extends AScene {
 
         eventManager.attachAllEventsToScene(getScene());
 
-        map.generateRandomTerrain();
+        map.generateRandomTerrain(ETerrainType.FOREST);
 
         group.getChildren().add(map);
         group.getChildren().add(player);

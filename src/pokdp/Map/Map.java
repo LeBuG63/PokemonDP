@@ -1,6 +1,7 @@
 package pokdp.Map;
 
 import pokdp.Entity.AEntity;
+import pokdp.Entity.EEntityType;
 import pokdp.Entity.Player.RandomCombatEvent;
 import pokdp.Map.Object.DecoObject;
 import pokdp.Map.Tile.Tile;
@@ -15,6 +16,8 @@ public class Map extends Parent {
 
     private HashMap<ETerrainType, ObjectSet> tilesetHash = new HashMap<>();
     private HashMap<ETerrainType, ObjectSet> decoObjectsetHash = new HashMap<>();
+
+    private HashMap<ETerrainType, ObjectSet> fencesetHash = new HashMap<>();
 
     private List<Tile> mapTile = new ArrayList<>();
     private List<DecoObject> decoObjectList = new ArrayList<>();
@@ -46,12 +49,54 @@ public class Map extends Parent {
         decoObjectsetHash.put(type, decoObjectSet);
     }
 
+    public void addFences(ObjectSet fenceObjectSet, ETerrainType type) {
+        fencesetHash.put(type, fenceObjectSet);
+    }
+
     public void generateRandomTerrain() {
         Random random = new Random();
 
         int terrainType = random.nextInt(ETerrainType.COUNT.ordinal());
 
         generateRandomTerrain(ETerrainType.values()[terrainType]);
+    }
+
+    public void manageFences(int x, int y, int bottomFenceLimit, int rightFenceLimit, List<DecoObject> fencesList, ETerrainType type) {
+
+        final int fenceupright =  4;
+        final int fenceupleft = 5;
+        final int fencedownright = 6;
+        final int fencedownleft = 7;
+
+        if(x == 0 || x == bottomFenceLimit) {
+            int i = (x == 0) ? 0 : 2;
+
+            i = (x == 0 && y == 0) ? fenceupleft : i;
+            i = (x == bottomFenceLimit && y == 0) ? fenceupright : i;
+            i = (x == bottomFenceLimit && y == rightFenceLimit) ? fencedownright : i;
+            i = (x == 0 && y == rightFenceLimit) ? fencedownleft : i;
+
+            DecoObject fence = new DecoObject(fencesetHash.get(type).getPathObject(i),
+                    x * Constantes.DEFAULT_FENCE_WIDTH,
+                    y * Constantes.DEFAULT_FENCE_HEIGHT + 3,
+                    fencesetHash.get(type).hasCollision(i));
+
+            fence.setFit(Constantes.DEFAULT_FENCE_WIDTH, Constantes.DEFAULT_FENCE_HEIGHT);
+
+            fencesList.add(fence);
+        }
+        else if(y == 0 || y == rightFenceLimit) {
+            int i = (y == 0) ? 1 : 3;
+
+            DecoObject fence = new DecoObject(fencesetHash.get(type).getPathObject(i),
+                    x * Constantes.DEFAULT_FENCE_WIDTH,
+                    y * Constantes.DEFAULT_FENCE_HEIGHT,
+                    fencesetHash.get(type).hasCollision(i));
+
+            fence.setFit(Constantes.DEFAULT_FENCE_WIDTH, Constantes.DEFAULT_FENCE_HEIGHT);
+
+            fencesList.add(fence);
+        }
     }
 
     /**
@@ -69,20 +114,17 @@ public class Map extends Parent {
 
         Random random = new Random();
 
+        final int bottomFenceLimit = width / (Constantes.DEFAULT_FENCE_WIDTH / Constantes.DEFAULT_TILE_MAP_WIDTH) - 1;
+        final int rightFenceLimit = height / (Constantes.DEFAULT_FENCE_HEIGHT / Constantes.DEFAULT_TILE_MAP_HEIGHT) - 1;
+
         for (int x = 0; x < width; ++x) {
             for (int y = 0; y < height; ++y) {
-                if(x == 0 || x == width - 1) {
-                    DecoObject fence_ver = new DecoObject("file:assets/sprites/objects/fence_vertical1.png", x * Constantes.DEFAULT_TILE_MAP_WIDTH + 5, y * Constantes.DEFAULT_TILE_MAP_HEIGHT, AEntity.HAS_COLLISION);
+                manageFences(x, y, bottomFenceLimit, rightFenceLimit, fencesList, type);
 
-                    fencesList.add(fence_ver);
-                }
-                 else if(y == 0 || y == height - 1) {
-                    DecoObject fence_hor = new DecoObject("file:assets/sprites/objects/fence_horizontal1.png", (x-1) * Constantes.DEFAULT_TILE_MAP_WIDTH, y * Constantes.DEFAULT_TILE_MAP_HEIGHT + 10, AEntity.HAS_COLLISION);
-
-                    fencesList.add(fence_hor);
-                }
-                else if (random.nextDouble() > Constantes.PROBA_DECO
-                && (x > 5 && y > 5)) {
+                if (random.nextDouble() > Constantes.PROBA_DECO
+                && (x > 5 && y > 5)
+                && (x < width - 13)
+                && (y < height - 13)) {
                     boolean add = true;
 
                     int i = random.nextInt(decoObjectsetHash.get(type).size());
