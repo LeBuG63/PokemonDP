@@ -9,6 +9,7 @@ import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.EventManager.EEventType;
 import pokdp.Map.Object.DecoObject;
 import pokdp.Map.ObjectSet;
+import pokdp.PokemonMenu.UIPokemonMenu;
 import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;
 import com.sun.javafx.geom.Vec2d;
@@ -34,6 +35,7 @@ public class Player extends AEntity {
     private AnimationManagerSprite[] animationManager = new AnimationManagerSprite[4];
     private List<Pokemon>   pokemonList = new ArrayList<>();
     private List<DecoObject> decoObjectList;
+    private Stage primaryStage;
 
     /// TODO: a changé quand la liste des pokemons sera implémentée
     private Pokemon pokemonAct = Constantes.pokemonHashMap.get("Bullbizare");
@@ -45,6 +47,7 @@ public class Player extends AEntity {
         super(EEntityType.PLAYER, new Vec2d(100,100), AEntity.HAS_COLLISION);
 
         this.decoObjectList = decoObjectList;
+        this.primaryStage = primaryStage;
 
         RandomCombatEvent randomCombatEvent = new RandomCombatEvent(this);
 
@@ -81,7 +84,7 @@ public class Player extends AEntity {
         return false;
     }
 
-    public void processKeyboardEvent(KeyEvent event) {
+    public void processKeyboardEvent(KeyEvent event,Stage primaryStage) {
            boolean collision = false;
            Vec2d save = new Vec2d(getCoord());
 
@@ -105,6 +108,9 @@ public class Player extends AEntity {
                    setCoordX(getCoord().x - KEYBOARD_MOVEMENT_DELTA);
                    collision = isCollidingWithDeco(decoObjectList);
                    look = LOOK_LEFT;
+                   break;
+               case ENTER:
+                   UIPokemonMenu.launch(primaryStage);
                    break;
            }
 

@@ -22,6 +22,13 @@ import pokdp.Utils.Constantes;
 import java.util.ArrayList;
 
 public class WorldScene extends AScene {
+    private Stage primaryStage;
+
+    public WorldScene(Stage primaryStage){
+        super();
+        this.primaryStage = primaryStage;
+    }
+
     @Override
     public void load(double width, double height) {
         Group group = new Group();
@@ -132,7 +139,7 @@ public class WorldScene extends AScene {
                     map.generateRandomTerrain();
                 }
 
-                ((Player) player).processKeyboardEvent(event);
+                ((Player) player).processKeyboardEvent(event,primaryStage);
             }
         }, EEventType.KEYBOARD_PRESSED);
 

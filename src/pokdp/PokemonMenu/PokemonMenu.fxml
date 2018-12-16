@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="pokdp.PokemonMenu.PokemonMenuController"
+            fx:id="pane"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <Label fx:id="labelName1"  GridPane.rowIndex="0"/>
+    <Label fx:id="labelLevel1" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Label fx:id="labelHP1"    GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+
+    <Label fx:id="labelName2" GridPane.rowIndex="1"/>
+    <Label fx:id="labelLevel2" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Label fx:id="labelHP2"    GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+    <Label fx:id="labelName3" GridPane.rowIndex="2"/>
+    <Label fx:id="labelLevel3" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Label fx:id="labelHP3"    GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+
+    <Label fx:id="labelName4" GridPane.rowIndex="3"/>
+    <Label fx:id="labelLevel4" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <Label fx:id="labelHP4"    GridPane.rowIndex="3" GridPane.columnIndex="2"/>
+
+    <Label fx:id="labelName5" GridPane.rowIndex="4"/>
+    <Label fx:id="labelLevel5" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+    <Label fx:id="labelHP5"    GridPane.rowIndex="4" GridPane.columnIndex="2"/>
+
+    <Label fx:id="labelName6" GridPane.rowIndex="5"/>
+    <Label fx:id="labelLevel6" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+    <Label fx:id="labelHP6"    GridPane.rowIndex="5" GridPane.columnIndex="2"/>
+
+
+    <fx:define>
+        <ArrayList fx:id="labelNameList">
+            <fx:reference source="labelName1" />
+            <fx:reference source="labelLevel1"/>
+            <fx:reference source="labelHP1" />
+
+            <fx:reference source="labelName2" />
+            <fx:reference source="labelLevel2" />
+            <fx:reference source="labelHP2" />
+
+            <fx:reference source="labelName3" />
+            <fx:reference source="labelLevel3" />
+            <fx:reference source="labelHP3" />
+
+            <fx:reference source="labelName4" />
+            <fx:reference source="labelLevel4" />
+            <fx:reference source="labelHP4" />
+
+            <fx:reference source="labelName5" />
+            <fx:reference source="labelLevel5" />
+            <fx:reference source="labelHP5" />
+
+            <fx:reference source="labelName6" />
+            <fx:reference source="labelLevel6" />
+            <fx:reference source="labelHP6" />
+        </ArrayList>
+    </fx:define>
+
+</GridPane>
