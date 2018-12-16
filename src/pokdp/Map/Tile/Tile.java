@@ -24,7 +24,6 @@ public class Tile extends AEntity {
     }
 
     /**
-     *
      * @param pathList  la liste des chemins pour les images
      * @param duration  la durée de l'animation, si elle est inférieure à 0 alors la durée sera aléatoire
      */

@@ -23,7 +23,6 @@ public class PokemonLoaderXML implements IPokemonLoader {
         HashMap<String, Pokemon> pokemonHashmap = new HashMap<>();
 
         try {
-
             final DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
             final Document document = documentBuilder.parse(path);
 

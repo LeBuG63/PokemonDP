@@ -45,6 +45,16 @@ public class WorldScene extends AScene {
             }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION, AEntity.HAS_NO_COLLISION);
         }}, ETerrainType.FOREST);
 
+        map.addTileSet(new ObjectSet()
+        {{
+            load("file:assets/sprites/terrain/snow1.png", 0.80f, AEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/terrain/snow2.png", 0.20f, AEntity.HAS_NO_COLLISION);
+        }}, ETerrainType.SNOW);
+
+        map.addDecoObjectSet(new ObjectSet() {{
+            load("file:assets/sprites/terrain/snowrock1.png", 0.10f, AEntity.HAS_NO_COLLISION);
+        }}, ETerrainType.SNOW);
+
         map.addDecoObjectSet(new ObjectSet()
         {{
             load("file:assets/sprites/terrain/tallgrass1.png", 0.5f, AEntity.HAS_NO_COLLISION);
@@ -75,6 +85,7 @@ public class WorldScene extends AScene {
 
                 if(combat) {
                     SceneManager.setSceneCombat("CombatScene", ((Player) player), ((Player) player).getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
+                    map.generateRandomTerrain(ETerrainType.SNOW);
                 }
 
                 ((Player) player).processKeyboardEvent(event);
@@ -87,7 +98,5 @@ public class WorldScene extends AScene {
 
         group.getChildren().add(map);
         group.getChildren().add(player);
-
-
     }
 }

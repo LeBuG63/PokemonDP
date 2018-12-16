@@ -28,13 +28,12 @@ import java.util.List;
 import java.util.Random;
 
 public class CombatSceneSimple extends WrapperSceneCombat {
-    private Label actionEnemy = new Label();
-    private Label actionPlayer = new Label();
+    private Label actionEnemy;
+    private Label actionPlayer;
     private GridPane gridPane = new GridPane();
     private GridPane actionPane = new GridPane(); // et pas action man
 
     private Button buttonDefense = new Button("Defense");
-
 
     private AUIPokemonStat statPlayer;
     private AUIPokemonStat statEnemy;
@@ -50,9 +49,6 @@ public class CombatSceneSimple extends WrapperSceneCombat {
 
         gridPane.setStyle("-fx-background-color: white; -fx-grid-lines-visible: true");
 
-        gridPane.add(actionEnemy, 2,1);
-        gridPane.add(actionPlayer, 0,1);
-
         ColumnConstraints colFirstPok = new ColumnConstraints();
         ColumnConstraints colSectPok = new ColumnConstraints();
         ColumnConstraints colAction = new ColumnConstraints();
@@ -65,9 +61,6 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         gridPane.getColumnConstraints().add(colAction);
         gridPane.getColumnConstraints().add(colSectPok);
 
-        gridPane.add(actionPane, 0, 3);
-
-        gridPane.add(buttonDefense, 0, 4);
         setScene(new Scene(gridPane, 1920, 1080, Color.WHITE));
 
         getScene().getStylesheets().add("file:assets/styles/combat.css");
@@ -80,11 +73,30 @@ public class CombatSceneSimple extends WrapperSceneCombat {
             actionPlayer.setText(pokPlayer.getName() + " se défend!");
         });
 
+        initialize(player, pokPlayer, enemy);
+    }
+
+    private void initialize(Player player, Pokemon pokPlayer, Pokemon enemy) {
+        gridPane.getChildren().clear();
+        actionPane.getChildren().clear();
+        buttonList.clear();
+
+        deadOccuredOnce = false;
+
         statPlayer = new UIPokemonStatSimple(pokPlayer, enemy);
         statEnemy = new UIPokemonStatSimple(enemy, pokPlayer);
 
+        actionPlayer = new Label();
+        actionEnemy = new Label();
+
         gridPane.add(statPlayer, 0, 2);
         gridPane.add(statEnemy, 2, 0);
+
+        gridPane.add(actionEnemy, 2,1);
+        gridPane.add(actionPlayer, 0,1);
+        gridPane.add(actionPane, 0, 3);
+        gridPane.add(buttonDefense, 0, 4);;
+
         int i = 0;
 
         for(Attack attack : pokPlayer.getAttacks()) {
@@ -119,13 +131,6 @@ public class CombatSceneSimple extends WrapperSceneCombat {
             actionPane.add(button, i++, 0);
             buttonList.add(button);
         }
-
-    }
-
-    public void initialize(Player player, Pokemon pokPlayer, Pokemon enemy) {
-        statPlayer = new UIPokemonStatSimple(pokPlayer, enemy);
-        statEnemy = new UIPokemonStatSimple(enemy, pokPlayer);
-
         //BackgroundImage backgroundImage = new BackgroundImage(new Image("file:assets/combat/combat_template1.png", 1920, 1080, true, false), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
     //    gridPane.setBackground(new Background(backgroundImage));
 
@@ -204,9 +209,6 @@ public class CombatSceneSimple extends WrapperSceneCombat {
             fadeTransition.setToValue(0.0);
 
             fadeTransition.play();
-
-            fadeTransition.getOnFinished();
-
         }
     }
 
