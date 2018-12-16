@@ -41,8 +41,6 @@ public class Cursor extends Parent {
                         }
                         break;
                 }
-
-                System.out.println(id);
             }
         }, EEventType.KEYBOARD_PRESSED);
 
