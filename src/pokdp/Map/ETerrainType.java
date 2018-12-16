@@ -1,9 +1,8 @@
 package pokdp.Map;
 
 public enum ETerrainType {
-    NONE,
     FOREST,
-    FIRE,
-    WATER,
-    SNOW
+    SNOW,
+
+    COUNT
 }

@@ -1,6 +1,7 @@
 package pokdp.Map;
 
 import pokdp.Entity.AEntity;
+import pokdp.Entity.Player.RandomCombatEvent;
 import pokdp.Map.Object.DecoObject;
 import pokdp.Map.Tile.Tile;
 import javafx.scene.Parent;
@@ -45,13 +46,24 @@ public class Map extends Parent {
         decoObjectsetHash.put(type, decoObjectSet);
     }
 
+    public void generateRandomTerrain() {
+        Random random = new Random();
+
+        int terrainType = random.nextInt(ETerrainType.COUNT.ordinal());
+
+        generateRandomTerrain(ETerrainType.values()[terrainType]);
+    }
+
     /**
      * génére un terrain aléatoire en fonction du type du terrain
      * @param type  le type du terrain
      */
     public void generateRandomTerrain(ETerrainType type) {
         mapTile.clear();
-        this.getChildren().removeAll();
+        decoObjectList.clear();
+
+        getChildren().removeAll();
+        getChildren().clear();
 
         List<DecoObject> fencesList = new ArrayList<>();
 
@@ -64,7 +76,7 @@ public class Map extends Parent {
 
                     fencesList.add(fence_ver);
                 }
-                else if(y == 0 || y == height - 1) {
+                 else if(y == 0 || y == height - 1) {
                     DecoObject fence_hor = new DecoObject("file:assets/sprites/objects/fence_horizontal1.png", (x-1) * Constantes.DEFAULT_TILE_MAP_WIDTH, y * Constantes.DEFAULT_TILE_MAP_HEIGHT + 10, AEntity.HAS_COLLISION);
 
                     fencesList.add(fence_hor);

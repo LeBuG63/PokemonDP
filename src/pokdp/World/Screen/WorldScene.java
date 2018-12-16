@@ -45,16 +45,6 @@ public class WorldScene extends AScene {
             }}, 0.10f, AnimationManagerSprite.RANDOM_DURATION, AEntity.HAS_NO_COLLISION);
         }}, ETerrainType.FOREST);
 
-        map.addTileSet(new ObjectSet()
-        {{
-            load("file:assets/sprites/terrain/snow1.png", 0.80f, AEntity.HAS_NO_COLLISION);
-            load("file:assets/sprites/terrain/snow2.png", 0.20f, AEntity.HAS_NO_COLLISION);
-        }}, ETerrainType.SNOW);
-
-        map.addDecoObjectSet(new ObjectSet() {{
-            load("file:assets/sprites/terrain/snowrock1.png", 0.10f, AEntity.HAS_NO_COLLISION);
-        }}, ETerrainType.SNOW);
-
         map.addDecoObjectSet(new ObjectSet()
         {{
             load("file:assets/sprites/terrain/tallgrass1.png", 0.5f, AEntity.HAS_NO_COLLISION);
@@ -63,6 +53,20 @@ public class WorldScene extends AScene {
             load("file:assets/sprites/objects/pc1.png", 0.10f, AEntity.HAS_COLLISION);
             load("file:assets/sprites/objects/littletree1.png", 0.55f, AEntity.HAS_COLLISION);
         }}, ETerrainType.FOREST);
+
+
+        map.addTileSet(new ObjectSet()
+        {{
+            load("file:assets/sprites/terrain/snow1.png", 0.80f, AEntity.HAS_NO_COLLISION);
+            load("file:assets/sprites/terrain/snow2.png", 0.30f, AEntity.HAS_NO_COLLISION);
+        }}, ETerrainType.SNOW);
+
+        map.addDecoObjectSet(new ObjectSet() {{
+            load("file:assets/sprites/terrain/snowrock1.png", 0.15f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/factory1.png", 0.10f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/mart1.png", 0.10f, AEntity.HAS_COLLISION);
+        }}, ETerrainType.SNOW);
+
 
         Playlist playlist = new Playlist()
         {{
@@ -85,7 +89,7 @@ public class WorldScene extends AScene {
 
                 if(combat) {
                     SceneManager.setSceneCombat("CombatScene", ((Player) player), ((Player) player).getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
-                    map.generateRandomTerrain(ETerrainType.SNOW);
+                    map.generateRandomTerrain();
                 }
 
                 ((Player) player).processKeyboardEvent(event);
@@ -94,7 +98,7 @@ public class WorldScene extends AScene {
 
         eventManager.attachAllEventsToScene(getScene());
 
-        map.generateRandomTerrain(ETerrainType.FOREST);
+        map.generateRandomTerrain();
 
         group.getChildren().add(map);
         group.getChildren().add(player);
