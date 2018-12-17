@@ -70,9 +70,9 @@ public class WorldScene extends AScene {
         }}, ETerrainType.SNOW);
 
         map.addDecoObjectSet(new ObjectSet() {{
-            load("file:assets/sprites/objects/snowrock1.png", 0.15f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/snowrock1.png", 0.25f, AEntity.HAS_COLLISION);
             load("file:assets/sprites/objects/factory1.png", 0.10f, AEntity.HAS_COLLISION);
-            load("file:assets/sprites/objects/mart1.png", 0.10f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/mart1.png", 0.20f, AEntity.HAS_COLLISION);
         }}, ETerrainType.SNOW);
 
         map.addFences(new ObjectSet() {{
@@ -93,8 +93,8 @@ public class WorldScene extends AScene {
         }}, ETerrainType.DIRT);
 
         map.addDecoObjectSet(new ObjectSet() {{
-            load("file:assets/sprites/objects/dirtpebble1.png", 0.15f, AEntity.HAS_COLLISION);
-            load("file:assets/sprites/objects/factory1.png", 0.10f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/dirtpebble1.png", 0.25f, AEntity.HAS_COLLISION);
+            load("file:assets/sprites/objects/factory1.png", 0.15f, AEntity.HAS_COLLISION);
         }}, ETerrainType.DIRT);
 
         map.addFences(new ObjectSet() {{
@@ -129,6 +129,7 @@ public class WorldScene extends AScene {
 
                 if(combat) {
                     SceneManager.setSceneCombat("CombatScene", ((Player) player), ((Player) player).getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
+                    ((Player) player).resetPosition();
                     map.generateRandomTerrain();
                 }
 

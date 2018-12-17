@@ -35,6 +35,8 @@ public class Player extends AEntity {
     private List<Pokemon>   pokemonList = new ArrayList<>();
     private List<DecoObject> decoObjectList;
 
+    public final static Vec2d DEFAULT_POSITION = new Vec2d(100, 100);
+
     /// TODO: a changé quand la liste des pokemons sera implémentée
     private Pokemon pokemonAct = Constantes.pokemonHashMap.get("Bullbizare");
 
@@ -42,7 +44,7 @@ public class Player extends AEntity {
      * @param scene la scène dans laquelle se trouve le joueur
      */
     public Player(Scene scene, List<DecoObject> decoObjectList, Stage primaryStage) {
-        super(EEntityType.PLAYER, new Vec2d(100,100), AEntity.HAS_COLLISION);
+        super(EEntityType.PLAYER, DEFAULT_POSITION, AEntity.HAS_COLLISION);
 
         this.decoObjectList = decoObjectList;
 
@@ -79,6 +81,10 @@ public class Player extends AEntity {
             }
         }
         return false;
+    }
+
+    public void resetPosition() {
+        setCoord(DEFAULT_POSITION);
     }
 
     public void processKeyboardEvent(KeyEvent event) {
