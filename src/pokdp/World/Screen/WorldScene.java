@@ -1,5 +1,6 @@
 package pokdp.World.Screen;
 
+import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -9,6 +10,7 @@ import pokdp.AnimationManager.AnimationManagerSprite;
 import pokdp.Entity.AEntity;
 import pokdp.Entity.Player.Player;
 import pokdp.Entity.Player.RandomCombatEvent;
+import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.EventManager.EEventType;
 import pokdp.EventManager.EventManager;
 import pokdp.Map.ETerrainType;
@@ -20,6 +22,7 @@ import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class WorldScene extends AScene {
     @Override
@@ -128,7 +131,14 @@ public class WorldScene extends AScene {
                 boolean combat = randomCombatEvent.roll();
 
                 if(combat) {
-                    SceneManager.setSceneCombat("CombatScene", ((Player) player), ((Player) player).getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
+                    Pokemon enemy;
+                    Random random = new Random();
+
+                    int pokemonId = random.nextInt(Constantes.pokemonHashMap.size());
+
+                    enemy = new Pokemon((Pokemon)Constantes.pokemonHashMap.values().toArray()[pokemonId]);
+
+                    SceneManager.setSceneCombat("CombatScene", ((Player) player), ((Player) player).getPokemon(), enemy);
                     ((Player) player).resetPosition();
                     map.generateRandomTerrain();
                 }

@@ -43,6 +43,27 @@ public class Pokemon extends AEntity {
             throw new IllegalArgumentException();
     }
 
+    public Pokemon(Pokemon pok) {
+        this(pok.getName(), pok.getSpriteURL(), pok.getArrBaseStats(), pok.getArrEV(), pok.getArrIV(), pok.getLevel(), pok.getType());
+        addAllAttacks(pok.getAttacks());
+    }
+
+    public EType getType() {
+        return type;
+    }
+
+    private int[] getArrBaseStats() {
+        return arrBaseStats;
+    }
+
+    private int[] getArrEV() {
+        return arrEV;
+    }
+
+    private int[] getArrIV() {
+        return arrIV;
+    }
+
     /**
      * Calcule les attributs d'un pokemon
      */
