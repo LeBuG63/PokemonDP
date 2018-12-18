@@ -47,9 +47,7 @@ public abstract class AEntity extends Parent {
         this.hasCollision = hasCollision;
         this.type = type;
         this.spriteView = new ImageView();
-
         setCollisionObject(new CollisionBox(coord, 0, 0));
-
         setCoord(coord);
 
         this.getChildren().add(spriteView);
@@ -65,9 +63,7 @@ public abstract class AEntity extends Parent {
         this.hasCollision = hasCollision;
         this.type = type;
         this.spriteView = new ImageView(new Image(spritePath));
-
         setCollisionObject(new CollisionBox(getCoord(), spriteView.getFitWidth(), spriteView.getFitHeight()));
-
         this.getChildren().add(spriteView);
     }
 
@@ -79,7 +75,6 @@ public abstract class AEntity extends Parent {
     public void setFit(int w, int h) {
         this.spriteView.setFitHeight(w);
         this.spriteView.setFitWidth(h);
-
         setCollisionObject(new CollisionBox(getCoord(), spriteView.getFitWidth(), spriteView.getFitHeight()));
     }
 

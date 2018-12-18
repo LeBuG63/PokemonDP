@@ -1,25 +1,20 @@
 package pokdp.Entity.Player;
 
+import com.sun.javafx.geom.Vec2d;
+import javafx.scene.Scene;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import pokdp.AnimationManager.AnimationManagerSprite;
-import pokdp.Combat.Screen.CombatSceneSimple;
-import pokdp.Entity.EEntityType;
 import pokdp.Entity.AEntity;
+import pokdp.Entity.EEntityType;
 import pokdp.Entity.Pokemon.Pokemon;
-import pokdp.EventManager.EEventType;
 import pokdp.Map.Object.DecoObject;
-import pokdp.Map.ObjectSet;
 import pokdp.PokemonMenu.UIPokemonMenu;
 import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;
-import com.sun.javafx.geom.Vec2d;
-import javafx.event.EventHandler;
-import javafx.scene.Scene;
-import javafx.scene.input.KeyEvent;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class Player extends AEntity {
     private final int LOOK_UP = 0;
@@ -31,14 +26,11 @@ public class Player extends AEntity {
 
     // Permet de définir le "pas" de pixel
     private static final int KEYBOARD_MOVEMENT_DELTA = 10;
+    private static List<Pokemon>   pokemonList = new ArrayList<>();
 
     private AnimationManagerSprite[] animationManager = new AnimationManagerSprite[4];
-    private List<Pokemon>   pokemonList = new ArrayList<>();
     private List<DecoObject> decoObjectList;
     private Stage primaryStage;
-
-    /// TODO: a changé quand la liste des pokemons sera implémentée
-    private Pokemon pokemonAct = Constantes.pokemonHashMap.get("Bullbizare");
 
     /**
      * @param scene la scène dans laquelle se trouve le joueur
@@ -63,6 +55,7 @@ public class Player extends AEntity {
                 animationManager[i].addFrameDefaultSize("file:assets/sprites/player/sasha_" + stringLook[i] + (j + 1) + ".png");
             }
         }
+        pokemonList.add(Constantes.pokemonHashMap.get("Bullbizare"));
 
         setSprite(animationManager[LOOK_DOWN].getFrame(0));
 
@@ -110,7 +103,9 @@ public class Player extends AEntity {
                    look = LOOK_LEFT;
                    break;
                case ENTER:
-                   UIPokemonMenu.launch(primaryStage);
+                   UIPokemonMenu pokemonMenu = new UIPokemonMenu(primaryStage,pokemonList);
+                   SceneManager.addScene(pokemonMenu,"PokemonMenu");
+                   SceneManager.setScene("PokemonMenu");
                    break;
            }
 
@@ -129,7 +124,7 @@ public class Player extends AEntity {
     }
 
     public Pokemon getPokemon() {
-        return pokemonAct;
+        return pokemonList.get(0);
     }
 
     public boolean alreayHavePokemon(String name) {
@@ -140,5 +135,9 @@ public class Player extends AEntity {
         }
 
         return false;
+    }
+
+    public static void setNewPokemonOrder(List<Pokemon> newPokemonList){
+        pokemonList = newPokemonList;
     }
 }

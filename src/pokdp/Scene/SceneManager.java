@@ -3,9 +3,11 @@ package pokdp.Scene;
 import javafx.stage.Stage;
 import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
+import pokdp.PokemonMenu.PokemonMenuController;
 import pokdp.Scene.Wrappers.WrapperSceneCombat;
 
 import java.util.HashMap;
+import java.util.List;
 
 public abstract class SceneManager {
     private static HashMap<String, AScene> sceneHashMap = new HashMap<>();

@@ -1,16 +1,18 @@
 package pokdp.ScreenComponent;
 
-import javafx.event.Event;
+import com.sun.javafx.geom.Vec2d;
 import javafx.event.EventHandler;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
+import pokdp.Entity.AEntity;
+import pokdp.Entity.EEntityType;
 import pokdp.EventManager.EEventType;
 import pokdp.EventManager.EventManager;
+import pokdp.Scene.SceneManager;
 
-public class Cursor extends Parent {
+public class Cursor extends AEntity {
     private ImageView   imageView;
     private int         max;
     private int         step;
@@ -19,6 +21,7 @@ public class Cursor extends Parent {
     private EventManager eventManager = new EventManager();
 
     public Cursor(Scene scene, String imgPath, double x, int max, int step) {
+        super(EEntityType.NONE,new Vec2d(100,100),AEntity.HAS_NO_COLLISION);
         this.imageView = new ImageView(new Image(imgPath));
         this.max = max;
 
@@ -39,6 +42,9 @@ public class Cursor extends Parent {
                             id++;
                             imageView.setY(imageView.getY() + step);
                         }
+                        break;
+                    case ESCAPE:
+                        SceneManager.setScene("WorldScene");
                         break;
                 }
             }

@@ -124,4 +124,9 @@ public class Pokemon extends AEntity {
     public List<Attack> getAttacks() {
         return attackList;
     }
+
+    @Override
+    public String toString(){
+        return getName()+" lv."+getLevel()+" "+getPV()+"/"+getPVMax();
+    }
 }
