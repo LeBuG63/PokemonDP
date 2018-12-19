@@ -16,6 +16,7 @@ public class Constantes {
     public static final double HITBOX_MARGIN = 20.0f;
     //public static final double PROBA_COMBAT = 0.03f;
     public static final double PROBA_COMBAT = 0.02f;
+    public static final int DIFFICULTY = 2;
 
     public static HashMap<String, Pokemon> pokemonHashMap = PokemonLoaderXML.load("assets/pokemons/list.xml");
 }

@@ -135,12 +135,16 @@ public class WorldScene extends AScene {
                     Random random = new Random();
 
                     int pokemonId = random.nextInt(Constantes.pokemonHashMap.size());
+                    int levelPokPlayer = ((Player) player).getPokemon().getLevel();
+                    int level = levelPokPlayer + Constantes.DIFFICULTY - random.nextInt(2  * Constantes.DIFFICULTY);
 
                     enemy = new Pokemon((Pokemon)Constantes.pokemonHashMap.values().toArray()[pokemonId]);
 
+                    enemy.setLevel(level);
+
                     SceneManager.setSceneCombat("CombatScene", ((Player) player), ((Player) player).getPokemon(), enemy);
                     ((Player) player).resetPosition();
-                    map.generateRandomTerrain();
+
                 }
 
                 ((Player) player).processKeyboardEvent(event);

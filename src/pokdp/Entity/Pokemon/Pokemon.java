@@ -48,9 +48,6 @@ public class Pokemon extends AEntity {
         addAllAttacks(pok.getAttacks());
     }
 
-    public EType getType() {
-        return type;
-    }
 
     private int[] getArrBaseStats() {
         return arrBaseStats;
@@ -62,6 +59,14 @@ public class Pokemon extends AEntity {
 
     private int[] getArrIV() {
         return arrIV;
+    }
+
+    public void setLevel(int level) {
+        LevelProperty.setValue(level);
+    }
+
+    public EType getType() {
+        return type;
     }
 
     /**
