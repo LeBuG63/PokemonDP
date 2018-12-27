@@ -2,7 +2,6 @@ package pokdp;
 
 import javafx.application.Application;
 import javafx.scene.Group;
-import javafx.scene.Scene;
 import javafx.scene.transform.Scale;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
@@ -30,7 +29,7 @@ public class Main extends Application {
 
         SceneManager.setManager(primaryStage, screenWidth, screenHeight);
 
-        WorldScene worldScene = new WorldScene();
+        WorldScene worldScene = new WorldScene(primaryStage);
         CombatSceneSimple combatSceneSimple = new CombatSceneSimple();
 
         SceneManager.addScene(worldScene, "WorldScene");

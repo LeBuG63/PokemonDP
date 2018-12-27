@@ -25,6 +25,13 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class WorldScene extends AScene {
+    private Stage primaryStage;
+
+    public WorldScene(Stage primaryStage){
+        super();
+        this.primaryStage = primaryStage;
+    }
+
     @Override
     public void load(double width, double height) {
         Group group = new Group();
@@ -147,7 +154,7 @@ public class WorldScene extends AScene {
 
                 }
 
-                ((Player) player).processKeyboardEvent(event);
+                ((Player) player).processKeyboardEvent(event,primaryStage);
             }
         }, EEventType.KEYBOARD_PRESSED);
 
