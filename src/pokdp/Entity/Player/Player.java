@@ -35,17 +35,13 @@ public class Player extends AEntity {
 
     /// TODO: a changé quand la liste des pokemons sera implémentée
     private Pokemon pokemonAct = Constantes.pokemonHashMap.get("Bullbizare");
-    private Stage primaryStage;
-
     /**
      * @param scene la scène dans laquelle se trouve le joueur
      */
-    public Player(Scene scene, List<DecoObject> decoObjectList, Stage primaryStage) {
+    public Player(Scene scene, List<DecoObject> decoObjectList) {
         super(EEntityType.PLAYER, DEFAULT_POSITION, AEntity.HAS_COLLISION);
 
         this.decoObjectList = decoObjectList;
-        this.primaryStage = primaryStage;
-
         RandomCombatEvent randomCombatEvent = new RandomCombatEvent(this);
 
         final int SPRITE_WIDTH = Constantes.DEFAULT_SPRITE_WIDTH;
@@ -112,9 +108,7 @@ public class Player extends AEntity {
                    look = LOOK_LEFT;
                    break;
                case ENTER:
-                   UIPokemonMenu pokemonMenu = new UIPokemonMenu(primaryStage,pokemonList);
-                   SceneManager.addScene(pokemonMenu,"PokemonMenu");
-                   SceneManager.setScene("PokemonMenu");
+                   SceneManager.setScenePokemon("PokemonMenu", getPokemonList());
                    break;
            }
 

@@ -6,6 +6,7 @@ import javafx.scene.transform.Scale;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import pokdp.Combat.Screen.CombatSceneSimple;
+import pokdp.PokemonMenu.UIPokemonMenu;
 import pokdp.Scene.SceneManager;
 import pokdp.World.Screen.WorldScene;
 
@@ -31,7 +32,9 @@ public class Main extends Application {
 
         WorldScene worldScene = new WorldScene(primaryStage);
         CombatSceneSimple combatSceneSimple = new CombatSceneSimple();
+        UIPokemonMenu pokemonMenu = new UIPokemonMenu();
 
+        SceneManager.addScene(pokemonMenu,"PokemonMenu");
         SceneManager.addScene(worldScene, "WorldScene");
         SceneManager.addScene(combatSceneSimple, "CombatScene");
 

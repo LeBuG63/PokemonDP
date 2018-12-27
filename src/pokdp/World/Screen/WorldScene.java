@@ -128,7 +128,7 @@ public class WorldScene extends AScene {
         playlist.shuffle();
         playlist.play();
 
-        AEntity player = new Player(getScene(), map.getDecoObjectList(), SceneManager.getStage());
+        AEntity player = new Player(getScene(), map.getDecoObjectList());
 
         randomCombatEvent = new RandomCombatEvent((Player) player);
 

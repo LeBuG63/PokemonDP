@@ -5,6 +5,7 @@ import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.PokemonMenu.PokemonMenuController;
 import pokdp.Scene.Wrappers.WrapperSceneCombat;
+import pokdp.Scene.Wrappers.WrapperScenePokemonMenu;
 
 import java.util.HashMap;
 import java.util.List;
@@ -48,11 +49,21 @@ public abstract class SceneManager {
     }
 
     public static void setSceneCombat(String sceneName, Player player, Pokemon pok1, Pokemon pok2) {
-        WrapperSceneCombat combatScene = (WrapperSceneCombat)sceneHashMap.get(sceneName);
-
-        combatScene.setAttributes(player, pok1, pok2);
-
         if(sceneHashMap.containsKey(sceneName)) {
+            WrapperSceneCombat combatScene = (WrapperSceneCombat)sceneHashMap.get(sceneName);
+
+            combatScene.setAttributes(player, pok1, pok2);
+
+            stage.setScene(sceneHashMap.get(sceneName).getScene());
+        }
+    }
+
+    public static void setScenePokemon(String sceneName, List<Pokemon> pokemonList) {
+        if (sceneHashMap.containsKey(sceneName)) {
+            WrapperScenePokemonMenu scenePokemonMenu = (WrapperScenePokemonMenu) sceneHashMap.get(sceneName);
+
+            scenePokemonMenu.setPokemonList(pokemonList);
+
             stage.setScene(sceneHashMap.get(sceneName).getScene());
         }
     }

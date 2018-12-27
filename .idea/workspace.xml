@@ -5,23 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bfb9f8d-23bb-4774-a912-566443977a86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperScenePokemonMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Utils/Constantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Utils/Constantes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/World/Screen/WorldScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/World/Screen/WorldScene.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/AEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/AEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Combat/Screen/CombatSceneSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Combat/Screen/CombatSceneSimple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Scene/AScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Scene/AScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokdp/Scene/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Scene/SceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/ScreenComponent/Cursor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/ScreenComponent/Cursor.java" afterDir="false" />
->>>>>>> PokemonMenuBinding
+      <change beforePath="$PROJECT_DIR$/src/pokdp/World/Screen/WorldScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/World/Screen/WorldScene.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,7 +92,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="306" />
-          <entry key="JAVA" value="21484" />
+          <entry key="JAVA" value="20326" />
           <entry key="PLAIN_TEXT" value="34" />
           <entry key="XML" value="430" />
         </counts>
@@ -117,26 +109,25 @@
           <entry key="CLASS" value="4" />
           <entry key="CSS" value="2" />
           <entry key="Font" value="1" />
-          <entry key="JAVA" value="181" />
+          <entry key="JAVA" value="176" />
           <entry key="Properties" value="2" />
-          <entry key="XML" value="6" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.44" value="2" />
-          <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.49" value="2" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.52" value="1" />
-          <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
     </session>
@@ -146,53 +137,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/src/pokdp/World/Screen/WorldScene.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="142" column="11" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Utils/Constantes.java">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/SceneManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2037#2038#0" expanded="true" />
-                <element signature="e#2082#2083#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -200,14 +149,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/AScene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+            <state relative-caret-position="210">
+              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
               <folding>
-                <element signature="e#135#136#0" expanded="true" />
-                <element signature="e#163#164#0" expanded="true" />
-                <element signature="e#207#208#0" expanded="true" />
-                <element signature="e#239#240#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperScenePokemonMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -222,34 +177,60 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Combat/Screen/CombatSceneSimple.java">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
-              <caret line="150" selection-start-line="150" selection-end-line="150" />
+            <state relative-caret-position="238">
+              <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
+                <element signature="e#643#644#0" expanded="true" />
+                <element signature="e#1231#1232#0" expanded="true" />
+                <element signature="e#1276#1277#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Player/RandomCombatEvent.java">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
             </state>
           </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ETerrainType.java">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenuController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Combat/Screen/AUIPokemonStat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Combat/Screen/CombatSceneSimple.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="187" column="59" selection-start-line="187" selection-start-column="59" selection-end-line="187" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -257,19 +238,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="390">
+              <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
-=======
-        <entry file="file://$PROJECT_DIR$/src/pokdp/ScreenComponent/Cursor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding>
-                <element signature="e#1900#1901#0" expanded="true" />
-                <element signature="e#1925#1926#0" expanded="true" />
->>>>>>> PokemonMenuBinding
               </folding>
             </state>
           </provider>
@@ -332,26 +304,12 @@
         <option value="$PROJECT_DIR$/src/pokdp/Combat/Screen/ICombatScene.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperCombat.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperSceneCombat.java" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/pokdp/Main.java" />
-=======
->>>>>>> PokemonMenuBinding
         <option value="$PROJECT_DIR$/src/pokdp/Entity/Player/RandomEvent.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Entity/Player/RandomCombatEvent.java" />
         <option value="$PROJECT_DIR$/src/pokdp/LoadPokemon/PokemonLoaderXML.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Map/Tile/Tile.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Map/ETerrainType.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/src/pokdp/Entity/AEntity.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/Map/Map.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/Scene/SceneManager.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/Combat/Screen/CombatSceneSimple.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/World/Screen/WorldScene.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/Utils/Constantes.java" />
-=======
         <option value="$PROJECT_DIR$/src/pokdp/Utils/Constantes.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Map/Map.java" />
         <option value="$PROJECT_DIR$/src/pokdp/World/Screen/WorldScene.java" />
@@ -360,13 +318,13 @@
         <option value="$PROJECT_DIR$/src/pokdp/Scene/AScene.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Scene/SceneManager.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Entity/AEntity.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/Main.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" />
         <option value="$PROJECT_DIR$/src/pokdp/ScreenComponent/Cursor.java" />
         <option value="$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenuController.java" />
-        <option value="$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java" />
         <option value="$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml" />
->>>>>>> PokemonMenuBinding
+        <option value="$PROJECT_DIR$/src/pokdp/Main.java" />
+        <option value="$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java" />
+        <option value="$PROJECT_DIR$/src/pokdp/Combat/Screen/CombatSceneSimple.java" />
       </list>
     </option>
   </component>
@@ -382,19 +340,11 @@
       <select />
     </treeState>
   </component>
-<<<<<<< HEAD
-  <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
-    <option name="y" value="15" />
-    <option name="width" value="758" />
-    <option name="height" value="835" />
-=======
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="176" />
     <option name="y" value="27" />
     <option name="width" value="740" />
     <option name="height" value="689" />
->>>>>>> PokemonMenuBinding
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -406,17 +356,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-=======
       <pane id="PackagesPane" />
-      <pane id="Scope" />
->>>>>>> PokemonMenuBinding
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
               <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
@@ -439,7 +390,7 @@
               <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="Screen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
@@ -447,65 +398,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pokdp" type="462c0819:PsiDirectoryNode" />
               <item name="Entity" type="462c0819:PsiDirectoryNode" />
-              <item name="Player" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
               <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="Pokemon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="LoadPokemon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Map" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Map" type="462c0819:PsiDirectoryNode" />
-              <item name="Object" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Map" type="462c0819:PsiDirectoryNode" />
-              <item name="Tile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Music" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="Player" type="462c0819:PsiDirectoryNode" />
-              <item name="Player" type="1a9f42e2:ClassTreeNode" />
->>>>>>> PokemonMenuBinding
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-              <item name="Pokemon" type="462c0819:PsiDirectoryNode" />
+              <item name="PokemonMenu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
@@ -519,42 +418,28 @@
               <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pokdp" type="462c0819:PsiDirectoryNode" />
+              <item name="Scene" type="462c0819:PsiDirectoryNode" />
+              <item name="Wrappers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
               <item name="ScreenComponent" type="462c0819:PsiDirectoryNode" />
             </path>
-<<<<<<< HEAD
             <path>
               <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
               <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Type" type="462c0819:PsiDirectoryNode" />
+              <item name="Screen" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Utils" type="462c0819:PsiDirectoryNode" />
-              <item name="Button" type="462c0819:PsiDirectoryNode" />
-            </path>
-=======
->>>>>>> PokemonMenuBinding
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-=======
->>>>>>> PokemonMenuBinding
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -563,11 +448,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< HEAD
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545213542626" />
-=======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545156102309" />
->>>>>>> PokemonMenuBinding
     <property name="last_opened_file_path" value="$USER_HOME$/space_invaders" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -628,6 +509,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Cucumber java.All Features in: Button" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -649,10 +531,8 @@
       <workItem from="1544606180155" duration="5672000" />
       <workItem from="1544782071586" duration="9058000" />
       <workItem from="1544867879140" duration="18096000" />
-      <workItem from="1544949800700" duration="9396000" />
-      <workItem from="1545058934867" duration="1444000" />
-      <workItem from="1545166582374" duration="1189000" />
-      <workItem from="1545212693331" duration="847000" />
+      <workItem from="1544949800700" duration="8625000" />
+      <workItem from="1545911487692" duration="615000" />
     </task>
     <servers />
   </component>
@@ -668,19 +548,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79461000" />
+    <option name="totallyTimeSpent" value="75825000" />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="-2" y="-18" width="1604" height="920" extended-state="0" />
+    <frame x="-2" y="18" width="1924" height="1045" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30359435" />
-=======
-    <frame x="0" y="27" width="1600" height="873" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2609536" />
->>>>>>> PokemonMenuBinding
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12513313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -689,26 +563,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290653" />
-<<<<<<< HEAD
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48973042" visible="true" weight="0.28076923" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49578652" weight="0.49255952" />
-=======
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49291238" weight="0.265625" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49291238" visible="true" weight="0.26490065" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49743262" weight="0.4247159" />
->>>>>>> PokemonMenuBinding
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32909605" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5102696" side_tool="true" visible="true" weight="0.28076923" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4961489" weight="0.32344633" />
-=======
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50708765" side_tool="true" weight="0.265625" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4935567" weight="0.3224432" />
->>>>>>> PokemonMenuBinding
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4935567" weight="0.3222958" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="12" weight="0.3292011" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -762,8 +625,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Attack/PhysicalAttack.java" />
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Attack/IDamageResolver.java" />
     <entry file="file://$PROJECT_DIR$/src/pokdp/Music/Playlist.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -867,7 +728,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Combat/Screen/ICombatScene.java" />
-<<<<<<< HEAD
     <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar!/javafx/scene/layout/Pane.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -882,18 +742,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Utils/Button/ButtonStyle.java">
-=======
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperSceneCombat.java" />
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jfxrt.jar!/javafx/scene/layout/Pane.class">
->>>>>>> PokemonMenuBinding
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Utils/Button/ButtonStyle.java" />
     <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Tile/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -912,20 +761,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="56" selection-start-line="56" selection-end-line="56" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Combat/Screen/UIPokemonStatSimple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
->>>>>>> PokemonMenuBinding
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java">
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="750">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="344">
+          <caret line="175" column="44" selection-start-line="175" selection-start-column="44" selection-end-line="175" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Utils/Constantes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -940,130 +792,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/AEntity.java">
-=======
-        <state relative-caret-position="255">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Utils/Button/ButtonStyle.java" />
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Tile/Tile.java">
->>>>>>> PokemonMenuBinding
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="91" column="12" selection-start-line="91" selection-start-column="12" selection-end-line="91" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Combat/Screen/AUIPokemonStat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Combat/Screen/SelectPokemonScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="86" column="34" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/SceneManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/AScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding>
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="175" column="44" selection-start-line="175" selection-start-column="44" selection-end-line="175" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Utils/Constantes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
->>>>>>> PokemonMenuBinding
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperSceneCombat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Combat/Screen/CombatSceneSimple.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="1875">
-          <caret line="150" selection-start-line="150" selection-end-line="150" />
-=======
-        <state relative-caret-position="105">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
->>>>>>> PokemonMenuBinding
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Player/RandomCombatEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-=======
     <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="61" selection-start-line="61" selection-end-line="61" />
->>>>>>> PokemonMenuBinding
-          <folding>
-            <element signature="e#1683#1684#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1071,15 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-<<<<<<< HEAD
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-=======
         </state>
       </provider>
     </entry>
@@ -1111,10 +837,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="129" column="70" selection-start-line="129" selection-start-column="70" selection-end-line="129" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/AEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3623#3624#0" expanded="true" />
-            <element signature="e#3654#3655#0" expanded="true" />
+            <element signature="e#4604#4605#0" expanded="true" />
+            <element signature="e#4640#4641#0" expanded="true" />
+            <element signature="e#4886#4887#0" expanded="true" />
+            <element signature="e#4929#4930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/World/Screen/WorldScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/ScreenComponent/Cursor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1800" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="38" column="27" lean-forward="true" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1130,114 +907,71 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
->>>>>>> PokemonMenuBinding
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java">
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperScenePokemonMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/AEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="25" column="59" lean-forward="true" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
->>>>>>> PokemonMenuBinding
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2037#2038#0" expanded="true" />
-            <element signature="e#2082#2083#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Map.java">
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperSceneCombat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
->>>>>>> PokemonMenuBinding
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Utils/Constantes.java">
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Combat/Screen/AUIPokemonStat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-=======
+        <state relative-caret-position="255">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="49" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
->>>>>>> PokemonMenuBinding
+        <state relative-caret-position="75">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4604#4605#0" expanded="true" />
-            <element signature="e#4640#4641#0" expanded="true" />
-            <element signature="e#4886#4887#0" expanded="true" />
-            <element signature="e#4929#4930#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/World/Screen/WorldScene.java">
-<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="142" column="11" selection-start-line="142" selection-start-column="11" selection-end-line="142" selection-end-column="11" />
+        <state relative-caret-position="238">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-=======
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1276#1277#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/ScreenComponent/Cursor.java">
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Combat/Screen/CombatSceneSimple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="465">
+          <caret line="187" column="59" selection-start-line="187" selection-start-column="59" selection-end-line="187" selection-end-column="59" />
           <folding>
-            <element signature="e#1900#1901#0" expanded="true" />
-            <element signature="e#1925#1926#0" expanded="true" />
->>>>>>> PokemonMenuBinding
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

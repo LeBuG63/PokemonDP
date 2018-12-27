@@ -186,7 +186,7 @@ public class CombatSceneSimple extends WrapperSceneCombat {
                 attacker.setPV(attacker.getPVMax());
 
                 if(!player.alreayHavePokemon(victim.getName())) {
-                    player.addPokemon(victim);
+                    player.addPokemon(new Pokemon(victim));
                 }
 
                 SceneManager.setScene("WorldScene");
