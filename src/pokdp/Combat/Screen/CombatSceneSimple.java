@@ -4,6 +4,7 @@ import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -12,6 +13,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import pokdp.Attack.Attack;
@@ -20,9 +22,13 @@ import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Scene.AScene;
 import pokdp.Scene.SceneManager;
 import pokdp.Scene.Wrappers.WrapperSceneCombat;
+import pokdp.Utils.Constantes;
 import pokdp.World.Screen.WorldScene;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -47,7 +53,7 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         gridPane.setPrefHeight(height);
         gridPane.setPrefWidth(width);
 
-        gridPane.setStyle("-fx-background-color: white; -fx-grid-lines-visible: true");
+        buttonDefense. setStyle(Constantes.DEFAULT_BUTTON);
 
         ColumnConstraints colFirstPok = new ColumnConstraints();
         ColumnConstraints colSectPok = new ColumnConstraints();
@@ -61,9 +67,18 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         gridPane.getColumnConstraints().add(colAction);
         gridPane.getColumnConstraints().add(colSectPok);
 
-        setScene(new Scene(gridPane, 1920, 1080, Color.WHITE));
+        gridPane.setStyle(
+                "-fx-background-image: url(" +
+                        "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/2fb2821a-1406-4a1d-9b04-6668f278e944/d83jrvo-9c5af987-f243-4528-8455-5ca87551aa58.jpg" +
+                        "); " +
+                        "-fx-background-size: cover;"
+        );
 
-        getScene().getStylesheets().add("file:assets/styles/combat.css");
+        gridPane.setAlignment(Pos.BOTTOM_CENTER);
+
+        setScene(new Scene(gridPane, width, height, Color.WHITE));
+
+        //getScene().getStylesheets().add("file:assets/styles/combat.css");
     }
 
     @Override
@@ -72,6 +87,7 @@ public class CombatSceneSimple extends WrapperSceneCombat {
             pokPlayer.setDefense(true);
             actionPlayer.setText(pokPlayer.getName() + " se défend!");
         });
+
 
         initialize(player, pokPlayer, enemy);
     }
@@ -95,12 +111,24 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         gridPane.add(actionEnemy, 2,1);
         gridPane.add(actionPlayer, 0,1);
         gridPane.add(actionPane, 0, 3);
-        gridPane.add(buttonDefense, 0, 4);;
+        gridPane.add(buttonDefense, 0, 4);
 
         int i = 0;
 
+        try {
+            Font font = Font.loadFont(new FileInputStream(new File("assets/fonts/pokemon.ttf")), 15);
+
+            actionEnemy.setFont(font);
+            actionPlayer.setFont(font);
+        }
+        catch(FileNotFoundException e) {
+            System.out.println("font not found");
+        }
+
         for(Attack attack : pokPlayer.getAttacks()) {
             Button button = new Button(attack.getName());
+
+            button.setStyle(Constantes.DEFAULT_BUTTON);
 
             button.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
@@ -177,6 +205,8 @@ public class CombatSceneSimple extends WrapperSceneCombat {
     private void addContinue(Player player, Pokemon attacker, Pokemon victim) {
         Button continueButton = new Button("continuer...");
 
+        continueButton.setStyle(Constantes.DEFAULT_BUTTON);
+
         continueButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent action) {
@@ -189,7 +219,8 @@ public class CombatSceneSimple extends WrapperSceneCombat {
                     player.addPokemon(new Pokemon(victim));
                 }
 
-                SceneManager.setScene("WorldScene");
+                //SceneManager.setScene("WorldScene");
+                SceneManager.setSceneVictory("VictoryScene", victim);
             }
         });
 

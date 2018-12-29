@@ -135,9 +135,7 @@ public class Pokemon extends AEntity {
     }
 
     public void addAttack(Attack attack) {
-        attackList.add(attack
-        );
-
+        attackList.add(attack);
     }
 
     public void addAllAttacks(List<Attack> attackList) {

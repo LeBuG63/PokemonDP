@@ -1,11 +1,13 @@
 package pokdp.Scene;
 
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.PokemonMenu.PokemonMenuController;
 import pokdp.Scene.Wrappers.WrapperSceneCombat;
 import pokdp.Scene.Wrappers.WrapperScenePokemonMenu;
+import pokdp.Scene.Wrappers.WrapperSceneVictory;
 
 import java.util.HashMap;
 import java.util.List;
@@ -18,7 +20,7 @@ public abstract class SceneManager {
     private static Stage stage;
 
     public static void setManager(Stage actstage, double width, double height) {
-        windowHeight = width;
+        windowWidth = width;
         windowHeight = height;
 
         stage = actstage;
@@ -54,7 +56,7 @@ public abstract class SceneManager {
 
             combatScene.setAttributes(player, pok1, pok2);
 
-            stage.setScene(sceneHashMap.get(sceneName).getScene());
+            stage.setScene(combatScene.getScene());
         }
     }
 
@@ -64,7 +66,17 @@ public abstract class SceneManager {
 
             scenePokemonMenu.setPokemonList(pokemonList);
 
-            stage.setScene(sceneHashMap.get(sceneName).getScene());
+            stage.setScene(scenePokemonMenu.getScene());
+        }
+    }
+
+    public static void setSceneVictory(String sceneName, Pokemon pokemon) {
+        if (sceneHashMap.containsKey(sceneName)) {
+            WrapperSceneVictory sceneVictory = (WrapperSceneVictory) sceneHashMap.get(sceneName);
+
+            sceneVictory.setPokemon(pokemon);
+
+            stage.setScene(sceneVictory.getScene());
         }
     }
 }

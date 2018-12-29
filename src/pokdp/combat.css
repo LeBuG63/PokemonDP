@@ -15,5 +15,6 @@
 }
 
 .text {
-    -fx-font-family: 'pokemon';
+    -fx-font-family: "pokemon";
+    -fx-font-size: 40;
 }
