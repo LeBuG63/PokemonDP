@@ -45,32 +45,38 @@ def randomEv():
 def printXML(name):
     pokemon = pb.pokemon(name.lower())
 
-    print('<Pokemon name="%s">' % pokemon.name.title())
-    print(' <type>UNKNOWN</type>')
-    print(' <sprite>%s</sprite>' % pokemon.sprites.front_default)
-    print(' <baseStats>')
+    os = ''
+
+    os += '<Pokemon name="{}">\n'.format(pokemon.name.title())
+    os += ' <id>{}</id>\n'.format(pokemon.id)
+    os += ' <type>UNKNOWN</type>\n'
+    os += ' <sprite>{}</sprite>\n'.format(pokemon.sprites.front_default)
+    os += ' <baseStats>\n'
     for i in range(6):
-        print('  <bstat>%s</bstat>' % pokemon.stats[i].base_stat)
+        os += '  <bstat>{}</bstat>\n'.format(pokemon.stats[i].base_stat)
 
     ev = randomEv()
 
-    print("  <ev>")
+    os += "  <ev>\n"
 
     for e in ev:
-        print('<estat>%d</estat>' % e)
+        os += '<estat>{}</estat>\n'.format(e)
 
-    print("</ev>")
+    os += '</ev>\n'
 
-    print("""    <iv>
+    os += """    <iv>
              <istat>32</istat>
              <istat>31</istat>
              <istat>31</istat>
              <istat>31</istat>
              <istat>31</istat>
              <istat>31</istat>
-            </iv>""")
-    print(' </baseStats>')
-    print(' <attacks>')
+            </iv>
+            </baseStats>
+            <attacks>
+            """
+
+    nmoves = 0
 
     for moves in pokemon.moves:
         move = moves.move
@@ -78,25 +84,43 @@ def printXML(name):
         if moves.version_group_details[0]['level_learned_at'] == 0:
             if attr['power']!= None:
                 move.name = re.sub('[-]', ' ', move.name.title())
-                print('  <attack name="%s">' % move.name)
-                print('   <basePower>%d</basePower>' % attr['power'])
-                print('   <accuracy>%d</accuracy>' % attr['accuracy'])
-                print('   <isSpecial>false</isSpecial>')
-                print('  </attack>')
+                os += '  <attack name="{}">\n'.format(move.name)
+                os += '   <basePower>{}</basePower>\n'.format(attr['power'])
+                os += '   <accuracy>{}</accuracy>\n'.format(attr['accuracy'])
+                os += '   <isSpecial>false</isSpecial>\n'
+                os += '   </attack>\n'
+                nmoves += 1
         else:
-            break
+          break 
 
-    print(' </attacks>')
-    print('</Pokemon>')
+    if nmoves == 0:
+       return 
+
+    os += ' </attacks>\n'
+    os += '</Pokemon>\n'
+
+    print(os)
+
+counter = -1
 
 if len(sys.argv) < 2:
     print('you must specify a file')
     sys.exit(1)
 
+if len(sys.argv) == 3:
+    counter = int(sys.argv[2])
+
 f = open(sys.argv[1], "r")
 print("""<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
         <list>""")
+
 for line in f:
+    if counter != -1:
+        if counter == 0:
+            break
+        
+        counter -= 1
+
     name = line.rstrip("\n\r")
     printXML(name)
 

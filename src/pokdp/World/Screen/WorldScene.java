@@ -137,6 +137,17 @@ public class WorldScene extends AScene {
             public void handle(KeyEvent event) {
                 boolean combat = randomCombatEvent.roll();
 
+
+                switch (event.getCode()) {
+                    case ENTER:
+                        SceneManager.setScenePokemon("PokemonMenu", ((Player) player).getPokemonList());
+                        return; // ici on veut un return car la suite ne doit pas se passer
+
+                    case P:
+                        SceneManager.setScene("PokedexScene");
+                        return;
+                }
+
                 if(combat) {
                     Pokemon enemy;
                     Random random = new Random();

@@ -107,9 +107,6 @@ public class Player extends AEntity {
                    collision = isCollidingWithDeco(decoObjectList);
                    look = LOOK_LEFT;
                    break;
-               case ENTER:
-                   SceneManager.setScenePokemon("PokemonMenu", getPokemonList());
-                   break;
            }
 
            if (collision) {

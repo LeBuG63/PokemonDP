@@ -25,10 +25,12 @@ public class Pokemon extends AEntity {
     private int[] arrBaseStats , arrEV , arrIV, currentStats;
     private EType type;
     private List<Attack> attackList = new ArrayList<>();
+    private int id;
 
-    public Pokemon(String name, String spritePath, int[] arrBaseStats , int[] arrEV , int[] arrIV, int level ,EType type) throws IllegalArgumentException{
+    public Pokemon(String name, int id, String spritePath, int[] arrBaseStats , int[] arrEV , int[] arrIV, int level ,EType type) throws IllegalArgumentException{
         super(EEntityType.POKEMON, false);
         if(arrBaseStats.length == 6 && arrEV.length == 6 && arrIV.length == 6) {
+            this.id = id;
             this.spritePath = spritePath;
             this.NameProperty.setValue(name);
             this.arrBaseStats = arrBaseStats;
@@ -44,16 +46,19 @@ public class Pokemon extends AEntity {
     }
 
     public Pokemon(Pokemon pok) {
-        this(pok.getName(), pok.getSpriteURL(), pok.getArrBaseStats(), pok.getArrEV(), pok.getArrIV(), pok.getLevel(), pok.getType());
+        this(pok.getName(), pok.getNumber(), pok.getSpriteURL(), pok.getArrBaseStats(), pok.getArrEV(), pok.getArrIV(), pok.getLevel(), pok.getType());
         addAllAttacks(pok.getAttacks());
     }
 
+    public int getNumber() {
+        return id;
+    }
 
     private int[] getArrBaseStats() {
         return arrBaseStats;
     }
 
-    private int[] getArrEV() {
+    public int[] getArrEV() {
         return arrEV;
     }
 

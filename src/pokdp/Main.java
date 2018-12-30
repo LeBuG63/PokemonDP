@@ -2,16 +2,15 @@ package pokdp;
 
 import javafx.application.Application;
 import javafx.scene.Group;
-import javafx.scene.text.Font;
 import javafx.scene.transform.Scale;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import pokdp.Combat.Screen.CombatSceneSimple;
 import pokdp.Combat.Screen.Victory.VictoryScene;
+import pokdp.Pokedex.PokedexScene;
 import pokdp.PokemonMenu.UIPokemonMenu;
 import pokdp.Scene.AScene;
 import pokdp.Scene.SceneManager;
-import pokdp.Utils.Constantes;
 import pokdp.World.Screen.WorldScene;
 
 public class Main extends Application {
@@ -39,11 +38,13 @@ public class Main extends Application {
         AScene combatSceneSimple = new CombatSceneSimple();
         AScene pokemonMenu = new UIPokemonMenu();
         AScene victoryScene = new VictoryScene();
+        AScene pokedexScene = new PokedexScene();
 
         SceneManager.addScene(pokemonMenu,"PokemonMenu");
         SceneManager.addScene(worldScene, "WorldScene");
         SceneManager.addScene(combatSceneSimple, "CombatScene");
         SceneManager.addScene(victoryScene, "VictoryScene");
+        SceneManager.addScene(pokedexScene, "PokedexScene");
 
         SceneManager.setScene("WorldScene");
         primaryStage.show();

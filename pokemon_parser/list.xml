@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
         <list>
 <Pokemon name="Bulbasaur">
+ <id>1</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png</sprite>
  <baseStats>
@@ -11,10 +12,10 @@
   <bstat>49</bstat>
   <bstat>45</bstat>
   <ev>
+<estat>18</estat>
 <estat>0</estat>
-<estat>161</estat>
 <estat>255</estat>
-<estat>117</estat>
+<estat>89</estat>
 <estat>0</estat>
 <estat>0</estat>
 </ev>
@@ -26,26 +27,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Ivysaur">
+ <id>2</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png</sprite>
  <baseStats>
@@ -56,12 +59,12 @@
   <bstat>62</bstat>
   <bstat>60</bstat>
   <ev>
+<estat>31</estat>
+<estat>93</estat>
 <estat>0</estat>
-<estat>28</estat>
-<estat>43</estat>
-<estat>86</estat>
-<estat>109</estat>
-<estat>121</estat>
+<estat>0</estat>
+<estat>87</estat>
+<estat>255</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -71,21 +74,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Venusaur">
+ <id>3</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png</sprite>
  <baseStats>
@@ -96,12 +101,12 @@
   <bstat>82</bstat>
   <bstat>80</bstat>
   <ev>
-<estat>17</estat>
-<estat>1</estat>
-<estat>3</estat>
 <estat>0</estat>
-<estat>15</estat>
-<estat>2</estat>
+<estat>80</estat>
+<estat>255</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -111,21 +116,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Charmander">
+ <id>4</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png</sprite>
  <baseStats>
@@ -136,12 +143,12 @@
   <bstat>52</bstat>
   <bstat>39</bstat>
   <ev>
-<estat>255</estat>
-<estat>13</estat>
-<estat>4</estat>
-<estat>69</estat>
 <estat>0</estat>
-<estat>16</estat>
+<estat>0</estat>
+<estat>41</estat>
+<estat>255</estat>
+<estat>20</estat>
+<estat>148</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -151,26 +158,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Charmeleon">
+ <id>5</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png</sprite>
  <baseStats>
@@ -181,12 +190,12 @@
   <bstat>64</bstat>
   <bstat>58</bstat>
   <ev>
-<estat>107</estat>
-<estat>5</estat>
 <estat>0</estat>
-<estat>23</estat>
-<estat>26</estat>
+<estat>153</estat>
 <estat>255</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>102</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -196,26 +205,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Charizard">
+ <id>6</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png</sprite>
  <baseStats>
@@ -226,10 +237,10 @@
   <bstat>84</bstat>
   <bstat>78</bstat>
   <ev>
-<estat>255</estat>
-<estat>69</estat>
-<estat>91</estat>
-<estat>23</estat>
+<estat>19</estat>
+<estat>0</estat>
+<estat>148</estat>
+<estat>176</estat>
 <estat>0</estat>
 <estat>0</estat>
 </ev>
@@ -241,26 +252,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Squirtle">
+ <id>7</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png</sprite>
  <baseStats>
@@ -271,10 +284,10 @@
   <bstat>48</bstat>
   <bstat>44</bstat>
   <ev>
-<estat>30</estat>
-<estat>24</estat>
 <estat>255</estat>
-<estat>64</estat>
+<estat>171</estat>
+<estat>0</estat>
+<estat>0</estat>
 <estat>0</estat>
 <estat>2</estat>
 </ev>
@@ -286,31 +299,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Wartortle">
+ <id>8</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png</sprite>
  <baseStats>
@@ -321,12 +336,12 @@
   <bstat>63</bstat>
   <bstat>59</bstat>
   <ev>
-<estat>41</estat>
+<estat>144</estat>
+<estat>80</estat>
 <estat>0</estat>
-<estat>130</estat>
-<estat>0</estat>
+<estat>21</estat>
 <estat>255</estat>
-<estat>49</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -336,31 +351,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Blastoise">
+ <id>9</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png</sprite>
  <baseStats>
@@ -371,12 +388,12 @@
   <bstat>83</bstat>
   <bstat>79</bstat>
   <ev>
+<estat>0</estat>
+<estat>22</estat>
+<estat>0</estat>
+<estat>84</estat>
+<estat>0</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>37</estat>
-<estat>0</estat>
-<estat>78</estat>
-<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -386,91 +403,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Caterpie">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png</sprite>
- <baseStats>
-  <bstat>45</bstat>
-  <bstat>20</bstat>
-  <bstat>20</bstat>
-  <bstat>35</bstat>
-  <bstat>30</bstat>
-  <bstat>45</bstat>
-  <ev>
-<estat>0</estat>
-<estat>255</estat>
-<estat>107</estat>
-<estat>10</estat>
-<estat>155</estat>
-<estat>15</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Metapod">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png</sprite>
- <baseStats>
-  <bstat>30</bstat>
-  <bstat>25</bstat>
-  <bstat>25</bstat>
-  <bstat>55</bstat>
-  <bstat>20</bstat>
-  <bstat>50</bstat>
-  <ev>
-<estat>255</estat>
-<estat>18</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>136</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Butterfree">
+ <id>12</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png</sprite>
  <baseStats>
@@ -481,76 +440,11 @@
   <bstat>45</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>67</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>180</estat>
-<estat>31</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
-   <basePower>80</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-  </attack>
- </attacks>
-</Pokemon>
-<Pokemon name="Weedle">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png</sprite>
- <baseStats>
-  <bstat>50</bstat>
-  <bstat>20</bstat>
-  <bstat>20</bstat>
-  <bstat>30</bstat>
-  <bstat>35</bstat>
-  <bstat>40</bstat>
-  <ev>
-<estat>0</estat>
-<estat>0</estat>
+<estat>61</estat>
 <estat>4</estat>
-<estat>255</estat>
-<estat>55</estat>
-<estat>25</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Kakuna">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png</sprite>
- <baseStats>
-  <bstat>35</bstat>
-  <bstat>25</bstat>
-  <bstat>25</bstat>
-  <bstat>50</bstat>
-  <bstat>25</bstat>
-  <bstat>45</bstat>
-  <ev>
 <estat>0</estat>
-<estat>93</estat>
-<estat>42</estat>
-<estat>255</estat>
-<estat>0</estat>
+<estat>32</estat>
 <estat>12</estat>
 </ev>
     <iv>
@@ -561,11 +455,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
+   <basePower>80</basePower>
+   <accuracy>100</accuracy>
+   <isSpecial>false</isSpecial>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Beedrill">
+ <id>15</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png</sprite>
  <baseStats>
@@ -576,12 +477,12 @@
   <bstat>90</bstat>
   <bstat>65</bstat>
   <ev>
-<estat>0</estat>
+<estat>56</estat>
 <estat>255</estat>
-<estat>51</estat>
+<estat>43</estat>
 <estat>0</estat>
 <estat>0</estat>
-<estat>59</estat>
+<estat>54</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -591,16 +492,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Pidgey">
+ <id>16</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png</sprite>
  <baseStats>
@@ -611,12 +514,12 @@
   <bstat>45</bstat>
   <bstat>40</bstat>
   <ev>
+<estat>19</estat>
+<estat>0</estat>
+<estat>100</estat>
 <estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>100</estat>
-<estat>20</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -626,16 +529,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Pidgeotto">
+ <id>17</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png</sprite>
  <baseStats>
@@ -647,11 +552,11 @@
   <bstat>63</bstat>
   <ev>
 <estat>0</estat>
-<estat>95</estat>
-<estat>255</estat>
-<estat>193</estat>
-<estat>61</estat>
 <estat>0</estat>
+<estat>156</estat>
+<estat>0</estat>
+<estat>255</estat>
+<estat>92</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -661,16 +566,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Pidgeot">
+ <id>18</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png</sprite>
  <baseStats>
@@ -681,12 +588,12 @@
   <bstat>80</bstat>
   <bstat>83</bstat>
   <ev>
+<estat>8</estat>
+<estat>197</estat>
 <estat>0</estat>
-<estat>52</estat>
+<estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>177</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -696,16 +603,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Rattata">
+ <id>19</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png</sprite>
  <baseStats>
@@ -716,12 +625,12 @@
   <bstat>56</bstat>
   <bstat>30</bstat>
   <ev>
+<estat>188</estat>
 <estat>0</estat>
-<estat>15</estat>
 <estat>0</estat>
-<estat>14</estat>
+<estat>54</estat>
 <estat>255</estat>
-<estat>0</estat>
+<estat>87</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -731,21 +640,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Raticate">
+ <id>20</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png</sprite>
  <baseStats>
@@ -756,10 +667,10 @@
   <bstat>81</bstat>
   <bstat>55</bstat>
   <ev>
-<estat>17</estat>
-<estat>157</estat>
-<estat>151</estat>
 <estat>255</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
 <estat>0</estat>
 <estat>0</estat>
 </ev>
@@ -771,21 +682,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Spearow">
+ <id>21</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png</sprite>
  <baseStats>
@@ -796,10 +709,10 @@
   <bstat>60</bstat>
   <bstat>40</bstat>
   <ev>
-<estat>176</estat>
+<estat>0</estat>
+<estat>12</estat>
 <estat>0</estat>
 <estat>255</estat>
-<estat>0</estat>
 <estat>0</estat>
 <estat>0</estat>
 </ev>
@@ -811,21 +724,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fly">
    <basePower>90</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Fearow">
+ <id>22</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png</sprite>
  <baseStats>
@@ -836,12 +751,12 @@
   <bstat>90</bstat>
   <bstat>65</bstat>
   <ev>
+<estat>2</estat>
 <estat>0</estat>
-<estat>17</estat>
-<estat>12</estat>
+<estat>0</estat>
 <estat>255</estat>
-<estat>47</estat>
-<estat>125</estat>
+<estat>0</estat>
+<estat>165</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -851,21 +766,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fly">
    <basePower>90</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Ekans">
+ <id>23</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png</sprite>
  <baseStats>
@@ -877,11 +794,11 @@
   <bstat>35</bstat>
   <ev>
 <estat>0</estat>
-<estat>0</estat>
-<estat>123</estat>
-<estat>31</estat>
 <estat>255</estat>
-<estat>154</estat>
+<estat>0</estat>
+<estat>80</estat>
+<estat>44</estat>
+<estat>174</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -891,31 +808,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Bind">
+            </baseStats>
+            <attacks>
+              <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Slam">
    <basePower>80</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Arbok">
+ <id>24</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png</sprite>
  <baseStats>
@@ -926,12 +845,12 @@
   <bstat>95</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>178</estat>
 <estat>0</estat>
 <estat>255</estat>
+<estat>81</estat>
 <estat>0</estat>
+<estat>178</estat>
 <estat>0</estat>
-<estat>73</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -941,26 +860,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Bind">
+            </baseStats>
+            <attacks>
+              <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Pikachu">
+ <id>25</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png</sprite>
  <baseStats>
@@ -971,12 +892,12 @@
   <bstat>55</bstat>
   <bstat>35</bstat>
   <ev>
-<estat>22</estat>
-<estat>10</estat>
+<estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
+<estat>91</estat>
 <estat>0</estat>
-<estat>58</estat>
+<estat>255</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -986,26 +907,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Pay Day">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Raichu">
+ <id>26</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png</sprite>
  <baseStats>
@@ -1016,12 +939,12 @@
   <bstat>90</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>0</estat>
-<estat>55</estat>
-<estat>89</estat>
+<estat>19</estat>
 <estat>255</estat>
 <estat>0</estat>
-<estat>160</estat>
+<estat>1</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1031,141 +954,53 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Pay Day">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Sandshrew">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png</sprite>
- <baseStats>
-  <bstat>40</bstat>
-  <bstat>30</bstat>
-  <bstat>20</bstat>
-  <bstat>85</bstat>
-  <bstat>75</bstat>
-  <bstat>50</bstat>
-  <ev>
-<estat>9</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>125</estat>
-<estat>188</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Sandslash">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png</sprite>
- <baseStats>
-  <bstat>65</bstat>
-  <bstat>55</bstat>
-  <bstat>45</bstat>
-  <bstat>110</bstat>
-  <bstat>100</bstat>
-  <bstat>75</bstat>
-  <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>104</estat>
-<estat>106</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Nidorina">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png</sprite>
- <baseStats>
-  <bstat>56</bstat>
-  <bstat>55</bstat>
-  <bstat>55</bstat>
-  <bstat>67</bstat>
-  <bstat>62</bstat>
-  <bstat>70</bstat>
-  <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>86</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>255</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Nidoqueen">
+ <id>31</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png</sprite>
  <baseStats>
@@ -1176,12 +1011,12 @@
   <bstat>92</bstat>
   <bstat>90</bstat>
   <ev>
-<estat>88</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>57</estat>
 <estat>0</estat>
 <estat>0</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>51</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1191,36 +1026,38 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Pay Day">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Nidorino">
+ <id>33</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png</sprite>
  <baseStats>
@@ -1231,12 +1068,12 @@
   <bstat>72</bstat>
   <bstat>61</bstat>
   <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>69</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>50</estat>
 <estat>255</estat>
+<estat>0</estat>
+<estat>57</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1246,16 +1083,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Nidoking">
+ <id>34</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png</sprite>
  <baseStats>
@@ -1266,12 +1105,12 @@
   <bstat>102</bstat>
   <bstat>81</bstat>
   <ev>
-<estat>43</estat>
-<estat>37</estat>
-<estat>0</estat>
 <estat>255</estat>
-<estat>67</estat>
-<estat>21</estat>
+<estat>60</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>68</estat>
+<estat>134</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1281,101 +1120,43 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Pay Day">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Clefairy">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png</sprite>
- <baseStats>
-  <bstat>35</bstat>
-  <bstat>65</bstat>
-  <bstat>60</bstat>
-  <bstat>48</bstat>
-  <bstat>45</bstat>
-  <bstat>70</bstat>
-  <ev>
-<estat>89</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>194</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Clefable">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png</sprite>
- <baseStats>
-  <bstat>60</bstat>
-  <bstat>90</bstat>
-  <bstat>95</bstat>
-  <bstat>73</bstat>
-  <bstat>70</bstat>
-  <bstat>95</bstat>
-  <ev>
-<estat>0</estat>
-<estat>66</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Vulpix">
+ <id>37</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png</sprite>
  <baseStats>
@@ -1386,12 +1167,12 @@
   <bstat>41</bstat>
   <bstat>38</bstat>
   <ev>
-<estat>1</estat>
-<estat>1</estat>
-<estat>1</estat>
+<estat>92</estat>
+<estat>255</estat>
+<estat>26</estat>
+<estat>14</estat>
 <estat>0</estat>
-<estat>12</estat>
-<estat>5</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1401,31 +1182,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Headbutt">
+            </baseStats>
+            <attacks>
+              <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Ninetales">
+ <id>38</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png</sprite>
  <baseStats>
@@ -1436,12 +1219,12 @@
   <bstat>76</bstat>
   <bstat>73</bstat>
   <ev>
-<estat>51</estat>
-<estat>132</estat>
+<estat>128</estat>
+<estat>115</estat>
 <estat>0</estat>
-<estat>0</estat>
+<estat>13</estat>
 <estat>255</estat>
-<estat>65</estat>
+<estat>33</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1451,91 +1234,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Headbutt">
+            </baseStats>
+            <attacks>
+              <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Jigglypuff">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png</sprite>
- <baseStats>
-  <bstat>20</bstat>
-  <bstat>25</bstat>
-  <bstat>45</bstat>
-  <bstat>20</bstat>
-  <bstat>45</bstat>
-  <bstat>115</bstat>
-  <ev>
-<estat>255</estat>
-<estat>2</estat>
-<estat>84</estat>
-<estat>50</estat>
-<estat>22</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Wigglytuff">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png</sprite>
- <baseStats>
-  <bstat>45</bstat>
-  <bstat>50</bstat>
-  <bstat>85</bstat>
-  <bstat>45</bstat>
-  <bstat>70</bstat>
-  <bstat>140</bstat>
-  <ev>
-<estat>11</estat>
-<estat>255</estat>
-<estat>38</estat>
-<estat>0</estat>
-<estat>16</estat>
-<estat>31</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Zubat">
+ <id>41</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png</sprite>
  <baseStats>
@@ -1546,12 +1271,12 @@
   <bstat>45</bstat>
   <bstat>40</bstat>
   <ev>
-<estat>0</estat>
-<estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
 <estat>0</estat>
-<estat>51</estat>
+<estat>0</estat>
+<estat>59</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1561,21 +1286,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Gust">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Golbat">
+ <id>42</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png</sprite>
  <baseStats>
@@ -1586,12 +1313,12 @@
   <bstat>80</bstat>
   <bstat>75</bstat>
   <ev>
-<estat>18</estat>
 <estat>0</estat>
+<estat>127</estat>
+<estat>138</estat>
+<estat>3</estat>
 <estat>255</estat>
-<estat>87</estat>
-<estat>30</estat>
-<estat>98</estat>
+<estat>26</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1601,16 +1328,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Oddish">
+ <id>43</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png</sprite>
  <baseStats>
@@ -1621,12 +1350,12 @@
   <bstat>50</bstat>
   <bstat>45</bstat>
   <ev>
-<estat>0</estat>
 <estat>255</estat>
-<estat>76</estat>
-<estat>73</estat>
-<estat>109</estat>
 <estat>0</estat>
+<estat>0</estat>
+<estat>46</estat>
+<estat>41</estat>
+<estat>35</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1636,26 +1365,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Gloom">
+ <id>44</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png</sprite>
  <baseStats>
@@ -1666,10 +1397,10 @@
   <bstat>65</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>76</estat>
-<estat>28</estat>
+<estat>255</estat>
+<estat>93</estat>
 <estat>0</estat>
-<estat>8</estat>
+<estat>60</estat>
 <estat>0</estat>
 <estat>0</estat>
 </ev>
@@ -1681,26 +1412,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Vileplume">
+ <id>45</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png</sprite>
  <baseStats>
@@ -1711,12 +1444,12 @@
   <bstat>80</bstat>
   <bstat>75</bstat>
   <ev>
-<estat>17</estat>
-<estat>38</estat>
-<estat>73</estat>
+<estat>108</estat>
+<estat>111</estat>
+<estat>255</estat>
+<estat>49</estat>
 <estat>0</estat>
-<estat>3</estat>
-<estat>4</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1726,121 +1459,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Paras">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png</sprite>
- <baseStats>
-  <bstat>25</bstat>
-  <bstat>55</bstat>
-  <bstat>45</bstat>
-  <bstat>55</bstat>
-  <bstat>70</bstat>
-  <bstat>35</bstat>
-  <ev>
-<estat>0</estat>
-<estat>45</estat>
-<estat>0</estat>
-<estat>108</estat>
-<estat>0</estat>
-<estat>255</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Parasect">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png</sprite>
- <baseStats>
-  <bstat>30</bstat>
-  <bstat>80</bstat>
-  <bstat>60</bstat>
-  <bstat>80</bstat>
-  <bstat>95</bstat>
-  <bstat>60</bstat>
-  <ev>
-<estat>2</estat>
-<estat>122</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>18</estat>
-<estat>255</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Venonat">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png</sprite>
- <baseStats>
-  <bstat>45</bstat>
-  <bstat>55</bstat>
-  <bstat>40</bstat>
-  <bstat>50</bstat>
-  <bstat>55</bstat>
-  <bstat>60</bstat>
-  <ev>
-<estat>24</estat>
-<estat>164</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Venomoth">
+ <id>49</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png</sprite>
  <baseStats>
@@ -1851,12 +1496,12 @@
   <bstat>65</bstat>
   <bstat>70</bstat>
   <ev>
-<estat>143</estat>
-<estat>0</estat>
-<estat>3</estat>
-<estat>33</estat>
-<estat>8</estat>
 <estat>255</estat>
+<estat>74</estat>
+<estat>0</estat>
+<estat>5</estat>
+<estat>154</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1866,136 +1511,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Diglett">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png</sprite>
- <baseStats>
-  <bstat>95</bstat>
-  <bstat>45</bstat>
-  <bstat>35</bstat>
-  <bstat>25</bstat>
-  <bstat>55</bstat>
-  <bstat>10</bstat>
-  <ev>
-<estat>63</estat>
-<estat>104</estat>
-<estat>0</estat>
-<estat>140</estat>
-<estat>255</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Dugtrio">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png</sprite>
- <baseStats>
-  <bstat>120</bstat>
-  <bstat>70</bstat>
-  <bstat>50</bstat>
-  <bstat>50</bstat>
-  <bstat>100</bstat>
-  <bstat>35</bstat>
-  <ev>
-<estat>3</estat>
-<estat>0</estat>
-<estat>2</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>27</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Meowth">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png</sprite>
- <baseStats>
-  <bstat>90</bstat>
-  <bstat>40</bstat>
-  <bstat>40</bstat>
-  <bstat>35</bstat>
-  <bstat>45</bstat>
-  <bstat>40</bstat>
-  <ev>
-<estat>255</estat>
-<estat>19</estat>
-<estat>13</estat>
-<estat>14</estat>
-<estat>5</estat>
-<estat>17</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Persian">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png</sprite>
- <baseStats>
-  <bstat>115</bstat>
-  <bstat>65</bstat>
-  <bstat>65</bstat>
-  <bstat>60</bstat>
-  <bstat>70</bstat>
-  <bstat>65</bstat>
-  <ev>
-<estat>0</estat>
-<estat>29</estat>
-<estat>0</estat>
-<estat>11</estat>
-<estat>255</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Psyduck">
+ <id>54</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png</sprite>
  <baseStats>
@@ -2006,55 +1533,10 @@
   <bstat>52</bstat>
   <bstat>50</bstat>
   <ev>
-<estat>21</estat>
-<estat>0</estat>
-<estat>11</estat>
 <estat>255</estat>
 <estat>0</estat>
 <estat>109</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
-   <basePower>80</basePower>
-   <accuracy>85</accuracy>
-   <isSpecial>false</isSpecial>
-  </attack>
-  <attack name="Pay Day">
-   <basePower>40</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-  </attack>
-  <attack name="Ice Punch">
-   <basePower>75</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-  </attack>
- </attacks>
-</Pokemon>
-<Pokemon name="Golduck">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png</sprite>
- <baseStats>
-  <bstat>85</bstat>
-  <bstat>80</bstat>
-  <bstat>95</bstat>
-  <bstat>78</bstat>
-  <bstat>82</bstat>
-  <bstat>80</bstat>
-  <ev>
-<estat>255</estat>
-<estat>118</estat>
-<estat>39</estat>
-<estat>12</estat>
+<estat>114</estat>
 <estat>0</estat>
 <estat>18</estat>
 </ev>
@@ -2066,72 +1548,44 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Pay Day">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Mankey">
+
+<Pokemon name="Golduck">
+ <id>55</id>
  <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png</sprite>
+ <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png</sprite>
  <baseStats>
-  <bstat>70</bstat>
-  <bstat>45</bstat>
-  <bstat>35</bstat>
-  <bstat>35</bstat>
+  <bstat>85</bstat>
   <bstat>80</bstat>
-  <bstat>40</bstat>
-  <ev>
-<estat>79</estat>
-<estat>11</estat>
-<estat>1</estat>
-<estat>17</estat>
-<estat>0</estat>
-<estat>1</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Primeape">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png</sprite>
- <baseStats>
   <bstat>95</bstat>
-  <bstat>70</bstat>
-  <bstat>60</bstat>
-  <bstat>60</bstat>
-  <bstat>105</bstat>
-  <bstat>65</bstat>
+  <bstat>78</bstat>
+  <bstat>82</bstat>
+  <bstat>80</bstat>
   <ev>
-<estat>108</estat>
-<estat>0</estat>
-<estat>146</estat>
-<estat>7</estat>
+<estat>3</estat>
+<estat>26</estat>
 <estat>255</estat>
-<estat>0</estat>
+<estat>103</estat>
+<estat>5</estat>
+<estat>120</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2141,11 +1595,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
+   <basePower>80</basePower>
+   <accuracy>85</accuracy>
+   <isSpecial>false</isSpecial>
+   </attack>
+  <attack name="Pay Day">
+   <basePower>40</basePower>
+   <accuracy>100</accuracy>
+   <isSpecial>false</isSpecial>
+   </attack>
+  <attack name="Ice Punch">
+   <basePower>75</basePower>
+   <accuracy>100</accuracy>
+   <isSpecial>false</isSpecial>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Growlithe">
+ <id>58</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png</sprite>
  <baseStats>
@@ -2157,11 +1628,11 @@
   <bstat>55</bstat>
   <ev>
 <estat>0</estat>
-<estat>65</estat>
 <estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>55</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2171,26 +1642,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Double Kick">
+            </baseStats>
+            <attacks>
+              <attack name="Double Kick">
    <basePower>30</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Arcanine">
+ <id>59</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png</sprite>
  <baseStats>
@@ -2201,11 +1674,11 @@
   <bstat>110</bstat>
   <bstat>90</bstat>
   <ev>
-<estat>14</estat>
+<estat>139</estat>
+<estat>5</estat>
+<estat>33</estat>
 <estat>0</estat>
 <estat>0</estat>
-<estat>16</estat>
-<estat>62</estat>
 <estat>255</estat>
 </ev>
     <iv>
@@ -2216,111 +1689,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Headbutt">
+            </baseStats>
+            <attacks>
+              <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Poliwag">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png</sprite>
- <baseStats>
-  <bstat>90</bstat>
-  <bstat>40</bstat>
-  <bstat>40</bstat>
-  <bstat>40</bstat>
-  <bstat>50</bstat>
-  <bstat>40</bstat>
-  <ev>
-<estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Poliwhirl">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png</sprite>
- <baseStats>
-  <bstat>90</bstat>
-  <bstat>50</bstat>
-  <bstat>50</bstat>
-  <bstat>65</bstat>
-  <bstat>65</bstat>
-  <bstat>65</bstat>
-  <ev>
-<estat>56</estat>
-<estat>35</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>141</estat>
-<estat>62</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Poliwrath">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png</sprite>
- <baseStats>
-  <bstat>70</bstat>
-  <bstat>90</bstat>
-  <bstat>70</bstat>
-  <bstat>95</bstat>
-  <bstat>95</bstat>
-  <bstat>90</bstat>
-  <ev>
-<estat>40</estat>
-<estat>27</estat>
-<estat>0</estat>
-<estat>16</estat>
-<estat>255</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Abra">
+ <id>63</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png</sprite>
  <baseStats>
@@ -2331,12 +1716,12 @@
   <bstat>20</bstat>
   <bstat>25</bstat>
   <ev>
-<estat>79</estat>
+<estat>165</estat>
+<estat>25</estat>
 <estat>0</estat>
-<estat>6</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>59</estat>
+<estat>20</estat>
+<estat>97</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2346,71 +1731,73 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Submission">
    <basePower>80</basePower>
    <accuracy>80</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Psychic">
    <basePower>90</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Rage">
    <basePower>20</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Kadabra">
+ <id>64</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png</sprite>
  <baseStats>
@@ -2421,10 +1808,10 @@
   <bstat>35</bstat>
   <bstat>40</bstat>
   <ev>
-<estat>4</estat>
-<estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
+<estat>50</estat>
+<estat>255</estat>
 <estat>0</estat>
 <estat>0</estat>
 </ev>
@@ -2436,56 +1823,58 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Alakazam">
+ <id>65</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png</sprite>
  <baseStats>
@@ -2496,12 +1885,12 @@
   <bstat>50</bstat>
   <bstat>55</bstat>
   <ev>
-<estat>39</estat>
+<estat>0</estat>
+<estat>152</estat>
 <estat>255</estat>
-<estat>165</estat>
-<estat>37</estat>
-<estat>6</estat>
-<estat>111</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2511,146 +1900,58 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Machop">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png</sprite>
- <baseStats>
-  <bstat>35</bstat>
-  <bstat>35</bstat>
-  <bstat>35</bstat>
-  <bstat>50</bstat>
-  <bstat>80</bstat>
-  <bstat>70</bstat>
-  <ev>
-<estat>255</estat>
-<estat>194</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>20</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Machoke">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png</sprite>
- <baseStats>
-  <bstat>45</bstat>
-  <bstat>60</bstat>
-  <bstat>50</bstat>
-  <bstat>70</bstat>
-  <bstat>100</bstat>
-  <bstat>80</bstat>
-  <ev>
-<estat>0</estat>
-<estat>58</estat>
-<estat>0</estat>
-<estat>119</estat>
-<estat>255</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Machamp">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png</sprite>
- <baseStats>
-  <bstat>55</bstat>
-  <bstat>85</bstat>
-  <bstat>65</bstat>
-  <bstat>80</bstat>
-  <bstat>130</bstat>
-  <bstat>90</bstat>
-  <ev>
-<estat>115</estat>
-<estat>0</estat>
-<estat>200</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>73</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Bellsprout">
+ <id>69</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png</sprite>
  <baseStats>
@@ -2662,11 +1963,11 @@
   <bstat>50</bstat>
   <ev>
 <estat>0</estat>
-<estat>28</estat>
-<estat>26</estat>
+<estat>0</estat>
+<estat>121</estat>
 <estat>255</estat>
-<estat>34</estat>
-<estat>3</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2676,21 +1977,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Weepinbell">
+ <id>70</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png</sprite>
  <baseStats>
@@ -2701,12 +2004,12 @@
   <bstat>90</bstat>
   <bstat>65</bstat>
   <ev>
-<estat>191</estat>
-<estat>0</estat>
+<estat>187</estat>
+<estat>42</estat>
 <estat>0</estat>
 <estat>0</estat>
 <estat>255</estat>
-<estat>0</estat>
+<estat>31</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2716,21 +2019,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Victreebel">
+ <id>71</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png</sprite>
  <baseStats>
@@ -2742,11 +2047,11 @@
   <bstat>80</bstat>
   <ev>
 <estat>255</estat>
-<estat>3</estat>
-<estat>7</estat>
-<estat>23</estat>
 <estat>0</estat>
-<estat>8</estat>
+<estat>13</estat>
+<estat>0</estat>
+<estat>152</estat>
+<estat>63</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2756,21 +2061,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Tentacool">
+ <id>72</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png</sprite>
  <baseStats>
@@ -2781,12 +2088,12 @@
   <bstat>40</bstat>
   <bstat>40</bstat>
   <ev>
-<estat>255</estat>
 <estat>0</estat>
-<estat>16</estat>
-<estat>37</estat>
-<estat>73</estat>
-<estat>104</estat>
+<estat>0</estat>
+<estat>60</estat>
+<estat>0</estat>
+<estat>1</estat>
+<estat>255</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2796,21 +2103,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Tentacruel">
+ <id>73</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png</sprite>
  <baseStats>
@@ -2821,12 +2130,12 @@
   <bstat>70</bstat>
   <bstat>80</bstat>
   <ev>
+<estat>31</estat>
+<estat>56</estat>
+<estat>0</estat>
+<estat>1</estat>
+<estat>0</estat>
 <estat>255</estat>
-<estat>103</estat>
-<estat>0</estat>
-<estat>54</estat>
-<estat>0</estat>
-<estat>9</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2836,21 +2145,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Geodude">
+ <id>74</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png</sprite>
  <baseStats>
@@ -2861,12 +2172,12 @@
   <bstat>80</bstat>
   <bstat>40</bstat>
   <ev>
-<estat>107</estat>
-<estat>0</estat>
-<estat>62</estat>
-<estat>0</estat>
-<estat>41</estat>
+<estat>33</estat>
 <estat>255</estat>
+<estat>0</estat>
+<estat>153</estat>
+<estat>28</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2876,31 +2187,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Graveler">
+ <id>75</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png</sprite>
  <baseStats>
@@ -2911,12 +2224,12 @@
   <bstat>95</bstat>
   <bstat>55</bstat>
   <ev>
-<estat>29</estat>
-<estat>255</estat>
-<estat>26</estat>
-<estat>49</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
 <estat>1</estat>
-<estat>198</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2926,31 +2239,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Golem">
+ <id>76</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png</sprite>
  <baseStats>
@@ -2961,11 +2276,11 @@
   <bstat>120</bstat>
   <bstat>80</bstat>
   <ev>
+<estat>30</estat>
+<estat>41</estat>
+<estat>104</estat>
+<estat>157</estat>
 <estat>0</estat>
-<estat>42</estat>
-<estat>20</estat>
-<estat>0</estat>
-<estat>255</estat>
 <estat>255</estat>
 </ev>
     <iv>
@@ -2976,96 +2291,38 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Ponyta">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png</sprite>
- <baseStats>
-  <bstat>90</bstat>
-  <bstat>65</bstat>
-  <bstat>65</bstat>
-  <bstat>55</bstat>
-  <bstat>85</bstat>
-  <bstat>50</bstat>
-  <ev>
-<estat>62</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>38</estat>
-<estat>44</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Rapidash">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png</sprite>
- <baseStats>
-  <bstat>105</bstat>
-  <bstat>80</bstat>
-  <bstat>80</bstat>
-  <bstat>70</bstat>
-  <bstat>100</bstat>
-  <bstat>65</bstat>
-  <ev>
-<estat>20</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>7</estat>
-<estat>167</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Slowpoke">
+ <id>79</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png</sprite>
  <baseStats>
@@ -3076,12 +2333,12 @@
   <bstat>65</bstat>
   <bstat>90</bstat>
   <ev>
-<estat>162</estat>
 <estat>0</estat>
+<estat>12</estat>
+<estat>7</estat>
 <estat>0</estat>
-<estat>18</estat>
-<estat>99</estat>
-<estat>255</estat>
+<estat>67</estat>
+<estat>8</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3091,21 +2348,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Pay Day">
+            </baseStats>
+            <attacks>
+              <attack name="Pay Day">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Stomp">
    <basePower>65</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Slowbro">
+ <id>80</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png</sprite>
  <baseStats>
@@ -3117,11 +2376,11 @@
   <bstat>95</bstat>
   <ev>
 <estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
 <estat>255</estat>
+<estat>26</estat>
 <estat>0</estat>
-<estat>28</estat>
+<estat>11</estat>
+<estat>64</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3131,91 +2390,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Pay Day">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Magnemite">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png</sprite>
- <baseStats>
-  <bstat>45</bstat>
-  <bstat>55</bstat>
-  <bstat>95</bstat>
-  <bstat>70</bstat>
-  <bstat>35</bstat>
-  <bstat>25</bstat>
-  <ev>
-<estat>0</estat>
-<estat>73</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>110</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Magneton">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png</sprite>
- <baseStats>
-  <bstat>70</bstat>
-  <bstat>70</bstat>
-  <bstat>120</bstat>
-  <bstat>95</bstat>
-  <bstat>60</bstat>
-  <bstat>50</bstat>
-  <ev>
-<estat>0</estat>
-<estat>135</estat>
-<estat>0</estat>
-<estat>87</estat>
-<estat>255</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Farfetchd">
+ <id>83</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png</sprite>
  <baseStats>
@@ -3226,12 +2427,12 @@
   <bstat>90</bstat>
   <bstat>52</bstat>
   <ev>
-<estat>92</estat>
-<estat>63</estat>
-<estat>54</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>6</estat>
+<estat>6</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>13</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3241,31 +2442,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Gust">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fly">
    <basePower>90</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Doduo">
+ <id>84</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png</sprite>
  <baseStats>
@@ -3276,12 +2479,12 @@
   <bstat>85</bstat>
   <bstat>35</bstat>
   <ev>
-<estat>0</estat>
-<estat>27</estat>
-<estat>59</estat>
 <estat>255</estat>
 <estat>0</estat>
-<estat>104</estat>
+<estat>54</estat>
+<estat>0</estat>
+<estat>155</estat>
+<estat>20</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3291,16 +2494,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Fly">
+            </baseStats>
+            <attacks>
+              <attack name="Fly">
    <basePower>90</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Dodrio">
+ <id>85</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png</sprite>
  <baseStats>
@@ -3311,12 +2516,12 @@
   <bstat>110</bstat>
   <bstat>60</bstat>
   <ev>
+<estat>0</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>108</estat>
-<estat>90</estat>
+<estat>29</estat>
 <estat>0</estat>
 <estat>0</estat>
+<estat>24</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3326,16 +2531,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Fly">
+            </baseStats>
+            <attacks>
+              <attack name="Fly">
    <basePower>90</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Seel">
+ <id>86</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png</sprite>
  <baseStats>
@@ -3346,12 +2553,12 @@
   <bstat>45</bstat>
   <bstat>65</bstat>
   <ev>
-<estat>98</estat>
+<estat>62</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>192</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>17</estat>
-<estat>0</estat>
+<estat>74</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3361,21 +2568,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Pay Day">
+            </baseStats>
+            <attacks>
+              <attack name="Pay Day">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Slam">
    <basePower>80</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Dewgong">
+ <id>87</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png</sprite>
  <baseStats>
@@ -3386,12 +2595,12 @@
   <bstat>70</bstat>
   <bstat>90</bstat>
   <ev>
-<estat>0</estat>
-<estat>125</estat>
-<estat>192</estat>
-<estat>39</estat>
-<estat>0</estat>
 <estat>255</estat>
+<estat>152</estat>
+<estat>24</estat>
+<estat>255</estat>
+<estat>0</estat>
+<estat>6</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3401,106 +2610,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Pay Day">
+            </baseStats>
+            <attacks>
+              <attack name="Pay Day">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Grimer">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png</sprite>
- <baseStats>
-  <bstat>25</bstat>
-  <bstat>50</bstat>
-  <bstat>40</bstat>
-  <bstat>50</bstat>
-  <bstat>80</bstat>
-  <bstat>80</bstat>
-  <ev>
-<estat>0</estat>
-<estat>8</estat>
-<estat>1</estat>
-<estat>122</estat>
-<estat>255</estat>
-<estat>58</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Muk">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png</sprite>
- <baseStats>
-  <bstat>50</bstat>
-  <bstat>100</bstat>
-  <bstat>65</bstat>
-  <bstat>75</bstat>
-  <bstat>105</bstat>
-  <bstat>105</bstat>
-  <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>86</estat>
-<estat>126</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Shellder">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png</sprite>
- <baseStats>
-  <bstat>40</bstat>
-  <bstat>25</bstat>
-  <bstat>45</bstat>
-  <bstat>100</bstat>
-  <bstat>65</bstat>
-  <bstat>30</bstat>
-  <ev>
-<estat>255</estat>
-<estat>0</estat>
-<estat>74</estat>
-<estat>0</estat>
-<estat>39</estat>
-<estat>11</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Cloyster">
+ <id>91</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png</sprite>
  <baseStats>
@@ -3511,12 +2632,12 @@
   <bstat>95</bstat>
   <bstat>50</bstat>
   <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>128</estat>
-<estat>133</estat>
+<estat>160</estat>
 <estat>0</estat>
 <estat>255</estat>
+<estat>0</estat>
+<estat>56</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3526,21 +2647,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Take Down">
+            </baseStats>
+            <attacks>
+              <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Gastly">
+ <id>92</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png</sprite>
  <baseStats>
@@ -3552,11 +2675,11 @@
   <bstat>30</bstat>
   <ev>
 <estat>0</estat>
-<estat>0</estat>
-<estat>18</estat>
-<estat>108</estat>
-<estat>255</estat>
-<estat>21</estat>
+<estat>7</estat>
+<estat>5</estat>
+<estat>4</estat>
+<estat>9</estat>
+<estat>35</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3566,46 +2689,48 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Fire Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Drain">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunderbolt">
    <basePower>90</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder">
    <basePower>110</basePower>
    <accuracy>70</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Psychic">
    <basePower>90</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Haunter">
+ <id>93</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png</sprite>
  <baseStats>
@@ -3617,11 +2742,11 @@
   <bstat>45</bstat>
   <ev>
 <estat>0</estat>
-<estat>147</estat>
-<estat>29</estat>
-<estat>0</estat>
 <estat>255</estat>
-<estat>21</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>131</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3631,46 +2756,48 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Fire Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Drain">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunderbolt">
    <basePower>90</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder">
    <basePower>110</basePower>
    <accuracy>70</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Psychic">
    <basePower>90</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Gengar">
+ <id>94</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png</sprite>
  <baseStats>
@@ -3681,12 +2808,12 @@
   <bstat>65</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>29</estat>
+<estat>138</estat>
 <estat>0</estat>
-<estat>131</estat>
-<estat>35</estat>
-<estat>27</estat>
+<estat>54</estat>
+<estat>42</estat>
 <estat>255</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3696,241 +2823,93 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Hyper Beam">
    <basePower>150</basePower>
    <accuracy>90</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Submission">
    <basePower>80</basePower>
    <accuracy>80</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Strength">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Drain">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunderbolt">
    <basePower>90</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder">
    <basePower>110</basePower>
    <accuracy>70</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Psychic">
    <basePower>90</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Onix">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png</sprite>
- <baseStats>
-  <bstat>70</bstat>
-  <bstat>45</bstat>
-  <bstat>30</bstat>
-  <bstat>160</bstat>
-  <bstat>45</bstat>
-  <bstat>35</bstat>
-  <ev>
-<estat>0</estat>
-<estat>46</estat>
-<estat>50</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>14</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Drowzee">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png</sprite>
- <baseStats>
-  <bstat>42</bstat>
-  <bstat>90</bstat>
-  <bstat>43</bstat>
-  <bstat>45</bstat>
-  <bstat>48</bstat>
-  <bstat>60</bstat>
-  <ev>
-<estat>255</estat>
-<estat>66</estat>
-<estat>47</estat>
-<estat>24</estat>
-<estat>0</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Hypno">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png</sprite>
- <baseStats>
-  <bstat>67</bstat>
-  <bstat>115</bstat>
-  <bstat>73</bstat>
-  <bstat>70</bstat>
-  <bstat>73</bstat>
-  <bstat>85</bstat>
-  <ev>
-<estat>32</estat>
-<estat>255</estat>
-<estat>13</estat>
-<estat>35</estat>
-<estat>120</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Krabby">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png</sprite>
- <baseStats>
-  <bstat>50</bstat>
-  <bstat>25</bstat>
-  <bstat>25</bstat>
-  <bstat>90</bstat>
-  <bstat>105</bstat>
-  <bstat>30</bstat>
-  <ev>
-<estat>20</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>48</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Kingler">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png</sprite>
- <baseStats>
-  <bstat>75</bstat>
-  <bstat>50</bstat>
-  <bstat>50</bstat>
-  <bstat>115</bstat>
-  <bstat>130</bstat>
-  <bstat>55</bstat>
-  <ev>
-<estat>31</estat>
-<estat>58</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>255</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Voltorb">
+ <id>100</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png</sprite>
  <baseStats>
@@ -3941,12 +2920,12 @@
   <bstat>30</bstat>
   <bstat>40</bstat>
   <ev>
-<estat>72</estat>
-<estat>0</estat>
-<estat>40</estat>
 <estat>255</estat>
-<estat>6</estat>
 <estat>0</estat>
+<estat>147</estat>
+<estat>20</estat>
+<estat>130</estat>
+<estat>101</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3956,16 +2935,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Headbutt">
+            </baseStats>
+            <attacks>
+              <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Electrode">
+ <id>101</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png</sprite>
  <baseStats>
@@ -3976,12 +2957,12 @@
   <bstat>50</bstat>
   <bstat>60</bstat>
   <ev>
+<estat>0</estat>
+<estat>100</estat>
+<estat>0</estat>
 <estat>255</estat>
-<estat>53</estat>
-<estat>6</estat>
+<estat>101</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>10</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3991,16 +2972,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Headbutt">
+            </baseStats>
+            <attacks>
+              <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Exeggcute">
+ <id>102</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png</sprite>
  <baseStats>
@@ -4011,12 +2994,12 @@
   <bstat>40</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>106</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>255</estat>
+<estat>28</estat>
+<estat>13</estat>
+<estat>19</estat>
+<estat>1</estat>
+<estat>31</estat>
+<estat>36</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4026,61 +3009,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Take Down">
+            </baseStats>
+            <attacks>
+              <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Strength">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Drain">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Exeggutor">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png</sprite>
- <baseStats>
-  <bstat>55</bstat>
-  <bstat>75</bstat>
-  <bstat>125</bstat>
-  <bstat>85</bstat>
-  <bstat>95</bstat>
-  <bstat>95</bstat>
-  <ev>
-<estat>19</estat>
-<estat>0</estat>
-<estat>94</estat>
-<estat>118</estat>
-<estat>255</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Cubone">
+ <id>104</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png</sprite>
  <baseStats>
@@ -4091,12 +3046,12 @@
   <bstat>50</bstat>
   <bstat>50</bstat>
   <ev>
-<estat>84</estat>
-<estat>104</estat>
+<estat>190</estat>
+<estat>70</estat>
+<estat>0</estat>
+<estat>0</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>78</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4106,36 +3061,38 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Kick">
    <basePower>30</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Marowak">
+ <id>105</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png</sprite>
  <baseStats>
@@ -4146,12 +3103,12 @@
   <bstat>80</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>0</estat>
-<estat>85</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>82</estat>
+<estat>114</estat>
+<estat>130</estat>
 <estat>0</estat>
 <estat>255</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4161,31 +3118,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Hitmonlee">
+ <id>106</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png</sprite>
  <baseStats>
@@ -4196,12 +3155,12 @@
   <bstat>120</bstat>
   <bstat>50</bstat>
   <ev>
+<estat>14</estat>
 <estat>255</estat>
-<estat>78</estat>
+<estat>83</estat>
 <estat>0</estat>
-<estat>12</estat>
 <estat>0</estat>
-<estat>23</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4211,46 +3170,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Hitmonchan">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png</sprite>
- <baseStats>
-  <bstat>76</bstat>
-  <bstat>110</bstat>
-  <bstat>35</bstat>
-  <bstat>79</bstat>
-  <bstat>105</bstat>
-  <bstat>50</bstat>
-  <ev>
-<estat>11</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Lickitung">
+ <id>108</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png</sprite>
  <baseStats>
@@ -4261,12 +3192,12 @@
   <bstat>55</bstat>
   <bstat>90</bstat>
   <ev>
+<estat>27</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>132</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>60</estat>
 <estat>255</estat>
+<estat>0</estat>
+<estat>25</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4276,131 +3207,43 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Koffing">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png</sprite>
- <baseStats>
-  <bstat>35</bstat>
-  <bstat>45</bstat>
-  <bstat>60</bstat>
-  <bstat>95</bstat>
-  <bstat>65</bstat>
-  <bstat>40</bstat>
-  <ev>
-<estat>81</estat>
-<estat>0</estat>
-<estat>109</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>255</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Weezing">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png</sprite>
- <baseStats>
-  <bstat>60</bstat>
-  <bstat>70</bstat>
-  <bstat>85</bstat>
-  <bstat>120</bstat>
-  <bstat>90</bstat>
-  <bstat>65</bstat>
-  <ev>
-<estat>0</estat>
-<estat>19</estat>
-<estat>28</estat>
-<estat>255</estat>
-<estat>27</estat>
-<estat>40</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Rhyhorn">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png</sprite>
- <baseStats>
-  <bstat>25</bstat>
-  <bstat>30</bstat>
-  <bstat>30</bstat>
-  <bstat>95</bstat>
-  <bstat>85</bstat>
-  <bstat>80</bstat>
-  <ev>
-<estat>0</estat>
-<estat>22</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>75</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Rhydon">
+ <id>112</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png</sprite>
  <baseStats>
@@ -4412,11 +3255,11 @@
   <bstat>105</bstat>
   <ev>
 <estat>255</estat>
-<estat>0</estat>
-<estat>10</estat>
-<estat>192</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>17</estat>
+<estat>57</estat>
+<estat>6</estat>
+<estat>38</estat>
+<estat>58</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4426,71 +3269,43 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Pay Day">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Chansey">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png</sprite>
- <baseStats>
-  <bstat>50</bstat>
-  <bstat>105</bstat>
-  <bstat>35</bstat>
-  <bstat>5</bstat>
-  <bstat>5</bstat>
-  <bstat>250</bstat>
-  <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>135</estat>
-<estat>255</estat>
-<estat>72</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Tangela">
+ <id>114</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png</sprite>
  <baseStats>
@@ -4501,12 +3316,12 @@
   <bstat>55</bstat>
   <bstat>65</bstat>
   <ev>
-<estat>1</estat>
+<estat>40</estat>
 <estat>0</estat>
-<estat>53</estat>
-<estat>5</estat>
+<estat>132</estat>
 <estat>255</estat>
-<estat>11</estat>
+<estat>0</estat>
+<estat>2</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4516,46 +3331,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Cut">
+            </baseStats>
+            <attacks>
+              <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Kangaskhan">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png</sprite>
- <baseStats>
-  <bstat>90</bstat>
-  <bstat>80</bstat>
-  <bstat>40</bstat>
-  <bstat>80</bstat>
-  <bstat>95</bstat>
-  <bstat>105</bstat>
-  <ev>
-<estat>43</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>25</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Horsea">
+ <id>116</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png</sprite>
  <baseStats>
@@ -4568,10 +3355,10 @@
   <ev>
 <estat>255</estat>
 <estat>0</estat>
-<estat>20</estat>
-<estat>21</estat>
-<estat>7</estat>
-<estat>83</estat>
+<estat>35</estat>
+<estat>46</estat>
+<estat>78</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4581,31 +3368,33 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Seadra">
+ <id>117</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png</sprite>
  <baseStats>
@@ -4616,12 +3405,12 @@
   <bstat>65</bstat>
   <bstat>55</bstat>
   <ev>
-<estat>11</estat>
-<estat>48</estat>
+<estat>180</estat>
+<estat>171</estat>
 <estat>255</estat>
 <estat>0</estat>
 <estat>3</estat>
-<estat>0</estat>
+<estat>34</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4631,146 +3420,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Headbutt">
+            </baseStats>
+            <attacks>
+              <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Goldeen">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png</sprite>
- <baseStats>
-  <bstat>63</bstat>
-  <bstat>50</bstat>
-  <bstat>35</bstat>
-  <bstat>60</bstat>
-  <bstat>67</bstat>
-  <bstat>45</bstat>
-  <ev>
-<estat>255</estat>
-<estat>38</estat>
-<estat>8</estat>
-<estat>4</estat>
-<estat>0</estat>
-<estat>14</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Seaking">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png</sprite>
- <baseStats>
-  <bstat>68</bstat>
-  <bstat>80</bstat>
-  <bstat>65</bstat>
-  <bstat>65</bstat>
-  <bstat>92</bstat>
-  <bstat>80</bstat>
-  <ev>
-<estat>255</estat>
-<estat>6</estat>
-<estat>53</estat>
-<estat>32</estat>
-<estat>0</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Staryu">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png</sprite>
- <baseStats>
-  <bstat>85</bstat>
-  <bstat>55</bstat>
-  <bstat>70</bstat>
-  <bstat>55</bstat>
-  <bstat>45</bstat>
-  <bstat>30</bstat>
-  <ev>
-<estat>0</estat>
-<estat>75</estat>
-<estat>255</estat>
-<estat>31</estat>
-<estat>200</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Starmie">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png</sprite>
- <baseStats>
-  <bstat>115</bstat>
-  <bstat>85</bstat>
-  <bstat>100</bstat>
-  <bstat>85</bstat>
-  <bstat>75</bstat>
-  <bstat>60</bstat>
-  <ev>
-<estat>0</estat>
-<estat>87</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>46</estat>
-<estat>7</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Scyther">
+ <id>123</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png</sprite>
  <baseStats>
@@ -4781,11 +3452,11 @@
   <bstat>110</bstat>
   <bstat>70</bstat>
   <ev>
-<estat>17</estat>
-<estat>74</estat>
-<estat>255</estat>
 <estat>0</estat>
-<estat>91</estat>
+<estat>0</estat>
+<estat>10</estat>
+<estat>255</estat>
+<estat>255</estat>
 <estat>0</estat>
 </ev>
     <iv>
@@ -4796,51 +3467,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Jynx">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png</sprite>
- <baseStats>
-  <bstat>95</bstat>
-  <bstat>95</bstat>
-  <bstat>115</bstat>
-  <bstat>35</bstat>
-  <bstat>50</bstat>
-  <bstat>65</bstat>
-  <ev>
-<estat>109</estat>
-<estat>0</estat>
-<estat>17</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>95</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Electabuzz">
+ <id>125</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png</sprite>
  <baseStats>
@@ -4851,7 +3494,7 @@
   <bstat>83</bstat>
   <bstat>65</bstat>
   <ev>
-<estat>11</estat>
+<estat>132</estat>
 <estat>0</estat>
 <estat>0</estat>
 <estat>0</estat>
@@ -4866,26 +3509,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Magmar">
+ <id>126</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png</sprite>
  <baseStats>
@@ -4896,12 +3541,12 @@
   <bstat>95</bstat>
   <bstat>65</bstat>
   <ev>
+<estat>165</estat>
+<estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>25</estat>
-<estat>147</estat>
-<estat>0</estat>
+<estat>4</estat>
+<estat>7</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4911,106 +3556,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Pinsir">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png</sprite>
- <baseStats>
-  <bstat>85</bstat>
-  <bstat>70</bstat>
-  <bstat>55</bstat>
-  <bstat>100</bstat>
-  <bstat>125</bstat>
-  <bstat>65</bstat>
-  <ev>
-<estat>0</estat>
-<estat>255</estat>
-<estat>71</estat>
-<estat>90</estat>
-<estat>0</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Tauros">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png</sprite>
- <baseStats>
-  <bstat>110</bstat>
-  <bstat>70</bstat>
-  <bstat>40</bstat>
-  <bstat>95</bstat>
-  <bstat>100</bstat>
-  <bstat>75</bstat>
-  <ev>
-<estat>151</estat>
-<estat>70</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>14</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Magikarp">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png</sprite>
- <baseStats>
-  <bstat>80</bstat>
-  <bstat>20</bstat>
-  <bstat>15</bstat>
-  <bstat>55</bstat>
-  <bstat>10</bstat>
-  <bstat>20</bstat>
-  <ev>
-<estat>57</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>42</estat>
-<estat>87</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Gyarados">
+ <id>130</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png</sprite>
  <baseStats>
@@ -5021,12 +3578,12 @@
   <bstat>125</bstat>
   <bstat>95</bstat>
   <ev>
-<estat>43</estat>
-<estat>178</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>88</estat>
 <estat>255</estat>
-<estat>43</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>141</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -5036,16 +3593,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Headbutt">
+            </baseStats>
+            <attacks>
+              <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Lapras">
+ <id>131</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png</sprite>
  <baseStats>
@@ -5056,12 +3615,12 @@
   <bstat>85</bstat>
   <bstat>130</bstat>
   <ev>
-<estat>19</estat>
-<estat>15</estat>
-<estat>38</estat>
+<estat>16</estat>
+<estat>60</estat>
+<estat>46</estat>
+<estat>23</estat>
+<estat>3</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -5071,196 +3630,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Headbutt">
+            </baseStats>
+            <attacks>
+              <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Ditto">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png</sprite>
- <baseStats>
-  <bstat>48</bstat>
-  <bstat>48</bstat>
-  <bstat>48</bstat>
-  <bstat>48</bstat>
-  <bstat>48</bstat>
-  <bstat>48</bstat>
-  <ev>
-<estat>255</estat>
-<estat>0</estat>
-<estat>46</estat>
-<estat>0</estat>
-<estat>35</estat>
-<estat>60</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Eevee">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png</sprite>
- <baseStats>
-  <bstat>55</bstat>
-  <bstat>65</bstat>
-  <bstat>45</bstat>
-  <bstat>50</bstat>
-  <bstat>55</bstat>
-  <bstat>55</bstat>
-  <ev>
-<estat>0</estat>
-<estat>255</estat>
-<estat>43</estat>
-<estat>0</estat>
-<estat>187</estat>
-<estat>35</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Vaporeon">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png</sprite>
- <baseStats>
-  <bstat>65</bstat>
-  <bstat>95</bstat>
-  <bstat>110</bstat>
-  <bstat>60</bstat>
-  <bstat>65</bstat>
-  <bstat>130</bstat>
-  <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Jolteon">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png</sprite>
- <baseStats>
-  <bstat>130</bstat>
-  <bstat>95</bstat>
-  <bstat>110</bstat>
-  <bstat>60</bstat>
-  <bstat>65</bstat>
-  <bstat>65</bstat>
-  <ev>
-<estat>255</estat>
-<estat>21</estat>
-<estat>53</estat>
-<estat>82</estat>
-<estat>0</estat>
-<estat>69</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Flareon">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png</sprite>
- <baseStats>
-  <bstat>65</bstat>
-  <bstat>110</bstat>
-  <bstat>95</bstat>
-  <bstat>60</bstat>
-  <bstat>130</bstat>
-  <bstat>65</bstat>
-  <ev>
-<estat>93</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>48</estat>
-<estat>24</estat>
-<estat>255</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Porygon">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png</sprite>
- <baseStats>
-  <bstat>40</bstat>
-  <bstat>75</bstat>
-  <bstat>85</bstat>
-  <bstat>70</bstat>
-  <bstat>60</bstat>
-  <bstat>65</bstat>
-  <ev>
-<estat>35</estat>
-<estat>0</estat>
-<estat>255</estat>
-<estat>13</estat>
-<estat>107</estat>
-<estat>96</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Omanyte">
+ <id>138</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png</sprite>
  <baseStats>
@@ -5271,12 +3652,12 @@
   <bstat>40</bstat>
   <bstat>35</bstat>
   <ev>
+<estat>0</estat>
+<estat>177</estat>
+<estat>0</estat>
+<estat>42</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>60</estat>
-<estat>255</estat>
+<estat>41</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -5286,26 +3667,28 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Bind">
+            </baseStats>
+            <attacks>
+              <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Slam">
    <basePower>80</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Omastar">
+ <id>139</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png</sprite>
  <baseStats>
@@ -5316,12 +3699,12 @@
   <bstat>60</bstat>
   <bstat>70</bstat>
   <ev>
-<estat>0</estat>
+<estat>24</estat>
+<estat>191</estat>
 <estat>255</estat>
+<estat>44</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>255</estat>
+<estat>3</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -5331,81 +3714,23 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Bind">
+            </baseStats>
+            <attacks>
+              <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
-<Pokemon name="Kabuto">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png</sprite>
- <baseStats>
-  <bstat>55</bstat>
-  <bstat>45</bstat>
-  <bstat>55</bstat>
-  <bstat>90</bstat>
-  <bstat>80</bstat>
-  <bstat>30</bstat>
-  <ev>
-<estat>0</estat>
-<estat>7</estat>
-<estat>9</estat>
-<estat>12</estat>
-<estat>6</estat>
-<estat>0</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
-<Pokemon name="Kabutops">
- <type>UNKNOWN</type>
- <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png</sprite>
- <baseStats>
-  <bstat>80</bstat>
-  <bstat>70</bstat>
-  <bstat>65</bstat>
-  <bstat>105</bstat>
-  <bstat>115</bstat>
-  <bstat>60</bstat>
-  <ev>
-<estat>46</estat>
-<estat>0</estat>
-<estat>3</estat>
-<estat>111</estat>
-<estat>0</estat>
-<estat>18</estat>
-</ev>
-    <iv>
-             <istat>32</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-             <istat>31</istat>
-            </iv>
- </baseStats>
- <attacks>
- </attacks>
-</Pokemon>
+
 <Pokemon name="Aerodactyl">
+ <id>142</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png</sprite>
  <baseStats>
@@ -5416,12 +3741,12 @@
   <bstat>105</bstat>
   <bstat>80</bstat>
   <ev>
+<estat>0</estat>
 <estat>255</estat>
-<estat>255</estat>
+<estat>114</estat>
+<estat>77</estat>
 <estat>0</estat>
-<estat>40</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>46</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -5431,16 +3756,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Snorlax">
+ <id>143</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png</sprite>
  <baseStats>
@@ -5451,12 +3778,12 @@
   <bstat>110</bstat>
   <bstat>160</bstat>
   <ev>
+<estat>65</estat>
 <estat>0</estat>
 <estat>0</estat>
-<estat>88</estat>
-<estat>106</estat>
+<estat>29</estat>
 <estat>255</estat>
-<estat>0</estat>
+<estat>21</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -5466,41 +3793,43 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Pay Day">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Articuno">
+ <id>144</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png</sprite>
  <baseStats>
@@ -5511,11 +3840,11 @@
   <bstat>85</bstat>
   <bstat>90</bstat>
   <ev>
-<estat>133</estat>
-<estat>186</estat>
-<estat>0</estat>
+<estat>38</estat>
+<estat>71</estat>
+<estat>83</estat>
+<estat>1</estat>
 <estat>255</estat>
-<estat>0</estat>
 <estat>0</estat>
 </ev>
     <iv>
@@ -5526,16 +3855,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Zapdos">
+ <id>145</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png</sprite>
  <baseStats>
@@ -5546,12 +3877,12 @@
   <bstat>90</bstat>
   <bstat>90</bstat>
   <ev>
-<estat>255</estat>
-<estat>48</estat>
 <estat>0</estat>
-<estat>3</estat>
-<estat>56</estat>
-<estat>2</estat>
+<estat>51</estat>
+<estat>255</estat>
+<estat>255</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -5561,36 +3892,38 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fly">
    <basePower>90</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Hyper Beam">
    <basePower>150</basePower>
    <accuracy>90</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Moltres">
+ <id>146</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png</sprite>
  <baseStats>
@@ -5601,12 +3934,12 @@
   <bstat>100</bstat>
   <bstat>90</bstat>
   <ev>
-<estat>0</estat>
-<estat>88</estat>
-<estat>0</estat>
-<estat>0</estat>
 <estat>255</estat>
-<estat>81</estat>
+<estat>6</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>94</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -5616,16 +3949,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Razor Wind">
+            </baseStats>
+            <attacks>
+              <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Dratini">
+ <id>147</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png</sprite>
  <baseStats>
@@ -5636,10 +3971,10 @@
   <bstat>64</bstat>
   <bstat>41</bstat>
   <ev>
+<estat>21</estat>
 <estat>0</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>57</estat>
+<estat>255</estat>
 <estat>255</estat>
 <estat>0</estat>
 </ev>
@@ -5651,16 +3986,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Bind">
+            </baseStats>
+            <attacks>
+              <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Dragonair">
+ <id>148</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png</sprite>
  <baseStats>
@@ -5671,12 +4008,12 @@
   <bstat>84</bstat>
   <bstat>61</bstat>
   <ev>
+<estat>77</estat>
 <estat>0</estat>
-<estat>12</estat>
-<estat>255</estat>
-<estat>13</estat>
 <estat>0</estat>
-<estat>2</estat>
+<estat>0</estat>
+<estat>176</estat>
+<estat>186</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -5686,16 +4023,18 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Bind">
+            </baseStats>
+            <attacks>
+              <attack name="Bind">
    <basePower>15</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Dragonite">
+ <id>149</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png</sprite>
  <baseStats>
@@ -5706,12 +4045,12 @@
   <bstat>134</bstat>
   <bstat>91</bstat>
   <ev>
-<estat>4</estat>
-<estat>27</estat>
-<estat>255</estat>
-<estat>39</estat>
-<estat>38</estat>
+<estat>169</estat>
 <estat>0</estat>
+<estat>61</estat>
+<estat>0</estat>
+<estat>255</estat>
+<estat>18</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -5721,36 +4060,38 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Fire Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Razor Wind">
    <basePower>80</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Cut">
    <basePower>50</basePower>
    <accuracy>95</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
 <Pokemon name="Mewtwo">
+ <id>150</id>
  <type>UNKNOWN</type>
  <sprite>https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png</sprite>
  <baseStats>
@@ -5761,12 +4102,12 @@
   <bstat>110</bstat>
   <bstat>106</bstat>
   <ev>
+<estat>199</estat>
+<estat>166</estat>
+<estat>7</estat>
+<estat>9</estat>
 <estat>0</estat>
-<estat>255</estat>
-<estat>187</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>74</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -5776,57 +4117,59 @@
              <istat>31</istat>
              <istat>31</istat>
             </iv>
- </baseStats>
- <attacks>
-  <attack name="Mega Punch">
+            </baseStats>
+            <attacks>
+              <attack name="Mega Punch">
    <basePower>80</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Pay Day">
    <basePower>40</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Fire Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Mega Kick">
    <basePower>120</basePower>
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Headbutt">
    <basePower>70</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Body Slam">
    <basePower>85</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Take Down">
    <basePower>90</basePower>
    <accuracy>85</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
   <attack name="Double Edge">
    <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
-  </attack>
+   </attack>
  </attacks>
 </Pokemon>
+
+</list>
