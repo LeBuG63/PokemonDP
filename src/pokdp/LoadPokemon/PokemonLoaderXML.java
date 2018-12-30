@@ -76,12 +76,14 @@ public class PokemonLoaderXML implements IPokemonLoader {
 
                 final String name = attack.getAttribute("name");
                 final Element elementBasePower = (Element)attack.getElementsByTagName("basePower").item(0);
+                final Element elementAccuracy = (Element)attack.getElementsByTagName("basePower").item(0);
                 final Element elementIsSpecial = (Element)attack.getElementsByTagName("isSpecial").item(0);
 
                 final int basePower = Integer.parseInt(elementBasePower.getTextContent());
                 final boolean isSpecial = Boolean.parseBoolean(elementIsSpecial.getTextContent());
+                final int accuracy = Integer.parseInt(elementAccuracy.getTextContent());
 
-                attackList.add(new Attack(name, basePower, isSpecial));
+                attackList.add(new Attack(name, basePower, isSpecial, accuracy));
             }
         }
 

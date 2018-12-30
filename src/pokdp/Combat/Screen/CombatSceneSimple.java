@@ -53,7 +53,7 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         gridPane.setPrefHeight(height);
         gridPane.setPrefWidth(width);
 
-        buttonDefense. setStyle(Constantes.DEFAULT_BUTTON);
+        buttonDefense.setStyle(Constantes.DEFAULT_BUTTON);
 
         ColumnConstraints colFirstPok = new ColumnConstraints();
         ColumnConstraints colSectPok = new ColumnConstraints();
@@ -87,7 +87,6 @@ public class CombatSceneSimple extends WrapperSceneCombat {
             pokPlayer.setDefense(true);
             actionPlayer.setText(pokPlayer.getName() + " se défend!");
         });
-
 
         initialize(player, pokPlayer, enemy);
     }
@@ -215,12 +214,12 @@ public class CombatSceneSimple extends WrapperSceneCombat {
                 attacker.levelUp();
                 attacker.setPV(attacker.getPVMax());
 
-                if(!player.alreayHavePokemon(victim.getName())) {
+                if (!player.alreayHavePokemon(victim.getName())) {
                     player.addPokemon(new Pokemon(victim));
+                    SceneManager.setSceneVictory("VictoryScene", victim);
+                } else {
+                    SceneManager.setScene("WorldScene");
                 }
-
-                //SceneManager.setScene("WorldScene");
-                SceneManager.setSceneVictory("VictoryScene", victim);
             }
         });
 

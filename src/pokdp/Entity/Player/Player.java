@@ -56,7 +56,7 @@ public class Player extends AEntity {
                 animationManager[i].addFrameDefaultSize("file:assets/sprites/player/sasha_" + stringLook[i] + (j + 1) + ".png");
             }
         }
-        pokemonList.add(Constantes.pokemonHashMap.get("Bullbizare"));
+        pokemonList.add(Constantes.pokemonHashMap.get("Bulbasaur"));
 
         setSprite(animationManager[LOOK_DOWN].getFrame(0));
 

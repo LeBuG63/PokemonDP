@@ -4,13 +4,18 @@ import pokdp.Entity.Pokemon.Pokemon;
 
 public class Attack implements IAttackManager{
     private int basePower;
+    private int accuracy;
     private boolean isSpecial;
     private String name;
 
-    public Attack(String name , int basePower, boolean isSpecial) {
+    public Attack(String name , int basePower, boolean isSpecial, int accuracy) {
         this.basePower = basePower;
         this.isSpecial = isSpecial;
         this.name = name;
+    }
+
+    private int getAccuracy() {
+        return accuracy;
     }
 
     public String getName(){
