@@ -54,11 +54,11 @@ public class Pokemon extends AEntity {
         return id;
     }
 
-    private int[] getArrBaseStats() {
+    public int[] getArrBaseStats() {
         return arrBaseStats;
     }
 
-    public int[] getArrEV() {
+    private int[] getArrEV() {
         return arrEV;
     }
 

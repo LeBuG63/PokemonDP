@@ -115,26 +115,20 @@ public class PokedexScene extends AScene {
             gridPane.add(name, 1, index);
             gridPane.add(sprite, 2, index);
 
-            int evcol = 3;
-            for(int ev : pokemon.getArrEV()) {
+            int bstatcol = 3;
+            for(int stat : pokemon.getArrBaseStats()) {
 
-                if(evcol - 3 == pokemon.getArrEV().length - 1)
+                if(bstatcol - 3 == pokemon.getArrBaseStats().length - 1)
                     break;
 
-                Label label = new Label(String.valueOf(ev));
+                Label label = new Label(String.valueOf(stat));
                 label.setStyle("-fx-text-fill: white");
 
                 if(font != null) {
                     label.setFont(font);
                 }
 
-                if(evcol == 3) {
-                    label.setText(String.valueOf(pokemon.getPV()));
-                    gridPane.add(label, evcol++, index);
-                }
-                else {
-                    gridPane.add(label, evcol++, index);
-                }
+                gridPane.add(label, bstatcol++, index);
             }
 
             index++;
