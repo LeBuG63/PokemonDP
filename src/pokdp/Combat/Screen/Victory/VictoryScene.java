@@ -35,8 +35,6 @@ public class VictoryScene extends WrapperSceneVictory {
 
     @Override
     public void load(double heigth, double height) {
-        Font.loadFont(VictoryScene.class.getResource("pokemon.ttf").toExternalForm(), 40);
-
         gridPane.setPrefHeight(height);
         gridPane.setPrefWidth(heigth);
 

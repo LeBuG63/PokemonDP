@@ -17,6 +17,13 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import pokdp.Attack.Attack;
+import pokdp.Combat.ACombatManager;
+import pokdp.Combat.ECombatRules;
+import pokdp.Combat.SimpleCombatManager;
+import pokdp.Entity.ArtificialIntelligence.AArtificialIntelligenceManager;
+import pokdp.Entity.ArtificialIntelligence.EAiType;
+import pokdp.Entity.ArtificialIntelligence.EEntityHurted;
+import pokdp.Entity.ArtificialIntelligence.SimpleAI;
 import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Scene.AScene;
@@ -46,7 +53,12 @@ public class CombatSceneSimple extends WrapperSceneCombat {
 
     private List<Button> buttonList = new ArrayList<>();
 
+    private AArtificialIntelligenceManager iaManager = new SimpleAI();
+    private ACombatManager combatManager = new SimpleCombatManager();
+
     private boolean deadOccuredOnce = false;
+    private boolean nextTurnCanBePlayed = true;
+    private int actualTurn = 0; // 0 = joueur    1 = ennemi
 
     @Override
     public void load(double width, double height) {
@@ -132,25 +144,35 @@ public class CombatSceneSimple extends WrapperSceneCombat {
             button.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent actionEvent) {
-                    if(!deadOccuredOnce) {
+                    if(!deadOccuredOnce && nextTurnCanBePlayed ) {
                         int damage = attack.calculateDamage(pokPlayer, enemy);
 
-                        if(enemy.isDefending()) {
+                        if (enemy.isDefending()) {
                             actionPlayer.setText(attack.getName() + " a loupé!");
                             enemy.setDefense(false);
                             return;
                         }
 
                         actionPlayer.setText(pokPlayer.getName() + " attaque avec " + attack.getName());
-                        playTranslationAnimation(statEnemy.getPokemonImageView(), 10f, 10, 100);
+                        TranslateTransition tt = playTranslationAnimation(statEnemy.getPokemonImageView(), 10f, 10, 100);
+
+                        tt.setOnFinished(new EventHandler<ActionEvent>() {
+                            @Override
+                            public void handle(ActionEvent actionEvent) {
+                                nextTurnCanBePlayed = true;
+                                enemyAttack(pokPlayer, enemy);
+                            }
+                        });
+
                         enemy.setPV(enemy.getPV() - damage);
 
-                        if (enemy.getPV() <= 0) {
+                        ECombatRules rule = combatManager.checkRules(pokPlayer, enemy);
+
+                        if (rule == ECombatRules.ENEMY_DEAD) {
                             processDeathAnim(attack, pokPlayer, enemy, statEnemy.getPokemonImageView());
                             addContinue(player, pokPlayer, enemy);
+                            return;
                         }
-
-                        enemyAttack(pokPlayer, enemy);
                     }
                 }
             });
@@ -158,42 +180,39 @@ public class CombatSceneSimple extends WrapperSceneCombat {
             actionPane.add(button, i++, 0);
             buttonList.add(button);
         }
-        //BackgroundImage backgroundImage = new BackgroundImage(new Image("file:assets/combat/combat_template1.png", 1920, 1080, true, false), BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
-    //    gridPane.setBackground(new Background(backgroundImage));
 
     }
 
     private void enemyAttack(Pokemon player, Pokemon enemy) {
-        Random random = new Random();
+        EEntityHurted entityHurted = iaManager.performAction(enemy, player, EAiType.NORMAL);
+        Attack attack = iaManager.getSelectedAttack();
 
-        boolean def = random.nextBoolean();
-
-        enemy.setDefense(def);
-
-        if(def) {
-            actionEnemy.setText(enemy.getName() + " se défend!");
-            return;
+        switch (entityHurted) {
+            case POKEMON_ATTACKER_DEF:
+                actionEnemy.setText(enemy.getName() + " se défend!");
+                break;
+            case POKEMON_VICTIM_DEF:
+                actionEnemy.setText(attack.getName() + " a loupé!");
+                break;
+            case POKEMON_VICTIM: {
+                actionEnemy.setText(enemy.getName() + " attaque avec " + attack.getName());
+                TranslateTransition tt = playTranslationAnimation(statPlayer.getPokemonImageView(), 10f, 10, 100);
+                tt.setOnFinished(new EventHandler<ActionEvent>() {
+                    @Override
+                    public void handle(ActionEvent actionEvent) {
+                        nextTurnCanBePlayed = true;
+                    }
+                });
+                }
+                break;
         }
 
-        int iAttack = random.nextInt(enemy.getAttacks().size());
-        Attack attack = enemy.getAttacks().get(iAttack);
+        ECombatRules rule = combatManager.checkRules(player, enemy);
 
-        if(player.isDefending()) {
-            actionEnemy.setText(attack.getName() + " a loupé!");
-            player.setDefense(false);
-            return;
-        }
-        playTranslationAnimation(statPlayer.getPokemonImageView(), 10f, 10, 100);
-
-        int damage = attack.calculateDamage(enemy, player);
-
-        player.setPV(player.getPV() - damage);
-
-        actionEnemy.setText(enemy.getName() + " attaque avec " + attack.getName());
-
-        if(player.getPV() <= 0) {
-            processDeathAnim(attack, enemy, player, statPlayer.getPokemonImageView());
+        if (rule == ECombatRules.PLAYER_DEAD) {
+            processDeathAnim(attack, player, enemy, statPlayer.getPokemonImageView());
             addDeath();
+            return;
         }
     }
 
@@ -242,12 +261,15 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         }
     }
 
-    private void playTranslationAnimation(Node node, float offsetX, int cycleCount, int duration) {
+    private TranslateTransition playTranslationAnimation(Node node, float offsetX, int cycleCount, int duration) {
         TranslateTransition tt = new TranslateTransition(Duration.millis(duration), node);
         tt.setByX(offsetX);
         tt.setCycleCount(cycleCount);
         tt.setAutoReverse(true);
 
         tt.play();
+        nextTurnCanBePlayed = false;
+
+        return tt;
     }
 }
