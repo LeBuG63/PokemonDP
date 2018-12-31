@@ -1,10 +1,7 @@
 package pokdp.Entity.Player;
 
 import pokdp.Entity.Pokemon.Pokemon;
-import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;
-
-import java.util.Random;
 
 public class RandomCombatEvent {
     private Pokemon pokemon1;
@@ -24,12 +21,13 @@ public class RandomCombatEvent {
         pokemon2 = pok;
     }
 
+    /**
+     * verifie si le combat doit etre lance ou non
+     * @return un boolean
+     */
     public boolean roll() {
-        if(Math.random() < Constantes.PROBA_COMBAT) {
-            return true;
-            //CombatSceneSimple.launch(primaryStage, this, getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
-        }
+        //CombatSceneSimple.launch(primaryStage, this, getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
+        return Math.random() < Constantes.PROBA_COMBAT;
 
-        return false;
     }
 }

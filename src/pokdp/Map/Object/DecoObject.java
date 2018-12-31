@@ -1,9 +1,9 @@
 package pokdp.Map.Object;
 
-import pokdp.AnimationManager.AnimationManagerSprite;
-import pokdp.Entity.EEntityType;
-import pokdp.Entity.AEntity;
 import javafx.scene.image.Image;
+import pokdp.AnimationManager.AnimationManagerSprite;
+import pokdp.Entity.AEntity;
+import pokdp.Entity.EEntityType;
 
 import java.util.ArrayList;
 import java.util.List;

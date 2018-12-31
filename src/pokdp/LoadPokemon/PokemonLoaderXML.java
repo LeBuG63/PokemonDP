@@ -10,10 +10,8 @@ import pokdp.Type.EType;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 
 public class PokemonLoaderXML implements IPokemonLoader {

@@ -1,10 +1,10 @@
 package pokdp.Map.Tile;
 
+import javafx.animation.Animation;
 import pokdp.AnimationManager.AnimationManagerSprite;
 import pokdp.Entity.AEntity;
 import pokdp.Entity.EEntityType;
 import pokdp.Utils.Constantes;
-import javafx.animation.Animation;
 
 import java.util.List;
 

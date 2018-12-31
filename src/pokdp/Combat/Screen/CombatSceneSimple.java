@@ -1,21 +1,17 @@
 package pokdp.Combat.Screen;
 
-import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.*;
+import javafx.scene.layout.ColumnConstraints;
+import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import javafx.stage.Stage;
-import javafx.util.Duration;
 import pokdp.Attack.Attack;
 import pokdp.Combat.ACombatManager;
 import pokdp.Combat.ECombatRules;
@@ -26,11 +22,10 @@ import pokdp.Entity.ArtificialIntelligence.EEntityHurted;
 import pokdp.Entity.ArtificialIntelligence.SimpleAI;
 import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
-import pokdp.Scene.AScene;
 import pokdp.Scene.SceneManager;
 import pokdp.Scene.Wrappers.WrapperSceneCombat;
 import pokdp.Utils.Constantes;
-import pokdp.World.Screen.WorldScene;
+import pokdp.Utils.Transition.Transition;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.io.File;
@@ -38,7 +33,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 public class CombatSceneSimple extends WrapperSceneCombat {
     private Label actionEnemy;
@@ -93,6 +87,12 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         //getScene().getStylesheets().add("file:assets/styles/combat.css");
     }
 
+    /**
+     * met a jour le combat
+     * @param player        le joueur
+     * @param pokPlayer     le pokemon du joueur
+     * @param enemy         le pokemon ennemi
+     */
     @Override
     public void setAttributes(Player player, Pokemon pokPlayer, Pokemon enemy) {
         buttonDefense.setOnAction(actionEvent -> {
@@ -103,6 +103,12 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         initialize(player, pokPlayer, enemy);
     }
 
+    /**
+     * initialise le combat
+     * @param player        le joueur
+     * @param pokPlayer     le pokemon du joueur
+     * @param enemy         le pokemon ennemi
+     */
     private void initialize(Player player, Pokemon pokPlayer, Pokemon enemy) {
         gridPane.getChildren().clear();
         actionPane.getChildren().clear();
@@ -153,8 +159,12 @@ public class CombatSceneSimple extends WrapperSceneCombat {
                             return;
                         }
 
+                        enemy.setPV(enemy.getPV() - damage);
                         actionPlayer.setText(pokPlayer.getName() + " attaque avec " + attack.getName());
-                        TranslateTransition tt = playTranslationAnimation(statEnemy.getPokemonImageView(), 10f, 10, 100);
+
+                        TranslateTransition tt = Transition.translate(statEnemy.getPokemonImageView(), 10f, 10, 100);
+
+                        nextTurnCanBePlayed = false;
 
                         tt.setOnFinished(new EventHandler<ActionEvent>() {
                             @Override
@@ -164,14 +174,12 @@ public class CombatSceneSimple extends WrapperSceneCombat {
                             }
                         });
 
-                        enemy.setPV(enemy.getPV() - damage);
 
                         ECombatRules rule = combatManager.checkRules(pokPlayer, enemy);
 
                         if (rule == ECombatRules.ENEMY_DEAD) {
                             processDeathAnim(attack, pokPlayer, enemy, statEnemy.getPokemonImageView());
                             addContinue(player, pokPlayer, enemy);
-                            return;
                         }
                     }
                 }
@@ -183,6 +191,11 @@ public class CombatSceneSimple extends WrapperSceneCombat {
 
     }
 
+    /**
+     * gere l attaque de l ennemi
+     * @param player    le pokemon du joueur
+     * @param enemy     le pokemon ennemi
+     */
     private void enemyAttack(Pokemon player, Pokemon enemy) {
         EEntityHurted entityHurted = iaManager.performAction(enemy, player, EAiType.NORMAL);
         Attack attack = iaManager.getSelectedAttack();
@@ -196,7 +209,10 @@ public class CombatSceneSimple extends WrapperSceneCombat {
                 break;
             case POKEMON_VICTIM: {
                 actionEnemy.setText(enemy.getName() + " attaque avec " + attack.getName());
-                TranslateTransition tt = playTranslationAnimation(statPlayer.getPokemonImageView(), 10f, 10, 100);
+                TranslateTransition tt = Transition.translate(statPlayer.getPokemonImageView(), 10f, 10, 100);
+
+                nextTurnCanBePlayed = false;
+
                 tt.setOnFinished(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent actionEvent) {
@@ -216,10 +232,19 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         }
     }
 
+    /**
+     * gere la mort du joueur
+     */
     private void addDeath() {
         throw new NotImplementedException();
     }
 
+    /**
+     * gere la victoire du joueur
+     * @param player        le joueur
+     * @param attacker      le pokemon gagnant
+     * @param victim        le pokemon perdant
+     */
     private void addContinue(Player player, Pokemon attacker, Pokemon victim) {
         Button continueButton = new Button("continuer...");
 
@@ -245,31 +270,16 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         gridPane.add(continueButton, 1, 1);
     }
 
+    /**
+     * gere l animation de mort d un pokemon
+     * @param attack        l attaque
+     * @param attacker      le pokemon attaquant
+     * @param victim        le pokemon victime
+     * @param imageView     l imageview du sprite du pokemon
+     */
     private void processDeathAnim(Attack attack, Pokemon attacker, Pokemon victim, ImageView imageView) {
-        int damage = attack.calculateDamage(attacker, victim);
-        victim.setPV(victim.getPV() - damage);
-
-        if (victim.getPV() <= 0) {
-            deadOccuredOnce = true;
-
-            FadeTransition fadeTransition = new FadeTransition(Duration.millis(3000), imageView);
-
-            fadeTransition.setFromValue(1.0);
-            fadeTransition.setToValue(0.0);
-
-            fadeTransition.play();
-        }
-    }
-
-    private TranslateTransition playTranslationAnimation(Node node, float offsetX, int cycleCount, int duration) {
-        TranslateTransition tt = new TranslateTransition(Duration.millis(duration), node);
-        tt.setByX(offsetX);
-        tt.setCycleCount(cycleCount);
-        tt.setAutoReverse(true);
-
-        tt.play();
-        nextTurnCanBePlayed = false;
-
-        return tt;
+        victim.setPV(0);
+        deadOccuredOnce = true;
+        Transition.fade(imageView, 3000, 1.0, 0.0);
     }
 }

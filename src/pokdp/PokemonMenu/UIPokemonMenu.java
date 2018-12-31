@@ -3,10 +3,7 @@ package pokdp.PokemonMenu;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
-import javafx.stage.Stage;
 import pokdp.Entity.Pokemon.Pokemon;
-import pokdp.EventManager.EventManager;
-import pokdp.Scene.AScene;
 import pokdp.Scene.Wrappers.WrapperScenePokemonMenu;
 
 import java.io.FileInputStream;

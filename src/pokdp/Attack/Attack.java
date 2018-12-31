@@ -30,6 +30,12 @@ public class Attack implements IAttackManager{
         return isSpecial;
     }
 
+    /**
+     * calcule les degats subits entre l attacker et le defender
+     * @param defender pokemon qui se fait attacker
+     * @param attacker pokemon qui attaque
+     * @return degats subis
+     */
     @Override
     public int calculateDamage(Pokemon defender, Pokemon attacker) {
         final int STAT_INDEX = (isSpecial)?3:1;

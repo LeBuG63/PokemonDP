@@ -1,27 +1,22 @@
 package pokdp.Combat.Screen.Victory;
 
-import com.sun.javafx.collections.ImmutableObservableList;
-import javafx.animation.Animation;
-import javafx.animation.RotateTransition;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.HPos;
 import javafx.geometry.Pos;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.*;
+import javafx.scene.layout.GridPane;
+import javafx.scene.layout.RowConstraints;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import javafx.scene.text.TextAlignment;
-import javafx.util.Duration;
 import pokdp.Entity.Pokemon.Pokemon;
-import pokdp.Main;
 import pokdp.Scene.SceneManager;
 import pokdp.Scene.Wrappers.WrapperSceneVictory;
-import pokdp.Utils.Constantes;
+import pokdp.Utils.Transition.Transition;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -70,11 +65,14 @@ public class VictoryScene extends WrapperSceneVictory {
         catch(FileNotFoundException e) {
         }
 
-        rotate(imageView);
+        Transition.rotate(imageView, 2500, 20);
 
         gridPane.add(msg, 0, 0);
         gridPane.add(imageView, 0, 1);
         gridPane.add(button, 0, 2);
+
+        gridPane.setHalignment(imageView, HPos.CENTER);
+        gridPane.setHalignment(button, HPos.CENTER);
 
         gridPane.setStyle(
                 "-fx-background-image: url(" +
@@ -91,22 +89,5 @@ public class VictoryScene extends WrapperSceneVictory {
         imageView.setImage(new Image(pokemon.getSpriteURL(),512, 512, false, false));
 
         msg.setText("Vous avez capture: " + pokemon.getName());
-    }
-
-    private void zoom(Node node) {
-
-    }
-
-    private void rotate(Node node) {
-        RotateTransition rt = new RotateTransition(Duration.millis(2500), node);
-
-        double angle = 20;
-
-        rt.setFromAngle(-angle);
-        rt.setByAngle(angle*2);
-        rt.setCycleCount(Animation.INDEFINITE);
-        rt.setAutoReverse(true);
-
-        rt.play();
     }
 }

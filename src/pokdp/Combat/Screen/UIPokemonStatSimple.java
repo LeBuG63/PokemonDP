@@ -1,20 +1,14 @@
 package pokdp.Combat.Screen;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Font;
-import pokdp.Attack.Attack;
 import pokdp.Entity.Pokemon.Pokemon;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class UIPokemonStatSimple extends AUIPokemonStat {
     private Label name = new Label();

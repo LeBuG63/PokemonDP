@@ -9,8 +9,6 @@ import pokdp.Entity.AEntity;
 import pokdp.Entity.EEntityType;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Map.Object.DecoObject;
-import pokdp.PokemonMenu.UIPokemonMenu;
-import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;
 
 import java.util.ArrayList;
@@ -78,10 +76,18 @@ public class Player extends AEntity {
         return false;
     }
 
+    /**
+     * remet la position du joueur a sa position par defaut
+     */
     public void resetPosition() {
         setCoord(DEFAULT_POSITION);
     }
 
+    /**
+     * gere les evenements du joueur
+     * @param event         l evenement au clavier
+     * @param primaryStage  le stage
+     */
     public void processKeyboardEvent(KeyEvent event,Stage primaryStage) {
            boolean collision = false;
            Vec2d save = new Vec2d(getCoord());
@@ -127,6 +133,11 @@ public class Player extends AEntity {
         return pokemonList.get(0);
     }
 
+    /**
+     * verifie si le joueur a deja le pokemon dans sa liste
+     * @param name  le nom du pokemon
+     * @return vrai si il existe deja, faux autrement
+     */
     public boolean alreayHavePokemon(String name) {
         for(Pokemon pokemon : getPokemonList()) {
             if(pokemon.getName() == name) {
@@ -137,6 +148,10 @@ public class Player extends AEntity {
         return false;
     }
 
+    /**
+     * change la liste de pokemon du joueur
+     * @param newPokemonList
+     */
     public static void setNewPokemonOrder(List<Pokemon> newPokemonList){
         pokemonList = newPokemonList;
     }

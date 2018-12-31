@@ -1,14 +1,13 @@
 package pokdp.Entity;
 
-import pokdp.EventManager.EventManager;
-import pokdp.Map.Object.CollisionBox;
-import pokdp.Map.Object.ICollisionObject;
-import pokdp.Utils.Constantes;
 import com.sun.javafx.geom.Vec2d;
 import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import pokdp.Entity.*;
+import pokdp.EventManager.EventManager;
+import pokdp.Map.Object.CollisionBox;
+import pokdp.Map.Object.ICollisionObject;
+import pokdp.Utils.Constantes;
 
 public abstract class AEntity extends Parent {
     public final static boolean HAS_COLLISION = true;

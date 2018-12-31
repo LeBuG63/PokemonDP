@@ -1,14 +1,14 @@
 package pokdp.Map;
 
-import pokdp.Entity.AEntity;
-import pokdp.Entity.EEntityType;
-import pokdp.Entity.Player.RandomCombatEvent;
+import javafx.scene.Parent;
 import pokdp.Map.Object.DecoObject;
 import pokdp.Map.Tile.Tile;
-import javafx.scene.Parent;
 import pokdp.Utils.Constantes;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Random;
 
 public class Map extends Parent {
     private int width;

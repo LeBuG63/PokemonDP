@@ -5,7 +5,8 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import pokdp.Attack.Attack;
-import pokdp.Entity.*;
+import pokdp.Entity.AEntity;
+import pokdp.Entity.EEntityType;
 import pokdp.Type.EType;
 
 import java.util.ArrayList;

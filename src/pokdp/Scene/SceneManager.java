@@ -1,10 +1,8 @@
 package pokdp.Scene;
 
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
-import pokdp.PokemonMenu.PokemonMenuController;
 import pokdp.Scene.Wrappers.WrapperSceneCombat;
 import pokdp.Scene.Wrappers.WrapperScenePokemonMenu;
 import pokdp.Scene.Wrappers.WrapperSceneVictory;

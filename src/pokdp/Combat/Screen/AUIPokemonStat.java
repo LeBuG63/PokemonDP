@@ -1,11 +1,8 @@
 package pokdp.Combat.Screen;
 
 import javafx.scene.Parent;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
-
-import pokdp.Entity.Pokemon.Pokemon;
 
 abstract class AUIPokemonStat extends Parent {
     private ImageView sprite;

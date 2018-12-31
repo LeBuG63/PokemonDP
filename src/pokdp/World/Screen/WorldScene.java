@@ -1,6 +1,5 @@
 package pokdp.World.Screen;
 
-import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -41,7 +40,7 @@ public class WorldScene extends AScene {
 
         setScene(new Scene(group));
 
-        Map map = new Map(1600 / Constantes.DEFAULT_TILE_MAP_WIDTH,900 / Constantes.DEFAULT_TILE_MAP_HEIGHT );
+        Map map = new Map((int)width / Constantes.DEFAULT_TILE_MAP_WIDTH,(int)height / Constantes.DEFAULT_TILE_MAP_HEIGHT + 1);
 
 
             map.addTileSet(new ObjectSet() {{

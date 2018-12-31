@@ -1,15 +1,14 @@
 package pokdp.AnimationManager;
 
-import pokdp.Entity.AEntity;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.scene.image.Image;
+import javafx.util.Duration;
+import pokdp.Entity.AEntity;
+import pokdp.Utils.Constantes;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import javafx.util.Duration;
-import pokdp.Utils.Constantes;
 
 public class AnimationManagerSprite  {
     public static final double RANDOM_DURATION = -1.0f;

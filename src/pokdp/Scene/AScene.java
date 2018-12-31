@@ -1,9 +1,6 @@
 package pokdp.Scene;
 
 import javafx.scene.Scene;
-import pokdp.Entity.Pokemon.Pokemon;
-
-import java.util.List;
 
 public abstract class AScene {
     private Scene scene;

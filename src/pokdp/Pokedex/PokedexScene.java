@@ -1,8 +1,6 @@
 package pokdp.Pokedex;
 
-import javafx.event.Event;
 import javafx.event.EventHandler;
-import javafx.event.EventType;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -146,7 +144,6 @@ public class PokedexScene extends AScene {
                 }
             }
         }, EEventType.KEYBOARD_PRESSED);
-
 
         Scene scene = new Scene(scrollPane, width, height);
 
