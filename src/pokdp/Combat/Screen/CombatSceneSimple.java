@@ -98,6 +98,8 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         buttonDefense.setOnAction(actionEvent -> {
             pokPlayer.setDefense(true);
             actionPlayer.setText(pokPlayer.getName() + " se défend!");
+
+            enemyAttack(pokPlayer, enemy);
         });
 
         initialize(player, pokPlayer, enemy);
@@ -174,7 +176,6 @@ public class CombatSceneSimple extends WrapperSceneCombat {
                             }
                         });
 
-
                         ECombatRules rule = combatManager.checkRules(pokPlayer, enemy);
 
                         if (rule == ECombatRules.ENEMY_DEAD) {
@@ -188,7 +189,6 @@ public class CombatSceneSimple extends WrapperSceneCombat {
             actionPane.add(button, i++, 0);
             buttonList.add(button);
         }
-
     }
 
     /**
