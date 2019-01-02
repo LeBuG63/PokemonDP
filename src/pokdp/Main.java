@@ -16,6 +16,7 @@ import pokdp.PokemonMenu.UIPokemonMenu;
 import pokdp.Scene.AScene;
 import pokdp.Scene.SceneManager;
 import pokdp.Starter.Screen.StarterScene;
+import pokdp.Utils.Constantes;
 import pokdp.World.Screen.WorldScene;
 import sun.java2d.loops.TransformHelper;
 
@@ -41,7 +42,7 @@ public class Main extends Application {
         scale.setPivotY(0);
 
         SceneManager.setManager(stage, width, height);
-        SceneManager.setScene("StarterScene");
+        SceneManager.setScene(Constantes.STARTERSCENE_NAME);
 
         primaryStage.show();
     }
@@ -63,12 +64,12 @@ public class Main extends Application {
         AScene pokedexScene = new PokedexScene();
         AScene starterScene = new StarterScene();
 
-        SceneManager.addScene(starterScene, "StarterScene");
-        SceneManager.addScene(pokemonMenu,"PokemonMenu");
-        SceneManager.addScene(worldScene, "WorldScene");
-        SceneManager.addScene(combatSceneSimple, "CombatScene");
-        SceneManager.addScene(victoryScene, "VictoryScene");
-        //SceneManager.addScene(pokedexScene, "PokedexScene");
+        SceneManager.addScene(starterScene, Constantes.STARTERSCENE_NAME);
+        SceneManager.addScene(pokemonMenu,Constantes.POKEMONMENU_NAME);
+        SceneManager.addScene(worldScene, Constantes.WORLDSCENE_NAME);
+        SceneManager.addScene(combatSceneSimple, Constantes.COMBATSCENE_NAME);
+        SceneManager.addScene(victoryScene, Constantes.VICTORYSCENE_NAME);
+        SceneManager.addScene(pokedexScene, Constantes.POKEDEXSCENE_NAME);
     }
 
     public static void main(String[] args) {

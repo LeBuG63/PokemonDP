@@ -258,9 +258,9 @@ public class CombatSceneSimple extends WrapperSceneCombat {
 
                 if (!player.alreayHavePokemon(victim.getName())) {
                     player.addPokemon(new Pokemon(victim));
-                    SceneManager.setSceneVictory("VictoryScene", victim);
+                    SceneManager.setSceneVictory(Constantes.VICTORYSCENE_NAME, victim);
                 } else {
-                    SceneManager.setScene("WorldScene");
+                    SceneManager.setScene(Constantes.WORLDSCENE_NAME);
                 }
             }
         });

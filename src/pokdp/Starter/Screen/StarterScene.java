@@ -91,8 +91,8 @@ public class StarterScene extends AScene {
             button.setOnAction(new EventHandler<ActionEvent>() {
                                    @Override
                                    public void handle(ActionEvent action) {
-                                       ((WorldScene)SceneManager.getScene("WorldScene")).getPlayer().addPokemon(randomPokemon);
-                                       SceneManager.setScene("WorldScene");
+                                       ((WorldScene)SceneManager.getScene(Constantes.WORLDSCENE_NAME)).getPlayer().addPokemon(randomPokemon);
+                                       SceneManager.setScene(Constantes.WORLDSCENE_NAME);
                                    }
                                });
 

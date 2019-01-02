@@ -16,6 +16,7 @@ import javafx.scene.text.Font;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Scene.SceneManager;
 import pokdp.Scene.Wrappers.WrapperSceneVictory;
+import pokdp.Utils.Constantes;
 import pokdp.Utils.ConstraintManager.RowConstraintManager;
 import pokdp.Utils.Transition.Transition;
 
@@ -45,7 +46,7 @@ public class VictoryScene extends WrapperSceneVictory {
         button.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent action) {
-                SceneManager.setScene("WorldScene");
+                SceneManager.setScene(Constantes.WORLDSCENE_NAME);
             }
         });
 

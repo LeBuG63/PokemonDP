@@ -140,11 +140,11 @@ public class WorldScene extends AScene {
 
                 switch (event.getCode()) {
                     case ENTER:
-                        SceneManager.setScenePokemon("PokemonMenu", ((Player) player).getPokemonList());
+                        SceneManager.setScenePokemon(Constantes.POKEMONMENU_NAME, ((Player) player).getPokemonList());
                         return; // ici on veut un return car la suite ne doit pas se passer
 
                     case P:
-                        SceneManager.setScene("PokedexScene");
+                        SceneManager.setScene(Constantes.POKEDEXSCENE_NAME);
                         return;
                 }
 
@@ -164,7 +164,7 @@ public class WorldScene extends AScene {
 
                     map.generateRandomTerrain();
 
-                    SceneManager.setSceneCombat("CombatScene", ((Player) player), ((Player) player).getPokemon(), enemy);
+                    SceneManager.setSceneCombat(Constantes.COMBATSCENE_NAME, ((Player) player), ((Player) player).getPokemon(), enemy);
                 }
 
                 ((Player) player).processKeyboardEvent(event,primaryStage);

@@ -8,6 +8,7 @@ import javafx.scene.control.ListView;
 import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Scene.SceneManager;
+import pokdp.Utils.Constantes;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,6 +49,6 @@ public class PokemonMenuController{
         listPokemon.set(listPokeView.getSelectionModel().getSelectedIndex(),oldHeadPokemon);
         setListPokeView(listPokemon);
         Player.setNewPokemonOrder(listPokemon);
-        SceneManager.setScene("WorldScene");
+        SceneManager.setScene(Constantes.WORLDSCENE_NAME);
     }
 }

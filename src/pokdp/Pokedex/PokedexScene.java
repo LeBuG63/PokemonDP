@@ -139,7 +139,7 @@ public class PokedexScene extends AScene {
                     case P:
                     case ENTER:
                     case ESCAPE:
-                        SceneManager.setScene("WorldScene");
+                        SceneManager.setScene(Constantes.WORLDSCENE_NAME);
                         break;
                 }
             }

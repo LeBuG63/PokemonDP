@@ -2,6 +2,7 @@ package pokdp.Utils;
 
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.LoadPokemon.PokemonLoaderXML;
+import pokdp.Scene.SceneManager;
 
 import java.util.HashMap;
 
@@ -29,6 +30,14 @@ public class Constantes {
             "      -fx-text-fill: #333333;"+
             "      -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);";
     public static final int NUMBER_STARTER = 3;
+
+
+    public static final String STARTERSCENE_NAME = "StarterScene";
+    public static final String POKEMONMENU_NAME = "PokemonMenu";
+    public static final String WORLDSCENE_NAME = "WorldScene";
+    public static final String COMBATSCENE_NAME = "CombatScene";
+    public static final String VICTORYSCENE_NAME = "VictoryScene";
+    public static final String POKEDEXSCENE_NAME = "PokedexScene";
 
     public static HashMap<String, Pokemon> pokemonHashMap = PokemonLoaderXML.load("assets/pokemons/list.xml");
 }

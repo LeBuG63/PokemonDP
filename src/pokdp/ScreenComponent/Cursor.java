@@ -11,6 +11,7 @@ import pokdp.Entity.EEntityType;
 import pokdp.EventManager.EEventType;
 import pokdp.EventManager.EventManager;
 import pokdp.Scene.SceneManager;
+import pokdp.Utils.Constantes;
 
 public class Cursor extends AEntity {
     private ImageView   imageView;
@@ -44,7 +45,7 @@ public class Cursor extends AEntity {
                         }
                         break;
                     case ESCAPE:
-                        SceneManager.setScene("WorldScene");
+                        SceneManager.setScene(Constantes.WORLDSCENE_NAME);
                         break;
                 }
             }
