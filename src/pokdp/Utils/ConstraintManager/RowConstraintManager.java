@@ -17,6 +17,8 @@ public class RowConstraintManager extends ConstraintManager {
         super(list);
     }
 
+    public RowConstraintManager() {super();}
+
     @Override
     public void addPercentToPane(GridPane pane) {
         for(int val : getConstraintsValues()) {

@@ -11,6 +11,9 @@ import java.util.List;
 public abstract class ConstraintManager {
     private List<Integer> listConstraints = new ArrayList<>();
 
+    public ConstraintManager() {}
+
+
     public ConstraintManager(List<Integer> list) {
         listConstraints = list;
     }
@@ -23,6 +26,10 @@ public abstract class ConstraintManager {
 
     public List<Integer> getConstraintsValues() {
         return listConstraints;
+    }
+
+    public void addConstraint(int val) {
+        listConstraints.add(val);
     }
 
     public abstract void addPercentToPane(GridPane pane);

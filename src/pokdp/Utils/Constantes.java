@@ -28,6 +28,7 @@ public class Constantes {
             "      -fx-font-size: 18px;"+
             "      -fx-text-fill: #333333;"+
             "      -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);";
+    public static final int NUMBER_STARTER = 3;
 
     public static HashMap<String, Pokemon> pokemonHashMap = PokemonLoaderXML.load("assets/pokemons/list.xml");
 }

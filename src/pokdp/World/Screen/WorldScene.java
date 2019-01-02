@@ -25,6 +25,7 @@ import java.util.Random;
 
 public class WorldScene extends AScene {
     private Stage primaryStage;
+    private AEntity player = new Player();
 
     public WorldScene(Stage primaryStage){
         super();
@@ -127,7 +128,7 @@ public class WorldScene extends AScene {
         playlist.shuffle();
         playlist.play();
 
-        AEntity player = new Player(getScene(), map.getDecoObjectList());
+        ((Player)player).setCollisionObjectsList(map.getDecoObjectList());
 
         randomCombatEvent = new RandomCombatEvent((Player) player);
 
@@ -176,5 +177,9 @@ public class WorldScene extends AScene {
 
         group.getChildren().add(map);
         group.getChildren().add(player);
+    }
+
+    public Player getPlayer() {
+        return (Player)player;
     }
 }

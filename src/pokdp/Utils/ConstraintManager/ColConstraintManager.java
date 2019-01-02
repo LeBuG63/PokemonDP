@@ -21,6 +21,8 @@ public class ColConstraintManager extends ConstraintManager {
         super(list);
     }
 
+    public ColConstraintManager() {super();}
+
     @Override
     public void addPercentToPane(GridPane pane) {
         for(int val : getConstraintsValues()) {

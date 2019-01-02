@@ -31,15 +31,11 @@ public class Player extends AEntity {
 
     public final static Vec2d DEFAULT_POSITION = new Vec2d(100, 100);
 
-    /// TODO: a changé quand la liste des pokemons sera implémentée
     private Pokemon pokemonAct = Constantes.pokemonHashMap.get("Bullbizare");
-    /**
-     * @param scene la scène dans laquelle se trouve le joueur
-     */
-    public Player(Scene scene, List<DecoObject> decoObjectList) {
+
+    public Player() {
         super(EEntityType.PLAYER, DEFAULT_POSITION, AEntity.HAS_COLLISION);
 
-        this.decoObjectList = decoObjectList;
         RandomCombatEvent randomCombatEvent = new RandomCombatEvent(this);
 
         final int SPRITE_WIDTH = Constantes.DEFAULT_SPRITE_WIDTH;
@@ -54,13 +50,24 @@ public class Player extends AEntity {
                 animationManager[i].addFrameDefaultSize("file:assets/sprites/player/sasha_" + stringLook[i] + (j + 1) + ".png");
             }
         }
-        pokemonList.add(Constantes.pokemonHashMap.get("Bulbasaur"));
 
         setSprite(animationManager[LOOK_DOWN].getFrame(0));
+    }
+
+    public Player(List<DecoObject> decoObjectList) {
+        this();
+        setCollisionObjectsList(decoObjectList);
+    }
+
+    public void setPokemonAct(Pokemon pokemonAct) {
+        this.pokemonAct = pokemonAct;
+    }
+
+    public void setCollisionObjectsList(List<DecoObject> decoObjectList) {
+        this.decoObjectList = decoObjectList;
 
         getCollisionObject().setHeight(getCollisionObject().getHeight()/2);
-        getCollisionObject().setCoord(new Vec2d(getCollisionObject().getCoord().x, getCollisionObject().getCoord().y - getCollisionObject().getCoord().y/2));
-    }
+        getCollisionObject().setCoord(new Vec2d(getCollisionObject().getCoord().x, getCollisionObject().getCoord().y - getCollisionObject().getCoord().y/2));    }
 
     /**
      * vérifie si le joueur est en collision avec un élément du décors

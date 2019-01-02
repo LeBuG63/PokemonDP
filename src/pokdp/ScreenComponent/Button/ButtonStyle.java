@@ -1,4 +1,4 @@
-package pokdp.Utils.Button;
+package pokdp.ScreenComponent.Button;
 
 import javafx.scene.control.Button;
 
