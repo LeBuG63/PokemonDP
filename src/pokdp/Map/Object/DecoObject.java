@@ -34,7 +34,6 @@ public class DecoObject extends AEntity {
         }
 
         setSprite(animationManager.getFrame(0));
-        Image frame = animationManager.getFrame(0);
 
         setCoordX(x);
         setCoordY(y);

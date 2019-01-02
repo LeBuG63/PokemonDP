@@ -18,6 +18,8 @@ import pokdp.EventManager.EventManager;
 import pokdp.Scene.AScene;
 import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;
+import pokdp.Utils.ConstraintManager.ColConstraintManager;
+import pokdp.Utils.ConstraintManager.ConstraintManager;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -41,30 +43,18 @@ public class PokedexScene extends AScene {
 
         gridPane.setBackground(new Background(new BackgroundFill(Color.ORANGERED, CornerRadii.EMPTY, Insets.EMPTY)));
 
-        ColumnConstraints col1 = new ColumnConstraints();
-        ColumnConstraints col2 = new ColumnConstraints();
-        ColumnConstraints col3 = new ColumnConstraints();
+        ConstraintManager colConstraintManager = new ColConstraintManager(new int[]{100, 200, 150});
 
-        col1.setPrefWidth(100);
-        col2.setPrefWidth(150);
-        col3.setPrefWidth(150);
-
-
-        gridPane.getColumnConstraints().add(col1);
-        gridPane.getColumnConstraints().add(col2);
-        gridPane.getColumnConstraints().add(col3);
 
         String[] colName = {"Id", "Nom", "Photo", "Vie", "Atq", "Def", "Vit", "Spe"};
 
         int col = 0;
 
-        ColumnConstraints columnConstraintsLabel = new ColumnConstraints();
-
-        columnConstraintsLabel.setPrefWidth(130);
-
         for(int i = 2; i < colName.length - 2; ++i) {
-            gridPane.getColumnConstraints().add(columnConstraintsLabel);
+            colConstraintManager.addConstraint(80);
         }
+
+        colConstraintManager.addFixedToPane(gridPane);
 
         Font font = null;
 
@@ -72,6 +62,7 @@ public class PokedexScene extends AScene {
             font = Font.loadFont(new FileInputStream(new File("assets/fonts/pokemon.ttf")), 14);
         }
         catch(FileNotFoundException e) {
+            System.out.println("font not found");
         }
 
         for(String name : colName) {

@@ -40,7 +40,7 @@ public class StarterScene extends AScene {
         Font font = null;
 
 
-        ConstraintManager rowConstraintManager = new RowConstraintManager(new int[]{20, 80});
+        ConstraintManager rowConstraintManager = new RowConstraintManager(new int[]{30});
 
         rowConstraintManager.addPercentToPane(gridPane);
 

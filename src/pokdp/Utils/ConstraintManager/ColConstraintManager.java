@@ -11,8 +11,6 @@ import java.util.Collection;
 import java.util.List;
 
 public class ColConstraintManager extends ConstraintManager {
-    private ColumnConstraints   columnConstraints = new ColumnConstraints();
-
     public ColConstraintManager(List<Integer> list) {
         super(list);
     }
@@ -26,6 +24,7 @@ public class ColConstraintManager extends ConstraintManager {
     @Override
     public void addPercentToPane(GridPane pane) {
         for(int val : getConstraintsValues()) {
+            ColumnConstraints columnConstraints = new ColumnConstraints();
             columnConstraints.setPercentWidth(val);
 
             pane.getColumnConstraints().add(columnConstraints);
@@ -34,6 +33,7 @@ public class ColConstraintManager extends ConstraintManager {
 
     public void addFixedToPane(GridPane pane) {
         for(int val : getConstraintsValues()) {
+            ColumnConstraints columnConstraints = new ColumnConstraints();
             columnConstraints.setPrefWidth(val);
 
             pane.getColumnConstraints().add(columnConstraints);

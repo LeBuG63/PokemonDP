@@ -7,8 +7,6 @@ import javafx.scene.layout.RowConstraints;
 import java.util.List;
 
 public class RowConstraintManager extends ConstraintManager {
-    private RowConstraints rowConstraints = new RowConstraints ();
-
     public RowConstraintManager(List<Integer> list) {
         super(list);
     }
@@ -22,6 +20,7 @@ public class RowConstraintManager extends ConstraintManager {
     @Override
     public void addPercentToPane(GridPane pane) {
         for(int val : getConstraintsValues()) {
+            RowConstraints rowConstraints = new RowConstraints();
             rowConstraints.setPercentHeight(val);
 
             pane.getRowConstraints().add(rowConstraints);
@@ -30,6 +29,7 @@ public class RowConstraintManager extends ConstraintManager {
 
     public void addFixedToPane(GridPane pane) {
         for(int val : getConstraintsValues()) {
+            RowConstraints rowConstraints = new RowConstraints();
             rowConstraints.setPrefHeight(val);
 
             pane.getRowConstraints().add(rowConstraints);

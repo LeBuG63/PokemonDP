@@ -65,7 +65,7 @@ public class CombatSceneSimple extends WrapperSceneCombat {
 
         buttonDefense.setStyle(Constantes.DEFAULT_BUTTON);
 
-        ConstraintManager colConstraintsManager = new ColConstraintManager(new int[]{40, 20, 40});
+        ConstraintManager colConstraintsManager = new ColConstraintManager(new int[]{5, 40, 20, 40});
         ConstraintManager rowConstraintsManager = new RowConstraintManager(new int[]{80, 20});
 
         colConstraintsManager.addPercentToPane(gridPane);
@@ -122,13 +122,13 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         actionPlayer = new Label();
         actionEnemy = new Label();
 
-        gridPane.add(statPlayer, 0, 3);
-        gridPane.add(statEnemy, 2, 1);
+        gridPane.add(statPlayer, 1, 3);
+        gridPane.add(statEnemy, 3, 1);
 
-        gridPane.add(actionEnemy, 2,2);
-        gridPane.add(actionPlayer, 0,2);
-        gridPane.add(actionPane, 0, 4);
-        gridPane.add(buttonDefense, 0, 5);
+        gridPane.add(actionEnemy, 3,2);
+        gridPane.add(actionPlayer, 1,2);
+        gridPane.add(actionPane, 1, 4);
+        gridPane.add(buttonDefense, 1, 5);
 
         int i = 0;
 
@@ -170,7 +170,8 @@ public class CombatSceneSimple extends WrapperSceneCombat {
                             @Override
                             public void handle(ActionEvent actionEvent) {
                                 nextTurnCanBePlayed = true;
-                                enemyAttack(pokPlayer, enemy);
+                                if(!deadOccuredOnce)
+                                    enemyAttack(pokPlayer, enemy);
                             }
                         });
 
@@ -184,7 +185,7 @@ public class CombatSceneSimple extends WrapperSceneCombat {
                 }
             });
 
-            actionPane.add(button, i++, 0);
+            actionPane.add(button, 1 + i++, 0);
             buttonList.add(button);
         }
     }
@@ -278,6 +279,7 @@ public class CombatSceneSimple extends WrapperSceneCombat {
     private void processDeathAnim(Attack attack, Pokemon attacker, Pokemon victim, ImageView imageView) {
         victim.setPV(0);
         deadOccuredOnce = true;
+
         Transition.fade(imageView, 3000, 1.0, 0.0);
     }
 }
