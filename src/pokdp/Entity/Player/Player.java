@@ -133,7 +133,7 @@ public class Player extends AEntity {
         return pokemonList;
     }
     public void addPokemon(Pokemon pokemon) {
-        pokemonList.add(pokemon);
+        pokemonList.add(new Pokemon(pokemon));
     }
 
     public Pokemon getPokemon() {
