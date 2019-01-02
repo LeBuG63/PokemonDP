@@ -16,6 +16,7 @@ import javafx.scene.text.Font;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Scene.SceneManager;
 import pokdp.Scene.Wrappers.WrapperSceneVictory;
+import pokdp.Utils.ConstraintManager.RowConstraintManager;
 import pokdp.Utils.Transition.Transition;
 
 import java.io.File;
@@ -33,17 +34,9 @@ public class VictoryScene extends WrapperSceneVictory {
         gridPane.setPrefHeight(height);
         gridPane.setPrefWidth(heigth);
 
-        RowConstraints colMsg = new RowConstraints();
-        RowConstraints colPok = new RowConstraints();
-        RowConstraints colAction = new RowConstraints();
+        RowConstraintManager rowConstraintManager = new RowConstraintManager(new int[]{20, 40, 20});
 
-        colMsg.setPercentHeight(20);
-        colPok.setPercentHeight(40);
-        colAction.setPercentHeight(20);
-
-        gridPane.getRowConstraints().add(colMsg);
-        gridPane.getRowConstraints().add(colAction);
-        gridPane.getRowConstraints().add(colPok);
+        rowConstraintManager.addPercentToPane(gridPane);
 
         gridPane.setAlignment(Pos.CENTER);
 

@@ -10,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.RowConstraints;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import pokdp.Attack.Attack;
@@ -25,6 +26,9 @@ import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Scene.SceneManager;
 import pokdp.Scene.Wrappers.WrapperSceneCombat;
 import pokdp.Utils.Constantes;
+import pokdp.Utils.ConstraintManager.ColConstraintManager;
+import pokdp.Utils.ConstraintManager.ConstraintManager;
+import pokdp.Utils.ConstraintManager.RowConstraintManager;
 import pokdp.Utils.Transition.Transition;
 import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
@@ -61,17 +65,11 @@ public class CombatSceneSimple extends WrapperSceneCombat {
 
         buttonDefense.setStyle(Constantes.DEFAULT_BUTTON);
 
-        ColumnConstraints colFirstPok = new ColumnConstraints();
-        ColumnConstraints colSectPok = new ColumnConstraints();
-        ColumnConstraints colAction = new ColumnConstraints();
+        ConstraintManager colConstraintsManager = new ColConstraintManager(new int[]{40, 20, 40});
+        ConstraintManager rowConstraintsManager = new RowConstraintManager(new int[]{80, 20});
 
-        colFirstPok.setPercentWidth(40);
-        colSectPok.setPercentWidth(40);
-        colAction.setPercentWidth(20);
-
-        gridPane.getColumnConstraints().add(colFirstPok);
-        gridPane.getColumnConstraints().add(colAction);
-        gridPane.getColumnConstraints().add(colSectPok);
+        colConstraintsManager.addPercentToPane(gridPane);
+        rowConstraintsManager.addPercentToPane(gridPane);
 
         gridPane.setStyle(
                 "-fx-background-image: url(" +
@@ -80,7 +78,7 @@ public class CombatSceneSimple extends WrapperSceneCombat {
                         "-fx-background-size: cover;"
         );
 
-        gridPane.setAlignment(Pos.BOTTOM_CENTER);
+        gridPane.setAlignment(Pos.BOTTOM_LEFT);
 
         setScene(new Scene(gridPane, width, height, Color.WHITE));
 
@@ -124,13 +122,13 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         actionPlayer = new Label();
         actionEnemy = new Label();
 
-        gridPane.add(statPlayer, 0, 2);
-        gridPane.add(statEnemy, 2, 0);
+        gridPane.add(statPlayer, 0, 3);
+        gridPane.add(statEnemy, 2, 1);
 
-        gridPane.add(actionEnemy, 2,1);
-        gridPane.add(actionPlayer, 0,1);
-        gridPane.add(actionPane, 0, 3);
-        gridPane.add(buttonDefense, 0, 4);
+        gridPane.add(actionEnemy, 2,2);
+        gridPane.add(actionPlayer, 0,2);
+        gridPane.add(actionPane, 0, 4);
+        gridPane.add(buttonDefense, 0, 5);
 
         int i = 0;
 
