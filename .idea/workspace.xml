@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5bfb9f8d-23bb-4774-a912-566443977a86" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Combat/Screen/CombatSceneSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Combat/Screen/CombatSceneSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Map/Object/DecoObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Map/Object/DecoObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Pokedex/PokedexScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Pokedex/PokedexScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Starter/Screen/StarterScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Starter/Screen/StarterScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Utils/ConstraintManager/ColConstraintManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Utils/ConstraintManager/ColConstraintManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pokdp/Utils/ConstraintManager/RowConstraintManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Utils/ConstraintManager/RowConstraintManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Music/MusicManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Music/MusicManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,7 +83,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="337" />
-          <entry key="JAVA" value="34033" />
+          <entry key="JAVA" value="34062" />
           <entry key="PLAIN_TEXT" value="65" />
           <entry key="XML" value="470" />
         </counts>
@@ -106,7 +101,7 @@
           <entry key="CSS" value="5" />
           <entry key="Font" value="8" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="301" />
+          <entry key="JAVA" value="304" />
           <entry key="Properties" value="2" />
           <entry key="XML" value="14" />
         </counts>
@@ -164,18 +159,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Combat/Screen/CombatSceneSimple.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="187" column="39" selection-start-line="187" selection-start-column="39" selection-end-line="187" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Map.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -202,20 +185,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="69" column="56" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
+            <state relative-caret-position="410">
+              <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Map/Tile/Tile.java">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Pokedex/PokedexScene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="-730">
+              <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Music/MusicManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pokdp/Music/Playlist.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -225,18 +229,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1183">
               <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pokdp/Starter/Screen/StarterScene.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="42" column="85" selection-start-line="42" selection-start-column="85" selection-end-line="42" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -277,7 +269,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pokdp/Map/ETerrainType.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java" />
         <option value="$PROJECT_DIR$/src/pokdp/EventManager/EventManager.java" />
         <option value="$PROJECT_DIR$/src/pokdp/PokemonMenu/PokemonMenu.fxml" />
@@ -328,6 +319,7 @@
         <option value="$PROJECT_DIR$/src/pokdp/Map/Map.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Map/Object/DecoObject.java" />
         <option value="$PROJECT_DIR$/src/pokdp/Entity/AEntity.java" />
+        <option value="$PROJECT_DIR$/src/pokdp/Music/MusicManager.java" />
       </list>
     </option>
   </component>
@@ -500,6 +492,13 @@
               <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pokdp" type="462c0819:PsiDirectoryNode" />
+              <item name="Music" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
               <item name="Pokedex" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -567,7 +566,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546467994753" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546477083459" />
     <property name="last_opened_file_path" value="$USER_HOME$/space_invaders" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -665,7 +664,7 @@
       <workItem from="1546250181233" duration="4151000" />
       <workItem from="1546274343834" duration="6569000" />
       <workItem from="1546358873083" duration="1675000" />
-      <workItem from="1546419561591" duration="8820000" />
+      <workItem from="1546419561591" duration="10509000" />
     </task>
     <servers />
   </component>
@@ -681,10 +680,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125002000" />
+    <option name="totallyTimeSpent" value="126691000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="36" width="1924" height="1027" extended-state="6" />
+    <frame x="-2" y="18" width="1924" height="1045" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21938232" />
@@ -696,7 +695,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289183" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49291238" visible="true" weight="0.38063064" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49291238" visible="true" weight="0.37306842" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49743262" weight="0.41501105" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -760,20 +759,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/pokemons/list.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="845">
-          <caret line="4174" column="7" selection-start-line="4174" selection-start-column="7" selection-end-line="4174" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/PokemonMenu/UIPokemonMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Combat/Screen/Victory/pokemon.ttf" />
     <entry file="file://$PROJECT_DIR$/src/pokdp/LoadPokemon/IPokemonLoader.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1059,16 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pokdp/Pokedex/PokedexScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Utils/ConstraintManager/ColConstraintManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -1166,8 +1141,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Map/ObjectSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="69" column="56" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
+        <state relative-caret-position="410">
+          <caret line="93" column="1" lean-forward="true" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Pokedex/PokedexScene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-730">
+          <caret line="68" column="42" lean-forward="true" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Music/Playlist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pokdp/Music/MusicManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
         </state>
       </provider>
     </entry>

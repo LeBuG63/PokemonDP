@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Map;
 
 public class MusicManager {
-    HashMap<String, Media> mediaHash = new HashMap<>();
-    MediaPlayer     mediaPlayer;
+    private HashMap<String, Media> mediaHash = new HashMap<>();
+    private MediaPlayer     mediaPlayer;
 
-    List<String>    musicName = new ArrayList<>();
+    private List<String>    musicName = new ArrayList<>();
     private String          actualMusicName = "";
 
     protected HashMap<String, Media> getMediaHash() {
@@ -75,7 +75,7 @@ public class MusicManager {
     void next() {
         List<Map.Entry<String, Media>> collection = new ArrayList<>(mediaHash.entrySet());
 
-        if(musicName.indexOf(actualMusicName) + 1 > musicName.size()) {
+        if(musicName.indexOf(actualMusicName) + 1 >= musicName.size()) {
             play(musicName.get(0));
         }
         else {
@@ -89,7 +89,7 @@ public class MusicManager {
     public void prev() {
         List<Map.Entry<String, Media>> collection = new ArrayList<>(mediaHash.entrySet());
 
-        if(musicName.indexOf(actualMusicName) - 1 > musicName.size()) {
+        if(musicName.indexOf(actualMusicName) - 1 < 0) {
             play(musicName.get(musicName.size() - 1));
         }
         else {
