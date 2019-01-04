@@ -28,6 +28,11 @@ public abstract class SceneManager {
         return stage;
     }
 
+    /**
+     * retourne une scene en fonction de son nom
+     * @param name  le nom de la scene
+     * @return      la scene en question
+     */
     public static AScene getScene(String name) {
         if(sceneHashMap.containsKey(name)) {
             return sceneHashMap.get(name);
@@ -36,18 +41,34 @@ public abstract class SceneManager {
         return null;
     }
 
+    /**
+     * ajoute une scene
+     * @param scene     la scene a ajouter
+     * @param sceneName son nom
+     */
     public static void addScene(AScene scene, String sceneName) {
         scene.load(windowWidth, windowHeight);
 
         sceneHashMap.put(sceneName, scene);
     }
 
+    /**
+     * dit quelle scene doit etre utilise par le stag
+     * @param sceneName le nom de la scene
+     */
     public static void setScene(String sceneName) {
         if(sceneHashMap.containsKey(sceneName)) {
             stage.setScene(sceneHashMap.get(sceneName).getScene());
         }
     }
 
+    /**
+     * ajoute une scene de combat
+     * @param sceneName le nom de la scene
+     * @param player    le joueur
+     * @param pok1      le pokemon attaquant
+     * @param pok2      le pokemon adverse
+     */
     public static void setSceneCombat(String sceneName, Player player, Pokemon pok1, Pokemon pok2) {
         if(sceneHashMap.containsKey(sceneName)) {
             WrapperSceneCombat combatScene = (WrapperSceneCombat)sceneHashMap.get(sceneName);
@@ -58,6 +79,11 @@ public abstract class SceneManager {
         }
     }
 
+    /**
+     * ajoute une scene pour gerer ses pokemons
+     * @param sceneName     le nom de la scene
+     * @param pokemonList   une liste de pokemon
+     */
     public static void setScenePokemon(String sceneName, List<Pokemon> pokemonList) {
         if (sceneHashMap.containsKey(sceneName)) {
             WrapperScenePokemonMenu scenePokemonMenu = (WrapperScenePokemonMenu) sceneHashMap.get(sceneName);
@@ -68,6 +94,11 @@ public abstract class SceneManager {
         }
     }
 
+    /**
+     * ajoute une scene de victoire
+     * @param sceneName     le nom de la scene
+     * @param pokemon       le pokemon vaincu
+     */
     public static void setSceneVictory(String sceneName, Pokemon pokemon) {
         if (sceneHashMap.containsKey(sceneName)) {
             WrapperSceneVictory sceneVictory = (WrapperSceneVictory) sceneHashMap.get(sceneName);

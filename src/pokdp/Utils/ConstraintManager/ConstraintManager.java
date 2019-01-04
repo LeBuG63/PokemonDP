@@ -28,10 +28,23 @@ public abstract class ConstraintManager {
         return listConstraints;
     }
 
+    /**
+     * ajoute une contrainte
+     * @param val la valeur de la contrainte
+     */
     public void addConstraint(int val) {
         listConstraints.add(val);
     }
 
+    /**
+     * ajoute les contraintes en fonction du pourcentage
+     * @param pane le gridpane sur lequelle les contraintes doivent etre mises
+     */
     public abstract void addPercentToPane(GridPane pane);
+
+    /**
+     * ajoute les contraintes en fonction de la taille en pixel
+     * @param pane le gridpane sur lequelle les contraintes doivent etre mises
+     */
     public abstract void addFixedToPane(GridPane pane);
 }

@@ -88,6 +88,11 @@ public class ObjectSet {
         return 0.0f;
     }
 
+    /**
+     * retourne si il l objet a l index i a un collisionbox
+     * @param i l index de l objet
+     * @return  vrai si il a une collisionbox, faux autrement
+     */
     public boolean hasCollision(int i) {
         return hasCollisionHash.get(i);
     }

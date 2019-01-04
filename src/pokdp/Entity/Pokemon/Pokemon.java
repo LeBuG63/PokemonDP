@@ -140,10 +140,18 @@ public class Pokemon extends AEntity {
         setCurrentStats();
     }
 
+    /**
+     * ajoute une attaque au pokemon
+     * @param attack l attaque
+     */
     public void addAttack(Attack attack) {
         attackList.add(attack);
     }
 
+    /**
+     * ajoute une liste d attaque
+     * @param attackList la liste d attaque
+     */
     public void addAllAttacks(List<Attack> attackList) {
         for(Attack a : attackList) {
             addAttack(a);

@@ -137,7 +137,7 @@ public abstract class AEntity extends Parent {
 
     /**
      * Vérifie si l'objet a des collisions
-     * @return
+     * @return true si collision, false sinon
      */
     public boolean hasCollision() {
         return hasCollision;

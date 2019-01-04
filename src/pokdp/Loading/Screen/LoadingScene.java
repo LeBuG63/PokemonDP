@@ -65,16 +65,10 @@ public class LoadingScene extends AScene {
 
     @Override
     public void load(double width, double height) {
-      //  ImageView imageView = new ImageView(new Image("file:assets/loadingscreen/pokeball.png"));
-
         gridPane.setPrefWidth(width);
         gridPane.setPrefHeight(height);
 
         gridPane.setBackground(new Background(new BackgroundFill(Color.ORANGERED, CornerRadii.EMPTY, Insets.EMPTY)));
-
-      //  Transition.rotate(imageView, 300, 40);
-
-       // gridPane.add(imageView, 0, 0);
 
         setScene(new Scene(gridPane, width, height));
     }

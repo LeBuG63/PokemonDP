@@ -49,6 +49,11 @@ public class Map extends Parent {
         decoObjectsetHash.put(type, decoObjectSet);
     }
 
+    /**
+     * ajoute des barrieres pour empecher que le joueur ne sorte de la carte
+     * @param fenceObjectSet    les barrieres a ajouter
+     * @param type              le type du terrain
+     */
     public void addFences(ObjectSet fenceObjectSet, ETerrainType type) {
         fencesetHash.put(type, fenceObjectSet);
     }
@@ -61,8 +66,7 @@ public class Map extends Parent {
         generateRandomTerrain(ETerrainType.values()[terrainType]);
     }
 
-    public void manageFences(int x, int y, int bottomFenceLimit, int rightFenceLimit, List<DecoObject> fencesList, ETerrainType type) {
-
+    private void manageFences(int x, int y, int bottomFenceLimit, int rightFenceLimit, List<DecoObject> fencesList, ETerrainType type) {
         final int fenceupright =  4;
         final int fenceupleft = 5;
         final int fencedownright = 6;
