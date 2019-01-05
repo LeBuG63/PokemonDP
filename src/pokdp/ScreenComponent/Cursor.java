@@ -14,6 +14,9 @@ import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;
 
 public class Cursor extends AEntity {
+    private final static int CUR_HOR = 0;
+    private final static int CUR_VER = 1;
+
     private ImageView   imageView;
     private int         max;
     private int         step;
@@ -21,42 +24,50 @@ public class Cursor extends AEntity {
 
     private EventManager eventManager = new EventManager();
 
-    public Cursor(Scene scene, String imgPath, double x, int max, int step) {
+    public Cursor(String imgPath, double x, int max, int step, int cursorpos) {
         super(EEntityType.NONE,new Vec2d(100,100),AEntity.HAS_NO_COLLISION);
         this.imageView = new ImageView(new Image(imgPath));
         this.max = max;
 
-        imageView.setX(x);
-
-        eventManager.add(new EventHandler<KeyEvent>() {
+        imageView.setX(x);eventManager.add(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
                 switch(event.getCode()) {
                     case UP:
                         if(id > 0) {
                             id--;
-                            imageView.setY(imageView.getY() - step);
+                            if(cursorpos == CUR_VER)
+                                imageView.setY(imageView.getY() - step);
+                            else
+                                imageView.setX(imageView.getX() - step);
                         }
                         break;
                     case DOWN:
                         if(id < max) {
                             id++;
-                            imageView.setY(imageView.getY() + step);
+                            if(cursorpos == CUR_VER)
+                                imageView.setY(imageView.getY() + step);
+                            else
+                                imageView.setX(imageView.getX() + step);
                         }
-                        break;
-                    case ESCAPE:
-                        SceneManager.setScene(Constantes.WORLDSCENE_NAME);
                         break;
                 }
             }
         }, EEventType.KEYBOARD_PRESSED);
 
-        eventManager.attachAllEventsToScene(scene);
         this.getChildren().add(imageView);
+    }
+
+    public Cursor(String imgPath, double x, int max, int step) {
+        this(imgPath, x, max, step, CUR_VER);
     }
 
     public int getID() {
         return id;
+    }
+
+    public void attachEvent(Scene scene) {
+        eventManager.attachAllEventsToScene(scene);
     }
 }
 

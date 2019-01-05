@@ -18,6 +18,7 @@ import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Scene.AScene;
 import pokdp.Scene.SceneManager;
 import pokdp.ScreenComponent.Button.ClickableImageView;
+import pokdp.ScreenComponent.Cursor;
 import pokdp.Utils.Constantes;
 import pokdp.Utils.ConstraintManager.ColConstraintManager;
 import pokdp.Utils.ConstraintManager.ConstraintManager;
@@ -38,8 +39,6 @@ public class StarterScene extends AScene {
     @Override
     public void load(double width, double height) {
         Font font = null;
-
-
         ConstraintManager rowConstraintManager = new RowConstraintManager(new int[]{30});
 
         rowConstraintManager.addPercentToPane(gridPane);
@@ -107,7 +106,8 @@ public class StarterScene extends AScene {
 
         gridPane.add(pokemonStarterPane, 0, 1);
 
-        setScene(new Scene(gridPane, width, height));
+        Scene scene = new Scene(gridPane, width, height);
+        setScene(scene);
     }
 
     private Pokemon getRandomPokemon() {

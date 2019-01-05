@@ -10,10 +10,10 @@ import java.util.List;
 import java.util.Map;
 
 public class MusicManager {
-    private HashMap<String, Media> mediaHash = new HashMap<>();
-    private MediaPlayer     mediaPlayer;
+    protected HashMap<String, Media> mediaHash = new HashMap<>();
+    protected MediaPlayer     mediaPlayer;
 
-    private List<String>    musicName = new ArrayList<>();
+    protected List<String>    musicName = new ArrayList<>();
     private String          actualMusicName = "";
 
     protected HashMap<String, Media> getMediaHash() {
