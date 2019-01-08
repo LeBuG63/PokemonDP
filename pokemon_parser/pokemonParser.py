@@ -81,7 +81,7 @@ def printXML(name):
     for moves in pokemon.moves:
         move = moves.move
         attr = getAttackAttr(move.url)
-        if moves.version_group_details[0]['level_learned_at'] == 0:
+        if nmoves <= 3 and moves.version_group_details[0]['level_learned_at'] == 0:
             if attr['power']!= None:
                 move.name = re.sub('[-]', ' ', move.name.title())
                 os += '  <attack name="{}">\n'.format(move.name)

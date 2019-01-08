@@ -159,7 +159,6 @@ public class Map extends Parent {
                     i = random.nextInt(objectSet.size());
                 }
 
-
                 Tile t;
 
                 if(objectSet.hasAnimation(i)) {

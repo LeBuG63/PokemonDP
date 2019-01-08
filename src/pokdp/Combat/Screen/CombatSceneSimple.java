@@ -93,13 +93,6 @@ public class CombatSceneSimple extends WrapperSceneCombat {
      */
     @Override
     public void setAttributes(Player player, Pokemon pokPlayer, Pokemon enemy) {
-        buttonDefense.setOnAction(actionEvent -> {
-            pokPlayer.setDefense(true);
-            actionPlayer.setText(pokPlayer.getName() + " se défend!");
-
-            enemyAttack(pokPlayer, enemy);
-        });
-
         initialize(player, pokPlayer, enemy);
     }
 
@@ -141,6 +134,13 @@ public class CombatSceneSimple extends WrapperSceneCombat {
         catch(FileNotFoundException e) {
             System.out.println("font not found");
         }
+
+        buttonDefense.setOnAction(actionEvent -> {
+            pokPlayer.setDefense(true);
+            actionPlayer.setText(pokPlayer.getName() + " se défend!");
+            nextTurnCanBePlayed = true;
+            enemyAttack(pokPlayer, enemy);
+        });
 
         for(Attack attack : pokPlayer.getAttacks()) {
             Button button = new Button(attack.getName());
@@ -203,7 +203,7 @@ public class CombatSceneSimple extends WrapperSceneCombat {
             case POKEMON_ATTACKER_DEF:
                 actionEnemy.setText(enemy.getName() + " se défend!");
                 break;
-            case POKEMON_VICTIM_DEF:
+            case POKEMON_VICTIM_MISSED:
                 actionEnemy.setText(attack.getName() + " a loupé!");
                 break;
             case POKEMON_VICTIM: {

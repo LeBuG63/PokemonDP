@@ -12,11 +12,11 @@
   <bstat>49</bstat>
   <bstat>45</bstat>
   <ev>
-<estat>18</estat>
-<estat>0</estat>
+<estat>67</estat>
+<estat>11</estat>
+<estat>6</estat>
+<estat>107</estat>
 <estat>255</estat>
-<estat>89</estat>
-<estat>0</estat>
 <estat>0</estat>
 </ev>
     <iv>
@@ -59,12 +59,12 @@
   <bstat>62</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>31</estat>
-<estat>93</estat>
+<estat>20</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>87</estat>
+<estat>123</estat>
+<estat>109</estat>
 <estat>255</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -102,10 +102,10 @@
   <bstat>80</bstat>
   <ev>
 <estat>0</estat>
-<estat>80</estat>
+<estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
-<estat>0</estat>
+<estat>120</estat>
 <estat>0</estat>
 </ev>
     <iv>
@@ -143,12 +143,12 @@
   <bstat>52</bstat>
   <bstat>39</bstat>
   <ev>
+<estat>12</estat>
+<estat>81</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>41</estat>
-<estat>255</estat>
-<estat>20</estat>
-<estat>148</estat>
+<estat>31</estat>
+<estat>39</estat>
+<estat>1</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -190,12 +190,12 @@
   <bstat>64</bstat>
   <bstat>58</bstat>
   <ev>
+<estat>5</estat>
+<estat>115</estat>
 <estat>0</estat>
-<estat>153</estat>
+<estat>0</estat>
+<estat>13</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>102</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -237,12 +237,12 @@
   <bstat>84</bstat>
   <bstat>78</bstat>
   <ev>
-<estat>19</estat>
-<estat>0</estat>
-<estat>148</estat>
-<estat>176</estat>
 <estat>0</estat>
 <estat>0</estat>
+<estat>32</estat>
+<estat>134</estat>
+<estat>65</estat>
+<estat>255</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -284,12 +284,12 @@
   <bstat>48</bstat>
   <bstat>44</bstat>
   <ev>
-<estat>255</estat>
-<estat>171</estat>
+<estat>26</estat>
+<estat>7</estat>
+<estat>12</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>2</estat>
+<estat>18</estat>
+<estat>1</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -336,12 +336,12 @@
   <bstat>63</bstat>
   <bstat>59</bstat>
   <ev>
-<estat>144</estat>
-<estat>80</estat>
+<estat>130</estat>
+<estat>70</estat>
 <estat>0</estat>
-<estat>21</estat>
 <estat>255</estat>
-<estat>0</estat>
+<estat>99</estat>
+<estat>8</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -388,12 +388,12 @@
   <bstat>83</bstat>
   <bstat>79</bstat>
   <ev>
-<estat>0</estat>
-<estat>22</estat>
-<estat>0</estat>
-<estat>84</estat>
-<estat>0</estat>
 <estat>255</estat>
+<estat>32</estat>
+<estat>49</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -440,12 +440,12 @@
   <bstat>45</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>255</estat>
-<estat>61</estat>
-<estat>4</estat>
+<estat>6</estat>
 <estat>0</estat>
-<estat>32</estat>
-<estat>12</estat>
+<estat>11</estat>
+<estat>134</estat>
+<estat>0</estat>
+<estat>255</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -477,12 +477,12 @@
   <bstat>90</bstat>
   <bstat>65</bstat>
   <ev>
-<estat>56</estat>
+<estat>0</estat>
+<estat>0</estat>
 <estat>255</estat>
-<estat>43</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>54</estat>
+<estat>119</estat>
+<estat>148</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -514,11 +514,11 @@
   <bstat>45</bstat>
   <bstat>40</bstat>
   <ev>
-<estat>19</estat>
-<estat>0</estat>
-<estat>100</estat>
-<estat>0</estat>
+<estat>47</estat>
+<estat>79</estat>
 <estat>255</estat>
+<estat>193</estat>
+<estat>3</estat>
 <estat>0</estat>
 </ev>
     <iv>
@@ -551,12 +551,12 @@
   <bstat>60</bstat>
   <bstat>63</bstat>
   <ev>
+<estat>81</estat>
 <estat>0</estat>
 <estat>0</estat>
-<estat>156</estat>
-<estat>0</estat>
+<estat>84</estat>
+<estat>126</estat>
 <estat>255</estat>
-<estat>92</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -588,9 +588,9 @@
   <bstat>80</bstat>
   <bstat>83</bstat>
   <ev>
-<estat>8</estat>
-<estat>197</estat>
-<estat>0</estat>
+<estat>25</estat>
+<estat>68</estat>
+<estat>174</estat>
 <estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
@@ -625,12 +625,12 @@
   <bstat>56</bstat>
   <bstat>30</bstat>
   <ev>
-<estat>188</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>54</estat>
+<estat>109</estat>
 <estat>255</estat>
-<estat>87</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -667,12 +667,12 @@
   <bstat>81</bstat>
   <bstat>55</bstat>
   <ev>
+<estat>15</estat>
 <estat>255</estat>
 <estat>0</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>6</estat>
+<estat>62</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -709,12 +709,12 @@
   <bstat>60</bstat>
   <bstat>40</bstat>
   <ev>
-<estat>0</estat>
-<estat>12</estat>
-<estat>0</estat>
+<estat>106</estat>
+<estat>11</estat>
 <estat>255</estat>
 <estat>0</estat>
 <estat>0</estat>
+<estat>8</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -751,12 +751,12 @@
   <bstat>90</bstat>
   <bstat>65</bstat>
   <ev>
-<estat>2</estat>
-<estat>0</estat>
+<estat>8</estat>
+<estat>72</estat>
+<estat>27</estat>
+<estat>42</estat>
 <estat>0</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>165</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -793,12 +793,12 @@
   <bstat>60</bstat>
   <bstat>35</bstat>
   <ev>
-<estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
-<estat>80</estat>
-<estat>44</estat>
-<estat>174</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>166</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -845,12 +845,12 @@
   <bstat>95</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>0</estat>
+<estat>35</estat>
 <estat>255</estat>
-<estat>81</estat>
 <estat>0</estat>
-<estat>178</estat>
 <estat>0</estat>
+<estat>113</estat>
+<estat>77</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -892,12 +892,12 @@
   <bstat>55</bstat>
   <bstat>35</bstat>
   <ev>
+<estat>179</estat>
 <estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
-<estat>91</estat>
+<estat>16</estat>
 <estat>0</estat>
-<estat>255</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -939,12 +939,12 @@
   <bstat>90</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>19</estat>
-<estat>255</estat>
 <estat>0</estat>
+<estat>30</estat>
+<estat>47</estat>
+<estat>7</estat>
 <estat>1</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>1</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -976,26 +976,6 @@
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Headbutt">
-   <basePower>70</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Body Slam">
-   <basePower>85</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Take Down">
-   <basePower>90</basePower>
-   <accuracy>85</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Double Edge">
-   <basePower>120</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -1012,11 +992,11 @@
   <bstat>90</bstat>
   <ev>
 <estat>0</estat>
+<estat>23</estat>
 <estat>0</estat>
-<estat>57</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>114</estat>
 <estat>255</estat>
+<estat>170</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1048,11 +1028,6 @@
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Thunder Punch">
-   <basePower>75</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -1068,12 +1043,12 @@
   <bstat>72</bstat>
   <bstat>61</bstat>
   <ev>
-<estat>50</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>146</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>57</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>19</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1106,11 +1081,11 @@
   <bstat>81</bstat>
   <ev>
 <estat>255</estat>
-<estat>60</estat>
+<estat>0</estat>
+<estat>255</estat>
 <estat>0</estat>
 <estat>0</estat>
-<estat>68</estat>
-<estat>134</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1142,16 +1117,6 @@
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Thunder Punch">
-   <basePower>75</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Cut">
-   <basePower>50</basePower>
-   <accuracy>95</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -1167,12 +1132,12 @@
   <bstat>41</bstat>
   <bstat>38</bstat>
   <ev>
-<estat>92</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
 <estat>255</estat>
-<estat>26</estat>
-<estat>14</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>7</estat>
+<estat>86</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1219,12 +1184,12 @@
   <bstat>76</bstat>
   <bstat>73</bstat>
   <ev>
-<estat>128</estat>
-<estat>115</estat>
-<estat>0</estat>
-<estat>13</estat>
+<estat>123</estat>
+<estat>111</estat>
 <estat>255</estat>
-<estat>33</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1271,12 +1236,12 @@
   <bstat>45</bstat>
   <bstat>40</bstat>
   <ev>
+<estat>54</estat>
+<estat>85</estat>
+<estat>0</estat>
+<estat>26</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>59</estat>
-<estat>0</estat>
+<estat>12</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1313,12 +1278,12 @@
   <bstat>80</bstat>
   <bstat>75</bstat>
   <ev>
-<estat>0</estat>
-<estat>127</estat>
-<estat>138</estat>
-<estat>3</estat>
+<estat>64</estat>
+<estat>61</estat>
+<estat>17</estat>
 <estat>255</estat>
-<estat>26</estat>
+<estat>132</estat>
+<estat>21</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1350,12 +1315,12 @@
   <bstat>50</bstat>
   <bstat>45</bstat>
   <ev>
+<estat>56</estat>
+<estat>26</estat>
+<estat>0</estat>
 <estat>255</estat>
+<estat>7</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>46</estat>
-<estat>41</estat>
-<estat>35</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1397,12 +1362,12 @@
   <bstat>65</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>255</estat>
-<estat>93</estat>
+<estat>1</estat>
+<estat>17</estat>
 <estat>0</estat>
-<estat>60</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>5</estat>
+<estat>10</estat>
+<estat>5</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1444,12 +1409,12 @@
   <bstat>80</bstat>
   <bstat>75</bstat>
   <ev>
-<estat>108</estat>
-<estat>111</estat>
+<estat>0</estat>
+<estat>22</estat>
 <estat>255</estat>
-<estat>49</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>1</estat>
+<estat>4</estat>
+<estat>149</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1496,12 +1461,12 @@
   <bstat>65</bstat>
   <bstat>70</bstat>
   <ev>
+<estat>0</estat>
 <estat>255</estat>
-<estat>74</estat>
 <estat>0</estat>
-<estat>5</estat>
-<estat>154</estat>
 <estat>0</estat>
+<estat>192</estat>
+<estat>2</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1533,12 +1498,12 @@
   <bstat>52</bstat>
   <bstat>50</bstat>
   <ev>
+<estat>30</estat>
+<estat>0</estat>
+<estat>0</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>109</estat>
-<estat>114</estat>
-<estat>0</estat>
-<estat>18</estat>
+<estat>189</estat>
+<estat>58</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1580,12 +1545,12 @@
   <bstat>82</bstat>
   <bstat>80</bstat>
   <ev>
-<estat>3</estat>
-<estat>26</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>24</estat>
+<estat>13</estat>
+<estat>195</estat>
 <estat>255</estat>
-<estat>103</estat>
-<estat>5</estat>
-<estat>120</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1627,12 +1592,12 @@
   <bstat>70</bstat>
   <bstat>55</bstat>
   <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>55</estat>
+<estat>36</estat>
+<estat>1</estat>
+<estat>3</estat>
 <estat>255</estat>
+<estat>13</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1674,12 +1639,12 @@
   <bstat>110</bstat>
   <bstat>90</bstat>
   <ev>
-<estat>139</estat>
-<estat>5</estat>
-<estat>33</estat>
+<estat>54</estat>
+<estat>3</estat>
 <estat>0</estat>
-<estat>0</estat>
+<estat>8</estat>
 <estat>255</estat>
+<estat>12</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1716,12 +1681,12 @@
   <bstat>20</bstat>
   <bstat>25</bstat>
   <ev>
-<estat>165</estat>
-<estat>25</estat>
+<estat>1</estat>
 <estat>0</estat>
-<estat>255</estat>
-<estat>20</estat>
-<estat>97</estat>
+<estat>0</estat>
+<estat>56</estat>
+<estat>0</estat>
+<estat>58</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1750,46 +1715,6 @@
    </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Mega Kick">
-   <basePower>120</basePower>
-   <accuracy>75</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Headbutt">
-   <basePower>70</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Body Slam">
-   <basePower>85</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Take Down">
-   <basePower>90</basePower>
-   <accuracy>85</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Double Edge">
-   <basePower>120</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Submission">
-   <basePower>80</basePower>
-   <accuracy>80</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Psychic">
-   <basePower>90</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Rage">
-   <basePower>20</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
@@ -1808,12 +1733,12 @@
   <bstat>35</bstat>
   <bstat>40</bstat>
   <ev>
+<estat>142</estat>
+<estat>83</estat>
+<estat>5</estat>
+<estat>8</estat>
+<estat>0</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>50</estat>
-<estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1842,31 +1767,6 @@
    </attack>
   <attack name="Thunder Punch">
    <basePower>75</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Mega Kick">
-   <basePower>120</basePower>
-   <accuracy>75</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Headbutt">
-   <basePower>70</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Body Slam">
-   <basePower>85</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Take Down">
-   <basePower>90</basePower>
-   <accuracy>85</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Double Edge">
-   <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
@@ -1885,12 +1785,12 @@
   <bstat>50</bstat>
   <bstat>55</bstat>
   <ev>
-<estat>0</estat>
-<estat>152</estat>
-<estat>255</estat>
-<estat>0</estat>
+<estat>43</estat>
+<estat>173</estat>
 <estat>0</estat>
 <estat>0</estat>
+<estat>111</estat>
+<estat>81</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -1922,31 +1822,6 @@
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Mega Kick">
-   <basePower>120</basePower>
-   <accuracy>75</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Headbutt">
-   <basePower>70</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Body Slam">
-   <basePower>85</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Take Down">
-   <basePower>90</basePower>
-   <accuracy>85</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Double Edge">
-   <basePower>120</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -1962,10 +1837,10 @@
   <bstat>75</bstat>
   <bstat>50</bstat>
   <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>121</estat>
+<estat>38</estat>
 <estat>255</estat>
+<estat>0</estat>
+<estat>55</estat>
 <estat>0</estat>
 <estat>0</estat>
 </ev>
@@ -2004,12 +1879,12 @@
   <bstat>90</bstat>
   <bstat>65</bstat>
   <ev>
-<estat>187</estat>
-<estat>42</estat>
-<estat>0</estat>
-<estat>0</estat>
 <estat>255</estat>
-<estat>31</estat>
+<estat>17</estat>
+<estat>14</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2046,12 +1921,12 @@
   <bstat>105</bstat>
   <bstat>80</bstat>
   <ev>
+<estat>65</estat>
+<estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
-<estat>13</estat>
-<estat>0</estat>
-<estat>152</estat>
-<estat>63</estat>
+<estat>55</estat>
+<estat>94</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2090,10 +1965,10 @@
   <ev>
 <estat>0</estat>
 <estat>0</estat>
-<estat>60</estat>
+<estat>56</estat>
 <estat>0</estat>
-<estat>1</estat>
 <estat>255</estat>
+<estat>177</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2130,12 +2005,12 @@
   <bstat>70</bstat>
   <bstat>80</bstat>
   <ev>
-<estat>31</estat>
-<estat>56</estat>
-<estat>0</estat>
-<estat>1</estat>
-<estat>0</estat>
 <estat>255</estat>
+<estat>255</estat>
+<estat>83</estat>
+<estat>0</estat>
+<estat>109</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2172,12 +2047,12 @@
   <bstat>80</bstat>
   <bstat>40</bstat>
   <ev>
-<estat>33</estat>
+<estat>67</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>116</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>153</estat>
-<estat>28</estat>
-<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2224,12 +2099,12 @@
   <bstat>95</bstat>
   <bstat>55</bstat>
   <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>255</estat>
+<estat>8</estat>
 <estat>1</estat>
+<estat>6</estat>
+<estat>0</estat>
+<estat>2</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2276,12 +2151,12 @@
   <bstat>120</bstat>
   <bstat>80</bstat>
   <ev>
-<estat>30</estat>
-<estat>41</estat>
-<estat>104</estat>
-<estat>157</estat>
-<estat>0</estat>
+<estat>169</estat>
+<estat>33</estat>
 <estat>255</estat>
+<estat>35</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2313,11 +2188,6 @@
    <accuracy>75</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Headbutt">
-   <basePower>70</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -2334,11 +2204,11 @@
   <bstat>90</bstat>
   <ev>
 <estat>0</estat>
-<estat>12</estat>
-<estat>7</estat>
+<estat>11</estat>
 <estat>0</estat>
-<estat>67</estat>
-<estat>8</estat>
+<estat>255</estat>
+<estat>91</estat>
+<estat>126</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2375,12 +2245,12 @@
   <bstat>75</bstat>
   <bstat>95</bstat>
   <ev>
-<estat>0</estat>
 <estat>255</estat>
-<estat>26</estat>
+<estat>21</estat>
 <estat>0</estat>
-<estat>11</estat>
-<estat>64</estat>
+<estat>0</estat>
+<estat>121</estat>
+<estat>116</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2427,12 +2297,12 @@
   <bstat>90</bstat>
   <bstat>52</bstat>
   <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>6</estat>
-<estat>6</estat>
 <estat>255</estat>
-<estat>13</estat>
+<estat>0</estat>
+<estat>77</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>158</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2480,11 +2350,11 @@
   <bstat>35</bstat>
   <ev>
 <estat>255</estat>
+<estat>109</estat>
 <estat>0</estat>
-<estat>54</estat>
 <estat>0</estat>
-<estat>155</estat>
-<estat>20</estat>
+<estat>0</estat>
+<estat>120</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2516,12 +2386,12 @@
   <bstat>110</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>0</estat>
 <estat>255</estat>
-<estat>29</estat>
+<estat>47</estat>
+<estat>5</estat>
 <estat>0</estat>
 <estat>0</estat>
-<estat>24</estat>
+<estat>17</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2553,12 +2423,12 @@
   <bstat>45</bstat>
   <bstat>65</bstat>
   <ev>
-<estat>62</estat>
+<estat>17</estat>
+<estat>45</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>192</estat>
 <estat>255</estat>
-<estat>74</estat>
+<estat>21</estat>
+<estat>17</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2595,12 +2465,12 @@
   <bstat>70</bstat>
   <bstat>90</bstat>
   <ev>
-<estat>255</estat>
-<estat>152</estat>
-<estat>24</estat>
-<estat>255</estat>
+<estat>133</estat>
 <estat>0</estat>
-<estat>6</estat>
+<estat>255</estat>
+<estat>42</estat>
+<estat>62</estat>
+<estat>23</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2632,12 +2502,12 @@
   <bstat>95</bstat>
   <bstat>50</bstat>
   <ev>
-<estat>160</estat>
+<estat>0</estat>
+<estat>159</estat>
+<estat>0</estat>
+<estat>13</estat>
 <estat>0</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>56</estat>
-<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2675,11 +2545,11 @@
   <bstat>30</bstat>
   <ev>
 <estat>0</estat>
-<estat>7</estat>
-<estat>5</estat>
-<estat>4</estat>
-<estat>9</estat>
-<estat>35</estat>
+<estat>192</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>195</estat>
+<estat>95</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2708,21 +2578,6 @@
    </attack>
   <attack name="Mega Drain">
    <basePower>40</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Thunderbolt">
-   <basePower>90</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Thunder">
-   <basePower>110</basePower>
-   <accuracy>70</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Psychic">
-   <basePower>90</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
@@ -2741,12 +2596,12 @@
   <bstat>50</bstat>
   <bstat>45</bstat>
   <ev>
+<estat>70</estat>
+<estat>0</estat>
+<estat>50</estat>
+<estat>0</estat>
 <estat>0</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>131</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2778,21 +2633,6 @@
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Thunderbolt">
-   <basePower>90</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Thunder">
-   <basePower>110</basePower>
-   <accuracy>70</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Psychic">
-   <basePower>90</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -2808,11 +2648,11 @@
   <bstat>65</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>138</estat>
-<estat>0</estat>
-<estat>54</estat>
-<estat>42</estat>
+<estat>98</estat>
+<estat>74</estat>
 <estat>255</estat>
+<estat>119</estat>
+<estat>0</estat>
 <estat>0</estat>
 </ev>
     <iv>
@@ -2845,66 +2685,6 @@
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Mega Kick">
-   <basePower>120</basePower>
-   <accuracy>75</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Headbutt">
-   <basePower>70</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Body Slam">
-   <basePower>85</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Take Down">
-   <basePower>90</basePower>
-   <accuracy>85</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Double Edge">
-   <basePower>120</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Hyper Beam">
-   <basePower>150</basePower>
-   <accuracy>90</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Submission">
-   <basePower>80</basePower>
-   <accuracy>80</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Strength">
-   <basePower>80</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Mega Drain">
-   <basePower>40</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Thunderbolt">
-   <basePower>90</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Thunder">
-   <basePower>110</basePower>
-   <accuracy>70</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Psychic">
-   <basePower>90</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -2920,12 +2700,12 @@
   <bstat>30</bstat>
   <bstat>40</bstat>
   <ev>
+<estat>71</estat>
 <estat>255</estat>
+<estat>4</estat>
 <estat>0</estat>
-<estat>147</estat>
-<estat>20</estat>
-<estat>130</estat>
-<estat>101</estat>
+<estat>19</estat>
+<estat>65</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2958,11 +2738,11 @@
   <bstat>60</bstat>
   <ev>
 <estat>0</estat>
-<estat>100</estat>
 <estat>0</estat>
-<estat>255</estat>
-<estat>101</estat>
+<estat>13</estat>
 <estat>0</estat>
+<estat>24</estat>
+<estat>68</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -2994,12 +2774,12 @@
   <bstat>40</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>28</estat>
-<estat>13</estat>
-<estat>19</estat>
-<estat>1</estat>
-<estat>31</estat>
-<estat>36</estat>
+<estat>181</estat>
+<estat>3</estat>
+<estat>255</estat>
+<estat>3</estat>
+<estat>0</estat>
+<estat>100</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3046,12 +2826,12 @@
   <bstat>50</bstat>
   <bstat>50</bstat>
   <ev>
-<estat>190</estat>
-<estat>70</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>49</estat>
 <estat>255</estat>
-<estat>78</estat>
+<estat>0</estat>
+<estat>124</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3083,11 +2863,6 @@
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Mega Kick">
-   <basePower>120</basePower>
-   <accuracy>75</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -3103,12 +2878,12 @@
   <bstat>80</bstat>
   <bstat>60</bstat>
   <ev>
-<estat>82</estat>
-<estat>114</estat>
-<estat>130</estat>
-<estat>0</estat>
+<estat>140</estat>
+<estat>11</estat>
 <estat>255</estat>
 <estat>0</estat>
+<estat>0</estat>
+<estat>51</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3155,12 +2930,12 @@
   <bstat>120</bstat>
   <bstat>50</bstat>
   <ev>
-<estat>14</estat>
+<estat>0</estat>
+<estat>50</estat>
+<estat>0</estat>
 <estat>255</estat>
-<estat>83</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
+<estat>16</estat>
+<estat>98</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3192,12 +2967,12 @@
   <bstat>55</bstat>
   <bstat>90</bstat>
   <ev>
-<estat>27</estat>
-<estat>0</estat>
-<estat>60</estat>
+<estat>42</estat>
 <estat>255</estat>
+<estat>64</estat>
+<estat>186</estat>
 <estat>0</estat>
-<estat>25</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3229,16 +3004,6 @@
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Cut">
-   <basePower>50</basePower>
-   <accuracy>95</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Bind">
-   <basePower>15</basePower>
-   <accuracy>85</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -3255,11 +3020,11 @@
   <bstat>105</bstat>
   <ev>
 <estat>255</estat>
-<estat>17</estat>
-<estat>57</estat>
-<estat>6</estat>
-<estat>38</estat>
-<estat>58</estat>
+<estat>0</estat>
+<estat>34</estat>
+<estat>0</estat>
+<estat>113</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3291,16 +3056,6 @@
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Thunder Punch">
-   <basePower>75</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Cut">
-   <basePower>50</basePower>
-   <accuracy>95</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -3316,12 +3071,12 @@
   <bstat>55</bstat>
   <bstat>65</bstat>
   <ev>
-<estat>40</estat>
 <estat>0</estat>
-<estat>132</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
-<estat>2</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3353,11 +3108,11 @@
   <bstat>40</bstat>
   <bstat>30</bstat>
   <ev>
-<estat>255</estat>
 <estat>0</estat>
-<estat>35</estat>
-<estat>46</estat>
-<estat>78</estat>
+<estat>28</estat>
+<estat>255</estat>
+<estat>38</estat>
+<estat>0</estat>
 <estat>0</estat>
 </ev>
     <iv>
@@ -3405,12 +3160,12 @@
   <bstat>65</bstat>
   <bstat>55</bstat>
   <ev>
-<estat>180</estat>
-<estat>171</estat>
+<estat>9</estat>
+<estat>2</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>3</estat>
-<estat>34</estat>
+<estat>8</estat>
+<estat>81</estat>
+<estat>24</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3452,12 +3207,12 @@
   <bstat>110</bstat>
   <bstat>70</bstat>
   <ev>
-<estat>0</estat>
-<estat>0</estat>
-<estat>10</estat>
-<estat>255</estat>
+<estat>47</estat>
 <estat>255</estat>
 <estat>0</estat>
+<estat>4</estat>
+<estat>33</estat>
+<estat>86</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3494,12 +3249,12 @@
   <bstat>83</bstat>
   <bstat>65</bstat>
   <ev>
-<estat>132</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>0</estat>
 <estat>255</estat>
+<estat>40</estat>
+<estat>11</estat>
 <estat>0</estat>
+<estat>0</estat>
+<estat>57</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3541,12 +3296,12 @@
   <bstat>95</bstat>
   <bstat>65</bstat>
   <ev>
-<estat>165</estat>
-<estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
-<estat>4</estat>
-<estat>7</estat>
+<estat>78</estat>
+<estat>8</estat>
+<estat>54</estat>
+<estat>30</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3578,12 +3333,12 @@
   <bstat>125</bstat>
   <bstat>95</bstat>
   <ev>
-<estat>88</estat>
+<estat>0</estat>
+<estat>17</estat>
+<estat>41</estat>
+<estat>0</estat>
 <estat>255</estat>
-<estat>0</estat>
-<estat>0</estat>
-<estat>141</estat>
-<estat>0</estat>
+<estat>56</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3615,12 +3370,12 @@
   <bstat>85</bstat>
   <bstat>130</bstat>
   <ev>
-<estat>16</estat>
-<estat>60</estat>
 <estat>46</estat>
-<estat>23</estat>
-<estat>3</estat>
+<estat>0</estat>
 <estat>255</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>30</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3652,12 +3407,12 @@
   <bstat>40</bstat>
   <bstat>35</bstat>
   <ev>
-<estat>0</estat>
-<estat>177</estat>
-<estat>0</estat>
-<estat>42</estat>
+<estat>124</estat>
 <estat>255</estat>
-<estat>41</estat>
+<estat>0</estat>
+<estat>67</estat>
+<estat>0</estat>
+<estat>5</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3699,12 +3454,12 @@
   <bstat>60</bstat>
   <bstat>70</bstat>
   <ev>
-<estat>24</estat>
-<estat>191</estat>
-<estat>255</estat>
-<estat>44</estat>
 <estat>0</estat>
-<estat>3</estat>
+<estat>75</estat>
+<estat>20</estat>
+<estat>0</estat>
+<estat>104</estat>
+<estat>255</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3741,12 +3496,12 @@
   <bstat>105</bstat>
   <bstat>80</bstat>
   <ev>
-<estat>0</estat>
 <estat>255</estat>
-<estat>114</estat>
-<estat>77</estat>
 <estat>0</estat>
-<estat>46</estat>
+<estat>8</estat>
+<estat>0</estat>
+<estat>0</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3778,12 +3533,12 @@
   <bstat>110</bstat>
   <bstat>160</bstat>
   <ev>
-<estat>65</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>29</estat>
 <estat>255</estat>
-<estat>21</estat>
+<estat>0</estat>
+<estat>17</estat>
+<estat>49</estat>
+<estat>0</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3815,16 +3570,6 @@
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Thunder Punch">
-   <basePower>75</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Mega Kick">
-   <basePower>120</basePower>
-   <accuracy>75</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -3840,10 +3585,10 @@
   <bstat>85</bstat>
   <bstat>90</bstat>
   <ev>
-<estat>38</estat>
-<estat>71</estat>
-<estat>83</estat>
-<estat>1</estat>
+<estat>0</estat>
+<estat>255</estat>
+<estat>166</estat>
+<estat>0</estat>
 <estat>255</estat>
 <estat>0</estat>
 </ev>
@@ -3878,10 +3623,10 @@
   <bstat>90</bstat>
   <ev>
 <estat>0</estat>
-<estat>51</estat>
-<estat>255</estat>
-<estat>255</estat>
 <estat>0</estat>
+<estat>45</estat>
+<estat>255</estat>
+<estat>41</estat>
 <estat>0</estat>
 </ev>
     <iv>
@@ -3914,11 +3659,6 @@
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Hyper Beam">
-   <basePower>150</basePower>
-   <accuracy>90</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -3935,11 +3675,11 @@
   <bstat>90</bstat>
   <ev>
 <estat>255</estat>
-<estat>6</estat>
+<estat>11</estat>
 <estat>0</estat>
+<estat>136</estat>
+<estat>107</estat>
 <estat>0</estat>
-<estat>0</estat>
-<estat>94</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -3971,12 +3711,12 @@
   <bstat>64</bstat>
   <bstat>41</bstat>
   <ev>
-<estat>21</estat>
 <estat>0</estat>
 <estat>0</estat>
+<estat>24</estat>
 <estat>255</estat>
-<estat>255</estat>
 <estat>0</estat>
+<estat>102</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4008,12 +3748,12 @@
   <bstat>84</bstat>
   <bstat>61</bstat>
   <ev>
-<estat>77</estat>
 <estat>0</estat>
 <estat>0</estat>
+<estat>255</estat>
+<estat>184</estat>
+<estat>198</estat>
 <estat>0</estat>
-<estat>176</estat>
-<estat>186</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4045,12 +3785,12 @@
   <bstat>134</bstat>
   <bstat>91</bstat>
   <ev>
-<estat>169</estat>
-<estat>0</estat>
-<estat>61</estat>
+<estat>36</estat>
+<estat>181</estat>
 <estat>0</estat>
 <estat>255</estat>
-<estat>18</estat>
+<estat>15</estat>
+<estat>6</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4082,11 +3822,6 @@
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>
-  <attack name="Cut">
-   <basePower>50</basePower>
-   <accuracy>95</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
  </attacks>
 </Pokemon>
 
@@ -4102,12 +3837,12 @@
   <bstat>110</bstat>
   <bstat>106</bstat>
   <ev>
-<estat>199</estat>
-<estat>166</estat>
-<estat>7</estat>
-<estat>9</estat>
-<estat>0</estat>
-<estat>74</estat>
+<estat>4</estat>
+<estat>26</estat>
+<estat>36</estat>
+<estat>255</estat>
+<estat>31</estat>
+<estat>3</estat>
 </ev>
     <iv>
              <istat>32</istat>
@@ -4136,36 +3871,6 @@
    </attack>
   <attack name="Ice Punch">
    <basePower>75</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Thunder Punch">
-   <basePower>75</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Mega Kick">
-   <basePower>120</basePower>
-   <accuracy>75</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Headbutt">
-   <basePower>70</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Body Slam">
-   <basePower>85</basePower>
-   <accuracy>100</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Take Down">
-   <basePower>90</basePower>
-   <accuracy>85</accuracy>
-   <isSpecial>false</isSpecial>
-   </attack>
-  <attack name="Double Edge">
-   <basePower>120</basePower>
    <accuracy>100</accuracy>
    <isSpecial>false</isSpecial>
    </attack>

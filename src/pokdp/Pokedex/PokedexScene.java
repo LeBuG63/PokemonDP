@@ -66,7 +66,8 @@ public class PokedexScene extends AScene {
         }
 
         for(String name : colName) {
-            Label label = new Label(name);           label.setStyle("-fx-text-fill: white");
+            Label label = new Label(name);
+            label.setStyle("-fx-text-fill: white");
 
             if(font != null) {
                 label.setFont(font);
