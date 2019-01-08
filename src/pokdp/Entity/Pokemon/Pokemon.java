@@ -7,12 +7,15 @@ import javafx.beans.property.StringProperty;
 import pokdp.Attack.Attack;
 import pokdp.Entity.AEntity;
 import pokdp.Entity.EEntityType;
+import pokdp.Serialization.SerializablePokemon;
 import pokdp.Type.EType;
+import pokdp.Utils.Constantes;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pokemon extends AEntity {
+public class Pokemon extends AEntity implements Serializable {
 
     private final int PV     = 0;
 
@@ -49,6 +52,11 @@ public class Pokemon extends AEntity {
     public Pokemon(Pokemon pok) {
         this(pok.getName(), pok.getNumber(), pok.getSpriteURL(), pok.getArrBaseStats(), pok.getArrEV(), pok.getArrIV(), pok.getLevel(), pok.getType());
         addAllAttacks(pok.getAttacks());
+    }
+
+    public Pokemon(SerializablePokemon serializablePokemon) {
+        this(Constantes.pokemonHashMap.get(serializablePokemon.getName()));
+        setLevel(serializablePokemon.getLevel());
     }
 
     public int getNumber() {

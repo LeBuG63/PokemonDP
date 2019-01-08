@@ -1,6 +1,9 @@
 package pokdp.Attack;
 
+import com.sun.corba.se.impl.orbutil.closure.Constant;
+import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import pokdp.Entity.Pokemon.Pokemon;
+import pokdp.Utils.Constantes;
 
 public class Attack implements IAttackManager{
     private int basePower;

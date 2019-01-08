@@ -11,10 +11,11 @@ import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Map.Object.DecoObject;
 import pokdp.Utils.Constantes;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Player extends AEntity {
+public class Player extends AEntity implements Serializable {
     private final int LOOK_UP = 0;
     private final int LOOK_DOWN = 1;
     private final int LOOK_RIGHT = 2;
@@ -57,6 +58,10 @@ public class Player extends AEntity {
     public Player(List<DecoObject> decoObjectList) {
         this();
         setCollisionObjectsList(decoObjectList);
+    }
+
+    public void setSelf(Player newPlayer) {
+        setNewPokemonOrder(newPlayer.getPokemonList());
     }
 
     public void setPokemonAct(Pokemon pokemonAct) {
@@ -159,7 +164,7 @@ public class Player extends AEntity {
      * change la liste de pokemon du joueur
      * @param newPokemonList
      */
-    public static void setNewPokemonOrder(List<Pokemon> newPokemonList){
+    public void setNewPokemonOrder(List<Pokemon> newPokemonList){
         pokemonList = newPokemonList;
     }
 }

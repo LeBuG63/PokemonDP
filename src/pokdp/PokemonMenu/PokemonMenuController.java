@@ -16,10 +16,10 @@ import java.util.List;
 public class PokemonMenuController{
     @FXML
     private ListView<String> listPokeView;
-
     private List<Pokemon> listPokemon;
 
-    ListProperty<String>   listP;
+    private ListProperty<String>   listP;
+    private Player player;
 
     public PokemonMenuController(){
     }
@@ -28,14 +28,20 @@ public class PokemonMenuController{
     public void initialize(){
     }
 
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
+
     @FXML
     public void setListPokeView(List<Pokemon> listPokemon){
         this.listPokemon = listPokemon;
         listP = new SimpleListProperty<>();
         List<String> listStringPokemon = new ArrayList<>();
+
         for(int i = 0 ; i < listPokemon.size() ; i ++ ){
             listStringPokemon.add(listPokemon.get(i).toString());
         }
+
         listP.setValue(FXCollections.observableArrayList(listStringPokemon));
         listPokeView.itemsProperty().bind(listP);
     }
@@ -44,11 +50,21 @@ public class PokemonMenuController{
     private void setHeadPokemon(){
         if(listPokeView.getItems().size() == 0)
             return;
+
         Pokemon oldHeadPokemon = listPokemon.get(0);
-        listPokemon.set(0,listPokemon.get(listPokeView.getSelectionModel().getSelectedIndex()));
+
+        int selectedIndex = listPokeView.getSelectionModel().getSelectedIndex();
+
+        if(selectedIndex < 0) {
+            selectedIndex = 0;
+        }
+
+        listPokemon.set(0,listPokemon.get(selectedIndex));
         listPokemon.set(listPokeView.getSelectionModel().getSelectedIndex(),oldHeadPokemon);
+
         setListPokeView(listPokemon);
-        Player.setNewPokemonOrder(listPokemon);
+
+        player.setNewPokemonOrder(listPokemon);
         SceneManager.setScene(Constantes.WORLDSCENE_NAME);
     }
 }

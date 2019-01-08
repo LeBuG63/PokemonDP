@@ -4,6 +4,7 @@ import javafx.stage.Stage;
 import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Scene.Wrappers.WrapperSceneCombat;
+import pokdp.Scene.Wrappers.WrapperScenePause;
 import pokdp.Scene.Wrappers.WrapperScenePokemonMenu;
 import pokdp.Scene.Wrappers.WrapperSceneVictory;
 
@@ -106,6 +107,21 @@ public abstract class SceneManager {
             sceneVictory.setPokemon(pokemon);
 
             stage.setScene(sceneVictory.getScene());
+        }
+    }
+
+    /**
+     * ajoute une scene de pause
+     * @param sceneName     le nom de la scene
+     * @param player        le joueur
+     */
+    public static void setScenePause(String sceneName, Player player) {
+        if (sceneHashMap.containsKey(sceneName)) {
+            WrapperScenePause scenePause = (WrapperScenePause) sceneHashMap.get(sceneName);
+
+            scenePause.setAttributes(player);
+
+            stage.setScene(scenePause.getScene());
         }
     }
 }

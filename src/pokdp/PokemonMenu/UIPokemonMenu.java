@@ -3,6 +3,7 @@ package pokdp.PokemonMenu;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
+import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Scene.Wrappers.WrapperScenePokemonMenu;
 
@@ -14,8 +15,12 @@ public class UIPokemonMenu extends WrapperScenePokemonMenu {
     private List<Pokemon> listPoke;
     private PokemonMenuController mpc;
 
-    public UIPokemonMenu() {
+    private Player player;
+
+    public UIPokemonMenu(Player player) {
         try {
+            this.player = player;
+
             FXMLLoader fxmlLoader = new FXMLLoader();
             FileInputStream fxmlStream = new FileInputStream("src/pokdp/PokemonMenu/PokemonMenu.fxml");
 
@@ -39,5 +44,6 @@ public class UIPokemonMenu extends WrapperScenePokemonMenu {
 
     public void loadPokemonIntoRoot() {
         mpc.setListPokeView(listPoke);
+        mpc.setPlayer(player);
     }
 }

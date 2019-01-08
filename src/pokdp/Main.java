@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import pokdp.Combat.Screen.CombatSceneSimple;
 import pokdp.Combat.Screen.Victory.VictoryScene;
 import pokdp.Loading.Screen.LoadingScene;
+import pokdp.Pause.Screen.PauseScene;
 import pokdp.Pokedex.PokedexScene;
 import pokdp.PokemonMenu.UIPokemonMenu;
 import pokdp.Scene.AScene;
@@ -59,13 +60,13 @@ public class Main extends Application {
 
         AScene worldScene = new WorldScene(stage);
         AScene combatSceneSimple = new CombatSceneSimple();
-        AScene pokemonMenu = new UIPokemonMenu();
         AScene victoryScene = new VictoryScene();
         AScene pokedexScene = new PokedexScene();
         AScene starterScene = new StarterScene();
+        AScene pauseScene = new PauseScene();
 
+        SceneManager.addScene(pauseScene, Constantes.PAUSESCENE_NAME);
         SceneManager.addScene(starterScene, Constantes.STARTERSCENE_NAME);
-        SceneManager.addScene(pokemonMenu,Constantes.POKEMONMENU_NAME);
         SceneManager.addScene(worldScene, Constantes.WORLDSCENE_NAME);
         SceneManager.addScene(combatSceneSimple, Constantes.COMBATSCENE_NAME);
         SceneManager.addScene(victoryScene, Constantes.VICTORYSCENE_NAME);

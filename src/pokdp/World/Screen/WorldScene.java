@@ -16,6 +16,7 @@ import pokdp.Map.ETerrainType;
 import pokdp.Map.Map;
 import pokdp.Map.ObjectSet;
 import pokdp.Music.Playlist;
+import pokdp.PokemonMenu.UIPokemonMenu;
 import pokdp.Scene.AScene;
 import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;
@@ -125,6 +126,10 @@ public class WorldScene extends AScene {
             load("assets/musics/palettetown.wav", "palettetown");
         }};
 
+
+        AScene pokemonMenu = new UIPokemonMenu((Player)player);
+        SceneManager.addScene(pokemonMenu,Constantes.POKEMONMENU_NAME);
+
         playlist.shuffle();
         playlist.play();
 
@@ -145,6 +150,10 @@ public class WorldScene extends AScene {
 
                     case P:
                         SceneManager.setScene(Constantes.POKEDEXSCENE_NAME);
+                        return;
+
+                    case ESCAPE:
+                        SceneManager.setScenePause(Constantes.PAUSESCENE_NAME, getPlayer());
                         return;
                 }
 

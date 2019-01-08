@@ -153,6 +153,10 @@ public class CombatSceneSimple extends WrapperSceneCombat {
                     if(!deadOccuredOnce && nextTurnCanBePlayed ) {
                         int damage = attack.calculateDamage(pokPlayer, enemy);
 
+                        if(Constantes.CHEAT_ON) {
+                            processDeathAnim(attack, pokPlayer, enemy, statEnemy.getPokemonImageView());
+                        }
+
                         if (enemy.isDefending()) {
                             actionPlayer.setText(attack.getName() + " a loupé!");
                             enemy.setDefense(false);
