@@ -100,7 +100,6 @@ public class StarterScene extends AScene {
 
             pokemonStarterPane.add(button, i, 0);
             pokemonStarterPane.add(nameLabel, i, 1);
-            //starterButton.add(button);
         }
 
 

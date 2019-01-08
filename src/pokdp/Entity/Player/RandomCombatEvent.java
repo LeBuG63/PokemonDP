@@ -23,8 +23,7 @@ public class RandomCombatEvent {
 
     /**
      * verifie si le combat doit etre lance ou non
-     * @return un boolean
-     */
+     * @return un boolean*/
     public boolean roll() {
         //CombatSceneSimple.launch(primaryStage, this, getPokemon(), Constantes.pokemonHashMap.get("Tauros"));
         return Math.random() < Constantes.PROBA_COMBAT;

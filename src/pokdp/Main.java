@@ -61,7 +61,7 @@ public class Main extends Application {
         AScene combatSceneSimple = new CombatSceneSimple();
         AScene pokemonMenu = new UIPokemonMenu();
         AScene victoryScene = new VictoryScene();
-        AScene pokedexScene = new PokedexScene();
+       // AScene pokedexScene = new PokedexScene();
         AScene starterScene = new StarterScene();
 
         SceneManager.addScene(starterScene, Constantes.STARTERSCENE_NAME);
@@ -69,7 +69,7 @@ public class Main extends Application {
         SceneManager.addScene(worldScene, Constantes.WORLDSCENE_NAME);
         SceneManager.addScene(combatSceneSimple, Constantes.COMBATSCENE_NAME);
         SceneManager.addScene(victoryScene, Constantes.VICTORYSCENE_NAME);
-        SceneManager.addScene(pokedexScene, Constantes.POKEDEXSCENE_NAME);
+        //SceneManager.addScene(pokedexScene, Constantes.POKEDEXSCENE_NAME);
     }
 
     public static void main(String[] args) {

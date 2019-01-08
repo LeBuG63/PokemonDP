@@ -75,7 +75,7 @@ public class MusicManager {
     void next() {
         List<Map.Entry<String, Media>> collection = new ArrayList<>(mediaHash.entrySet());
 
-        if(musicName.indexOf(actualMusicName) + 1 >= musicName.size()) {
+        if(musicName.indexOf(actualMusicName) + 1 > musicName.size()) {
             play(musicName.get(0));
         }
         else {
