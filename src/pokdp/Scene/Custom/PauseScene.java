@@ -6,12 +6,14 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.EventManager.EEventType;
@@ -26,6 +28,9 @@ import pokdp.Utils.Constantes;
 import pokdp.Utils.ConstraintManager.ConstraintManager;
 import pokdp.Utils.ConstraintManager.RowConstraintManager;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -41,11 +46,25 @@ public class PauseScene extends WrapperScenePause {
 
     @Override
     public void load(double width, double height) {
-        ConstraintManager rowConstraintManager = new RowConstraintManager(new int[]{33,33,33});
+        ConstraintManager rowConstraintManager = new RowConstraintManager(new int[]{10,33,33,33});
 
         Button saveButton = new ButtonStyle("Sauvegarder", Constantes.DEFAULT_BUTTON);
         Button loadButton = new ButtonStyle("Charger", Constantes.DEFAULT_BUTTON);
         Button quitButton = new ButtonStyle("Quitter", Constantes.DEFAULT_BUTTON);
+
+        Label nameLabel = new Label("Pause");
+
+        Font font = null;
+
+        try {
+            font = Font.loadFont(new FileInputStream(new File("assets/fonts/pokemon.ttf")), 42);
+        }
+        catch(FileNotFoundException e) {
+            System.out.println("font not found");
+        }
+
+        nameLabel.setFont(font);
+
         gridPane.setBackground(new Background(new BackgroundFill(Color.INDIANRED, CornerRadii.EMPTY, Insets.EMPTY)));
         gridPane.setAlignment(Pos.CENTER);
 
@@ -55,6 +74,7 @@ public class PauseScene extends WrapperScenePause {
             @Override
             public void handle(ActionEvent actionEvent) {
                 saveSerializablePokemon();
+                SceneManager.setScene(Constantes.WORLDSCENE_NAME);
             }
         });
 
@@ -74,6 +94,7 @@ public class PauseScene extends WrapperScenePause {
                 }
 
                 player.setNewPokemonOrder(pokemonList);
+                SceneManager.setScene(Constantes.WORLDSCENE_NAME);
             }
         });
 
@@ -90,15 +111,16 @@ public class PauseScene extends WrapperScenePause {
             public void handle(KeyEvent event) {
                 switch (event.getCode()) {
                     case ESCAPE:
-                        SceneManager.setScene("WorldScene");
+                        SceneManager.setScene(Constantes.WORLDSCENE_NAME);
                         return;
                 }
             }
         }, EEventType.KEYBOARD_PRESSED);
 
-        gridPane.add(saveButton, 0, 0);
-        gridPane.add(loadButton, 0, 1);
-        gridPane.add(quitButton, 0, 2);
+        gridPane.add(nameLabel, 0, 0);
+        gridPane.add(saveButton, 0, 1);
+        gridPane.add(loadButton, 0, 2);
+        gridPane.add(quitButton, 0, 3);
 
         Scene scene = new Scene(gridPane, width, height);
 
