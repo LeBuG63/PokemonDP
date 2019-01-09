@@ -52,6 +52,7 @@ public class LoadingScene extends AScene {
         Transition.rotate(imageView, 2000, 40);
 
         gridPane.setAlignment(Pos.TOP_CENTER);
+        rowConstraints.setPercentHeight(33);
 
         gridPane.setHalignment(imageView, HPos.CENTER);
         gridPane.setHalignment(loading, HPos.CENTER);

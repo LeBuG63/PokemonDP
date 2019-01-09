@@ -3,15 +3,13 @@ package pokdp.Scene.Custom;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.CornerRadii;
-import javafx.scene.layout.GridPane;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import pokdp.Entity.Player.Player;
@@ -35,7 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PauseScene extends WrapperScenePause {
-    private GridPane gridPane = new GridPane();
+    private TilePane tilePane = new TilePane();
     private Player player;
     private EventManager eventManager = new EventManager();
     private IObjectSerializationManager objectSerializationManager = new SimpleObjectSerializationManager();
@@ -46,8 +44,6 @@ public class PauseScene extends WrapperScenePause {
 
     @Override
     public void load(double width, double height) {
-        ConstraintManager rowConstraintManager = new RowConstraintManager(new int[]{10,33,33,33});
-
         Button saveButton = new ButtonStyle("Sauvegarder", Constantes.DEFAULT_BUTTON);
         Button loadButton = new ButtonStyle("Charger", Constantes.DEFAULT_BUTTON);
         Button quitButton = new ButtonStyle("Quitter", Constantes.DEFAULT_BUTTON);
@@ -65,10 +61,10 @@ public class PauseScene extends WrapperScenePause {
 
         nameLabel.setFont(font);
 
-        gridPane.setBackground(new Background(new BackgroundFill(Color.INDIANRED, CornerRadii.EMPTY, Insets.EMPTY)));
-        gridPane.setAlignment(Pos.CENTER);
-
-        rowConstraintManager.addPercentToPane(gridPane);
+        tilePane.setBackground(new Background(new BackgroundFill(Color.INDIANRED, CornerRadii.EMPTY, Insets.EMPTY)));
+        tilePane.setAlignment(Pos.CENTER);
+        tilePane.setVgap(100);
+        tilePane.setOrientation(Orientation.VERTICAL);
 
         saveButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -117,12 +113,12 @@ public class PauseScene extends WrapperScenePause {
             }
         }, EEventType.KEYBOARD_PRESSED);
 
-        gridPane.add(nameLabel, 0, 0);
-        gridPane.add(saveButton, 0, 1);
-        gridPane.add(loadButton, 0, 2);
-        gridPane.add(quitButton, 0, 3);
+        tilePane.getChildren().add(nameLabel);
+        tilePane.getChildren().add(saveButton);
+        tilePane.getChildren().add(loadButton);
+        tilePane.getChildren().add(quitButton);
 
-        Scene scene = new Scene(gridPane, width, height);
+        Scene scene = new Scene(tilePane, width, height);
 
         eventManager.attachAllEventsToScene(scene);
 
