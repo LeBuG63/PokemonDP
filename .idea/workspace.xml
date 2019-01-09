@@ -3,8 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="5bfb9f8d-23bb-4774-a912-566443977a86" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filesave1.pkdp" beforeDir="false" afterPath="$PROJECT_DIR$/filesave1.pkdp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/CustomPreloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/CustomPreloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/AEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/AEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Entity/Pokemon/Pokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Music/IMusicManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Music/IMusicManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Scene/Custom/Combat/CombatScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Scene/Custom/Combat/CombatScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pokdp/Scene/Custom/PauseScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Scene/Custom/PauseScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Scene/Custom/PokedexScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Scene/Custom/PokedexScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Scene/Custom/PokemonMenu/PokemonMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Scene/Custom/PokemonMenu/PokemonMenu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Scene/Custom/StarterScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Scene/Custom/StarterScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Scene/Custom/VictoryScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Scene/Custom/VictoryScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Scene/Custom/WorldScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Scene/Custom/WorldScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Scene/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Scene/SceneManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperScenePause.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperScenePause.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperScenePokemonMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperScenePokemonMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Utils/ConstraintManager/ColConstraintManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Utils/ConstraintManager/ColConstraintManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Utils/ConstraintManager/ConstraintManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Utils/ConstraintManager/ConstraintManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/Utils/ConstraintManager/RowConstraintManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/Utils/ConstraintManager/RowConstraintManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pokdp/World/Map/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pokdp/World/Map/Map.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,7 +169,7 @@
         <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/Custom/PokedexScene.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="58" selection-start-line="58" selection-end-line="65" selection-end-column="9" />
+              <caret line="61" selection-start-line="61" selection-end-line="68" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -159,8 +177,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/Custom/PauseScene.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="76" column="66" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
+            <state relative-caret-position="900">
+              <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -199,7 +217,7 @@
         <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="690">
-              <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+              <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,7 +229,7 @@
         <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperScenePokemonMenu.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+              <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -229,7 +247,7 @@
         <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/SceneManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1245">
-              <caret line="94" selection-start-line="94" selection-end-line="94" />
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
             </state>
           </provider>
         </entry>
@@ -412,67 +430,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="pokdp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-              <item name="Player" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Music" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Scene" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Scene" type="462c0819:PsiDirectoryNode" />
-              <item name="Custom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Scene" type="462c0819:PsiDirectoryNode" />
-              <item name="Custom" type="462c0819:PsiDirectoryNode" />
-              <item name="PokemonMenu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="Scene" type="462c0819:PsiDirectoryNode" />
-              <item name="Wrappers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pokemondp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pokemondp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pokdp" type="462c0819:PsiDirectoryNode" />
-              <item name="World" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -593,7 +550,7 @@
       <workItem from="1546939544062" duration="4970000" />
       <workItem from="1546959161566" duration="6812000" />
       <workItem from="1546989765400" duration="2320000" />
-      <workItem from="1547023004694" duration="221000" />
+      <workItem from="1547023004694" duration="632000" />
     </task>
     <servers />
   </component>
@@ -609,11 +566,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145316000" />
+    <option name="totallyTimeSpent" value="145727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="22" y="42" width="1556" height="817" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15430464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -704,6 +660,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#163#164#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -840,6 +799,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -952,6 +915,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -966,6 +932,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="74" column="11" selection-start-line="74" selection-start-column="11" selection-end-line="74" selection-end-column="11" />
+          <folding>
+            <element signature="e#518#519#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,7 +982,7 @@
     <entry file="file://$PROJECT_DIR$/src/pokdp/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
-          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+          <caret line="57" column="45" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1020,7 +992,7 @@
     <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/Wrappers/WrapperScenePokemonMenu.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -1034,7 +1006,7 @@
     <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/SceneManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
-          <caret line="94" selection-start-line="94" selection-end-line="94" />
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
         </state>
       </provider>
     </entry>
@@ -1055,14 +1027,14 @@
     <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/Custom/PokedexScene.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="58" selection-start-line="58" selection-end-line="65" selection-end-column="9" />
+          <caret line="61" selection-start-line="61" selection-end-line="68" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pokdp/Scene/Custom/PauseScene.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="76" column="66" selection-start-line="76" selection-start-column="66" selection-end-line="76" selection-end-column="66" />
+        <state relative-caret-position="900">
+          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -5,9 +5,9 @@ import javafx.scene.Parent;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import pokdp.EventManager.EventManager;
+import pokdp.Utils.Constantes;
 import pokdp.World.Object.CollisionBox;
 import pokdp.World.Object.ICollisionObject;
-import pokdp.Utils.Constantes;
 
 public abstract class AEntity extends Parent {
     public final static boolean HAS_COLLISION = true;

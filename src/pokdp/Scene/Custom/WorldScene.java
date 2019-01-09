@@ -12,14 +12,13 @@ import pokdp.Entity.Player.RandomCombatEvent;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.EventManager.EEventType;
 import pokdp.EventManager.EventManager;
-import pokdp.World.Map.ETerrainType;
-import pokdp.World.Map.Map;
-import pokdp.World.Map.ObjectSet;
 import pokdp.Music.Playlist;
-import pokdp.Scene.Custom.PokemonMenu.PokemonMenuScene;
 import pokdp.Scene.AScene;
 import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;
+import pokdp.World.Map.ETerrainType;
+import pokdp.World.Map.Map;
+import pokdp.World.Map.ObjectSet;
 
 import java.util.ArrayList;
 import java.util.Random;

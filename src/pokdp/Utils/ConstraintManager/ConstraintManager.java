@@ -1,9 +1,6 @@
 package pokdp.Utils.ConstraintManager;
 
-import javafx.scene.Node;
-import javafx.scene.layout.ConstraintsBase;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
 
 import java.util.ArrayList;
 import java.util.List;

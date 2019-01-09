@@ -1,13 +1,9 @@
 package pokdp.Utils.ConstraintManager;
 
 
-import javafx.scene.Node;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 public class ColConstraintManager extends ConstraintManager {

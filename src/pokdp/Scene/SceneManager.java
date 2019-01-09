@@ -9,7 +9,6 @@ import pokdp.Scene.Wrappers.WrapperScenePokemonMenu;
 import pokdp.Scene.Wrappers.WrapperSceneVictory;
 
 import java.util.HashMap;
-import java.util.List;
 
 public abstract class SceneManager {
     private static HashMap<String, AScene> sceneHashMap = new HashMap<>();

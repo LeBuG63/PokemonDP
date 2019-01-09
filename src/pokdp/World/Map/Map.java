@@ -1,9 +1,9 @@
 package pokdp.World.Map;
 
 import javafx.scene.Parent;
-import pokdp.World.Object.DecoObject;
-import pokdp.World.Map.Tile.Tile;
 import pokdp.Utils.Constantes;
+import pokdp.World.Map.Tile.Tile;
+import pokdp.World.Object.DecoObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;

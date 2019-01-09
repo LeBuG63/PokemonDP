@@ -7,8 +7,8 @@ import pokdp.AnimationManager.AnimationManagerSprite;
 import pokdp.Entity.AEntity;
 import pokdp.Entity.EEntityType;
 import pokdp.Entity.Pokemon.Pokemon;
-import pokdp.World.Object.DecoObject;
 import pokdp.Utils.Constantes;
+import pokdp.World.Object.DecoObject;
 
 import java.io.Serializable;
 import java.util.ArrayList;

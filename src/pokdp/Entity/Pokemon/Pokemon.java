@@ -7,8 +7,8 @@ import javafx.beans.property.StringProperty;
 import pokdp.Combat.Attack.Attack;
 import pokdp.Entity.AEntity;
 import pokdp.Entity.EEntityType;
-import pokdp.Stream.Serialization.SerializablePokemon;
 import pokdp.Entity.Pokemon.Type.EType;
+import pokdp.Stream.Serialization.SerializablePokemon;
 import pokdp.Utils.Constantes;
 
 import java.io.Serializable;
