@@ -1,14 +1,13 @@
 package pokdp.Entity.Player;
 
 import com.sun.javafx.geom.Vec2d;
-import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import pokdp.AnimationManager.AnimationManagerSprite;
 import pokdp.Entity.AEntity;
 import pokdp.Entity.EEntityType;
 import pokdp.Entity.Pokemon.Pokemon;
-import pokdp.Map.Object.DecoObject;
+import pokdp.World.Object.DecoObject;
 import pokdp.Utils.Constantes;
 
 import java.io.Serializable;
@@ -25,14 +24,12 @@ public class Player extends AEntity implements Serializable {
 
     // Permet de définir le "pas" de pixel
     private static final int KEYBOARD_MOVEMENT_DELTA = 10;
-    private static List<Pokemon>   pokemonList = new ArrayList<>();
+    private List<Pokemon>  pokemonList = new ArrayList<>();
 
     private AnimationManagerSprite[] animationManager = new AnimationManagerSprite[4];
     private List<DecoObject> decoObjectList;
 
     public final static Vec2d DEFAULT_POSITION = new Vec2d(100, 100);
-
-    private Pokemon pokemonAct = Constantes.pokemonHashMap.get("Bullbizare");
 
     public Player() {
         super(EEntityType.PLAYER, DEFAULT_POSITION, AEntity.HAS_COLLISION);
@@ -58,14 +55,6 @@ public class Player extends AEntity implements Serializable {
     public Player(List<DecoObject> decoObjectList) {
         this();
         setCollisionObjectsList(decoObjectList);
-    }
-
-    public void setSelf(Player newPlayer) {
-        setNewPokemonOrder(newPlayer.getPokemonList());
-    }
-
-    public void setPokemonAct(Pokemon pokemonAct) {
-        this.pokemonAct = pokemonAct;
     }
 
     public void setCollisionObjectsList(List<DecoObject> decoObjectList) {

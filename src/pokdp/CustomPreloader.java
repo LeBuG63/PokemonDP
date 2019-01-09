@@ -1,10 +1,9 @@
 package pokdp;
 
-import javafx.application.Platform;
 import javafx.application.Preloader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import pokdp.Loading.Screen.LoadingScene;
+import pokdp.Scene.Custom.LoadingScene;
 import pokdp.Scene.AScene;
 
 public class CustomPreloader extends Preloader {

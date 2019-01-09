@@ -85,12 +85,11 @@ public abstract class SceneManager {
      * @param sceneName     le nom de la scene
      * @param pokemonList   une liste de pokemon
      */
-    public static void setScenePokemon(String sceneName, List<Pokemon> pokemonList) {
+    public static void setScenePokemon(String sceneName, Player player) {
         if (sceneHashMap.containsKey(sceneName)) {
             WrapperScenePokemonMenu scenePokemonMenu = (WrapperScenePokemonMenu) sceneHashMap.get(sceneName);
 
-            scenePokemonMenu.setPokemonList(pokemonList);
-
+            scenePokemonMenu.setAttributes(player);
             stage.setScene(scenePokemonMenu.getScene());
         }
     }

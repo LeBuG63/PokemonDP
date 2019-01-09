@@ -1,9 +1,7 @@
 package pokdp.Utils;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import pokdp.Entity.Pokemon.Pokemon;
-import pokdp.LoadPokemon.PokemonLoaderXML;
-import pokdp.Scene.SceneManager;
+import pokdp.Stream.LoadPokemon.PokemonLoaderXML;
 
 import java.util.HashMap;
 

@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MusicManager {
+public class MusicManager implements IMusicManager {
     protected HashMap<String, Media> mediaHash = new HashMap<>();
     protected MediaPlayer     mediaPlayer;
 
@@ -72,7 +72,7 @@ public class MusicManager {
     /**
      * joue la prochaine musique
      */
-    void next() {
+    public void next() {
         List<Map.Entry<String, Media>> collection = new ArrayList<>(mediaHash.entrySet());
 
         if(musicName.indexOf(actualMusicName) + 1 > musicName.size()) {

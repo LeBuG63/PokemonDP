@@ -2,24 +2,20 @@ package pokdp;
 
 import com.sun.javafx.application.LauncherImpl;
 import javafx.application.Application;
-import javafx.event.Event;
-import javafx.event.EventType;
 import javafx.scene.Group;
 import javafx.scene.transform.Scale;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-import pokdp.Combat.Screen.CombatSceneSimple;
-import pokdp.Combat.Screen.Victory.VictoryScene;
-import pokdp.Loading.Screen.LoadingScene;
-import pokdp.Pause.Screen.PauseScene;
-import pokdp.Pokedex.PokedexScene;
-import pokdp.PokemonMenu.UIPokemonMenu;
+import pokdp.Scene.Custom.Combat.CombatScene;
+import pokdp.Scene.Custom.PokemonMenu.PokemonMenuScene;
+import pokdp.Scene.Custom.VictoryScene;
+import pokdp.Scene.Custom.PauseScene;
+import pokdp.Scene.Custom.PokedexScene;
 import pokdp.Scene.AScene;
 import pokdp.Scene.SceneManager;
-import pokdp.Starter.Screen.StarterScene;
+import pokdp.Scene.Custom.StarterScene;
 import pokdp.Utils.Constantes;
-import pokdp.World.Screen.WorldScene;
-import sun.java2d.loops.TransformHelper;
+import pokdp.Scene.Custom.WorldScene;
 
 public class Main extends Application {
     private Stage stage;
@@ -59,12 +55,14 @@ public class Main extends Application {
         SceneManager.setManager(stage, width, height);
 
         AScene worldScene = new WorldScene(stage);
-        AScene combatSceneSimple = new CombatSceneSimple();
+        AScene combatSceneSimple = new CombatScene();
         AScene victoryScene = new VictoryScene();
         AScene pokedexScene = new PokedexScene();
         AScene starterScene = new StarterScene();
         AScene pauseScene = new PauseScene();
+        AScene pokemonMenu = new PokemonMenuScene();
 
+        SceneManager.addScene(pokemonMenu,Constantes.POKEMONMENU_NAME);
         SceneManager.addScene(pauseScene, Constantes.PAUSESCENE_NAME);
         SceneManager.addScene(starterScene, Constantes.STARTERSCENE_NAME);
         SceneManager.addScene(worldScene, Constantes.WORLDSCENE_NAME);

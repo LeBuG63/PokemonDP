@@ -1,6 +1,6 @@
 package pokdp.Entity.ArtificialIntelligence;
 
-import pokdp.Attack.Attack;
+import pokdp.Combat.Attack.Attack;
 import pokdp.Entity.Pokemon.Pokemon;
 
 import java.util.Random;
