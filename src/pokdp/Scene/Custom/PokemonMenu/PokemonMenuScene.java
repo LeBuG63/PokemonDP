@@ -10,6 +10,7 @@ import pokdp.Scene.Wrappers.WrapperScenePokemonMenu;
 import java.io.FileInputStream;
 import java.util.List;
 
+
 public class PokemonMenuScene extends WrapperScenePokemonMenu {
     private GridPane root = new GridPane();
     private List<Pokemon> listPoke;
@@ -32,7 +33,8 @@ public class PokemonMenuScene extends WrapperScenePokemonMenu {
 
     @Override
     public void load(double width, double height) {
-        setScene(new Scene(root));
+        setScene(new Scene(root,width,height));
+        mpc.setListSize(width,height);
     }
 
     public void setAttributes(Player player) {
@@ -53,3 +55,4 @@ public class PokemonMenuScene extends WrapperScenePokemonMenu {
         mpc.setListPokeView(listPoke);
     }
 }
+
