@@ -44,6 +44,7 @@ public class PauseScene extends WrapperScenePause {
 
     @Override
     public void load(double width, double height) {
+        Button pokedexButton = new ButtonStyle("Pokedex", Constantes.DEFAULT_BUTTON);
         Button saveButton = new ButtonStyle("Sauvegarder", Constantes.DEFAULT_BUTTON);
         Button loadButton = new ButtonStyle("Charger", Constantes.DEFAULT_BUTTON);
         Button quitButton = new ButtonStyle("Quitter", Constantes.DEFAULT_BUTTON);
@@ -102,6 +103,13 @@ public class PauseScene extends WrapperScenePause {
             }
         });
 
+        pokedexButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                SceneManager.setScene(Constantes.POKEDEXSCENE_NAME);
+            }
+        });
+
         eventManager.add(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
@@ -114,6 +122,7 @@ public class PauseScene extends WrapperScenePause {
         }, EEventType.KEYBOARD_PRESSED);
 
         tilePane.getChildren().add(nameLabel);
+        tilePane.getChildren().add(pokedexButton);
         tilePane.getChildren().add(saveButton);
         tilePane.getChildren().add(loadButton);
         tilePane.getChildren().add(quitButton);
