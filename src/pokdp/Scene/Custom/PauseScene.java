@@ -90,7 +90,7 @@ public class PauseScene extends WrapperScenePause {
                 }
 
                 player.setNewPokemonOrder(pokemonList);
-                SceneManager.setScene(Constantes.WORLDSCENE_NAME);
+                SceneManager.setLastScene();
             }
         });
 
@@ -107,7 +107,7 @@ public class PauseScene extends WrapperScenePause {
             public void handle(KeyEvent event) {
                 switch (event.getCode()) {
                     case ESCAPE:
-                        SceneManager.setScene(Constantes.WORLDSCENE_NAME);
+                        SceneManager.setLastScene();
                         return;
                 }
             }

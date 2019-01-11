@@ -8,12 +8,17 @@ import pokdp.Scene.Wrappers.WrapperScenePause;
 import pokdp.Scene.Wrappers.WrapperScenePokemonMenu;
 import pokdp.Scene.Wrappers.WrapperSceneVictory;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 
 public abstract class SceneManager {
     private static HashMap<String, AScene> sceneHashMap = new HashMap<>();
     private static double windowWidth;
     private static double windowHeight;
+
+    private static LinkedList<String> listNameSceneSaved = new LinkedList<>();
 
     private static Stage stage;
 
@@ -58,7 +63,17 @@ public abstract class SceneManager {
      */
     public static void setScene(String sceneName) {
         if(sceneHashMap.containsKey(sceneName)) {
+            listNameSceneSaved.push(sceneName);
             stage.setScene(sceneHashMap.get(sceneName).getScene());
+        }
+    }
+
+    public static void setLastScene() {
+        if(listNameSceneSaved.size() > 0) {
+            listNameSceneSaved.pop();
+            String lastName = listNameSceneSaved.pop();
+
+            setScene(lastName);
         }
     }
 
@@ -75,7 +90,7 @@ public abstract class SceneManager {
 
             combatScene.setAttributes(player, pok1, pok2);
 
-            stage.setScene(combatScene.getScene());
+            setScene(sceneName);
         }
     }
 
@@ -89,7 +104,7 @@ public abstract class SceneManager {
             WrapperScenePokemonMenu scenePokemonMenu = (WrapperScenePokemonMenu) sceneHashMap.get(sceneName);
 
             scenePokemonMenu.setAttributes(player);
-            stage.setScene(scenePokemonMenu.getScene());
+            setScene(sceneName);
         }
     }
 
@@ -104,7 +119,7 @@ public abstract class SceneManager {
 
             sceneVictory.setPokemon(pokemon);
 
-            stage.setScene(sceneVictory.getScene());
+            setScene(sceneName);
         }
     }
 
@@ -119,7 +134,7 @@ public abstract class SceneManager {
 
             scenePause.setAttributes(player);
 
-            stage.setScene(scenePause.getScene());
+            setScene(sceneName);
         }
     }
 }
