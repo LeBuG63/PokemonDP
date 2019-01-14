@@ -30,6 +30,7 @@ public class Constantes {
             "      -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,0.2) , 1, 0.0 , 0 , 1);";
     public static final int NUMBER_STARTER = 3;
 
+    public static final int MENU_LIMIT = 10;
 
     public static final String STARTERSCENE_NAME = "StarterScene";
     public static final String POKEMONMENU_NAME = "PokemonMenu";
@@ -38,10 +39,11 @@ public class Constantes {
     public static final String VICTORYSCENE_NAME = "VictoryScene";
     public static final String POKEDEXSCENE_NAME = "PokedexScene";
     public static final String PAUSESCENE_NAME = "PauseScene";
+    public static final String DEFEATSCENE_NAME = "DefeatScene";
 
     public static final String SAVE_FILE_PATH = "filesave1.pkdp";
 
-    public static final Boolean CHEAT_ON = true;
+    public static final Boolean CHEAT_ON = false;
 
     public static HashMap<String, Pokemon> pokemonHashMap = PokemonLoaderXML.load("assets/pokemons/list.xml");
 }

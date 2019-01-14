@@ -3,10 +3,7 @@ package pokdp.Scene;
 import javafx.stage.Stage;
 import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
-import pokdp.Scene.Wrappers.WrapperSceneCombat;
-import pokdp.Scene.Wrappers.WrapperScenePause;
-import pokdp.Scene.Wrappers.WrapperScenePokemonMenu;
-import pokdp.Scene.Wrappers.WrapperSceneVictory;
+import pokdp.Scene.Wrappers.*;
 
 import java.util.HashMap;
 
@@ -82,7 +79,6 @@ public abstract class SceneManager {
     /**
      * ajoute une scene pour gerer ses pokemons
      * @param sceneName     le nom de la scene
-     * @param pokemonList   une liste de pokemon
      */
     public static void setScenePokemon(String sceneName, Player player) {
         if (sceneHashMap.containsKey(sceneName)) {
@@ -105,6 +101,16 @@ public abstract class SceneManager {
             sceneVictory.setPokemon(pokemon);
 
             stage.setScene(sceneVictory.getScene());
+        }
+    }
+
+    public static void setSceneDefeat(String sceneName,Player player){
+        if(sceneHashMap.containsKey(sceneName)){
+            WrapperSceneDefeat defeat = (WrapperSceneDefeat) sceneHashMap.get(sceneName);
+
+            defeat.healPokemon(player.getPokemonList());
+
+            stage.setScene(defeat.getScene());
         }
     }
 

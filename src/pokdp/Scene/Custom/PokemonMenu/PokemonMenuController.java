@@ -3,8 +3,6 @@ package pokdp.Scene.Custom.PokemonMenu;
 import javafx.beans.property.ListProperty;
 import javafx.beans.property.SimpleListProperty;
 import javafx.collections.FXCollections;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -47,7 +45,7 @@ public class PokemonMenuController{
 
     @FXML
     public void setListPokeView(List<Pokemon> listPokemon){
-        int  lineLimit = 10;
+        int  lineLimit = Constantes.MENU_LIMIT;
         boolean hasBeenInterrupted = false;
 
         this.listPokemon = listPokemon;

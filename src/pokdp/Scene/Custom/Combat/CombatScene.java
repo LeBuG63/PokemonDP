@@ -52,6 +52,7 @@ public class CombatScene extends WrapperSceneCombat {
     private AArtificialIntelligenceManager iaManager = new SimpleAI();
     private ACombatManager combatManager = new SimpleCombatManager();
 
+
     private boolean deadOccuredOnce = false;
     private boolean nextTurnCanBePlayed = true;
     private int actualTurn = 0; // 0 = joueur    1 = ennemi
@@ -137,7 +138,7 @@ public class CombatScene extends WrapperSceneCombat {
             pokPlayer.setDefense(true);
             actionPlayer.setText(pokPlayer.getName() + " se défend!");
             nextTurnCanBePlayed = true;
-            enemyAttack(pokPlayer, enemy);
+            enemyAttack(player,pokPlayer, enemy);
         });
 
         for(Attack attack : pokPlayer.getAttacks()) {
@@ -173,7 +174,7 @@ public class CombatScene extends WrapperSceneCombat {
                             public void handle(ActionEvent actionEvent) {
                                 nextTurnCanBePlayed = true;
                                 if(!deadOccuredOnce)
-                                    enemyAttack(pokPlayer, enemy);
+                                    enemyAttack(player,pokPlayer, enemy);
                             }
                         });
 
@@ -197,8 +198,8 @@ public class CombatScene extends WrapperSceneCombat {
      * @param player    le pokemon du joueur
      * @param enemy     le pokemon ennemi
      */
-    private void enemyAttack(Pokemon player, Pokemon enemy) {
-        EEntityHurted entityHurted = iaManager.performAction(enemy, player, EAiType.NORMAL);
+    private void enemyAttack(Player player,Pokemon pokPlayer, Pokemon enemy) {
+        EEntityHurted entityHurted = iaManager.performAction(enemy, pokPlayer, EAiType.NORMAL);
         Attack attack = iaManager.getSelectedAttack();
 
         switch (entityHurted) {
@@ -224,11 +225,11 @@ public class CombatScene extends WrapperSceneCombat {
                 break;
         }
 
-        ECombatRules rule = combatManager.checkRules(player, enemy);
+        ECombatRules rule = combatManager.checkRules(pokPlayer, enemy);
 
         if (rule == ECombatRules.PLAYER_DEAD) {
-            processDeathAnim(attack, player, enemy, statPlayer.getPokemonImageView());
-            addDeath();
+            processDeathAnim(attack, pokPlayer, enemy, statPlayer.getPokemonImageView());
+            addDeath(player,enemy,pokPlayer);
             return;
         }
     }
@@ -236,8 +237,28 @@ public class CombatScene extends WrapperSceneCombat {
     /**
      * gere la mort du joueur
      */
-    private void addDeath() {
-        throw new NotImplementedException();
+    private void addDeath(Player player, Pokemon attacker, Pokemon victim) {
+        Button continueButton = new Button("Continuer");
+        Button fleeButton = new Button("Fuir");
+
+        continueButton.setStyle(Constantes.DEFAULT_BUTTON);
+        fleeButton.setStyle(Constantes.DEFAULT_BUTTON);
+
+        fleeButton.setOnAction(actionEvent -> {
+            /*
+            Afficher l'écran de défaite
+            Relancer l'overworld
+            */
+            SceneManager.setSceneDefeat(Constantes.DEFEATSCENE_NAME,player);
+        });
+
+        continueButton.setOnAction(actionEvent -> {
+            /*
+                Lancer le menu de choix de Pokemon, choisir puis revenir sur le combat
+             */
+        });
+        gridPane.add(continueButton,1,1);
+        gridPane.add(fleeButton,2,1);
     }
 
     /**

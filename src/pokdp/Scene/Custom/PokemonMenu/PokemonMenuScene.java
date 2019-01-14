@@ -45,6 +45,7 @@ public class PokemonMenuScene extends WrapperScenePokemonMenu {
     public void setPlayer(Player player) {
         this.player = player;
     }
+
     public void setPokemonList(List<Pokemon> pokemonList) {
         this.listPoke = pokemonList;
         loadPokemonIntoRoot();
