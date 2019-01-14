@@ -47,7 +47,7 @@ public class PokemonMenuController{
 
     @FXML
     public void setListPokeView(List<Pokemon> listPokemon){
-        int  lineLimit = 7;
+        int  lineLimit = 10;
         boolean hasBeenInterrupted = false;
 
         this.listPokemon = listPokemon;

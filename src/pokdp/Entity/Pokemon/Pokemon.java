@@ -57,6 +57,7 @@ public class Pokemon extends AEntity implements Serializable {
     public Pokemon(SerializablePokemon serializablePokemon) {
         this(Constantes.pokemonHashMap.get(serializablePokemon.getName()));
         setLevel(serializablePokemon.getLevel());
+        setPV(getPVMax());
     }
 
     public int getNumber() {
@@ -173,6 +174,6 @@ public class Pokemon extends AEntity implements Serializable {
 
     @Override
     public String toString(){
-        return getName()+" lv."+getLevel()+" "+getPV()+"/"+getPVMax();
+        return getName()+" lv."+getLevel()+" "+getPV()+"/"+getPVMax()+"    ";
     }
 }
