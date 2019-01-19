@@ -2,7 +2,9 @@ package pokdp.World.Map;
 
 import javafx.scene.Parent;
 import pokdp.Utils.Constantes;
+import pokdp.World.Map.Tile.Factory.ITileFactory;
 import pokdp.World.Map.Tile.Tile;
+import pokdp.World.Map.Tile.Factory.TileFactory;
 import pokdp.World.Object.DecoObject;
 
 import java.util.ArrayList;
@@ -117,6 +119,7 @@ public class Map extends Parent {
         List<DecoObject> fencesList = new ArrayList<>();
 
         Random random = new Random();
+        ITileFactory tileFactory = new TileFactory();
 
         final int bottomFenceLimit = width / (Constantes.DEFAULT_FENCE_WIDTH / Constantes.DEFAULT_TILE_MAP_WIDTH) - 1;
         final int rightFenceLimit = height / (Constantes.DEFAULT_FENCE_HEIGHT / Constantes.DEFAULT_TILE_MAP_HEIGHT) - 1;
@@ -162,10 +165,10 @@ public class Map extends Parent {
                 Tile t;
 
                 if(objectSet.hasAnimation(i)) {
-                    t = new Tile(objectSet.getPathObject(i), objectSet.getAnimationDuration(i));
+                    t = (Tile)TileFactory.create(objectSet.getPathObject(i), objectSet.getAnimationDuration(i));
                 }
                 else {
-                    t = new Tile(objectSet.getPathObject(i));
+                    t = (Tile)TileFactory.create(objectSet.getPathObject(i));
                 }
 
                 t.setCoordX(x * Constantes.DEFAULT_TILE_MAP_WIDTH);

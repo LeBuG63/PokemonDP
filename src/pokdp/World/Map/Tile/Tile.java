@@ -8,7 +8,7 @@ import pokdp.Utils.Constantes;
 
 import java.util.List;
 
-public class Tile extends AEntity {
+public class Tile extends AEntity implements ITile {
     private AnimationManagerSprite animationManager = new AnimationManagerSprite();
 
     public Tile(List<String> pathList) {
