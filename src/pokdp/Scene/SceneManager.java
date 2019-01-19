@@ -3,7 +3,9 @@ package pokdp.Scene;
 import javafx.stage.Stage;
 import pokdp.Entity.Player.Player;
 import pokdp.Entity.Pokemon.Pokemon;
+import pokdp.Scene.Custom.Combat.CombatScene;
 import pokdp.Scene.Wrappers.*;
+import pokdp.Utils.Constantes;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -69,7 +71,17 @@ public abstract class SceneManager {
         if(listNameSceneSaved.size() > 0) {
             listNameSceneSaved.pop();
             String lastName = listNameSceneSaved.pop();
+            setScene(lastName);
+        }
+    }
 
+    public static void setLastScene(Player player) {
+        if(listNameSceneSaved.size() > 0) {
+            listNameSceneSaved.pop();
+            String lastName = listNameSceneSaved.pop();
+            if(lastName.equals(Constantes.COMBATSCENE_NAME)){
+                ((CombatScene)sceneHashMap.get(Constantes.COMBATSCENE_NAME)).setAttributes(player,((CombatScene)sceneHashMap.get(Constantes.COMBATSCENE_NAME)).getEnemy());
+            }
             setScene(lastName);
         }
     }
@@ -78,15 +90,12 @@ public abstract class SceneManager {
      * ajoute une scene de combat
      * @param sceneName le nom de la scene
      * @param player    le joueur
-     * @param pok1      le pokemon attaquant
      * @param pok2      le pokemon adverse
      */
-    public static void setSceneCombat(String sceneName, Player player, Pokemon pok1, Pokemon pok2) {
+    public static void setSceneCombat(String sceneName, Player player,Pokemon pok2) {
         if(sceneHashMap.containsKey(sceneName)) {
             WrapperSceneCombat combatScene = (WrapperSceneCombat)sceneHashMap.get(sceneName);
-
-            combatScene.setAttributes(player, pok1, pok2);
-
+            combatScene.setAttributes(player, pok2);
             setScene(sceneName);
         }
     }

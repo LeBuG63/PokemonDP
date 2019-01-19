@@ -47,6 +47,8 @@ public class CombatScene extends WrapperSceneCombat {
     private AUIPokemonStat statPlayer;
     private AUIPokemonStat statEnemy;
 
+    private Pokemon enemy;
+
     private List<Button> buttonList = new ArrayList<>();
 
     private AArtificialIntelligenceManager iaManager = new SimpleAI();
@@ -87,14 +89,19 @@ public class CombatScene extends WrapperSceneCombat {
     /**
      * met a jour le combat
      * @param player        le joueur
-     * @param pokPlayer     le pokemon du joueur
      * @param enemy         le pokemon ennemi
      */
     @Override
-    public void setAttributes(Player player, Pokemon pokPlayer, Pokemon enemy) {
-        initialize(player, pokPlayer, enemy);
+    public void setAttributes(Player player,  Pokemon enemy) {
+        this.enemy = enemy;
+        this.enemy.setPV(this.enemy.getPVMax());
+        initialize(player, player.getPokemon(), enemy);
     }
 
+
+    public Pokemon getEnemy(){
+        return enemy;
+    }
     /**
      * initialise le combat
      * @param player        le joueur
@@ -146,44 +153,41 @@ public class CombatScene extends WrapperSceneCombat {
 
             button.setStyle(Constantes.DEFAULT_BUTTON);
 
-            button.setOnAction(new EventHandler<ActionEvent>() {
-                @Override
-                public void handle(ActionEvent actionEvent) {
-                    if(!deadOccuredOnce && nextTurnCanBePlayed ) {
-                        int damage = attack.calculateDamage(pokPlayer, enemy);
+            button.setOnAction(actionEvent -> {
+                if(!deadOccuredOnce && nextTurnCanBePlayed ) {
+                    int damage = attack.calculateDamage(pokPlayer, enemy);
 
-                        if(Constantes.CHEAT_ON) {
-                            processDeathAnim(attack, pokPlayer, enemy, statEnemy.getPokemonImageView());
+                    if(Constantes.CHEAT_ON) {
+                        processDeathAnim(attack, pokPlayer, enemy, statEnemy.getPokemonImageView());
+                    }
+
+                    if (enemy.isDefending()) {
+                        actionPlayer.setText(attack.getName() + " a loupé!");
+                        enemy.setDefense(false);
+                        return;
+                    }
+
+                    enemy.setPV(enemy.getPV() - damage);
+                    actionPlayer.setText(pokPlayer.getName() + " attaque avec " + attack.getName());
+
+                    TranslateTransition tt = Transition.translate(statEnemy.getPokemonImageView(), 10f, 10, 100);
+
+                    nextTurnCanBePlayed = false;
+
+                    tt.setOnFinished(new EventHandler<ActionEvent>() {
+                        @Override
+                        public void handle(ActionEvent actionEvent) {
+                            nextTurnCanBePlayed = true;
+                            if(!deadOccuredOnce)
+                                enemyAttack(player,pokPlayer, enemy);
                         }
+                    });
 
-                        if (enemy.isDefending()) {
-                            actionPlayer.setText(attack.getName() + " a loupé!");
-                            enemy.setDefense(false);
-                            return;
-                        }
+                    ECombatRules rule = combatManager.checkRules(pokPlayer, enemy);
 
-                        enemy.setPV(enemy.getPV() - damage);
-                        actionPlayer.setText(pokPlayer.getName() + " attaque avec " + attack.getName());
-
-                        TranslateTransition tt = Transition.translate(statEnemy.getPokemonImageView(), 10f, 10, 100);
-
-                        nextTurnCanBePlayed = false;
-
-                        tt.setOnFinished(new EventHandler<ActionEvent>() {
-                            @Override
-                            public void handle(ActionEvent actionEvent) {
-                                nextTurnCanBePlayed = true;
-                                if(!deadOccuredOnce)
-                                    enemyAttack(player,pokPlayer, enemy);
-                            }
-                        });
-
-                        ECombatRules rule = combatManager.checkRules(pokPlayer, enemy);
-
-                        if (rule == ECombatRules.ENEMY_DEAD) {
-                            processDeathAnim(attack, pokPlayer, enemy, statEnemy.getPokemonImageView());
-                            addContinue(player, pokPlayer, enemy);
-                        }
+                    if (rule == ECombatRules.ENEMY_DEAD) {
+                        processDeathAnim(attack, pokPlayer, enemy, statEnemy.getPokemonImageView());
+                        addContinue(player, pokPlayer, enemy);
                     }
                 }
             });
@@ -215,12 +219,7 @@ public class CombatScene extends WrapperSceneCombat {
 
                 nextTurnCanBePlayed = false;
 
-                tt.setOnFinished(new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent actionEvent) {
-                        nextTurnCanBePlayed = true;
-                    }
-                });
+                tt.setOnFinished(actionEvent -> nextTurnCanBePlayed = true);
                 }
                 break;
         }
@@ -238,26 +237,22 @@ public class CombatScene extends WrapperSceneCombat {
      * gere la mort du joueur
      */
     private void addDeath(Player player, Pokemon attacker, Pokemon victim) {
-        Button continueButton = new Button("Continuer");
         Button fleeButton = new Button("Fuir");
 
-        continueButton.setStyle(Constantes.DEFAULT_BUTTON);
         fleeButton.setStyle(Constantes.DEFAULT_BUTTON);
 
         fleeButton.setOnAction(actionEvent -> {
-            /*
-            Afficher l'écran de défaite
-            Relancer l'overworld
-            */
             SceneManager.setSceneDefeat(Constantes.DEFEATSCENE_NAME,player);
         });
 
-        continueButton.setOnAction(actionEvent -> {
-            /*
-                Lancer le menu de choix de Pokemon, choisir puis revenir sur le combat
-             */
-        });
-        gridPane.add(continueButton,1,1);
+        if(player.getPokemonList().size() != 1) {
+            Button continueButton = new Button("Continuer");
+            continueButton.setStyle(Constantes.DEFAULT_BUTTON);
+            continueButton.setOnAction(actionEvent -> {
+                SceneManager.setScenePokemon(Constantes.POKEMONMENU_NAME, player);
+            });
+            gridPane.add(continueButton, 1, 1);
+        }
         gridPane.add(fleeButton,2,1);
     }
 

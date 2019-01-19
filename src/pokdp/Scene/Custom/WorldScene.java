@@ -168,7 +168,7 @@ public class WorldScene extends AScene {
 
                     map.generateRandomTerrain();
 
-                    SceneManager.setSceneCombat(Constantes.COMBATSCENE_NAME, ((Player) player), ((Player) player).getPokemon(), enemy);
+                    SceneManager.setSceneCombat(Constantes.COMBATSCENE_NAME, ((Player) player), enemy);
                 }
 
                 ((Player) player).processKeyboardEvent(event,primaryStage);

@@ -1,17 +1,14 @@
 package pokdp;
 
 import com.sun.javafx.application.LauncherImpl;
-import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import javafx.application.Application;
 import javafx.scene.Group;
-import javafx.scene.Scene;
 import javafx.scene.transform.Scale;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import pokdp.Scene.AScene;
 import pokdp.Scene.Custom.Combat.CombatScene;
 import pokdp.Scene.Custom.*;
-import pokdp.Scene.Custom.PokemonMenu.DefeatScene;
 import pokdp.Scene.Custom.PokemonMenu.PokemonMenuScene;
 import pokdp.Scene.SceneManager;
 import pokdp.Utils.Constantes;

@@ -96,7 +96,7 @@ public class PokemonMenuController{
         listPokemon.set(oldIndex,oldHeadPokemon);
         setListPokeView(listPokemon);
         player.setNewPokemonOrder(listPokemon);
-        SceneManager.setScene(Constantes.WORLDSCENE_NAME);
+        SceneManager.setLastScene(player);
 
     }
 }

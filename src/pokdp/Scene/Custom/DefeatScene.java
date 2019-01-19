@@ -1,4 +1,4 @@
-package pokdp.Scene.Custom.PokemonMenu;
+package pokdp.Scene.Custom;
 
 
 import javafx.geometry.Pos;
@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Font;
 import pokdp.Entity.Pokemon.Pokemon;
 import pokdp.Scene.AScene;
 import pokdp.Scene.SceneManager;
@@ -14,6 +15,9 @@ import pokdp.Scene.Wrappers.WrapperSceneDefeat;
 import pokdp.Utils.Constantes;
 import pokdp.Utils.ConstraintManager.RowConstraintManager;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.List;
 
 public class DefeatScene extends WrapperSceneDefeat {
@@ -37,7 +41,16 @@ public class DefeatScene extends WrapperSceneDefeat {
         btn.setOnAction(actionEvent -> {
             SceneManager.setScene(Constantes.WORLDSCENE_NAME);
         });
-        pane.add(btn,2,1);
+        pane.add(btn,1,2);
+
+        try {
+            Font font = Font.loadFont(new FileInputStream(new File("assets/fonts/pokemon.ttf")), 30);
+
+            defeatMessage.setFont(font);
+            btn.setFont(font);
+        }
+        catch(FileNotFoundException e) {
+        }
 
 
         pane.setStyle(
