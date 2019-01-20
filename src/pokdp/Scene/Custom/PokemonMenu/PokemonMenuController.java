@@ -25,7 +25,7 @@ public class PokemonMenuController{
 
     private List<Pokemon> listPokemon;
 
-    private ListProperty<GridPane>   listP;
+    private ListProperty<GridPane>      listP;
     private Player player;
 
     public PokemonMenuController(){

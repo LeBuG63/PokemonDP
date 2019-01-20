@@ -12,7 +12,6 @@ public class EventManager {
     // Permet de stocker les événements, clé = EventHandler<?> val = EEVentType
     private HashMap<EventHandler<?>, EEventType> eventDict = new HashMap<>();
 
-    // TODO: penser à faire des vérifications
     /**
      * ajoute un événement
      * @param event     l'événement à ajouter

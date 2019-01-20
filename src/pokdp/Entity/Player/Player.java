@@ -80,7 +80,7 @@ public class Player extends AEntity implements Serializable {
     /**
      * remet la position du joueur a sa position par defaut
      */
-    public void resetPosition() {
+        public void resetPosition() {
         setCoord(DEFAULT_POSITION);
     }
 

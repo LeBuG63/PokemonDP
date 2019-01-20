@@ -80,9 +80,7 @@ public class Pokemon extends AEntity implements Serializable {
         LevelProperty.setValue(level);
     }
 
-    public EType getType() {
-        return type;
-    }
+    public EType getType() { return type; }
 
     /**
      * Calcule les attributs d'un pokemon
@@ -99,7 +97,7 @@ public class Pokemon extends AEntity implements Serializable {
         return NameProperty.getValue();
     }
     public StringProperty getNameProperty() {return NameProperty; }
-    public int getLevel(){
+    public int      getLevel(){
         return LevelProperty.getValue();
     }
     public IntegerProperty getLevelProperty () { return LevelProperty; }

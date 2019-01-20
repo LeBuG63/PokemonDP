@@ -9,7 +9,7 @@ import pokdp.Utils.Constantes;
 import pokdp.World.Object.CollisionBox;
 import pokdp.World.Object.ICollisionObject;
 
-public abstract class AEntity extends Parent {
+public abstract class  AEntity extends Parent {
     public final static boolean HAS_COLLISION = true;
     public final static boolean HAS_NO_COLLISION = false;
 
@@ -49,20 +49,6 @@ public abstract class AEntity extends Parent {
         setCollisionObject(new CollisionBox(coord, 0, 0));
         setCoord(coord);
 
-        this.getChildren().add(spriteView);
-    }
-
-    /**
-     *
-     * @param spritePath    le chemin (file:/...) du sprite
-     * @param type          le type de l'entité
-     */
-    public AEntity(String spritePath, EEntityType type, boolean hasCollision) {
-
-        this.hasCollision = hasCollision;
-        this.type = type;
-        this.spriteView = new ImageView(new Image(spritePath));
-        setCollisionObject(new CollisionBox(getCoord(), spriteView.getFitWidth(), spriteView.getFitHeight()));
         this.getChildren().add(spriteView);
     }
 
@@ -129,10 +115,6 @@ public abstract class AEntity extends Parent {
 
     public ICollisionObject getCollisionObject() {
         return collisionObject;
-    }
-
-    protected EventManager getEventManager() {
-        return eventManager;
     }
 
     /**

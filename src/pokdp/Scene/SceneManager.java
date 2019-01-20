@@ -50,7 +50,7 @@ public abstract class SceneManager {
      * @param scene     la scene a ajouter
      * @param sceneName son nom
      */
-    public static void addScene(AScene scene, String sceneName) {
+            public static void addScene(AScene scene, String sceneName) {
         scene.load(windowWidth, windowHeight);
 
         sceneHashMap.put(sceneName, scene);

@@ -24,7 +24,7 @@ public class SimpleObjectSerializationManager implements IObjectSerializationMan
     }
 
 
-    public void writeObjectFromFile(String path, Object item){
+        public void writeObjectFromFile(String path, Object item){
         try {
             FileOutputStream outputFile = new FileOutputStream(new File(path));
             ObjectOutputStream outputObject = new ObjectOutputStream(outputFile);

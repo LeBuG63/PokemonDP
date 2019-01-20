@@ -49,7 +49,7 @@ public class DecoObject extends AEntity {
      * @param entity
      * @return
      */
-    public boolean isInCollision(AEntity entity) {
+        public boolean isInCollision(AEntity entity) {
         if(!entity.hasCollision()) return false;
         return getCollisionObject().isInCollision(entity.getCollisionObject());
     }
