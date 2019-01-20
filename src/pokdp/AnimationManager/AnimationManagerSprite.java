@@ -93,7 +93,7 @@ public class AnimationManagerSprite  {
      * @param imagePath     le chemin(file:...) du sprite
      */
     public void addFrameDefaultSize(String imagePath) {
-        imageList.add(new Image(imagePath, defaultWidth, defaultHeight, false, false));
+        imageList.add(new Image(imagePath, defaultWidth, defaultHeight, true, false));
     }
 
     /**
@@ -103,7 +103,7 @@ public class AnimationManagerSprite  {
      * @param h             la hauteur
      */
     public void addFrame(String imagePath, double w, double h) {
-        imageList.add(new Image(imagePath, w, h, false, false));
+        imageList.add(new Image(imagePath, w, h, true, false));
     }
 
     /**

@@ -1,9 +1,11 @@
 package pokdp.Scene.Custom;
 
+import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import pokdp.AnimationManager.AnimationManagerSprite;
 import pokdp.Entity.AEntity;
@@ -34,15 +36,17 @@ public class WorldScene extends AScene {
 
     @Override
     public void load(double width, double height) {
-        Group group = new Group();
+        AnchorPane anchorPane = new AnchorPane();
+
+        anchorPane.setPrefWidth(width);
+        anchorPane.setPrefHeight(height);
 
         EventManager eventManager = new EventManager();
         RandomCombatEvent randomCombatEvent;
 
-        setScene(new Scene(group));
+        setScene(new Scene(anchorPane, width, height));
 
         Map map = new Map((int)width / Constantes.DEFAULT_TILE_MAP_WIDTH,(int)height / Constantes.DEFAULT_TILE_MAP_HEIGHT + 1);
-
 
             map.addTileSet(new ObjectSet() {{
                 load("file:assets/sprites/terrain/grass1.png", 0.80f, AEntity.HAS_NO_COLLISION);
@@ -150,6 +154,10 @@ public class WorldScene extends AScene {
                     case ESCAPE:
                         SceneManager.setScenePause(Constantes.PAUSESCENE_NAME, getPlayer());
                         return;
+
+                    case C:
+                        Constantes.CHEAT_ON = !Constantes.CHEAT_ON;
+                        break;
                 }
 
                 if(combat) {
@@ -179,8 +187,8 @@ public class WorldScene extends AScene {
 
         map.generateRandomTerrain(ETerrainType.FOREST);
 
-        group.getChildren().add(map);
-        group.getChildren().add(player);
+        anchorPane.getChildren().add(map);
+        anchorPane.getChildren().add(player);
     }
 
     public Player getPlayer() {

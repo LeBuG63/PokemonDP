@@ -41,7 +41,7 @@ public class Constantes {
 
     public static final String SAVE_FILE_PATH = "filesave1.pkdp";
 
-    public static final Boolean CHEAT_ON = true;
+    public static Boolean CHEAT_ON = false;
 
     public static HashMap<String, Pokemon> pokemonHashMap = PokemonLoaderXML.load("assets/pokemons/list.xml");
 }

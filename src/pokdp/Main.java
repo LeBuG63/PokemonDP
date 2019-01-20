@@ -24,7 +24,6 @@ public class Main extends Application {
 
         stage = primaryStage;
 
-
         Group root = new Group();
 
         primaryStage.setFullScreen(true);
